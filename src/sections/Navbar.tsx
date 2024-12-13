@@ -1,24 +1,25 @@
 import Image from "next/image";
-import logoImage from "@/assets/images/logo.svg";
+import logoImage from "@/assets/images/blvcksheep.svg";
 import Button from "@/components/Button";
 
 const navLinks = [
   { label: "Home", href: "#" },
+  { label: "About", href: "#about" },
   { label: "Features", href: "#features" },
-  { label: "Integrations", href: "#integrations" },
+  { label: "Destinations", href: "#destinations" },
   { label: "FAQs", href: "#faqs" },
 ];
 
 export default function Navbar() {
   return (
     <section className="py-4 lg:py-8">
-      <div className="container max-w-5xl">
+      <div className="container max-w-6xl">
         <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full px-4 md:px-2 items-center">
           <div className="p-2">
             <Image
               src={logoImage}
               alt="logo"
-              className="h-9 md:h-auto w-auto"
+              className="h-12 md:h-14 lg:h-16 w-auto"
             />
           </div>
           <div className="hidden lg:flex justify-center items-center">
@@ -48,7 +49,7 @@ export default function Navbar() {
               <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
             <Button variant="primary" className="hidden md:inline-flex">
-              Contact
+              Contact Us
             </Button>
           </div>
         </div>
