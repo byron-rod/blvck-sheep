@@ -1,19 +1,16 @@
 import { ButtonHTMLAttributes } from "react";
 import { cva } from "class-variance-authority";
 
-const classes = cva(
-  "border h-14 rounded-full px-4 font-medium font-bold items-center",
-  {
-    variants: {
-      variant: {
-        primary:
-          "bg-white text-black border-white hover:bg-transparent hover:text-white",
-        secondary:
-          "border-white text-white bg-transparent hover:bg-white hover:text-black",
-      },
+const classes = cva("border h-14 rounded-full px-4 font-medium items-center", {
+  variants: {
+    variant: {
+      primary:
+        "bg-white text-black border-white hover:bg-transparent hover:text-white",
+      secondary:
+        "border-white text-white bg-transparent hover:bg-white hover:text-black",
     },
-  }
-);
+  },
+});
 
 export default function Button(
   props: {

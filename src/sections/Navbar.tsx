@@ -13,9 +13,9 @@ const navLinks = [
 export default function Navbar() {
   return (
     <section className="py-4 lg:py-8">
-      <div className="container max-w-6xl">
+      <div className="container max-w-5xl">
         <div className="grid grid-cols-2 lg:grid-cols-3 border border-white/15 rounded-full px-4 md:px-2 items-center">
-          <div className="p-2">
+          <div className="p-1">
             <Image
               src={logoImage}
               alt="logo"
@@ -31,11 +31,11 @@ export default function Navbar() {
               ))}
             </nav>
           </div>
-          <div className="flex justify-end gap-4">
+          <div className="flex justify-end">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="28"
+              height="28"
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
