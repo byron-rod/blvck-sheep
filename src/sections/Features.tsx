@@ -1,6 +1,11 @@
 import Tag from "@/components/Tag";
 import FeatureCard from "@/components/FeatureCard";
+import Avatar from "@/components/Avatar";
 import car from "@/assets/images/suzuki-xl7.png";
+import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
+import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
+import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
+import whatsapp from "@/assets/images/wa-logo.png";
 import Image from "next/image";
 
 const features = [
@@ -22,12 +27,13 @@ export default function Features() {
         <h2 className="text-4xl text-center mt-6">
           More Comfort. More Freedom. Less Hassle.
         </h2>
-        <div className="mt-12 grid grid-cols-1 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only 5-6 passangers."
+            description="Spacious SUVs with only 5-6 passangers with amazing music and air conditioning."
+            className="col-span-2 lg:col-span-1"
           >
-            <div>
+            <div className="aspect-video flex items-center justify-center">
               <div>
                 <Image src={car} alt="Suzuki SUV"></Image>
               </div>
@@ -35,22 +41,88 @@ export default function Features() {
           </FeatureCard>
           <FeatureCard
             title="Personalized Service"
-            description="Flexible schedules and tailored journeys."
-          ></FeatureCard>
+            description="Flexible schedules and tailored journeys. We adapt to the needs of our passangers."
+            className="col-span-2 lg:col-span-1"
+          >
+            <div className="aspect-video flex items-center justify-center mt-6">
+              <Avatar className="z-40">
+                <Image
+                  src={avatar1}
+                  alt="Avatar"
+                  className="rounded-full"
+                ></Image>
+              </Avatar>
+              <Avatar className="-ml-6 border-indigo-500 z-30">
+                <Image
+                  src={avatar3}
+                  alt="Avatar"
+                  className="rounded-full"
+                ></Image>
+              </Avatar>
+              <Avatar className="-ml-6 border-amber-500 z-20">
+                <Image
+                  src={avatar2}
+                  alt="Avatar"
+                  className="rounded-full"
+                ></Image>
+              </Avatar>
+              <Avatar className="-ml-6 border-transparent">
+                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                  {Array.from({ length: 3 }).map((_, i) => (
+                    <span
+                      className="size-1.5 rounded-full bg-white inline-flex"
+                      key={i}
+                    ></span>
+                  ))}
+                </div>
+              </Avatar>
+            </div>
+          </FeatureCard>
           <FeatureCard
             title="Private Ride Option"
-            description="Total control of stops, music, and timeframes."
-          ></FeatureCard>
+            description="Total control of stops, music, and timeframes. Explore at your own pace."
+            className="col-span-2 lg:col-span-1"
+          >
+            <div className="aspect-video flex items-center justify-center">
+              <p className="text-4xl font-extrabold text-white/20 text-center">
+                Exploring{" "}
+                <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
+                  Guatemala
+                </span>{" "}
+                done{" "}
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                  your way
+                </span>
+              </p>
+            </div>
+          </FeatureCard>
           <FeatureCard
-            title="Expert Recommendations"
-            description="Travel like a local with our WhatsApp tips."
-          ></FeatureCard>
+            title="Expert Guidance"
+            description="We go beyond your transportation service. Travel like a local with our exclusive WhatsApp tips."
+            className="col-span-2 lg:col-span-1"
+          >
+            <div className="aspect-video flex items-center justify-center">
+              <div>
+                <Image
+                  src={whatsapp}
+                  alt="WhatsApp logo"
+                  height={140}
+                  width={140}
+                ></Image>
+              </div>
+            </div>
+          </FeatureCard>
         </div>
-        <div>
+        <div className="mt-8 flex flex-wrap gap-3 justify-center">
           {features.map((feature) => (
-            <div key={feature}>
-              <span></span>
-              <span>{feature}</span>
+            <div
+              key={feature}
+              className="bg-neutral-900 border border-white/10 inline-flex px-3 py-1.5 md:py-2 rounded-2xl gap-3 items-center"
+            >
+              <span className="bg-purple-600 text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
+                &#10038;
+              </span>
+              <span className="font-medium">{feature}</span>
             </div>
           ))}
         </div>
