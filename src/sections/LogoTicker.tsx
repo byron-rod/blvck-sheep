@@ -24,7 +24,7 @@ export default function LogoTicker() {
     <section className="py-24 overflow-x-clip">
       <div className="container">
         <h2 className="text-center text-white/50 text-xl">
-          Trusted by these amazing brands
+          Trusted by these amazing hostels
         </h2>
         <div className="overflow-hidden mt-12 mask-image-gradient">
           <div className="flex gap-24 pr-24">
