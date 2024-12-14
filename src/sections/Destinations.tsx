@@ -48,7 +48,7 @@ export default function Destinations() {
               <Tag>Destinations</Tag>
             </div>
             <h2 className="text-4xl lg:text-5xl text-center mt-6">
-              Guatemala's Most Beautiful{" "}
+              Guatemala&apos;s Most Beautiful{" "}
               <span className="text-blue-500">Locations</span>
             </h2>
           </div>
