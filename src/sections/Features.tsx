@@ -26,7 +26,8 @@ export default function Features() {
           <Tag>Features</Tag>
         </div>
         <h2 className="text-4xl lg:text-5xl text-center mt-6">
-          More Comfort. More Freedom. Less Hassle.
+          More <span className="text-purple-400">Comfort</span>. More{" "}
+          <span className="text-blue-500">Freedom</span>. Less Hassle.
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
