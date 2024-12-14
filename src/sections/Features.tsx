@@ -6,6 +6,7 @@ import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import whatsapp from "@/assets/images/wa-logo.png";
+import background from "@/assets/images/wa-bg.png";
 import Image from "next/image";
 
 const features = [
@@ -24,7 +25,7 @@ export default function Features() {
         <div className="flex justify-center">
           <Tag>Features</Tag>
         </div>
-        <h2 className="text-4xl text-center mt-6">
+        <h2 className="text-4xl lg:text-5xl text-center mt-6">
           More Comfort. More Freedom. Less Hassle.
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
@@ -59,7 +60,7 @@ export default function Features() {
                   className="rounded-full"
                 ></Image>
               </Avatar>
-              <Avatar className="-ml-6 border-amber-500 z-20">
+              <Avatar className="-ml-6 border-purple-500 z-20">
                 <Image
                   src={avatar2}
                   alt="Avatar"
@@ -101,7 +102,16 @@ export default function Features() {
             description="We go beyond your transportation service. Travel like a local with our exclusive WhatsApp tips."
             className="col-span-2 lg:col-span-1"
           >
-            <div className="aspect-video flex items-center justify-center">
+            <div className="aspect-video relative flex items-center justify-center">
+              <div className="flex opacity-20">
+                <Image
+                  src={background}
+                  alt="WhatsApp background"
+                  layout="fill"
+                  objectFit="cover"
+                  className="z-0 rounded-3xl"
+                ></Image>
+              </div>
               <div>
                 <Image
                   src={whatsapp}
@@ -117,10 +127,10 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature}
-              className="bg-neutral-900 border border-white/10 inline-flex px-3 py-1.5 md:py-2 rounded-2xl gap-3 items-center"
+              className="bg-neutral-900 border border-lime-200 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center"
             >
-              <span className="bg-purple-600 text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
-                &#10038;
+              <span className="bg-transparent text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
+                &#100038;
               </span>
               <span className="font-medium">{feature}</span>
             </div>

@@ -11,3 +11,13 @@
     transparent
   );
 }
+
+.mask-destination-gradient {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.9),
+    transparent
+  );
+}
