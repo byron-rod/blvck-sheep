@@ -38,7 +38,8 @@ export default function Faqs() {
           <Tag>FAQs</Tag>
         </div>
         <h2 className="text-4xl lg:text-5xl mt-6 text-center max-w-xl mx-auto">
-          Questions? We've Got <span className="text-blue-500">Answers</span>
+          Questions? We&apos;ve Got{" "}
+          <span className="text-blue-500">Answers</span>
         </h2>
         <div className="mt-12 flex flex-col gap-6 max-w-xl mx-auto">
           {faqs.map((faq, faqIndex) => (

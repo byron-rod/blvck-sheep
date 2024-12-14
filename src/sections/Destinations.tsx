@@ -4,7 +4,6 @@ import paredon from "@/assets/images/el-paredon.jpg";
 import antigua from "@/assets/images/antigua.jpg";
 import semuc from "@/assets/images/semuc.jpg";
 import atitlan from "@/assets/images/lake-atitlan.jpg";
-import Image from "next/image";
 import DestinationsColumn from "@/components/DestinationsColumn";
 
 const destinations = [
