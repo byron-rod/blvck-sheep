@@ -5,6 +5,7 @@ import car from "@/assets/images/suzuki-xl7.png";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
+import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
 import whatsapp from "@/assets/images/wa-logo.png";
 import background from "@/assets/images/wa-bg.png";
 import Image from "next/image";
@@ -32,19 +33,25 @@ export default function Features() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only 5-6 passangers with amazing music and air conditioning."
+            description="Spacious SUVs with only 5-6 passengers with amazing music and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
-              <div>
-                <Image src={car} alt="Suzuki SUV"></Image>
+              <div className="group relative">
+                <Image
+                  src={car}
+                  alt="Suzuki SUV"
+                  className="transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-2"
+                />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-50 transition-opacity duration-500"></div>
               </div>
             </div>
           </FeatureCard>
+
           <FeatureCard
             title="Personalized Service"
             description="Flexible schedules and tailored journeys. We adapt to the needs of our passangers."
-            className="col-span-2 lg:col-span-1"
+            className="col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex items-center justify-center mt-6">
               <Avatar className="z-40">
@@ -68,8 +75,13 @@ export default function Features() {
                   className="rounded-full"
                 ></Image>
               </Avatar>
-              <Avatar className="-ml-6 border-transparent">
-                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+              <Avatar className="-ml-6 border-transparent group-hover:border-blue-400 transition duration-400">
+                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1 relative">
+                  <Image
+                    src={avatar4}
+                    alt="Avatar 4"
+                    className="absolute size-full rounded-full opacity-0 group-hover:opacity-100 transition"
+                  />
                   {Array.from({ length: 3 }).map((_, i) => (
                     <span
                       className="size-1.5 rounded-full bg-white inline-flex"
@@ -85,14 +97,14 @@ export default function Features() {
             description="Total control of stops, music, and timeframes. Explore at your own pace."
             className="col-span-2 lg:col-span-1"
           >
-            <div className="aspect-video flex items-center justify-center">
+            <div className="aspect-video flex items-center justify-center hover:scale-105 transition duration-300">
               <p className="text-4xl font-extrabold text-white/20 text-center">
                 Exploring{" "}
                 <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                   Guatemala
                 </span>{" "}
                 done{" "}
-                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent hover:scale-110">
                   your way
                 </span>
               </p>
@@ -103,7 +115,7 @@ export default function Features() {
             description="We go beyond your transportation service. Travel like a local with our exclusive WhatsApp tips."
             className="col-span-2 lg:col-span-1"
           >
-            <div className="aspect-video relative flex items-center justify-center">
+            <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">
               <div className="flex opacity-20">
                 <Image
                   src={background}
@@ -128,10 +140,10 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature}
-              className="bg-neutral-900 border border-lime-200 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center"
+              className="bg-neutral-900 border border-lime-200 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center hover:scale-105 transition duration-500 group"
             >
-              <span className="bg-transparent text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl">
-                &#100038;
+              <span className="bg-transparent text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-45 transition duration-500">
+                &#10032;
               </span>
               <span className="font-medium">{feature}</span>
             </div>

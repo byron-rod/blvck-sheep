@@ -57,6 +57,7 @@ export default function Destinations() {
               <DestinationsColumn destinations={destinations} />
               <DestinationsColumn
                 destinations={destinations.slice().reverse()}
+                reverse
                 className="hidden md:flex"
               />
             </div>

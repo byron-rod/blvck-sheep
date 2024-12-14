@@ -1,36 +1,40 @@
+"use client";
 import Tag from "@/components/Tag";
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "How is Layers different from other design tools?",
+    question: "How do I book a ride?",
     answer:
-      "Unlike traditional design tools, Layers prioritizes speed and simplicity without sacrificing power. Our intelligent interface adapts to your workflow, reducing clicks and keeping you in your creative flow.",
+      "You can book your ride directly through our website or by contacting us via WhatsApp. Choose your destination, select your preferred date and time, and we'll handle the rest!",
   },
   {
-    question: "Is there a learning curve?",
+    question: "What's included in a shared ride?",
     answer:
-      "Layers is designed to feel intuitive from day one. Most designers are productive within hours, not weeks. We also provide interactive tutorials and comprehensive documentation to help you get started.",
+      "Shared rides include a comfortable seat in one of our 7-passenger black SUVs, air conditioning, great music playlists, and flexible schedules designed to minimize wait times.",
   },
   {
-    question: "How do you handle version control?",
+    question: "Can I bring luggage?",
     answer:
-      "Every change in Layers is automatically saved and versioned. You can review history, restore previous versions, and create named versions for important milestones.",
+      "Yes, our SUVs are spacious and can accommodate your luggage. However, we recommend limiting it to one large suitcase and one carry-on per person for optimal comfort.",
   },
   {
-    question: "Can I work offline?",
+    question: "What are your cancellation or rescheduling policies?",
     answer:
-      "Yes! Layers includes a robust offline mode. Changes sync automatically when you're back online, so you can keep working anywhere.",
+      "We understand that plans can change. You can cancel or reschedule your booking up to 24 hours before departure at no extra charge. For last-minute changes, contact us, and we'll do our best to assist you.",
   },
   {
-    question: "How does Layers handle collaboration?",
+    question: "Do you provide door-to-door service?",
     answer:
-      "Layers is built for collaboration. You can invite team members to your projects, share feedback, and work together in real-time.",
+      "Yes! We offer door-to-door pick-up and drop-off for all our rides. Please provide your exact address when booking.",
   },
 ];
 
 export default function Faqs() {
-  const selectedIndex = 0;
+  const [selectedIndex, setSelectedIndex] = useState(0);
   return (
     <section className="py-24">
       <div className="container">
@@ -47,7 +51,10 @@ export default function Faqs() {
               key={faq.question}
               className="bg-neutral-900 rounded-2xl border border-white/10 p-6"
             >
-              <div className="flex justify-between items-center">
+              <div
+                className="flex justify-between items-center"
+                onClick={() => setSelectedIndex(faqIndex)}
+              >
                 <h3 className="font-medium">{faq.question}</h3>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +67,7 @@ export default function Faqs() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   className={twMerge(
-                    "feather feather-plus text-blue-500 flex-shrink-0",
+                    "feather feather-plus text-blue-500 flex-shrink-0 transition duration-500",
                     selectedIndex === faqIndex && "rotate-45"
                   )}
                 >
@@ -68,14 +75,27 @@ export default function Faqs() {
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                 </svg>
               </div>
-              <div
-                className={twMerge(
-                  "mt-6",
-                  selectedIndex !== faqIndex && "hidden"
+              <AnimatePresence>
+                {selectedIndex === faqIndex && (
+                  <motion.div
+                    initial={{
+                      height: 0,
+                      marginTop: 0,
+                    }}
+                    animate={{
+                      height: "auto",
+                      marginTop: 24,
+                    }}
+                    exit={{
+                      height: 0,
+                      marginTop: 0,
+                    }}
+                    className={twMerge("overflow-hidden")}
+                  >
+                    <p className="text-white/50">{faq.answer}</p>
+                  </motion.div>
                 )}
-              >
-                <p className="text-white/50">{faq.answer}</p>
-              </div>
+              </AnimatePresence>
             </div>
           ))}
         </div>
