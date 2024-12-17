@@ -9,12 +9,12 @@ const faqs = [
   {
     question: "How do I book a ride?",
     answer:
-      "You can book your ride directly through our website or by contacting us via WhatsApp. Choose your destination, select your preferred date and time, and we'll handle the rest!",
+      "You can book your ride directly by contacting us via WhatsApp or with our trusted hostels. Choose your destination, check availability for your date and time, make your payment to reserve your spot, and we'll handle the rest!",
   },
   {
-    question: "What's included in a shared ride?",
+    question: "How do I make a reservation?",
     answer:
-      "Shared rides include a comfortable seat in one of our 7-passenger black SUVs, air conditioning, great music playlists, and flexible schedules designed to minimize wait times.",
+      "We work with Guatemalan Fintech company called Recurrente.com for easy and safe credit card link payments. We take Visa or Mastercard. We accept money transfers to our accounts. Or, if you book with one of our trusted hostels they will take care of your reservation. All the money is refundable up until 24-hours before your trip.",
   },
   {
     question: "Can I bring luggage?",
@@ -29,7 +29,7 @@ const faqs = [
   {
     question: "Do you provide door-to-door service?",
     answer:
-      "Yes! We offer door-to-door pick-up and drop-off for all our rides. Please provide your exact address when booking.",
+      "Yes! We offer door-to-door pick-up and drop-off for all our rides within certain areas, this will depend on the location. Please provide your exact address and location when booking, if it is within our working parameters we will pick you up direclty, if not, we have specific pick-up and drop-off areas.",
   },
 ];
 

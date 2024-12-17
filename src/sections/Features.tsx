@@ -11,12 +11,12 @@ import background from "@/assets/images/wa-bg.png";
 import Image from "next/image";
 
 const features = [
+  "Secure Payments",
   "Cool Vibes",
   "Curated Playlists",
   "Friendly Staff",
   "Air Conditioner",
   "Less Waiting",
-  "No Kids",
 ];
 
 export default function Features() {
@@ -33,7 +33,7 @@ export default function Features() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only 5-6 passengers with amazing music and air conditioning."
+            description="Spacious SUVs with only 5-6 passengers with great music and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
@@ -50,7 +50,7 @@ export default function Features() {
 
           <FeatureCard
             title="Personalized Service"
-            description="Flexible schedules and tailored journeys. We adapt to the needs of our passangers."
+            description="Flexible schedules and tailored journeys. We adapt to the needs of our passengers."
             className="col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex items-center justify-center mt-6">

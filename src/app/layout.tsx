@@ -10,8 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Modern Design Tool Landing Page",
-  description: "Created with the help of Frontend Tribe",
+  title: "BlvckSheep Shuttles",
+  description:
+    "Shuttle and tourist services for Guatemala. Providing a more comfortable experience.",
 };
 
 export default function RootLayout({
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white`}
       >

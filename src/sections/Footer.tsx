@@ -1,5 +1,6 @@
 import logoImage from "@/assets/images/blvcksheep.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const footerLinks = [
   { href: "#", label: "Contact" },
@@ -33,6 +34,18 @@ export default function Footer() {
               ))}
             </nav>
           </div>
+        </div>
+        <div className="text-white/50 text-sm text-center justify-center mt-3">
+          Created by{" "}
+          <Link
+            href="https://www.inari-agency.com"
+            className="hover:cursor-pointer hover:text-white"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Link to inari-agency.com"
+          >
+            www.inari-agency.com
+          </Link>
         </div>
       </div>
     </section>
