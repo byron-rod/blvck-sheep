@@ -9,11 +9,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 
 const navLinks = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#about" },
-  { label: "Features", href: "#features" },
-  { label: "Destinations", href: "#destinations" },
-  { label: "FAQs", href: "#faqs" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/#about" },
+  { label: "Features", href: "/#features" },
+  { label: "Destinations", href: "/#destinations" },
+  { label: "FAQs", href: "/#faqs" },
 ];
 
 const whatsappLink =

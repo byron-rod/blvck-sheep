@@ -2,15 +2,6 @@ import logoImage from "@/assets/images/blvcksheep.svg";
 import Image from "next/image";
 import Link from "next/link";
 
-const footerLinks = [
-  {
-    href: "mailto:connect@inari-agency.com",
-    label: "Email",
-  },
-  { href: "#", label: "WhatsApp" },
-  { href: "/terms-conditions", label: "Terms & Conditions" },
-];
-
 export default function Footer() {
   return (
     <section className="py-16">
@@ -28,15 +19,30 @@ export default function Footer() {
           </div>
           <div>
             <nav className="flex gap-6">
-              {footerLinks.map((link, index) => (
-                <a
-                  key={index}
-                  href={link.href}
-                  className="text-white/50 text-sm"
-                >
-                  {link.label}
-                </a>
-              ))}
+              {/* Email Link */}
+              <a
+                href="mailto:connect@inari-agency.com"
+                className="text-white/50 text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Email
+              </a>
+
+              {/* WhatsApp Link */}
+              <a
+                href="#"
+                className="text-white/50 text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+
+              {/* Terms & Conditions Link */}
+              <Link href="/terms-conditions" className="text-white/50 text-sm">
+                Terms & Conditions
+              </Link>
             </nav>
           </div>
         </div>
