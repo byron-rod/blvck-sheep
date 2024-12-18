@@ -40,7 +40,7 @@ export type DestinationsType = typeof destinations;
 
 export default function Destinations() {
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-24 overflow-hidden" id="destinations">
       <div className="container">
         <div className="grid lg:grid-cols-2 items-center lg:gap-16">
           <div>

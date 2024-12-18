@@ -3,7 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
-  { href: "#", label: "Contact" },
+  {
+    href: "mailto:connect@inari-agency.com",
+    label: "Contact",
+  },
   { href: "#", label: "Privacy Policy" },
   { href: "#", label: "Terms & Conditions" },
 ];
@@ -14,12 +17,14 @@ export default function Footer() {
       <div className="container">
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
           <div>
-            <Image
-              src={logoImage}
-              alt="BlvckSheep Logo"
-              width={200}
-              height={200}
-            />
+            <Link href="/">
+              <Image
+                src={logoImage}
+                alt="BlvckSheep Logo"
+                width={200}
+                height={200}
+              />
+            </Link>
           </div>
           <div>
             <nav className="flex gap-6">
@@ -35,8 +40,8 @@ export default function Footer() {
             </nav>
           </div>
         </div>
-        <div className="text-white/50 text-sm text-center justify-center mt-3">
-          Created by{" "}
+        <div className="text-white/30 text-xs text-center justify-center mt-12">
+          Website by{" "}
           <Link
             href="https://www.inari-agency.com"
             className="hover:cursor-pointer hover:text-white"

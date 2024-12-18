@@ -22,7 +22,7 @@ export default function About() {
     });
   }, [wordIndex]);
   return (
-    <section className="py-24 lg:py-40">
+    <section className="py-24 lg:py-40" id="about">
       <div className="container">
         <div className="sticky top-20 md:top-24 lg:top-32">
           <div className="flex justify-center">

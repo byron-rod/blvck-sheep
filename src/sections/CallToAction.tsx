@@ -1,11 +1,15 @@
 "use client";
 import { AnimationPlaybackControls, motion, useAnimate } from "framer-motion";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function CallToAction() {
   const [isHovered, setIsHovered] = useState(false);
   const animation = useRef<AnimationPlaybackControls>(null);
   const [scope, animate] = useAnimate();
+
+  const whatsappLink =
+    "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
 
   useEffect(() => {
     // Check if scope.current is defined before trying to animate
@@ -40,7 +44,15 @@ export default function CallToAction() {
           {Array.from({ length: 10 }).map((_, i) => (
             <div key={i} className="flex items-center gap-16">
               <span>&#10038;</span>
-              <span className="group-hover:text-blue-400">Book Your Ride</span>
+              <Link
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group-hover:text-blue-400"
+                aria-label="WhatsApp contact for BlackSheep Shuttles"
+              >
+                Book Your Ride
+              </Link>
             </div>
           ))}
         </motion.div>

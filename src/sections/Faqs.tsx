@@ -12,31 +12,31 @@ const faqs = [
       "You can book your ride directly by contacting us via WhatsApp or with our trusted hostels. Choose your destination, check availability for your date and time, make your payment to reserve your spot, and we'll handle the rest!",
   },
   {
-    question: "How do I make a reservation?",
+    question: "How do I pay for my reservation?",
     answer:
-      "We work with Guatemalan Fintech company called Recurrente.com for easy and safe credit card link payments. We take Visa or Mastercard. We accept money transfers to our accounts. Or, if you book with one of our trusted hostels they will take care of your reservation. All the money is refundable up until 24-hours before your trip.",
-  },
-  {
-    question: "Can I bring luggage?",
-    answer:
-      "Yes, our SUVs are spacious and can accommodate your luggage. However, we recommend limiting it to one large suitcase and one carry-on per person for optimal comfort.",
+      "We work with Guatemalan Fintech company Recurrente.com for easy and safe credit card link payments. We accept Visa or Mastercard. Also, accept money transfers to our accounts. Or, if you book with one of our trusted hostels they will take care of your reservation. All the money is refundable up until 24-hours before your trip.",
   },
   {
     question: "What are your cancellation or rescheduling policies?",
     answer:
-      "We understand that plans can change. You can cancel or reschedule your booking up to 24 hours before departure at no extra charge. For last-minute changes, contact us, and we'll do our best to assist you.",
+      "We understand that plans can change. You can cancel or reschedule your booking up to 24 hours before departure at no extra charge or for a full refund. Last minute changes, no shows, or cancellations will not be refunded under any circumstance.",
+  },
+  {
+    question: "Can I bring luggage?",
+    answer:
+      "Yes, our SUVs are spacious and can accommodate your luggage. However, we recommend limiting it to one large suitcase and personal item for optimal comfort.",
   },
   {
     question: "Do you provide door-to-door service?",
     answer:
-      "Yes! We offer door-to-door pick-up and drop-off for all our rides within certain areas, this will depend on the location. Please provide your exact address and location when booking, if it is within our working parameters we will pick you up direclty, if not, we have specific pick-up and drop-off areas.",
+      "Yes! We offer door-to-door pick-up and drop-off for all our rides within certain areas, this will depend on the location and the type of service your require. Please provide your exact address and location when booking, if it is within our working parameters we will pick you up direclty, if not, we have specific pick-up and drop-off areas.",
   },
 ];
 
 export default function Faqs() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (
-    <section className="py-24">
+    <section className="py-24" id="faqs">
       <div className="container">
         <div className="flex justify-center items-center">
           <Tag>FAQs</Tag>

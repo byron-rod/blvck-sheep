@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const navLinks = [
   { label: "Home", href: "#" },
@@ -14,6 +15,9 @@ const navLinks = [
   { label: "Destinations", href: "#destinations" },
   { label: "FAQs", href: "#faqs" },
 ];
+
+const whatsappLink =
+  "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,18 +29,25 @@ export default function Navbar() {
           <div className="border border-white/15 rounded-[27px] md:rounded-full bg-neutral-950/70 backdrop-blur">
             <div className="grid grid-cols-2 lg:grid-cols-3 px-4 md:px-2 items-center">
               <div className="p-1">
-                <Image
-                  src={logoImage}
-                  alt="logo"
-                  className="h-12 md:h-14 lg:h-16 w-auto"
-                />
+                <Link href="/">
+                  <Image
+                    src={logoImage}
+                    alt="BlackSheep logo"
+                    className="h-12 md:h-14 lg:h-16 w-auto cursor-pointer"
+                  />
+                </Link>
               </div>
-              <div className="hidden lg:flex justify-center items-center">
+              <div className="hidden lg:flex justify-center items-center relative z-50">
                 <nav className="flex gap-6 font-medium">
                   {navLinks.map((link) => (
-                    <a href={link.href} key={link.label}>
+                    <Link
+                      href={link.href}
+                      key={link.label}
+                      scroll={true}
+                      passHref
+                    >
                       {link.label}
-                    </a>
+                    </Link>
                   ))}
                 </nav>
               </div>
@@ -83,7 +94,15 @@ export default function Navbar() {
                   ></line>
                 </svg>
                 <Button variant="primary" className="hidden md:inline-flex">
-                  Contact Us
+                  <Link
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group-hover:text-blue-400"
+                    aria-label="WhatsApp contact for BlackSheep Shuttles"
+                  >
+                    Contact Us
+                  </Link>
                 </Button>
               </div>
             </div>
@@ -95,18 +114,27 @@ export default function Navbar() {
                   exit={{ height: 0 }}
                   className="overflow-hidden"
                 >
-                  <div className="flex flex-col items-center gap-4 py-4 ">
+                  <div className="flex flex-col items-center gap-4 py-4">
                     {navLinks.map((link) => (
                       <a
                         href={link.href}
                         key={link.label}
                         className="text-white font-medium"
+                        onClick={() => setIsOpen(false)} // Close menu on link click
                       >
                         {link.label}
                       </a>
                     ))}
                     <button className="border h-8 rounded-full px-4 font-medium items-center hover:bg-white hover:text-black">
-                      Contact Us
+                      <Link
+                        href={whatsappLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group-hover:text-blue-400"
+                        aria-label="WhatsApp contact for BlackSheep Shuttles"
+                      >
+                        Contact Us
+                      </Link>
                     </button>
                   </div>
                 </motion.div>
