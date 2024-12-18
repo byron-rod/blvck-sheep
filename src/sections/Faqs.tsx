@@ -9,27 +9,27 @@ const faqs = [
   {
     question: "How do I book a ride?",
     answer:
-      "You can book your ride directly by contacting us via WhatsApp or with our trusted hostels. Choose your destination, check availability for your date and time, make your payment to reserve your spot, and we'll handle the rest!",
+      "You can book your ride directly by contacting us via WhatsApp or with our trusted hostels. Choose your destination, confirm availability for your date and time, make your payment, and we'll send you a booking confirmation to finalize your reservation!",
   },
   {
     question: "How do I pay for my reservation?",
     answer:
-      "We work with Guatemalan Fintech company Recurrente.com for easy and safe credit card link payments. We accept Visa or Mastercard. Also, accept money transfers to our accounts. Or, if you book with one of our trusted hostels they will take care of your reservation. All the money is refundable up until 24-hours before your trip.",
+      "We accept safe and secure payments through Recurrente.com via Visa or Mastercard. Money transfers to our accounts are also available for direct bookings. If you book through one of our trusted hostels, they will handle your payment. All payments are fully refundable if canceled at least 24 hours in advance.",
   },
   {
     question: "What are your cancellation or rescheduling policies?",
     answer:
-      "We understand that plans can change. You can cancel or reschedule your booking up to 24 hours before departure at no extra charge or for a full refund. Last minute changes, no shows, or cancellations will not be refunded under any circumstance.",
+      "Plans change—we get it! Cancel or reschedule up to 24 hours before departure at no extra charge for a full refund. Changes made less than 24 hours before departure or no-shows are non-refundable. For example, if your trip is on a Saturday at 10 AM, you must request changes or cancellations by Friday at 10 AM.",
   },
   {
-    question: "Can I bring luggage?",
+    question: "How much luggage may I bring?",
     answer:
-      "Yes, our SUVs are spacious and can accommodate your luggage. However, we recommend limiting it to one large suitcase and personal item for optimal comfort.",
+      "Our SUVs are spacious and can accommodate your luggage. For your comfort, we recommend one large suitcase and one personal item per passenger. If you have extra or oversized items, please let us know in advance as additional charges may apply.",
   },
   {
     question: "Do you provide door-to-door service?",
     answer:
-      "Yes! We offer door-to-door pick-up and drop-off for all our rides within certain areas, this will depend on the location and the type of service your require. Please provide your exact address and location when booking, if it is within our working parameters we will pick you up direclty, if not, we have specific pick-up and drop-off areas.",
+      "Yes! We offer door-to-door pick-up and drop-off in most areas we service. When booking, provide your exact address, and we'll confirm if it's within our coverage. If not, we'll arrange the nearest convenient pick-up and drop-off point for you.",
   },
 ];
 

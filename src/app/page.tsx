@@ -11,7 +11,7 @@ import Navbar from "@/sections/Navbar";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
       <LogoTicker />
       <About />
@@ -19,7 +19,7 @@ export default function Home() {
       <Destinations />
       <Faqs />
       <CallToAction />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

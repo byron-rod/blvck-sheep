@@ -5,10 +5,10 @@ import Link from "next/link";
 const footerLinks = [
   {
     href: "mailto:connect@inari-agency.com",
-    label: "Contact",
+    label: "Email",
   },
-  { href: "#", label: "Privacy Policy" },
-  { href: "#", label: "Terms & Conditions" },
+  { href: "#", label: "WhatsApp" },
+  { href: "/terms-conditions", label: "Terms & Conditions" },
 ];
 
 export default function Footer() {
