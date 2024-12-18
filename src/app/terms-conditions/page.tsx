@@ -27,13 +27,13 @@ export default function TermsConditions() {
             7-passenger SUVs with a maximum of 5 clients per trip for a more
             private and comfortable experience. Delays or schedule adjustments
             may occur due to traffic, weather, or other unforeseen
-            circumstances. We'll always strive to minimize disruptions and keep
-            you informed.
+            circumstances. We&apos;ll always strive to minimize disruptions and
+            keep you informed.
           </li>
           <li>
             <strong>Personal Responsibility:</strong> Passengers are responsible
-            for their belongings. While we'll do our best to assist, we cannot
-            guarantee recovery of lost items.
+            for their belongings. While we&apos;ll do our best to assist, we
+            cannot guarantee recovery of lost items.
           </li>
           <li>
             <strong>Third-Party Factors:</strong> Black Sheep is not liable for
