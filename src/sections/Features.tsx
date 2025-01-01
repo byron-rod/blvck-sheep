@@ -1,7 +1,7 @@
 import Tag from "@/components/Tag";
 import FeatureCard from "@/components/FeatureCard";
 import Avatar from "@/components/Avatar";
-import car from "@/assets/images/suzuki-xl7.png";
+import car from "@/assets/images/suzuki-xl7.webp";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
@@ -27,13 +27,12 @@ export default function Features() {
           <Tag>Features</Tag>
         </div>
         <h2 className="text-4xl lg:text-5xl text-center mt-6">
-          More <span className="text-blue-400">Comfort</span>. More{" "}
-          <span className="">Freedom</span>. Less Hassle.
+          More <span className="text-blue-400">Comfort</span>. Less Hassle.
         </h2>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only 5-6 passengers with great music and air conditioning."
+            description="Spacious SUVs with only 5 passengers, great music, and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
@@ -140,7 +139,7 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature}
-              className="bg-neutral-900 border border-lime-200 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center hover:scale-105 transition duration-500 group"
+              className="bg-neutral-900 border border-blue-400 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center hover:scale-105 transition duration-500 group"
             >
               <span className="bg-transparent text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-45 transition duration-500">
                 &#10032;

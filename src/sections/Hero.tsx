@@ -1,6 +1,10 @@
 import Button from "@/components/Button";
+import Link from "next/link";
 
 export default function Hero() {
+  const whatsappLink =
+    "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
+
   return (
     <section className="py-24 px-5 md:px-0">
       <div className="container max-w-5xl">
@@ -17,7 +21,15 @@ export default function Hero() {
           <span className="font-bold"> just got Better</span>
         </p>
         <Button variant="secondary" className="mt-8 font-bold flex">
-          Book Your Ride Now
+          <Link
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group-hover:text-blue-400"
+            aria-label="WhatsApp contact for BlackSheep Shuttles"
+          >
+            Book Your Ride Now
+          </Link>
         </Button>
       </div>
     </section>

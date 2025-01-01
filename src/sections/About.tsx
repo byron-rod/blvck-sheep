@@ -29,7 +29,7 @@ export default function About() {
             <Tag>Introducing BlvckSheep</Tag>
           </div>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-6">
-            <span className="text-white/80">
+            <span className="text-white/90">
               At BlvckSheep, we believe your journey should be as incredible as
               your destination.
             </span>{" "}
@@ -39,7 +39,7 @@ export default function About() {
                   key={wordIndex}
                   className={twMerge(
                     "transition duration-500 text-white/15",
-                    wordIndex < currentWord && "text-blue-400"
+                    wordIndex < currentWord && "text-white"
                   )}
                 >{`${word} `}</span>
               ))}

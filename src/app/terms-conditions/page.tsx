@@ -42,6 +42,16 @@ export default function TermsConditions() {
             accordingly, especially during high-demand seasons (e.g., Holy Week,
             Christmas, New Year).
           </li>
+          <li>
+            <strong>Payment Processing Information:</strong> All payments for
+            Black Sheep services are securely processed through Recurrente.com,
+            under the legal name of our parent company, Inari Agency. When you
+            receive a payment link or confirmation, you may see Inari Agency
+            listed as the payee. Rest assured, this is the legitimate and
+            authorized business entity for Black Sheep. If you have any
+            questions or concerns regarding your payment, please contact us
+            immediately.
+          </li>
         </ul>
       </section>
 
@@ -53,8 +63,9 @@ export default function TermsConditions() {
         <ul className="list-disc pl-6 text-neutral-400 space-y-4">
           <li>
             <strong>How to Book:</strong> Reservations can be made via WhatsApp
-            or through our trusted hostel partners. Choose your destination,
-            check availability, make your payment, and secure your spot.
+            or through our trusted hostel partners at least 48 hours prior your
+            departure time. Choose your destination, check availability, make
+            your payment, and secure your spot.
           </li>
           <li>
             <strong>Payment Methods:</strong> We accept payments via credit card
@@ -63,7 +74,8 @@ export default function TermsConditions() {
             accepted. Payments are refundable up to 24 hours before your trip.
           </li>
           <li>
-            <strong>Late Bookings:</strong> Last-minute bookings are subject to
+            <strong>Late Bookings:</strong> We can manage last-minute bookings
+            with at least 24 hour prior your departure, but are subject to
             availability and may incur additional charges.
           </li>
         </ul>
@@ -107,8 +119,8 @@ export default function TermsConditions() {
           </li>
           <li>
             <strong>Oversized or Special Luggage:</strong> For oversized items
-            (e.g., surfboards or bikes), please notify us in advance. Additional
-            fees may apply.
+            (e.g., surfboards), please notify us in advance. Additional fees may
+            apply.
           </li>
           <li>
             <strong>Unapproved Luggage:</strong> Black Sheep reserves the right
