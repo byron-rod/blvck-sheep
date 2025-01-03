@@ -16,9 +16,6 @@ const navLinks = [
   { label: "FAQs", href: "/#faqs" },
 ];
 
-const whatsappLink =
-  "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
-
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
