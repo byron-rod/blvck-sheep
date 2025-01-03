@@ -18,26 +18,14 @@ export default function Footer() {
             </Link>
           </div>
           <div>
-            <nav className="flex gap-6">
-              {/* Email Link */}
-              <a
-                href="mailto:connect@inari-agency.com"
-                className="text-white/50 text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Email
-              </a>
-
-              {/* WhatsApp Link */}
-              <a
-                href="#"
-                className="text-white/50 text-sm"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
+            <nav className="flex gap-4">
+              <Link href="/destinations" className="text-white/50 text-sm">
+                Destinations
+              </Link>
+              {/* Contact Us*/}
+              <Link href="/contact" className="text-white/50 text-sm">
+                Contact Us
+              </Link>
 
               {/* Terms & Conditions Link */}
               <Link href="/terms-conditions" className="text-white/50 text-sm">

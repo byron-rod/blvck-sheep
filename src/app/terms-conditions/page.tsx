@@ -23,7 +23,7 @@ export default function TermsConditions() {
         </h2>
         <ul className="list-disc pl-6 text-neutral-400 space-y-4">
           <li>
-            <strong>Service Conditions:</strong> Black Sheep operates
+            <strong>Service Conditions:</strong> Blvck Sheep operates
             7-passenger SUVs with a maximum of 5 clients per trip for a more
             private and comfortable experience. Delays or schedule adjustments
             may occur due to traffic, weather, or other unforeseen
@@ -36,7 +36,7 @@ export default function TermsConditions() {
             cannot guarantee recovery of lost items.
           </li>
           <li>
-            <strong>Third-Party Factors:</strong> Black Sheep is not liable for
+            <strong>Third-Party Factors:</strong> Blvck Sheep is not liable for
             delays or cancellations caused by roadblocks, mechanical issues,
             traffic, or natural disasters. We encourage clients to plan
             accordingly, especially during high-demand seasons (e.g., Holy Week,
@@ -44,11 +44,11 @@ export default function TermsConditions() {
           </li>
           <li>
             <strong>Payment Processing Information:</strong> All payments for
-            Black Sheep services are securely processed through Recurrente.com,
+            Blvck Sheep services are securely processed through Recurrente.com,
             under the legal name of our parent company, Inari Agency. When you
             receive a payment link or confirmation, you may see Inari Agency
             listed as the payee. Rest assured, this is the legitimate and
-            authorized business entity for Black Sheep. If you have any
+            authorized business entity for Blvck Sheep. If you have any
             questions or concerns regarding your payment, please contact us
             immediately.
           </li>
@@ -75,7 +75,7 @@ export default function TermsConditions() {
           </li>
           <li>
             <strong>Late Bookings:</strong> We can manage last-minute bookings
-            with at least 24 hour prior your departure, but are subject to
+            with at least 8 hours prior your departure, but are subject to
             availability and may incur additional charges.
           </li>
         </ul>

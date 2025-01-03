@@ -5,6 +5,8 @@ import antigua from "@/assets/images/antigua.webp";
 import semuc from "@/assets/images/semuc.webp";
 import atitlan from "@/assets/images/lake-atitlan.webp";
 import DestinationsColumn from "@/components/DestinationsColumn";
+import Button from "@/components/Button";
+import Link from "next/link";
 
 const destinations = [
   {
@@ -51,6 +53,14 @@ export default function Destinations() {
               Guatemala&apos;s Most Beautiful{" "}
               <span className="text-blue-500">Locations</span>
             </h2>
+            <Link href="/destinations">
+              <Button
+                variant="secondary"
+                className="hidden lg:flex justify-center mt-12 m-auto"
+              >
+                Learn More
+              </Button>
+            </Link>
           </div>
           <div>
             <div className="h-[400px] lg:h-[800px] mt-8 lg:mt-0 overflow-hidden mask-destination-gradient grid md:grid-cols-2 gap-4">
@@ -63,6 +73,14 @@ export default function Destinations() {
             </div>
           </div>
         </div>
+        <Link href="/destinations">
+          <Button
+            variant="secondary"
+            className="flex justify-center mt-16 lg:mt-20 m-auto lg:hidden"
+          >
+            Learn More
+          </Button>
+        </Link>
       </div>
     </section>
   );

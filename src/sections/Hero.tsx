@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
   const whatsappLink =
-    "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
+    "https://wa.me/50255116881?text=Hello!,%20I%20would%20like%20to%20book%20a%20shuttle!";
 
   return (
     <section className="py-24 px-5 md:px-0">
