@@ -150,7 +150,7 @@ export default function TermsConditions() {
               +502 5511 6881
             </a>
           </li>
-          <li>Email: hello@blvck-sheep.com</li>
+          <li>Email: blvcksheepgt@gmail.com</li>
         </ul>
       </section>
     </main>

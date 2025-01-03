@@ -17,7 +17,7 @@ export const metadata = {
 
 export default function Contact() {
   const whatsappLink = "https://wa.me/50255116881";
-  const emailLink = "mailto:hello@blvck-sheep.com";
+  const emailLink = "mailto:blvcksheepgt@gmail.com";
   const instagramLink = "https://www.instagram.com/blvcksheepgt";
   const facebookLink = "https://www.facebook.com/blvcksheepgt";
 
