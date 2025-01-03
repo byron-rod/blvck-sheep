@@ -33,7 +33,7 @@ export default function Contact() {
           Contact Us
         </h1>
         <p className="text-start text-lg md:text-xl lg:text-2xl text-white/50 mt-4 md:mt-6 max-w-xl lg:max-w-3xl">
-          For all your transportation needs in Guatemala, we're here to help.
+          For all your transportation needs in Guatemala, we are here to help.
           Reach out to us via WhatsApp, email, or social media.
         </p>
         <div className="flex gap-4 mt-8">

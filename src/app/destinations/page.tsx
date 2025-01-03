@@ -35,8 +35,8 @@ export default function Destinations() {
                 imageAlt: "Restaurant",
               },
               {
-                title: "Dreamboat Hostel",
-                description: "The best party hostel in Panajachel",
+                title: "Best Hostels",
+                description: "Find the best hostels in Panajachel",
                 imageSrc: smallPicAtitlan,
                 imageAlt: "Hostel",
               },
@@ -48,7 +48,7 @@ export default function Destinations() {
               featurePost={<FeatureAntigua />}
               blogCards={[
                 {
-                  title: "Volcanoes to Hike",
+                  title: "Volcanos to Hike",
                   description: "Climb Acatenango and Fuego",
                   imageSrc: smallPicAntigua,
                   imageAlt: "Restaurant",
