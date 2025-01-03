@@ -25,7 +25,7 @@ export default function DestinationsSection({
       <div className="flex justify-start p-2">
         <Tag>{tag}</Tag>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-y-3 gap-x-6 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-y-3 gap-x-6 mt-5">
         <article className="col-span-1 row-span-2 mt-2">{featurePost}</article>
         {blogCards.map((card, index) => (
           <article key={index} className="col-span-1 row-span-1">

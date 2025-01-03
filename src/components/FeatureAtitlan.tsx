@@ -1,13 +1,13 @@
 import Image from "next/image";
-import bigPic from "@/assets/images/lake-atitlan.jpg";
+import bigPic from "@/assets/images/atitlan.jpg";
 import BlogCardFeat from "./BlogCardFeat";
 
 const FeatureAtitlan = () => {
   return (
     <section className="group inline-block overflow-hidden rounded-xl">
       <BlogCardFeat
-        title="Where to Stay"
-        description="Santa Cruz La Laguna"
+        title="Lake Atitlan"
+        description="Pana-Guate: $28 | Pana-Antigua: $15 | Pana-El Paredon: $32"
         className="col-span-2 lg:col-span-1"
       >
         <div className="aspect-video flex items-center justify-center overflow-hidden rounded-3xl">

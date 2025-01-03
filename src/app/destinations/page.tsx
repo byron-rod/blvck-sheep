@@ -1,9 +1,13 @@
 import DestinationsSection from "@/components/DestinationsSection";
 import FeatureAtitlan from "@/components/FeatureAtitlan";
-import smallPicAtitlan from "@/assets/images/lake-atitlan.webp";
-import smallPicAntigua from "@/assets/images/antigua.webp";
-import smallPicParedon from "@/assets/images/el-paredon.webp";
-import smallPicSemuc from "@/assets/images/semuc.webp";
+import smallPicAtitlan from "@/assets/images/lake-atitlan.jpg";
+import smallPicAtitlanFree from "@/assets/images/free-cerv.jpg";
+import smallPicAntigua from "@/assets/images/adra.jpg";
+import smallPicAntiguaDoozy from "@/assets/images/the-doozy-koala.jpg";
+import smallPicParedon from "@/assets/images/mellow.jpg";
+import smallPicParedonHostel from "@/assets/images/cocori.jpg";
+import smallPicSemuc from "@/assets/images/zephyr.avif";
+import smallPicSemucCaves from "@/assets/images/lanquin.jpg";
 import FeatureAntigua from "@/components/FeatureAntigua";
 import FeatureElParedon from "@/components/FeatureElParedon";
 import FeatureSemuc from "@/components/FeatureSemuc";
@@ -29,15 +33,16 @@ export default function Destinations() {
             featurePost={<FeatureAtitlan />}
             blogCards={[
               {
-                title: "Yoga Experience",
-                description: "The best yoga retreats in San Marcos La Laguna",
+                title: "Best Towns to Visit",
+                description:
+                  "Panajachel, San Marcos, San Pedro, and Santa Cruz",
                 imageSrc: smallPicAtitlan,
                 imageAlt: "Restaurant",
               },
               {
                 title: "Best Hostels",
-                description: "Find the best hostels in Panajachel",
-                imageSrc: smallPicAtitlan,
+                description: "Free Cerveza and Dreamboat Hostel",
+                imageSrc: smallPicAtitlanFree,
                 imageAlt: "Hostel",
               },
             ]}
@@ -48,14 +53,15 @@ export default function Destinations() {
               featurePost={<FeatureAntigua />}
               blogCards={[
                 {
-                  title: "Volcanos to Hike",
-                  description: "Climb Acatenango and Fuego",
-                  imageSrc: smallPicAntigua,
+                  title: "Best Hostels",
+                  description:
+                    "The Doozy Koala, Adra Hostel, and The Yellow House",
+                  imageSrc: smallPicAntiguaDoozy,
                   imageAlt: "Restaurant",
                 },
                 {
-                  title: "Fine Dining",
-                  description: "The best restaurants in Antigua",
+                  title: "Best Restaurants",
+                  description: "Hector's Bistro, Samsara, and Adra Kitchen",
                   imageSrc: smallPicAntigua,
                   imageAlt: "Hostel",
                 },
@@ -66,14 +72,16 @@ export default function Destinations() {
               featurePost={<FeatureElParedon />}
               blogCards={[
                 {
-                  title: "Fresh Seafood",
-                  description: "Find the best seafood in El Paredon",
-                  imageSrc: smallPicParedon,
+                  title: "Best Hostels",
+                  description:
+                    "Cocori Lodge, Driftwood Surfer, and Mellow Hostel",
+                  imageSrc: smallPicParedonHostel,
                   imageAlt: "Restaurant",
                 },
                 {
-                  title: "Best Airbnbs",
-                  description: "Find the best places to stay in El Paredon",
+                  title: "Best Restuarants",
+                  description:
+                    "Delicias del Mar, Mellow Hostel, Bora El Paredon",
                   imageSrc: smallPicParedon,
                   imageAlt: "Hostel",
                 },
@@ -85,13 +93,13 @@ export default function Destinations() {
               blogCards={[
                 {
                   title: "Day Trips in Lanquin",
-                  description: "Caves and waterfalls to explore",
-                  imageSrc: smallPicSemuc,
+                  description: "Semuc Champey, Kanba Caves, and Lanquin Caves",
+                  imageSrc: smallPicSemucCaves,
                   imageAlt: "Restaurant",
                 },
                 {
                   title: "Best Hotels",
-                  description: "Find the best places to stay in Lanquin",
+                  description: "Zephyr Lodge, El Retiro, and Greengo's",
                   imageSrc: smallPicSemuc,
                   imageAlt: "Hostel",
                 },

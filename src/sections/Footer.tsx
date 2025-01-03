@@ -19,7 +19,11 @@ export default function Footer() {
           </div>
           <div>
             <nav className="flex gap-4">
-              <Link href="/destinations" className="text-white/50 text-sm">
+              <Link
+                href="/destinations"
+                className="text-white/50 text-sm"
+                aria-label="Link to information about our destinations"
+              >
                 Destinations
               </Link>
               {/* Contact Us*/}

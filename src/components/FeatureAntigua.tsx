@@ -6,8 +6,8 @@ const FeatureAntigua = () => {
   return (
     <section className="group inline-block overflow-hidden rounded-xl">
       <BlogCardFeat
-        title="Best Bars in Town"
-        description="Antigua Guatemala"
+        title="Antigua Guatemala"
+        description="Pana-Antigua: $15 | Guate-Antigua: $15"
         className="col-span-2 lg:col-span-1"
       >
         <div className="aspect-video flex items-center justify-center overflow-hidden rounded-3xl">

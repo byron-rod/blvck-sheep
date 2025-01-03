@@ -11,7 +11,7 @@ export default function BlogCardFeat(props: {
   return (
     <div
       className={twMerge(
-        "relative bg-neutral-900 border border-white/10 rounded-3xl overflow-hidden",
+        "relative bg-neutral-900 border border-white/10 rounded-3xl overflow-hidden -mt-2",
         className
       )}
     >
@@ -25,7 +25,7 @@ export default function BlogCardFeat(props: {
       {/* Text Overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
         <h3 className="text-4xl font-medium text-white mb-2">{title}</h3>
-        <p className="text-white/75 text-sm">{description}</p>
+        <p className="text-white text-sm">{description}</p>
       </div>
     </div>
   );
