@@ -95,11 +95,8 @@ export default function Navbar() {
                 </svg>
                 <Button variant="primary" className="hidden md:inline-flex">
                   <Link
-                    href={whatsappLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group-hover:text-blue-400"
-                    aria-label="WhatsApp contact for BlackSheep Shuttles"
+                    href="/contact"
+                    aria-label="Link to Contact Information for BlackSheep Shuttles"
                   >
                     Contact Us
                   </Link>
@@ -127,11 +124,9 @@ export default function Navbar() {
                     ))}
                     <button className="border h-8 rounded-full px-4 font-medium items-center hover:bg-white hover:text-black">
                       <Link
-                        href={whatsappLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="/contact"
                         className="group-hover:text-blue-400"
-                        aria-label="WhatsApp contact for BlackSheep Shuttles"
+                        aria-label="Link to Contact Information for BlackSheep Shuttles"
                       >
                         Contact Us
                       </Link>
