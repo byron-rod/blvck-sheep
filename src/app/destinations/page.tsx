@@ -11,6 +11,7 @@ import smallPicSemucCaves from "@/assets/images/lanquin.jpg";
 import FeatureAntigua from "@/components/FeatureAntigua";
 import FeatureElParedon from "@/components/FeatureElParedon";
 import FeatureSemuc from "@/components/FeatureSemuc";
+import CallToAction from "@/sections/CallToAction";
 
 export const metadata = {
   title: "Our Destinations - Black Sheep Shuttle Service",
@@ -108,6 +109,7 @@ export default function Destinations() {
           </div>
         </div>
       </div>
+      <CallToAction />
     </section>
   );
 }
