@@ -55,13 +55,13 @@ export default function Destinations() {
             </h2>
             <Link
               href="/destinations"
-              aria-label="Link to information about our destinations"
+              aria-label="Explore all destinations available with BlackSheep Shuttles"
             >
               <Button
                 variant="secondary"
                 className="hidden lg:flex justify-center mt-12 m-auto"
               >
-                Learn More
+                Destination Guide
               </Button>
             </Link>
           </div>
@@ -78,13 +78,13 @@ export default function Destinations() {
         </div>
         <Link
           href="/destinations"
-          aria-label="Link to information about our destinations"
+          aria-label="Explore all destinations available with BlackSheep Shuttles"
         >
           <Button
             variant="secondary"
             className="flex justify-center mt-16 lg:mt-20 m-auto lg:hidden"
           >
-            Learn More
+            Destination Guide
           </Button>
         </Link>
       </div>
