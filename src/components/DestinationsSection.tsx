@@ -34,6 +34,9 @@ export default function DestinationsSection({
                 src={card.imageSrc}
                 alt={card.imageAlt}
                 className="rounded-xl object-cover"
+                layout="responsive"
+                width={700}
+                height={500}
               />
             </BlogCardSmall>
           </article>
