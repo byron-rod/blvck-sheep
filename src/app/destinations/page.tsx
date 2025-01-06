@@ -99,7 +99,7 @@ export default function Destinations() {
                   imageAlt: "Restaurant",
                 },
                 {
-                  title: "Best Hotels",
+                  title: "Best Hostels",
                   description: "Zephyr Lodge, El Retiro, and Greengo's",
                   imageSrc: smallPicSemuc,
                   imageAlt: "Hostel",

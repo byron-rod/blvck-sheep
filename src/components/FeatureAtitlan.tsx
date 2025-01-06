@@ -7,7 +7,7 @@ const FeatureAtitlan = () => {
     <section className="group inline-block overflow-hidden rounded-xl">
       <BlogCardFeat
         title="Lake Atitlan"
-        description="Pana-Guate: $28 | Pana-Antigua: $15 | Pana-El Paredon: $32"
+        description="Prices per passenger starting at: Pana-Guate: $28 | Pana-Antigua: $15 | Pana-El Paredon: $32"
         className="col-span-2 lg:col-span-1"
       >
         <div className="aspect-video flex items-center justify-center overflow-hidden rounded-3xl">
