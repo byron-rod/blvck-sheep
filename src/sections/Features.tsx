@@ -14,7 +14,7 @@ const features = [
   "Secure Payments",
   "Cool Vibes",
   "Curated Playlists",
-  "Friendly Staff",
+  "Eco-Friendly",
   "Air Conditioner",
   "Less Waiting",
 ];
@@ -32,7 +32,7 @@ export default function Features() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only 5 passengers, great music, and air conditioning."
+            description="Spacious Hybrid SUVs with only five passengers, great music, and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">

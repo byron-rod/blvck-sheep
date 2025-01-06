@@ -2,14 +2,14 @@ import { ButtonHTMLAttributes } from "react";
 import { cva } from "class-variance-authority";
 
 const classes = cva(
-  "border rounded-full min-w-[48px] px-8 py-4 font-semibold items-center",
+  "border rounded-full min-w-[48px] px-7 py-4 font-semibold items-center",
   {
     variants: {
       variant: {
         primary:
           "bg-white text-black border-white hover:bg-transparent hover:text-white h-14",
         secondary:
-          "border-white text-white bg-transparent hover:bg-white hover:text-black h-16 text-lg",
+          "border-white text-white bg-transparent hover:bg-white hover:text-black h-14 text-lg",
       },
     },
   }
