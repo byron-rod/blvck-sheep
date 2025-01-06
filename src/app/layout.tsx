@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "BlvckSheep Shuttles",
   description:
-    "Shuttle and tourist services for Guatemala. Providing a more comfortable experience.",
+    "Discover Guatemala in Comfort. Exclusive shuttle and tourist services.",
 };
 
 export default function RootLayout({
