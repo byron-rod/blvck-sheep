@@ -7,7 +7,7 @@ const FeatureSemuc = () => {
     <section className="group inline-block overflow-hidden rounded-xl">
       <BlogCardFeat
         title="Semuc Champey"
-        description="Prices per passenger starting at: Guate-Semuc Champey: $45 | Pana-Semuc Champey: $50"
+        description="Prices per passenger starting at: Guate-Semuc Champey: $48 | Pana-Semuc Champey: $60"
         className="col-span-2 lg:col-span-1"
       >
         <div className="aspect-video flex items-center justify-center overflow-hidden rounded-3xl">
