@@ -13,9 +13,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BlvckSheep Shuttles",
+  title: "Blvck Sheep Shuttles | Premium Shuttle Services in Guatemala",
   description:
-    "Discover Guatemala in Comfort. Exclusive shuttle and tourist services.",
+    "Discover Guatemala with Blvck Sheep Shuttles. Offering exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Your journey, your way.",
+  keywords:
+    "Guatemala shuttles, Black Sheep Shuttles, transportation in Guatemala, private shuttles Guatemala, shared shuttles Guatemala, Antigua to Lake Atitlan, Guatemala City transport, El Paredon shuttles, premium travel Guatemala, tourist transportation Guatemala",
 };
 
 export default function RootLayout({

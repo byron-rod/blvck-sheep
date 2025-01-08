@@ -18,7 +18,7 @@ export const metadata = {
   description:
     "General information about the destinations you can visit with Black Sheep's personalized shuttle services in Guatemala.",
   keywords:
-    "panajachel, antigua, el paredon, semuc champey, guatemala, shuttle, service, black sheep, transportation, travel",
+    "Panajachel, Antigua, El Paredon, Semuc Champey, Guatemala, shuttle, service, Black Sheep, transportation, travel",
 };
 
 export default function Destinations() {
