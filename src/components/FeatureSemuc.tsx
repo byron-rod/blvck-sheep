@@ -16,7 +16,6 @@ const FeatureSemuc = () => {
               src={bigPic}
               alt="Semuc Champey"
               className="transition-transform duration-500 group-hover:scale-105 opacity-80"
-              layout="responsive"
               width={700}
               height={500}
             />
