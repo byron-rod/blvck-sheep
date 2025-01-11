@@ -30,7 +30,7 @@ export default function About() {
           </div>
           <div className="text-3xl md:text-4xl lg:text-5xl text-center font-medium mt-6">
             <span className="text-white/90">
-              At BlvckSheep, we believe your journey should be as incredible as
+              At Blvck Sheep, we believe your journey should be as incredible as
               your destination.
             </span>{" "}
             <span className="">
@@ -45,8 +45,7 @@ export default function About() {
               ))}
             </span>
             <span className="text-white font-semibold block">
-              Because let&apos;s face it, travel should be an enjoyable
-              experience.
+              Travel differently with Blvck Sheep.
             </span>
           </div>
         </div>
