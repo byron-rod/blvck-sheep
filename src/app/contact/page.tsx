@@ -21,6 +21,15 @@ export default function Contact() {
   const instagramLink = "https://www.instagram.com/blvcksheepgt";
   const facebookLink = "https://www.facebook.com/blvcksheepgt";
 
+  // Function to handle conversion tracking
+  const handleWhatsAppClick = () => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-11538548523/n0uiCOvdjoIaEKuOgf4q",
+      });
+    }
+  };
+
   return (
     <section className="py-24 px-5 md:px-0">
       <div className="container max-w-5xl">
@@ -47,6 +56,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp contact for BlackSheep Shuttles"
+              onClick={handleWhatsAppClick} // Add tracking on click
             >
               <FaWhatsapp size={24} />
             </Link>
