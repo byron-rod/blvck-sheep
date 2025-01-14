@@ -9,13 +9,13 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 
-export const metadata = {
-  title: "Contact Us - Black Sheep Shuttle Service",
-  description:
-    "Contact Black Sheep Shuttle Service for all your transportation needs in Guatemala.",
-  keywords:
-    "panajachel, antigua, el paredon, semuc champey, guatemala, shuttle, service, black sheep, contact",
-};
+// export const metadata = {
+//   title: "Contact Us - Black Sheep Shuttle Service",
+//   description:
+//     "Contact Black Sheep Shuttle Service for all your transportation needs in Guatemala.",
+//   keywords:
+//     "panajachel, antigua, el paredon, semuc champey, guatemala, shuttle, service, black sheep, contact",
+// };
 
 export default function Contact() {
   const whatsappLink = "https://wa.me/50255116881";
