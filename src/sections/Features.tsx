@@ -14,7 +14,7 @@ const features = [
   "Secure Payments",
   "Cool Vibes",
   "Curated Playlists",
-  "Eco-Friendly",
+  "Drink Coolers",
   "Air Conditioner",
   "Less Waiting",
 ];
@@ -32,7 +32,7 @@ export default function Features() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious Hybrid SUVs with only five passengers, great music, and air conditioning."
+            description="Spacious SUVs with only five passengers, great music, and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
@@ -49,7 +49,7 @@ export default function Features() {
 
           <FeatureCard
             title="Personalized Service"
-            description="Flexible schedules and tailored journeys. We adapt to the needs of our passengers."
+            description="Flexible schedules and tailored journeys. We adapt to your needs."
             className="col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex items-center justify-center mt-6">
@@ -94,10 +94,10 @@ export default function Features() {
           <FeatureCard
             title="Private Ride Option"
             description="Total control of stops, music, and timeframes. Explore at your own pace."
-            className="col-span-2 lg:col-span-1"
+            className="col-span-2 lg:col-span-1 mt-2"
           >
             <div className="aspect-video flex items-center justify-center hover:scale-105 transition duration-300">
-              <p className="text-4xl font-extrabold text-white/20 text-center">
+              <p className="text-4xl md:text-[2.2rem] md:leading-[2.1rem] font-extrabold text-white/20 text-center">
                 Exploring{" "}
                 <span className="bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent">
                   Guatemala
@@ -111,8 +111,8 @@ export default function Features() {
           </FeatureCard>
           <FeatureCard
             title="Expert Guidance"
-            description="We go beyond your transportation service. Travel like a local with our exclusive WhatsApp tips."
-            className="col-span-2 lg:col-span-1"
+            description="We're more than just a ride. Travel like a local with our exclusive WhatsApp tips and destination packages."
+            className="col-span-2 lg:col-span-1 mt-1"
           >
             <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">
               <div className="flex opacity-20">
