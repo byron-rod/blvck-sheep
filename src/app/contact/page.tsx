@@ -19,7 +19,7 @@ import {
 
 export default function Contact() {
   const whatsappLink = "https://wa.me/50255116881";
-  const emailLink = "mailto:blvcksheepgt@gmail.com";
+  const emailLink = "mailto:connect@blvck-sheep.com";
   const instagramLink = "https://www.instagram.com/blvcksheepgt";
   const facebookLink = "https://www.facebook.com/blvcksheepgt";
 
