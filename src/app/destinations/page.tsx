@@ -41,8 +41,8 @@ export default function Destinations() {
                 imageAlt: "Restaurant",
               },
               {
-                title: "Best Hostels",
-                description: "Free Cerveza and Dreamboat Hostel",
+                title: "Places to Stay",
+                description: "Amaranto, Free Cerveza and Dreamboat Hostel",
                 imageSrc: smallPicAtitlanFree,
                 imageAlt: "Hostel",
               },
