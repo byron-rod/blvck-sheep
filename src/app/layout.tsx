@@ -46,17 +46,36 @@ export default function RootLayout({
         <meta name="twitter:image:alt" content="Blvck Sheep Shuttles logo" />
 
         {/* Structured Data */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "WebPage",
-            name: "Blvck Sheep Shuttles | Transportation Services in Guatemala",
-            description:
-              "Explore Guatemala in comfort with Blvck Sheep. Offering a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Travel differently.",
-            image: "https://www.blvck-sheep.com/blvcksheeplogo.jpg",
-            url: "https://www.blvck-sheep.com",
-          })}
-        </script>
+        <Script
+          id="structured-data-transportation"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Transportation",
+              name: "Blvck Sheep Shuttles",
+              description: metadata.description,
+              url: "https://www.blvck-sheep.com",
+              logo: "https://www.blvck-sheep.com/blvcksheeplogo.jpg",
+              sameAs: [
+                "https://www.instagram.com/blvcksheepgt",
+                "https://www.facebook.com/blvcksheepgt",
+              ],
+              contactPoint: {
+                "@type": "ContactPoint",
+                telephone: "+50255116881",
+                contactType: "Customer Service",
+              },
+              areaServed: "GT",
+              offers: {
+                "@type": "Offer",
+                price: "15.00",
+                priceCurrency: "USD",
+                category: "Shuttle Service",
+              },
+            }),
+          }}
+        />
 
         {/* Google Tag Manager */}
         <Script
