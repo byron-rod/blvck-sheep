@@ -67,11 +67,46 @@ export default function RootLayout({
                 contactType: "Customer Service",
               },
               areaServed: "GT",
-              product: {
-                "@type": "Car",
-                price: "15.00",
-                priceCurrency: "USD",
-                category: "Shuttle Service",
+              priceRange: "$$",
+              hasOfferCatalog: {
+                "@type": "OfferCatalog",
+                name: "Shuttle Services",
+                itemListElement: [
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Antigua to Lake Atitlan",
+                      description: "Shuttle service from Antigua to Panajachel",
+                      price: "17.00",
+                      priceCurrency: "USD",
+                      category: "Shuttle Service",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Guatemala City to Lake Atitlan",
+                      description:
+                        "Shuttle service from Guatemala City to Panajachel",
+                      price: "28.00",
+                      priceCurrency: "USD",
+                      category: "Shuttle Service",
+                    },
+                  },
+                  {
+                    "@type": "Offer",
+                    itemOffered: {
+                      "@type": "Service",
+                      name: "Antigua to El Paredon",
+                      description: "Shuttle service from Antigua to El Paredon",
+                      price: "17.00",
+                      priceCurrency: "USD",
+                      category: "Shuttle Service",
+                    },
+                  },
+                ],
               },
             }),
           }}
