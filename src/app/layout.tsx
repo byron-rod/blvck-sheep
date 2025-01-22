@@ -28,6 +28,36 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* SEO Meta Tags */}
+        <meta
+          property="og:title"
+          content="Blvck Sheep Shuttles | Transportation Services in Guatemala"
+        />
+        <meta
+          property="og:description"
+          content="Explore Guatemala in comfort with Blvck Sheep. Offering a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Travel differently."
+        />
+        <meta property="og:image" content="/blvcksheeplogo.jpg" />
+        <meta property="og:image:alt" content="Blvck Sheep Shuttles logo" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="500" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content="/blvcksheeplogo.jpg" />
+        <meta name="twitter:image:alt" content="Blvck Sheep Shuttles logo" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Blvck Sheep Shuttles | Transportation Services in Guatemala",
+            description:
+              "Explore Guatemala in comfort with Blvck Sheep. Offering a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Travel differently.",
+            image: "https://www.blvck-sheep.com/blvcksheeplogo.jpg",
+            url: "https://www.blvck-sheep.com",
+          })}
+        </script>
+
         {/* Google Tag Manager */}
         <Script
           id="gtm-script"
@@ -40,6 +70,7 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-T4HH8JKL')`,
           }}
         />
+
         {/* Google Conversion Tracking */}
         <Script
           id="google-tag"
