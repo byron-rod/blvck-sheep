@@ -67,8 +67,8 @@ export default function RootLayout({
                 contactType: "Customer Service",
               },
               areaServed: "GT",
-              offers: {
-                "@type": "Offer",
+              product: {
+                "@type": "Car",
                 price: "15.00",
                 priceCurrency: "USD",
                 category: "Shuttle Service",
