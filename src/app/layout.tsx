@@ -79,8 +79,6 @@ export default function RootLayout({
                       name: "Antigua to Lake Atitlan",
                       description:
                         "Shuttle services from Antigua to Panajachel",
-                      price: "17.00",
-                      priceCurrency: "USD",
                       category: "Shuttle Service",
                     },
                   },
@@ -91,8 +89,6 @@ export default function RootLayout({
                       name: "Guatemala City to Lake Atitlan",
                       description:
                         "Shuttle services from Guatemala City to Panajachel",
-                      price: "28.00",
-                      priceCurrency: "USD",
                       category: "Shuttle Service",
                     },
                   },
@@ -103,8 +99,6 @@ export default function RootLayout({
                       name: "Antigua to El Paredon",
                       description:
                         "Shuttle services from Antigua to El Paredon",
-                      price: "17.00",
-                      priceCurrency: "USD",
                       category: "Shuttle Service",
                     },
                   },
