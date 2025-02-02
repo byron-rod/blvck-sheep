@@ -47,7 +47,11 @@ export default function Destinations() {
                 description: (
                   <>
                     Discover hostels like Free Cerveza or Amaranto.{" "}
-                    <Link href="/hostels" className="text-blue-400 underline">
+                    <Link
+                      href="/hostels"
+                      className="text-blue-400 underline"
+                      aria-label="See more information about hostels in Lake Atitlan"
+                    >
                       See more hostels
                     </Link>
                   </>
@@ -68,7 +72,11 @@ export default function Destinations() {
                 description: (
                   <>
                     Stay at Adra Hostel or The Yellow House.{" "}
-                    <Link href="/hostels" className="text-blue-400 underline">
+                    <Link
+                      href="/hostels"
+                      className="text-blue-400 underline"
+                      aria-label="See more information about hostels in Antigua"
+                    >
                       See more hostels
                     </Link>
                   </>
@@ -95,7 +103,11 @@ export default function Destinations() {
                 description: (
                   <>
                     Explore Cocori Lodge, or Mellow Hostel.{" "}
-                    <Link href="/hostels" className="text-blue-400 underline">
+                    <Link
+                      href="/hostels"
+                      className="text-blue-400 underline"
+                      aria-label="See more information about hostels in El Paredon"
+                    >
                       See more hostels
                     </Link>
                   </>
@@ -127,9 +139,13 @@ export default function Destinations() {
                 title: "Best Hostels",
                 description: (
                   <>
-                    Stay at Zephyr Lodge, El Retiro, and Greengo's.{" "}
-                    <Link href="/hostels" className="text-blue-400 underline">
-                      See more hostels
+                    Stay at Zephyr Lodge, or El Retiro.{" "}
+                    <Link
+                      href="/hostels"
+                      className="text-blue-400 underline"
+                      aria-label="See more information about hostels in Semuc Champey"
+                    >
+                      See more infomation
                     </Link>
                   </>
                 ),

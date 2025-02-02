@@ -25,8 +25,8 @@ const ReferralProgramPage = () => {
           Do you love sharing great travel experiences? Join the
           <strong> Blvck Sheep Referral Program</strong> and earn rewards by
           referring travelers to our comfortable and private shuttle service.
-          Whether you're a traveler, blogger, or influencer, this is a great way
-          to make extra income while helping people explore Guatemala.
+          Whether you&apos;re a traveler, blogger, or influencer, this is a
+          great way to make extra income while helping people explore Guatemala.
         </p>
 
         <p className="text-start text-xl lg:text-xl text-white/70 mt-4">
