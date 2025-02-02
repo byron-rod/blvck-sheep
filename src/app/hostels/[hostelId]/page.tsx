@@ -43,11 +43,11 @@ const hostels: Record<string, Hostel> = {
   },
 };
 
-// ✅ Correctly type the function props
+// ✅ Correctly type the function props for the page
 export default function HostelPage({
   params,
 }: {
-  params: { hostelId: string };
+  params: { hostelId: string }; // Type the params properly as expected by Next.js
 }) {
   const hostel = hostels[params.hostelId];
 
