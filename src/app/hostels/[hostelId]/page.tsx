@@ -1,3 +1,4 @@
+"use client";
 import { notFound } from "next/navigation";
 import Button from "@/components/Button";
 import Features from "@/sections/Features";
