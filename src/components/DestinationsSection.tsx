@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 
 interface BlogCard {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   imageSrc: StaticImageData | string;
   imageAlt: string;
 }

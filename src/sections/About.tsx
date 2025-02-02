@@ -45,7 +45,8 @@ export default function About() {
               ))}
             </span>
             <span className="text-white font-semibold block">
-              Travel differently with Blvck Sheep.
+              Travel <span className="text-blue-400">Differently</span> with
+              Blvck Sheep.
             </span>
           </div>
         </div>

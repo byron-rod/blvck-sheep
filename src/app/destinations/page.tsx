@@ -1,3 +1,4 @@
+import Link from "next/link"; // Import Link from Next.js
 import DestinationsSection from "@/components/DestinationsSection";
 import FeatureAtitlan from "@/components/FeatureAtitlan";
 import smallPicAtitlan from "@/assets/images/lake-atitlan.jpg";
@@ -29,6 +30,7 @@ export default function Destinations() {
           <h1 className="text-5xl">Destinations</h1>
         </div>
         <div className="">
+          {/* Lake Atitlán Section */}
           <DestinationsSection
             tag="Lake Atitlan"
             featurePost={<FeatureAtitlan />}
@@ -38,75 +40,104 @@ export default function Destinations() {
                 description:
                   "Panajachel, San Marcos, San Pedro, and Santa Cruz",
                 imageSrc: smallPicAtitlan,
-                imageAlt: "Restaurant",
+                imageAlt: "Lake Atitlan",
               },
               {
                 title: "Places to Stay",
-                description: "Amaranto, Free Cerveza and Dreamboat Hostel",
+                description: (
+                  <>
+                    Discover hostels like Free Cerveza or Amaranto.{" "}
+                    <Link href="/hostels" className="text-blue-400 underline">
+                      See more hostels
+                    </Link>
+                  </>
+                ),
                 imageSrc: smallPicAtitlanFree,
-                imageAlt: "Hostel",
+                imageAlt: "Hostel at Lake Atitlan",
               },
             ]}
           />
-          <div>
-            <DestinationsSection
-              tag="Antigua Guatemala"
-              featurePost={<FeatureAntigua />}
-              blogCards={[
-                {
-                  title: "Best Hostels",
-                  description:
-                    "The Doozy Koala, Adra Hostel, and The Yellow House",
-                  imageSrc: smallPicAntiguaDoozy,
-                  imageAlt: "Restaurant",
-                },
-                {
-                  title: "Best Restaurants",
-                  description: "Hector's Bistro, Samsara, and Adra Kitchen",
-                  imageSrc: smallPicAntigua,
-                  imageAlt: "Hostel",
-                },
-              ]}
-            />
-            <DestinationsSection
-              tag="El Paredon"
-              featurePost={<FeatureElParedon />}
-              blogCards={[
-                {
-                  title: "Best Hostels",
-                  description:
-                    "Cocori Lodge, Driftwood Surfer, and Mellow Hostel",
-                  imageSrc: smallPicParedonHostel,
-                  imageAlt: "Restaurant",
-                },
-                {
-                  title: "Best Restuarants",
-                  description:
-                    "Delicias del Mar, Mellow Hostel, Bora El Paredon",
-                  imageSrc: smallPicParedon,
-                  imageAlt: "Hostel",
-                },
-              ]}
-            />
-            <DestinationsSection
-              tag="Semuc Champey"
-              featurePost={<FeatureSemuc />}
-              blogCards={[
-                {
-                  title: "Day Trips in Lanquin",
-                  description: "Semuc Champey, Kanba Caves, and Lanquin Caves",
-                  imageSrc: smallPicSemucCaves,
-                  imageAlt: "Restaurant",
-                },
-                {
-                  title: "Best Hostels",
-                  description: "Zephyr Lodge, El Retiro, and Greengo's",
-                  imageSrc: smallPicSemuc,
-                  imageAlt: "Hostel",
-                },
-              ]}
-            />
-          </div>
+
+          {/* Antigua Section */}
+          <DestinationsSection
+            tag="Antigua Guatemala"
+            featurePost={<FeatureAntigua />}
+            blogCards={[
+              {
+                title: "Best Hostels",
+                description: (
+                  <>
+                    Stay at Adra Hostel or The Yellow House.{" "}
+                    <Link href="/hostels" className="text-blue-400 underline">
+                      See more hostels
+                    </Link>
+                  </>
+                ),
+                imageSrc: smallPicAntiguaDoozy,
+                imageAlt: "Hostel in Antigua",
+              },
+              {
+                title: "Best Restaurants",
+                description: "Hector's Bistro, Samsara, and Adra Kitchen",
+                imageSrc: smallPicAntigua,
+                imageAlt: "Restaurant in Antigua",
+              },
+            ]}
+          />
+
+          {/* El Paredón Section */}
+          <DestinationsSection
+            tag="El Paredon"
+            featurePost={<FeatureElParedon />}
+            blogCards={[
+              {
+                title: "Best Hostels",
+                description: (
+                  <>
+                    Explore Cocori Lodge, or Mellow Hostel.{" "}
+                    <Link href="/hostels" className="text-blue-400 underline">
+                      See more hostels
+                    </Link>
+                  </>
+                ),
+                imageSrc: smallPicParedonHostel,
+                imageAlt: "Hostel in El Paredon",
+              },
+              {
+                title: "Best Restaurants",
+                description: "Delicias del Mar, Mellow Hostel, Bora El Paredón",
+                imageSrc: smallPicParedon,
+                imageAlt: "Restaurant in El Paredon",
+              },
+            ]}
+          />
+
+          {/* Semuc Champey Section */}
+          <DestinationsSection
+            tag="Semuc Champey"
+            featurePost={<FeatureSemuc />}
+            blogCards={[
+              {
+                title: "Day Trips in Lanquin",
+                description: "Semuc Champey, Kanba Caves, and Lanquin Caves",
+                imageSrc: smallPicSemucCaves,
+                imageAlt: "Semuc Champey",
+              },
+              {
+                title: "Best Hostels",
+                description: (
+                  <>
+                    Stay at Zephyr Lodge, El Retiro, and Greengo's.{" "}
+                    <Link href="/hostels" className="text-blue-400 underline">
+                      See more hostels
+                    </Link>
+                  </>
+                ),
+                imageSrc: smallPicSemuc,
+                imageAlt: "Hostel in Semuc Champey",
+              },
+            ]}
+          />
         </div>
       </div>
       <CallToAction />

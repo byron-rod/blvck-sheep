@@ -2,7 +2,7 @@ import { twMerge } from "tailwind-merge";
 
 export default function BlogCardSmall(props: {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   children?: React.ReactNode;
   className?: string;
 }) {

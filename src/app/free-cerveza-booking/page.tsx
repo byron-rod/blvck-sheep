@@ -1,5 +1,4 @@
 import Button from "@/components/Button";
-import CallToAction from "@/sections/CallToAction";
 import Features from "@/sections/Features";
 import Link from "next/link";
 
@@ -37,7 +36,6 @@ const page = () => {
         </Button>
       </div>
       <Features />
-      <CallToAction />
     </section>
   );
 };
