@@ -1,10 +1,7 @@
-"use client";
 import { notFound } from "next/navigation";
 import Button from "@/components/Button";
 import Features from "@/sections/Features";
 import Link from "next/link";
-// Import necessary types
-import { FC } from "react";
 
 // Define the type for hostels
 type Hostel = {
@@ -46,20 +43,21 @@ const hostels: Record<string, Hostel> = {
   },
 };
 
-// Define the props type
-type HostelPageProps = {
-  params: {
-    hostelId: string;
-  };
-};
-
-const HostelPage: FC<HostelPageProps> = ({ params }) => {
+// ✅ Correctly type the function props
+export default function HostelPage({
+  params,
+}: {
+  params: { hostelId: string };
+}) {
   const hostel = hostels[params.hostelId];
+
   // If the hostel does not exist, return a 404 page
   if (!hostel) {
     return notFound();
   }
+
   const whatsappLink = `https://wa.me/50255116881?text=Hello,%20I%20am%20staying%20at%20${hostel.whatsappCode}%20and%20would%20like%20to%20book%20a%20shuttle!`;
+
   return (
     <section className="py-24 px-5 md:px-0">
       <div className="container max-w-5xl">
@@ -69,12 +67,15 @@ const HostelPage: FC<HostelPageProps> = ({ params }) => {
             Explore Guatemala in Comfort
           </div>
         </div>
+
         {/* Title */}
         <h1 className="text-5xl lg:text-6xl font-medium mt-10 leading-[2.5rem]">
           Blvck Sheep & {hostel.name}
         </h1>
+
         {/* Description */}
         <p className="text-xl text-white/70 mt-4">{hostel.description}</p>
+
         {/* Booking Buttons */}
         <div className="mt-8 space-x-4">
           <Button variant="secondary">
@@ -88,6 +89,7 @@ const HostelPage: FC<HostelPageProps> = ({ params }) => {
               Book Your Shuttle
             </Link>
           </Button>
+
           <Button variant="primary">
             <Link
               href={hostel.bookingLink}
@@ -101,9 +103,8 @@ const HostelPage: FC<HostelPageProps> = ({ params }) => {
           </Button>
         </div>
       </div>
+
       <Features />
     </section>
   );
-};
-
-export default HostelPage;
+}
