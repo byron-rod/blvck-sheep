@@ -16,28 +16,28 @@ const hostels: Record<string, Hostel> = {
   "free-cerveza": {
     name: "Free Cerveza",
     description:
-      "Blvck Sheep and Free Cerveza bring you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
+      "The ultimate destination hostel nestled on the shores of Lake Atitlan. Blvck Sheep brings you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
     whatsappCode: "Free%20Cerveza",
     bookingLink: "https://freecervezahostel.com/stay/",
   },
   "mellow-surf-hostel": {
     name: "Mellow Surf Hostel",
     description:
-      "Blvck Sheep and Mellow Surf Hostel offer an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Mellow is a surf and lifestyle hostel located in a unique surf town on the pacific coast of Guatemala, only 2 blocks from the beach. Book your beach getaway now and come surf, swim, kayak and tan in our beautiful hostel, where the vibes are always excellent. Blvck Sheep offers an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
     whatsappCode: "Mellow%20Surf%20Hostel",
     bookingLink: "https://mellowsurfhostel.com/",
   },
   "zephyr-lodge": {
     name: "Zephyr Lodge",
     description:
-      "Blvck Sheep and Zephyr Lodge offer an easy way to travel to Lanquin from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Zephyr Lodge, a place with a world famous infinity pool with unobstructed mountain views that has been known to melt more than one Instagramers heart. Our lively backpackers bar, equipped with cocktails on tap, is the perfect spot to meet fellow travelers with whom you will be able to enjoy our unique river tubing and Semuc Champey tours. Blvck Sheep offer an easy way to travel to Lanquín from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
     whatsappCode: "Zephyr%20Lodge",
     bookingLink: "https://zephyrlodgelanquin.com/",
   },
   "adra-hostel": {
     name: "Adra Hostel Antigua",
     description:
-      "Blvck Sheep and Adra Hostel Antigua offer an easy way to travel to Antigua from Guatemala City, El Paredon, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Adra Hostel was founded in 2017 in Antigua Guatemala. Its founders opened the doors with a concept of Community Harmony Space, where travelers from all over the world can meet, share stories and create unforgettable memories in the center of Antigua Guatemala. Blvck Sheep offers an easy way to travel to Antigua from Guatemala City, El Paredon, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
     whatsappCode: "Adra%20Hostel%20Antigua",
     bookingLink: "https://adrahostel.com/antigua-guatemala/",
   },
@@ -60,7 +60,7 @@ export default async function HostelPage({
   const whatsappLink = `https://wa.me/50255116881?text=Hello,%20I%20am%20staying%20at%20${hostel.whatsappCode}%20and%20would%20like%20to%20book%20a%20shuttle!`;
 
   return (
-    <section className="py-24 px-5 md:px-0">
+    <section className="py-16 px-5 md:px-0">
       <div className="container max-w-5xl">
         {/* Badge */}
         <div className="flex justify-start">
@@ -71,7 +71,7 @@ export default async function HostelPage({
 
         {/* Title */}
         <h1 className="text-5xl lg:text-6xl font-medium mt-10 leading-[2.5rem]">
-          Blvck Sheep & {hostel.name}
+          {hostel.name}
         </h1>
 
         {/* Description */}
@@ -94,7 +94,7 @@ export default async function HostelPage({
           </Button>
 
           <Button
-            variant="primary"
+            variant="secondary"
             className="mt-2 md:mt-8 flex text-center justify-center"
           >
             <Link
@@ -107,6 +107,14 @@ export default async function HostelPage({
               {hostel.name} Website
             </Link>
           </Button>
+        </div>
+        {/* Back Button */}
+        <div className="flex justify-start mb-8 mt-8">
+          <Link href="/hostels">
+            <Button variant="primary" className="flex items-center text-sm">
+              &larr; Back
+            </Button>
+          </Link>
         </div>
       </div>
 

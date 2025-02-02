@@ -13,7 +13,7 @@ const HostelsPage = () => {
           Explore & Stay in Guatemala
         </h1>
         <p className="text-xl text-white/70 mt-4">
-          We partner with top hostels to ensure you have the best experience in
+          These are our top hostels to ensure you have the best experience in
           Guatemala. Book your stay and let us handle your shuttle
           transportation.
         </p>
