@@ -3,47 +3,55 @@ import Button from "@/components/Button";
 import Features from "@/sections/Features";
 import Link from "next/link";
 
-// Define the type for hostels
-type Hostel = {
-  name: string;
-  description: string;
-  whatsappCode: string;
-  bookingLink: string;
-};
+// Define type for params
+interface HostelPageProps {
+  params: {
+    hostelId: string;
+  };
+}
 
-// Define the hostel data object
-const hostels: Record<string, Hostel> = {
+// Define hostel data
+const hostels: Record<
+  string,
+  {
+    name: string;
+    description: string;
+    whatsappCode: string;
+    bookingLink: string;
+  }
+> = {
   "free-cerveza": {
     name: "Free Cerveza",
     description:
-      "Blvck Sheep and Free Cerveza bring you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
+      "Blvck Sheep and Free Cerveza bring you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable.",
     whatsappCode: "Free%20Cerveza",
     bookingLink: "https://freecervezahostel.com/stay/",
   },
   "mellow-surf-hostel": {
     name: "Mellow Surf Hostel",
     description:
-      "Blvck Sheep and Mellow Surf Hostel offer an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Blvck Sheep and Mellow Surf Hostel offer an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán.",
     whatsappCode: "Mellow%20Surf%20Hostel",
     bookingLink: "https://mellowsurfhostel.com/",
   },
   "zephyr-lodge": {
     name: "Zephyr Lodge",
     description:
-      "Blvck Sheep and Zephyr Lodge offer an easy way to travel to Lanquin from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Blvck Sheep and Zephyr Lodge offer an easy way to travel to Lanquin from Guatemala City, Antigua, or Lake Atitlán.",
     whatsappCode: "Zephyr%20Lodge",
     bookingLink: "https://zephyrlodgelanquin.com/",
   },
   "adra-hostel": {
     name: "Adra Hostel Antigua",
     description:
-      "Blvck Sheep and Adra Hostel Antigua offer an easy way to travel to Antigua from Guatemala City, El Paredon, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Blvck Sheep and Adra Hostel Antigua offer an easy way to travel to Antigua from Guatemala City, El Paredon, or Lake Atitlán.",
     whatsappCode: "Zephyr%20Lodge",
     bookingLink: "https://adrahostel.com/antigua-guatemala/",
   },
 };
 
-const HostelPage = ({ params }: { params: { hostelId: string } }) => {
+// Ensure params are correctly typed
+const HostelPage = ({ params }: HostelPageProps) => {
   const hostel = hostels[params.hostelId];
 
   // If the hostel does not exist, return a 404 page
@@ -105,3 +113,10 @@ const HostelPage = ({ params }: { params: { hostelId: string } }) => {
 };
 
 export default HostelPage;
+
+// Ensure Next.js generates static pages for all hostels
+export async function generateStaticParams() {
+  return Object.keys(hostels).map((hostelId) => ({
+    hostelId,
+  }));
+}
