@@ -43,13 +43,14 @@ const hostels: Record<string, Hostel> = {
   },
 };
 
-// ✅ Correctly type the function props for the page
-export default function HostelPage({
+// ✅ Correctly type the function props for the page with params as a Promise
+export default async function HostelPage({
   params,
 }: {
-  params: { hostelId: string }; // Type the params properly as expected by Next.js
+  params: Promise<{ hostelId: string }>; // Treat params as a Promise
 }) {
-  const hostel = hostels[params.hostelId];
+  const { hostelId } = await params; // Resolve the promise to get hostelId
+  const hostel = hostels[hostelId];
 
   // If the hostel does not exist, return a 404 page
   if (!hostel) {
