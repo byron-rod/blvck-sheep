@@ -78,20 +78,25 @@ export default async function HostelPage({
         <p className="text-xl text-white/70 mt-4">{hostel.description}</p>
 
         {/* Booking Buttons */}
-        <div className="mt-8 space-x-4">
-          <Button variant="secondary">
+        <div className="flex flex-wrap gap-4 mt-8">
+          <Button
+            variant="secondary"
+            className="mt-2 md:mt-8 flex text-center justify-center"
+          >
             <Link
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group-hover:text-blue-400"
               aria-label={`WhatsApp contact for booking a shuttle from ${hostel.name}`}
             >
-              Book Your Shuttle
+              Book Now
             </Link>
           </Button>
 
-          <Button variant="primary">
+          <Button
+            variant="primary"
+            className="mt-2 md:mt-8 flex text-center justify-center"
+          >
             <Link
               href={hostel.bookingLink}
               target="_blank"
@@ -99,7 +104,7 @@ export default async function HostelPage({
               className="group-hover:text-blue-400"
               aria-label={`Book a stay at ${hostel.name}`}
             >
-              Book a Stay
+              {hostel.name} Website
             </Link>
           </Button>
         </div>
