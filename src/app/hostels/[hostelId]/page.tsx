@@ -16,7 +16,7 @@ const hostels: Record<string, Hostel> = {
   "free-cerveza": {
     name: "Free Cerveza",
     description:
-      "The ultimate destination hostel nestled on the shores of Lake Atitlan. Blvck Sheep brings you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
+      "Free Cerveza is a popular hostel in Santa Cruz La Laguna, a 10 minute boat ride from Panajachel. The ultimate destination hostel nestled on the shores of Lake Atitlan, with fun activities and amazing people from all over the world. Blvck Sheep brings you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
     whatsappCode: "Free%20Cerveza",
     bookingLink: "https://freecervezahostel.com/stay/",
   },
@@ -30,7 +30,7 @@ const hostels: Record<string, Hostel> = {
   "zephyr-lodge": {
     name: "Zephyr Lodge",
     description:
-      "Zephyr Lodge, a place with a world famous infinity pool with unobstructed mountain views that has been known to melt more than one Instagramers heart. Our lively backpackers bar, equipped with cocktails on tap, is the perfect spot to meet fellow travelers with whom you will be able to enjoy our unique river tubing and Semuc Champey tours. Blvck Sheep offer an easy way to travel to Lanquín from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Zephyr Lodge is located in Lanquin, a place with a world famous infinity pool with unobstructed mountain views that has been known to melt more than one Instagramers heart. Their lively backpackers bar, equipped with cocktails on tap, is the perfect spot to meet fellow travelers with whom you will be able to enjoy unique river tubing and Semuc Champey tours. Blvck Sheep offer an easy way to travel to Lanquín from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
     whatsappCode: "Zephyr%20Lodge",
     bookingLink: "https://zephyrlodgelanquin.com/",
   },
@@ -43,13 +43,12 @@ const hostels: Record<string, Hostel> = {
   },
 };
 
-// ✅ Correctly type the function props for the page with params as a Promise
 export default async function HostelPage({
   params,
 }: {
-  params: Promise<{ hostelId: string }>; // Treat params as a Promise
+  params: Promise<{ hostelId: string }>;
 }) {
-  const { hostelId } = await params; // Resolve the promise to get hostelId
+  const { hostelId } = await params;
   const hostel = hostels[hostelId];
 
   // If the hostel does not exist, return a 404 page
@@ -60,7 +59,7 @@ export default async function HostelPage({
   const whatsappLink = `https://wa.me/50255116881?text=Hello,%20I%20am%20staying%20at%20${hostel.whatsappCode}%20and%20would%20like%20to%20book%20a%20shuttle!`;
 
   return (
-    <section className="py-16 px-5 md:px-0">
+    <section className="py-10 px-5 md:px-0">
       <div className="container max-w-5xl">
         {/* Badge */}
         <div className="flex justify-start">
@@ -111,7 +110,7 @@ export default async function HostelPage({
         {/* Back Button */}
         <div className="flex justify-start mb-8 mt-8">
           <Link href="/hostels">
-            <Button variant="primary" className="flex items-center text-sm">
+            <Button variant="primary" className="flex items-center text-md">
               &larr; Back
             </Button>
           </Link>

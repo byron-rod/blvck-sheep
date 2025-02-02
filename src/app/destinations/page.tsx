@@ -52,7 +52,7 @@ export default function Destinations() {
                       className="text-blue-400 underline"
                       aria-label="See more information about hostels in Lake Atitlan"
                     >
-                      See more hostels
+                      More Information
                     </Link>
                   </>
                 ),
@@ -77,7 +77,7 @@ export default function Destinations() {
                       className="text-blue-400 underline"
                       aria-label="See more information about hostels in Antigua"
                     >
-                      See more hostels
+                      More Information
                     </Link>
                   </>
                 ),
@@ -108,7 +108,7 @@ export default function Destinations() {
                       className="text-blue-400 underline"
                       aria-label="See more information about hostels in El Paredon"
                     >
-                      See more hostels
+                      More Information
                     </Link>
                   </>
                 ),
@@ -145,7 +145,7 @@ export default function Destinations() {
                       className="text-blue-400 underline"
                       aria-label="See more information about hostels in Semuc Champey"
                     >
-                      See more infomation
+                      More Information
                     </Link>
                   </>
                 ),
