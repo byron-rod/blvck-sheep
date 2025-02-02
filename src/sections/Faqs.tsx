@@ -9,12 +9,12 @@ const faqs = [
   {
     question: "How do I book a ride?",
     answer:
-      "You can book your ride directly by contacting us via WhatsApp or with our trusted hostels. Choose your destination, confirm availability for your date and time, make your payment, and we'll send you a booking confirmation to finalize your reservation!",
+      "You can book your ride directly by contacting us via WhatsApp. Choose your destination, confirm availability for your date and time, make your payment, and we'll send you a booking confirmation to finalize your reservation!",
   },
   {
     question: "How do I pay for my reservation?",
     answer:
-      "We accept safe and secure payments through Recurrente.com via Visa or Mastercard. Money transfers to our accounts are also available for direct bookings. If you book through one of our trusted hostels, they will handle your payment. All payments are fully refundable if canceled at least 24 hours in advance.",
+      "We accept safe and secure payments through Recurrente.com via Visa or Mastercard. Money transfers to our accounts are also available for direct bookings. All payments are fully refundable if canceled at least 24 hours in advance.",
   },
   {
     question: "What are your cancellation or rescheduling policies?",
@@ -30,6 +30,11 @@ const faqs = [
     question: "Do you provide door-to-door service?",
     answer:
       "Yes! We offer door-to-door pick-up and drop-off in most areas we service. When booking, provide your exact address, and we'll confirm if it's within our coverage. If not, we'll arrange the nearest convenient pick-up and drop-off point for you.",
+  },
+  {
+    question: "What are your top destinations?",
+    answer:
+      "We can take you anywhere in Guatemala and even to neighboring countries! Our most popular routes include Antigua, Panajachel (Lake Atitlán), El Paredón (Pacific Coast), and Lanquín (Semuc Champey). If you have a custom destination in mind, let us know—we willl make it happen!",
   },
 ];
 
