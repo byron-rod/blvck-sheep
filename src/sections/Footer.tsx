@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   FaSpotify, // Import Spotify icon
-  FaEnvelope,
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
