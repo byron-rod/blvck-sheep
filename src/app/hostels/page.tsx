@@ -21,8 +21,8 @@ const HostelsPage = () => {
         {/* Hostel Categories - Responsive Grid Layout */}
         <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
           {/* First Row: Antigua & Atitlan */}
-          <div>
-            <h2 className="text-3xl font-semibold">Antigua Guatemala</h2>
+          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
+            <h2 className="text-3xl font-medium">Antigua Guatemala</h2>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
@@ -35,8 +35,8 @@ const HostelsPage = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="text-3xl font-semibold">Lake Atitlan</h2>
+          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
+            <h2 className="text-3xl font-medium">Lake Atitlan</h2>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
@@ -50,8 +50,8 @@ const HostelsPage = () => {
           </div>
 
           {/* Second Row: Paredon & Lanquin */}
-          <div>
-            <h2 className="text-3xl font-semibold">El Paredón</h2>
+          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
+            <h2 className="text-3xl font-medium">El Paredón</h2>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
@@ -64,8 +64,8 @@ const HostelsPage = () => {
             </ul>
           </div>
 
-          <div>
-            <h2 className="text-3xl font-semibold">Lanquin</h2>
+          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
+            <h2 className="text-3xl font-medium">Lanquin</h2>
             <ul className="mt-3 space-y-2">
               <li>
                 <Link
