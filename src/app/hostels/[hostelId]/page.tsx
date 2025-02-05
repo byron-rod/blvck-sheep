@@ -23,7 +23,7 @@ const hostels: Record<string, Hostel> = {
   "mellow-surf-hostel": {
     name: "Mellow Surf Hostel",
     description:
-      "Mellow is a surf and lifestyle hostel located in a unique surf town on the pacific coast of Guatemala, only 2 blocks from the beach. Book your beach getaway now and go surf to Guatemala's hot spot, swim, kayak and tan in one of the most beautiful hostels in the area. Blvck Sheep offers an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
+      "Mellow is a surf and lifestyle hostel located in a unique surf town on the pacific coast of Guatemala, only 2 blocks from the beach. Book your beach getaway now and visit Guatemala's surf hot spot. Enjoy their pool, exclusive drinks, delicious food, in one of the most beautiful hostels in the area. Blvck Sheep offers an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
     whatsappCode: "Mellow%20Surf%20Hostel",
     bookingLink: "https://mellowsurfhostel.com/",
   },
