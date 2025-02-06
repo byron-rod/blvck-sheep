@@ -7,7 +7,7 @@ import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
 import whatsapp from "@/assets/images/wa-logo.png";
-import background from "@/assets/images/wa-bg.png";
+// import background from "@/assets/images/wa-bg.png";
 import Image from "next/image";
 
 const features = [
@@ -115,15 +115,6 @@ export default function Features() {
             className="col-span-2 lg:col-span-1 mt-1"
           >
             <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">
-              <div className="flex opacity-20">
-                <Image
-                  src={background}
-                  alt="WhatsApp background"
-                  layout="fill"
-                  objectFit="cover"
-                  className="z-0 rounded-3xl"
-                ></Image>
-              </div>
               <div>
                 <Image
                   src={whatsapp}

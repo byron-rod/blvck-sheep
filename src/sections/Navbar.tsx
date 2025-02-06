@@ -13,6 +13,7 @@ const navLinks = [
   { label: "About", href: "/#about" },
   { label: "Features", href: "/#features" },
   { label: "Destinations", href: "/#destinations" },
+  { label: "Reviews", href: "/#reviews" },
   { label: "FAQs", href: "/#faqs" },
 ];
 
@@ -31,6 +32,8 @@ export default function Navbar() {
                     src={logoImage}
                     alt="BlackSheep logo"
                     className="h-12 md:h-14 lg:h-16 w-auto cursor-pointer"
+                    width={64}
+                    height={64}
                   />
                 </Link>
               </div>
