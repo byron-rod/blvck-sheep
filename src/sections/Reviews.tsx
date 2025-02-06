@@ -2,7 +2,6 @@
 import Tag from "@/components/Tag";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 
 // Mock data for testimonials (will be replaced with dynamic data)
@@ -47,42 +46,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 };
 
 export default function Reviews() {
-  const [testimonials, setTestimonials] = useState(mockTestimonials);
-
-  // Comment out the useEffect for now since we're using static data
-  /*
-  useEffect(() => {
-    const fetchGoogleReviews = async () => {
-      try {
-        const response = await fetch("/api/reviews");
-
-        if (!response.ok) {
-          throw new Error(`API request failed with status ${response.status}`);
-        }
-
-        const data = await response.json();
-
-        if (data.result && data.result.reviews) {
-          const reviews = data.result.reviews.map((review: any) => ({
-            id: review.time,
-            author: review.author_name,
-            review: review.text,
-            rating: review.rating,
-          }));
-          setTestimonials(reviews);
-        } else {
-          console.warn("No reviews found. Falling back to mock data.");
-          setTestimonials(mockTestimonials); // Fallback to mock data
-        }
-      } catch (error) {
-        console.error("Error fetching Google Reviews:", error);
-        setTestimonials(mockTestimonials); // Fallback to mock data
-      }
-    };
-
-    fetchGoogleReviews();
-  }, []);
-  */
+  // Google Reviews URL
   const googleReviewsUrl =
     "https://www.google.com/maps/place/Blvck+Sheep+Shuttles/@14.6445077,-92.0295077,9z/data=!4m18!1m9!3m8!1s0x2f5c46efe00c2129:0xd52b1ce1b65c5d3f!2sBlvck+Sheep+Shuttles!8m2!3d14.6478388!4d-90.7804049!9m1!1b1!16s%2Fg%2F11lz83hjm6!3m7!1s0x2f5c46efe00c2129:0xd52b1ce1b65c5d3f!8m2!3d14.6478388!4d-90.7804049!9m1!1b1!16s%2Fg%2F11lz83hjm6?authuser=3&entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D";
 
@@ -104,7 +68,7 @@ export default function Reviews() {
           >
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex flex-col gap-8">
-                {testimonials.map((testimonial) => (
+                {mockTestimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
                     className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
