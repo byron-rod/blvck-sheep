@@ -55,7 +55,7 @@ const StarRating = ({ rating }: { rating: number }) => {
 export default function Reviews() {
   // Google Reviews URL
   const googleReviewsUrl =
-    "https://www.google.com/maps/place/Blvck+Sheep+Shuttles/@14.6445077,-92.0295077,9z/data=!4m18!1m9!3m8!1s0x2f5c46efe00c2129:0xd52b1ce1b65c5d3f!2sBlvck+Sheep+Shuttles!8m2!3d14.6478388!4d-90.7804049!9m1!1b1!16s%2Fg%2F11lz83hjm6!3m7!1s0x2f5c46efe00c2129:0xd52b1ce1b65c5d3f!8m2!3d14.6478388!4d-90.7804049!9m1!1b1!16s%2Fg%2F11lz83hjm6?authuser=3&entry=ttu&g_ep=EgoyMDI1MDIwMy4wIKXMDSoASAFQAw%3D%3D";
+    "https://www.google.com/search?sca_esv=44785faec4b38403&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzRTyKwwlVPVvfhff3cuThV83efgYTZfIExpXi9I3WmPus2PlubctDAsiFYnMcU2GHMxW0MrJ1Mfe95iFyOwtCuF6XXQKdID-fj8tek3avuw0o3oGfg%3D%3D&q=Blvck+Sheep+Shuttles+Reviews&sa=X&ved=2ahUKEwj4h5HH45GNAxWXSjABHTY4EjcQ0bkNegQIMRAD&biw=1536&bih=702&dpr=1.25";
 
   return (
     <section className="py-24 lg:py-32 overflow-hidden" id="reviews">

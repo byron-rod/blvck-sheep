@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `With our 7-passenger SUVs, it's all about comfort, safety and a personalized touch. Whether you're sharing a ride or booking privately, we've got you covered with flexible schedules, curated Spotify playlists, and the best local tips through our exclusive WhatsApp chat service.`;
+const text = `With our 7-passenger SUVs, it's all about comfort, safety and a personalized touch. We've got you covered with flexible schedules, bilingual drivers, curated Spotify playlists, and the best tips to discover Guatemala like a local.`;
 const words = text.split(" ");
 
 export default function About() {

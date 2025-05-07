@@ -111,7 +111,7 @@ export default function Features() {
           </FeatureCard>
           <FeatureCard
             title="Expert Guidance"
-            description="We're more than just a ride. Travel like a local with our exclusive WhatsApp tips and destination packages."
+            description="We're more than just a ride. Travel like a local with our exclusive WhatsApp tips and destination guidance."
             className="col-span-2 lg:col-span-1 mt-1"
           >
             <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">
