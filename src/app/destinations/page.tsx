@@ -37,8 +37,7 @@ export default function Destinations() {
             blogCards={[
               {
                 title: "Best Towns to Visit",
-                description:
-                  "Panajachel, San Marcos, San Pedro, and Santa Cruz",
+                description: "Panajachel, San Marcos, San Pedro, and San Juan.",
                 imageSrc: smallPicAtitlan,
                 imageAlt: "Lake Atitlan",
               },

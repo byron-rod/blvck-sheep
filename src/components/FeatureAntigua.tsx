@@ -7,7 +7,7 @@ const FeatureAntigua = () => {
     <section className="group inline-block overflow-hidden rounded-xl">
       <BlogCardFeat
         title="Antigua Guatemala"
-        description="Prices per passenger starting at: Antigua-Pana: $15 | Guate-Antigua: $14"
+        description="Charming colonial streets, vibrant cafes, and rich history beneath majestic volcanoes."
         className="col-span-2 lg:col-span-1"
       >
         <div className="aspect-video flex items-center justify-center overflow-hidden rounded-3xl">
