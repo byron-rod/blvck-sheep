@@ -92,7 +92,7 @@ export default function Features() {
             </div>
           </FeatureCard>
           <FeatureCard
-            title="Private Ride Option"
+            title="Private Ride or Shared Options"
             description="Total control of stops, music, and timeframes. Explore at your own pace."
             className="col-span-2 lg:col-span-1 mt-2"
           >

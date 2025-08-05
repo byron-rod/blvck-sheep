@@ -8,27 +8,41 @@ import { FaGoogle } from "react-icons/fa";
 const mockTestimonials = [
   {
     id: 1,
-    author: "Paige Biencourt",
+    author: "Steven Taylor",
     review:
-      "I can't recommend Blvck Sheep highly enough! From start to finish, our experience with Byron was exceptional. The car was spotless, comfortable, and perfect for exploring Guatemala, making the journey smooth and enjoyable. What truly set Byron apart was his wealth of local knowledge. He didn’t just take us from place to place—he shared fascinating, unique insights that gave us a deeper appreciation for Guatemala’s culture, history, and hidden gems. His recommendations were spot-on, and we felt like we were getting an insider's perspective that most tourists miss. Beyond that, Byron was professional, punctual, and a pleasure to be around. If you're looking for a reliable and knowledgeable driver in Guatemala, Blvck Sheep is the way to go! We will absolutely be booking with them again on our next visit.",
+      "Excellent service and communication; in addition to better prices than most other options I saw. Drivers coordinated when plans had to change due to traffic problems and got us back to the airport on-time from el paredon. Highly reccomend.",
     rating: 5,
   },
   {
     id: 2,
+    author: "Yashmeen Khan",
+    review:
+      "Im an elderly female who needed a solo private ride from the airport to Lake Atitlan and found the perfect shuttle service with Byron, the owner of Blvck Sheep. Byron not only made me feel safe but was such a caring and interesting companion for the few hours of the drive. He made stops to attend to my needs, helped me with cellphone data and recommended my hotel which I was happy with. He gave me a great deal of tips and advice for my stay in Atitlan and was always pleasant and friendly throughout the journey, making the time fly by. Byron is a kind soul and a good person to have at the helm of your journey of a few hours.",
+    rating: 5,
+  },
+  {
+    id: 3,
+    author: "Paige Biencourt",
+    review:
+      "I can't recommend Blvck Sheep highly enough! From start to finish, our experience with Byron was exceptional. The car was spotless, comfortable, and perfect for exploring Guatemala, making the journey smooth and enjoyable. What truly set Byron apart was his wealth of local knowledge. He didn&apost just take us from place to place—he shared fascinating, unique insights that gave us a deeper appreciation for Guatemala&aposs culture, history, and hidden gems. His recommendations were spot-on, and we felt like we were getting an insider's perspective that most tourists miss. Beyond that, Byron was professional, punctual, and a pleasure to be around. If you're looking for a reliable and knowledgeable driver in Guatemala, Blvck Sheep is the way to go! We will absolutely be booking with them again on our next visit.",
+    rating: 5,
+  },
+  {
+    id: 4,
     author: "Brad Corbett",
     review:
       "This is hands down the best way to get to panajchel from the capital and back. The service is new and just starting up so there aren't a ton of reviews yet, but they have been flexible and dependable. Arrived on time. Byron was our driver and speaks perfect English. There was a lot of traffic leaving the capital so it took a little while and we were so glad we weren't crammed in a van with a bunch of other tourists. The car was nice and clean. Can't recommend this service enough.",
     rating: 5,
   },
   {
-    id: 3,
+    id: 5,
     author: "Paula Martinez Olmo",
     review:
       "Recomendado 100%. Son muy flexibles con los horarios y precios muy económicos para el servicio de alta calidad que ofrecen. En mi caso, Byron, el conductor, fue en todo momento muy amable y atento, haciéndome recomendaciones y haciendome sentir segura al quedarse esperándome hasta que me abriesen la puerta del hostel, pues era de madrugada.",
     rating: 5,
   },
   {
-    id: 4,
+    id: 6,
     author: "Fabiola Koloff",
     review:
       "Para empezar el piloto muy amable, hizo que el viaje fuera muy placentero, con muy buena música, precavido para manejar. Lo recomiendo muy seguro para viajar.",
