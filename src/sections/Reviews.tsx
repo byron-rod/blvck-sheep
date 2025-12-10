@@ -52,7 +52,7 @@ const mockTestimonials = [
     id: 7,
     author: "Irene Sander",
     review:
-      "Realmente fue una experiencia excelente, servicio por parte de Byron, aparte del traslado, estuvo al pendiente de nosotras todo el viaje aunque no nos tocara estar con él, recomendaciones de restaurantes, de paseos o lugares que visitar, gracias por esta grata experiencia que hizo que nos encantara Guatemala.",
+      "Realmente fue una experiencia excelente, servicio por parte de Byron, aparte del traslado, estuvo al pendiente de nosotras todo el viaje aunque no nos tocara estar con el, recomendaciones de restaurantes, de paseos o lugares que visitar, gracias por esta grata experiencia que hizo que nos encantara Guatemala.",
     rating: 5,
   },
   {
@@ -78,7 +78,7 @@ const mockTestimonials = [
   },
   {
     id: 11,
-    author: "Luis Miguel Torres Colo",
+    author: "Luis Miguel Torres",
     review:
       "Excelente persona, muy puntual y dio excelentes recomendaciones durante el viaje. Altamente recomendado!",
     rating: 5,
