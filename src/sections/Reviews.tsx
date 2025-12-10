@@ -24,7 +24,7 @@ const mockTestimonials = [
     id: 3,
     author: "Paige Biencourt",
     review:
-      "I can't recommend Blvck Sheep highly enough! From start to finish, our experience with Byron was exceptional. The car was spotless, comfortable, and perfect for exploring Guatemala, making the journey smooth and enjoyable. What truly set Byron apart was his wealth of local knowledge. He didn&apost just take us from place to place—he shared fascinating, unique insights that gave us a deeper appreciation for Guatemala&aposs culture, history, and hidden gems. His recommendations were spot-on, and we felt like we were getting an insider's perspective that most tourists miss. Beyond that, Byron was professional, punctual, and a pleasure to be around. If you're looking for a reliable and knowledgeable driver in Guatemala, Blvck Sheep is the way to go! We will absolutely be booking with them again on our next visit.",
+      "I can't recommend Blvck Sheep highly enough! From start to finish, our experience with Byron was exceptional. The car was spotless, comfortable, and perfect for exploring Guatemala, making the journey smooth and enjoyable. What truly set Byron apart was his wealth of local knowledge. He didn&apost just take us from place to place—he shared fascinating, unique insights that gave us a deeper appreciation for Guatemalan culture, history, and hidden gems. His recommendations were spot-on, and we felt like we were getting an insider's perspective that most tourists miss. Beyond that, Byron was professional, punctual, and a pleasure to be around. If you're looking for a reliable and knowledgeable driver in Guatemala, Blvck Sheep is the way to go! We will absolutely be booking with them again on our next visit.",
     rating: 5,
   },
   {
@@ -46,6 +46,41 @@ const mockTestimonials = [
     author: "Fabiola Koloff",
     review:
       "Para empezar el piloto muy amable, hizo que el viaje fuera muy placentero, con muy buena música, precavido para manejar. Lo recomiendo muy seguro para viajar.",
+    rating: 5,
+  },
+  {
+    id: 7,
+    author: "Irene Sander",
+    review:
+      "Realmente fue una experiencia excelente, servicio por parte de Byron, aparte del traslado, estuvo al pendiente de nosotras todo el viaje aunque no nos tocara estar con él, recomendaciones de restaurantes, de paseos o lugares que visitar, gracias por esta grata experiencia que hizo que nos encantara Guatemala.",
+    rating: 5,
+  },
+  {
+    id: 8,
+    author: "Noah Parks",
+    review:
+      "Byron was amazing! We rode from the airport in Guatemala City to Panajachel. His communication was excellent and his car was immaculate. Would definitely use Black Sheep in the future.",
+    rating: 5,
+  },
+  {
+    id: 9,
+    author: "Tom Riggs",
+    review:
+      "Very punctual, reliable, and friendly service. Would definitely hire again.",
+    rating: 5,
+  },
+  {
+    id: 10,
+    author: "Renatha Blonde",
+    review:
+      "Muchas gracias a Blvck Sheep y Byron por haber sido parte de nuestro viaje a Guatemala. Siempre estuvo a tiempo por nosotras y siempre nos sentimos seguras y en confianza",
+    rating: 5,
+  },
+  {
+    id: 11,
+    author: "Luis Miguel Torres Colo",
+    review:
+      "Excelente persona, muy puntual y dio excelentes recomendaciones durante el viaje. Altamente recomendado!",
     rating: 5,
   },
 ];
