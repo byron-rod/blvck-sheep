@@ -32,7 +32,7 @@ export default function Features() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-8">
           <FeatureCard
             title="Comfortable Rides"
-            description="Spacious SUVs with only five passengers, great music, and air conditioning."
+            description="Spacious SUVs or comfortable sedans, great music, and air conditioning."
             className="col-span-2 lg:col-span-1"
           >
             <div className="aspect-video flex items-center justify-center">
@@ -93,7 +93,7 @@ export default function Features() {
           </FeatureCard>
           <FeatureCard
             title="Private Ride or Shared Options"
-            description="Total control of stops, music, and timeframes. Explore at your own pace."
+            description="We got you covered if you are in a budget or looking for a more exclusive experience."
             className="col-span-2 lg:col-span-1 mt-2"
           >
             <div className="aspect-video flex items-center justify-center hover:scale-105 transition duration-300">

@@ -24,9 +24,11 @@ export default function TermsConditions() {
         <ul className="list-disc pl-6 text-neutral-400 space-y-4">
           <li>
             <strong>Service Conditions:</strong> Blvck Sheep operates
-            7-passenger SUVs with a maximum of 5 clients per trip for a more
-            private and comfortable experience. Delays or schedule adjustments
-            may occur due to traffic, weather, or other unforeseen
+            5-passenger SUVs or Sedans or 7-passenger SUVs with a maximum of 4
+            clients per trip for a more private and comfortable experience. For
+            larger groups we have partnerships with trusted providers, that
+            assist us with van or microbus services. Delays or schedule
+            adjustments may occur due to traffic, weather, or other unforeseen
             circumstances. We&apos;ll always strive to minimize disruptions and
             keep you informed.
           </li>
@@ -63,15 +65,15 @@ export default function TermsConditions() {
         <ul className="list-disc pl-6 text-neutral-400 space-y-4">
           <li>
             <strong>How to Book:</strong> Reservations can be made via WhatsApp
-            or through our trusted hostel partners at least 48 hours prior your
-            departure time. Choose your destination, check availability, make
-            your payment, and secure your spot.
+            at least 48 hours prior your departure time. Choose your
+            destination, check availability, make your payment, and secure your
+            spot.
           </li>
           <li>
             <strong>Payment Methods:</strong> We accept payments via credit card
             (Visa or Mastercard) through our partner, Recurrente.com. Bank
-            transfers and payments through our trusted hostel partners are also
-            accepted. Payments are refundable up to 24 hours before your trip.
+            transfers are also accepted for local travelers. Payments are
+            refundable up to 24 hours before your trip.
           </li>
           <li>
             <strong>Late Bookings:</strong> We can manage last-minute bookings
