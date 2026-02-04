@@ -26,11 +26,11 @@ export default function TermsConditions() {
             <strong>Service Conditions:</strong> Blvck Sheep operates
             5-passenger SUVs or Sedans or 7-passenger SUVs with a maximum of 4
             clients per trip for a more private and comfortable experience. For
-            larger groups we have partnerships with trusted providers, that
-            assist us with van or microbus services. Delays or schedule
-            adjustments may occur due to traffic, weather, or other unforeseen
-            circumstances. We&apos;ll always strive to minimize disruptions and
-            keep you informed.
+            our shared services or larger groups we have partnerships with
+            trusted providers, that assist us with van or microbus services.
+            Delays or schedule adjustments may occur due to traffic, weather, or
+            other unforeseen circumstances. We&apos;ll always strive to minimize
+            disruptions and keep you informed.
           </li>
           <li>
             <strong>Personal Responsibility:</strong> Passengers are responsible

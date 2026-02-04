@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How much luggage may I bring?",
     answer:
-      "Our SUVs are spacious and can accommodate your luggage. For your comfort, we recommend one large suitcase and one personal item per passenger. If you have extra or oversized items, please let us know in advance as additional charges may apply.",
+      "Our SUVs and Sedans are spacious and can accommodate your luggage. For your comfort, we recommend one large suitcase or carry-on bag, and one personal item per passenger. If you have extra or oversized items, please let us know in advance as additional charges may apply.",
   },
   {
     question: "Do you provide door-to-door service?",
@@ -73,7 +73,7 @@ export default function Faqs() {
                   strokeLinejoin="round"
                   className={twMerge(
                     "feather feather-plus text-blue-500 flex-shrink-0 transition duration-500",
-                    selectedIndex === faqIndex && "rotate-45"
+                    selectedIndex === faqIndex && "rotate-45",
                   )}
                 >
                   <line x1="12" y1="5" x2="12" y2="19"></line>
