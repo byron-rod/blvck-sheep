@@ -118,8 +118,8 @@ export default function Features() {
                 <Image
                   src={image0}
                   alt="Tailored Itineraries Map graphic"
-                  height={140}
-                  width={140}
+                  height={150}
+                  width={150}
                   className="rounded-xl opacity-90 drop-shadow-2xl"
                 ></Image>
               </div>
