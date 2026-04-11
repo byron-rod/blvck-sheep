@@ -16,7 +16,7 @@ export default function Hero() {
         <h1 className="text-[5.5rem] lg:text-[6.2rem] font-medium mt-10 leading-[4.3rem]">
           Blvck Sheep
         </h1>
-        <p className="text-start text-xl lg:text-2xl text-white/50 mt-4 md:mt-6 font-bold text-yellow-300">
+        <p className="text-start text-xl lg:text-2xl text-white mt-4 md:mt-6 font-bold">
           Tourist Services,
           <span className="text-gray-400"> just got Better</span>
         </p>
