@@ -22,6 +22,7 @@ export default function ItinerariesPage() {
               title={item.title} 
               description={item.description}
               bookingUrl={item.bookingUrl} 
+              visualHookKey={item.visualHookKey}
               index={index} 
             />
           ))}
