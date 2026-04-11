@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `With our rides, it's all about comfort, safety and a personalized touch. We've got you covered with flexible schedules, options for budget travelers or private experience, and the best tips to discover Guatemala like a local.`;
+const text = `With our service, it's all about comfort, safety and a personalized touch. We've got you covered with flexible schedules, options for budget travelers or private experience, and we can help you plan your trip to discover Guatemala like a local.`;
 const words = text.split(" ");
 
 export default function About() {

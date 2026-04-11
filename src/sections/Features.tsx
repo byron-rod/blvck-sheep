@@ -49,7 +49,7 @@ export default function Features() {
 
           <FeatureCard
             title="Personalized Service"
-            description="Flexible schedules and tailored journeys. We adapt to your needs."
+            description="Flexible schedules and tailored journeys. We adapt to your needs, with quality customer service."
             className="col-span-2 lg:col-span-1 group"
           >
             <div className="aspect-video flex items-center justify-center mt-6">
@@ -110,8 +110,8 @@ export default function Features() {
             </div>
           </FeatureCard>
           <FeatureCard
-            title="Expert Guidance"
-            description="We're more than just a ride. Travel like a local with our exclusive WhatsApp tips and destination guidance."
+            title="Tailored Itineraries"
+            description="We're more than just a ride. Travel like a local with our tailored itineraries, we can help you plan your trip to Guatemala."
             className="col-span-2 lg:col-span-1 mt-1"
           >
             <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">

@@ -35,14 +35,14 @@ export default function TermsConditions() {
           <li>
             <strong>Personal Responsibility:</strong> Passengers are responsible
             for their belongings. While we&apos;ll do our best to assist, we
-            cannot guarantee recovery of lost items.
+            cannot guarantee recovery of lost items. 
           </li>
           <li>
             <strong>Third-Party Factors:</strong> Blvck Sheep is not liable for
             delays or cancellations caused by roadblocks, mechanical issues,
             traffic, or natural disasters. We encourage clients to plan
             accordingly, especially during high-demand seasons (e.g., Holy Week,
-            Christmas, New Year).
+            Christmas, New Year). We can advice on timeframes but are not responsible for any delays or cancellations caused by third-party factors.
           </li>
           <li>
             <strong>Payment Processing Information:</strong> All payments for

@@ -17,7 +17,7 @@ export default function Hero() {
           Blvck Sheep
         </h1>
         <p className="text-start text-xl lg:text-2xl text-white/50 mt-4 md:mt-6">
-          Shuttles Services,
+          Tourist Services,
           <span className="font-bold"> just got Better</span>
         </p>
         <Button variant="secondary" className="mt-8 font-bold flex">

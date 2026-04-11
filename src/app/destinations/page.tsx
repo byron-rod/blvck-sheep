@@ -101,7 +101,7 @@ export default function Destinations() {
                 title: "Best Hostels",
                 description: (
                   <>
-                    Explore Cocori Lodge, or Mellow Hostel.{" "}
+                    Explore El Puente Hotel, or Mellow Hostel.{" "}
                     <Link
                       href="/hostels"
                       className="text-blue-400 underline"
