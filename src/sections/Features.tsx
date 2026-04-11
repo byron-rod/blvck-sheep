@@ -6,8 +6,7 @@ import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg";
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg";
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg";
-import whatsapp from "@/assets/images/wa-logo.png";
-// import background from "@/assets/images/wa-bg.png";
+import image0 from "@/assets/images/blvck-compass.png";
 import Image from "next/image";
 
 const features = [
@@ -117,10 +116,11 @@ export default function Features() {
             <div className="aspect-video relative flex items-center justify-center hover:scale-105 transition duration-500">
               <div>
                 <Image
-                  src={whatsapp}
-                  alt="WhatsApp logo"
+                  src={image0}
+                  alt="Tailored Itineraries Map graphic"
                   height={140}
                   width={140}
+                  className="rounded-xl opacity-90 drop-shadow-2xl"
                 ></Image>
               </div>
             </div>

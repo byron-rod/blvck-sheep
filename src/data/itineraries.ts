@@ -9,19 +9,19 @@ export const itinerariesData: Itinerary[] = [
   {
     id: "wellness-retreat",
     title: "Wellness Retreat",
-    description: "Disconnect to reconnect. A curated journey of yoga, meditation, and holistic healing designed to restore your inner balance. Rejuvenate your mind, body, and soul in tranquil sanctuaries.",
+    description: "Disconnect to reconnect. A curated journey of yoga, meditation, healthy food, and holistic healing designed to restore your inner balance. Rejuvenate your mind, body, and soul in tranquil sanctuaries.",
     bookingUrl: ""
   },
   {
     id: "surf-and-party",
-    title: "Surf & Party",
-    description: "Catch world-class waves by day and experience electrifying nightlife by the shore. The ultimate high-energy escape blending adrenaline, ocean breezes, and unforgettable celebrations.",
+    title: "Social, Surf & Summit",
+    description: "A high-octane blend of surf, volcanos, and social connection. Conquer the active Fuego volcano, catch world-class waves in El Paredon, and dive headfirst into Guatemala's electrifying nightlife from inside the best party hostels.",
     bookingUrl: ""
   },
   {
     id: "cultural-immersion",
     title: "Cultural Immersion",
-    description: "Dive deep into local traditions, authentic cuisine, and hidden gems. A highly curated experience connecting you with the heart of the destination and its vibrant heritage.",
+    description: "Dive deep into local traditions, learn to cook authentic cuisine, and discover hidden gems. A highly curated experience connecting you with the heart of Guatemala and its vibrant heritage.",
     bookingUrl: ""
   }
 ];

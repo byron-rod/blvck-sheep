@@ -3,6 +3,7 @@ import CallToAction from "@/sections/CallToAction";
 import Destinations from "@/sections/Destinations";
 import Faqs from "@/sections/Faqs";
 import Features from "@/sections/Features";
+import CuratedExperiences from "@/sections/CuratedExperiences";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
 // import LogoTicker from "@/sections/LogoTicker";
@@ -14,6 +15,7 @@ export default function Home() {
       {/* <LogoTicker /> */}
       <About />
       <Features />
+      <CuratedExperiences />
       <Destinations />
       <Reviews />
       <Faqs />
