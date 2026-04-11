@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 interface ItineraryCardProps {
   title: string;
   description: string;
+  bookingUrl: string;
   index: number;
 }
 
-export default function ItineraryCard({ title, description, index }: ItineraryCardProps) {
+export default function ItineraryCard({ title, description, bookingUrl, index }: ItineraryCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -24,9 +25,11 @@ export default function ItineraryCard({ title, description, index }: ItineraryCa
       </div>
       <div className="flex justify-start">
         <a 
-          href="#" 
+          href={bookingUrl || "#"} 
           className="inline-block"
-          onClick={(e) => e.preventDefault()}
+          onClick={(e) => {
+            if (!bookingUrl) e.preventDefault();
+          }}
         >
           <button className="border border-white/20 rounded-full px-6 py-3 font-medium text-sm transition-colors hover:bg-white hover:text-black">
             Book Experience

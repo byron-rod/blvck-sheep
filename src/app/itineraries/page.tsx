@@ -1,19 +1,5 @@
 import ItineraryCard from "@/components/ItineraryCard";
-
-const itineraries = [
-  {
-    title: "Wellness Retreat",
-    description: "Disconnect to reconnect. A curated journey of yoga, meditation, and holistic healing designed to restore your inner balance. Rejuvenate your mind, body, and soul in tranquil sanctuaries.",
-  },
-  {
-    title: "Surf & Party",
-    description: "Catch world-class waves by day and experience electrifying nightlife by the shore. The ultimate high-energy escape blending adrenaline, ocean breezes, and unforgettable celebrations.",
-  },
-  {
-    title: "Cultural Immersion",
-    description: "Dive deep into local traditions, authentic cuisine, and hidden gems. A highly curated experience connecting you with the heart of the destination and its vibrant heritage.",
-  }
-];
+import { itinerariesData } from "@/data/itineraries";
 
 export default function ItinerariesPage() {
   return (
@@ -30,11 +16,12 @@ export default function ItinerariesPage() {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {itineraries.map((item, index) => (
+          {itinerariesData.map((item, index) => (
             <ItineraryCard 
-              key={index} 
+              key={item.id} 
               title={item.title} 
-              description={item.description} 
+              description={item.description}
+              bookingUrl={item.bookingUrl} 
               index={index} 
             />
           ))}
