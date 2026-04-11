@@ -20,7 +20,7 @@ export default function CuratedExperiences() {
             Elevate Your <br className="hidden md:block"/> Journey.
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
-            Discover Guatemala like a local. Our boutique travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and sophisticated comfort tailored entirely to you.
+            Discover Guatemala differently. Our boutique travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.
           </p>
           <Link href="/itineraries">
             <button className="bg-white text-black font-semibold rounded-full px-10 py-5 transition-all hover:bg-neutral-200 hover:scale-105 active:scale-95 text-lg">

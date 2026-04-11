@@ -1,6 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import lotusIcon from "@/assets/images/icons-lotus.png";
+import sssIcon from "@/assets/images/icons-sss.png";
+import mayaIcon from "@/assets/images/icons-maya.png";
+import { StaticImageData } from "next/image";
 
 interface ItineraryCardProps {
   title: string;
@@ -10,34 +15,22 @@ interface ItineraryCardProps {
   index: number;
 }
 
-const HookIcon = ({ hookKey }: { hookKey: string }) => {
-  const commonClasses = "text-white opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500 ease-out";
-  
-  switch (hookKey) {
+const getHookImage = (key: string): StaticImageData | null => {
+  switch (key) {
     case "wellness":
-      return (
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={commonClasses}>
-          <circle cx="12" cy="12" r="10" />
-        </svg>
-      );
+      return lotusIcon;
     case "adrenaline":
-      return (
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={commonClasses}>
-          <polygon points="12 2 22 20 2 20" />
-        </svg>
-      );
+      return sssIcon;
     case "culture":
-      return (
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className={commonClasses}>
-          <rect x="4" y="4" width="16" height="16" rx="2" ry="2" />
-        </svg>
-      );
+      return mayaIcon;
     default:
       return null;
   }
 };
 
 export default function ItineraryCard({ title, description, bookingUrl, visualHookKey, index }: ItineraryCardProps) {
+  const imageSrc = getHookImage(visualHookKey);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -47,7 +40,15 @@ export default function ItineraryCard({ title, description, bookingUrl, visualHo
     >
       <div>
         <div className="mb-8">
-          <HookIcon hookKey={visualHookKey} />
+          {imageSrc && (
+            <Image 
+              src={imageSrc} 
+              alt={`${visualHookKey} icon`}
+              width={68}
+              height={68}
+              className="opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500 ease-out mix-blend-screen object-contain"
+            />
+          )}
         </div>
         <h3 className="text-2xl font-semibold mb-3 tracking-tight group-hover:text-white transition-colors">{title}</h3>
         <p className="text-zinc-400 text-sm leading-relaxed mb-8 group-hover:text-zinc-300 transition-colors">
