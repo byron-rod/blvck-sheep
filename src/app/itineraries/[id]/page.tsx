@@ -15,17 +15,19 @@ import tikalVertical from "@/assets/images/tikal.png";
 import semuc from "@/assets/images/semuc.png";
 import jaguar from "@/assets/images/jaguar.png";
 import mayan from "@/assets/images/mayan-heartbeat.png";
+import social from "@/assets/images/social-hero.png";
 
 type Props = {
   params: Promise<{ id: string }>;
 };
+
 
 // Mock Data specifically for Lookbook
 const lookbookData = {
   "social-surf-summit": {
     heroImage:
       // "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=2500&auto=format&fit=crop" 
-      jaguar.src,
+      social.src,
     duration: "7 Days / 6 Nights",
     highlights: ["Volcanic Crater Basecamp", "Pacific Swell Sessions", "Curated Colonial Nightlife"],
     featuredStays: [
@@ -69,10 +71,10 @@ const lookbookData = {
           "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1000&auto=format&fit=crop",
       },
       {
-        name: "Casa Prana Sanctuary",
+        name: "The Lakeside Sanctuary",
         location: "Lake Atitlán",
         description:
-          "The centerpiece of your journey. Nestled within nine acres of lush gardens with no road access, Casa Prana offers an unparalleled level of privacy and luxury. Your days are anchored in deep meditation, bespoke yoga sessions, and traditional Mayan cacao ceremonies, all performed with the majestic stillness of the lake as your backdrop.",
+          "The centerpiece of your journey. We secure your stay in one of Atitlán's premier eco-luxury havens, completely removed from the noise of the outside world. Your days are anchored in deep meditation, bespoke yoga sessions, and traditional Mayan cacao ceremonies, all performed with the majestic stillness of the volcanic lake as your backdrop.",
         image:
           "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop",
       },
