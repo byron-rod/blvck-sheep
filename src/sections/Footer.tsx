@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
 import {
-  FaSpotify, // Import Spotify icon
+  FaSpotify,
   FaInstagram,
   FaFacebook,
 } from "react-icons/fa";
@@ -15,7 +15,8 @@ export default function Footer() {
   const facebookLink = "https://www.facebook.com/blvcksheepgt";
 
   return (
-    <section className="py-16">
+    // Added bg-black to the outermost section
+    <section className="py-16 bg-black">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-6">
           <div>
@@ -64,21 +65,6 @@ export default function Footer() {
               <FaSpotify size={24} />
             </Link>
           </Button>
-
-          {/* Email */}
-          {/* <Button
-            variant="secondary"
-            className="mt-8 font-bold flex text-center justify-center"
-          >
-            <Link
-              href={emailLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Email contact for BlackSheep Shuttles"
-            >
-              <FaEnvelope size={24} />
-            </Link>
-          </Button> */}
 
           {/* Instagram */}
           <Button

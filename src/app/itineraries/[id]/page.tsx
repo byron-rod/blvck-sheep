@@ -9,6 +9,10 @@ import { IoChevronBack, IoShareOutline } from "react-icons/io5";
 
 // Import local assets
 import fuegoVolcan from "@/assets/images/fuego-volcano.png";
+import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
+import quetzal from "@/assets/images/quetzal-hero.png";
+import tikalVertical from "@/assets/images/tikal.png";
+import semuc from "@/assets/images/semuc.png";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -45,6 +49,73 @@ const lookbookData = {
           "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it’s surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
         image:
           "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop",
+      },
+    ],
+  },
+  "wellness-retreat": {
+    heroImage: wellnessAtitlan.src,
+    duration: "10 Days / 9 Nights",
+    highlights: ["Ancestral Cacao Rites", "Private Atitlán Sanctuary", "Coastal Restoration"],
+    featuredStays: [
+      {
+        name: "Antigua Culinary Enclave",
+        location: "Antigua, Guatemala",
+        description:
+          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn’t a standard food tour; it’s a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
+        image:
+          "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1000&auto=format&fit=crop",
+      },
+      {
+        name: "Casa Prana Sanctuary",
+        location: "Lake Atitlán",
+        description:
+          "The centerpiece of your journey. Nestled within nine acres of lush gardens with no road access, Casa Prana offers an unparalleled level of privacy and luxury. Your days are anchored in deep meditation, bespoke yoga sessions, and traditional Mayan cacao ceremonies, all performed with the majestic stillness of the lake as your backdrop.",
+        image:
+          "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop",
+      },
+      {
+        name: "The Coastal Hideaway",
+        location: "El Paredon",
+        description:
+          "Conclude your retreat where the jungle meets the Pacific. We have selected a boutique beachfront sanctuary designed for ultimate decompression. Trade the social energy of the village for unscripted stillness, organic coastal cuisine, and the restorative power of the equatorial sun. This is wellness in its purest, most relaxed form.",
+        image:
+          "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1000&auto=format&fit=crop",
+      },
+    ],
+  },
+  "cultural-immersion": {
+    heroImage: quetzal.src,
+    duration: "14 Days / 13 Nights",
+    highlights: ["Ancient Petén Jungle", "Highland Gastronomy", "Caribbean & Canyons"],
+    featuredStays: [
+      {
+        name: "The Northern Expedition",
+        location: "Flores & Tikal",
+        description:
+          "Your expedition begins deep within the Petén biosphere. We bypass the standard tours to grant you intimate, early-access to the towering pyramids of Tikal as the jungle wakes. Retreat to a luxury eco-lodge suspended above Lake Petén Itzá to decompress after touching ancient history.",
+        image: tikalVertical.src,
+      },
+      {
+        name: "Canyons & The Coast",
+        location: "Semuc Champey to Livingston",
+        description:
+          "Traverse the limestone terraces and pristine turquoise pools of Semuc Champey before navigating the dramatic Rio Dulce gorge. Emerge on the Caribbean coast in Livingston, where we immerse you in the vibrant rhythms and rich, coconut-infused seafood of the indigenous Garifuna culture.",
+        image: semuc.src,
+      },
+      {
+        name: "The Mayan Heartbeat",
+        location: "Lake Atitlán & Chichicastenango",
+        description:
+          "Witness the living colors of the Chichicastenango market before descending to Lake Atitlán. Here, we trade the tourist trail for deep authenticity in San Juan La Laguna. Source fresh ingredients at the local market to cook alongside a Mayan matriarch, capped by a breathtaking panoramic summit of the Rostro Maya.",
+        image:
+          "https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=1000&auto=format&fit=crop",
+      },
+      {
+        name: "The Grand Finale",
+        location: "Antigua & Acatenango",
+        description:
+          "Return to colonial elegance. Dine at Antigua&apos;s most exclusive culinary tables, experiencing the absolute pinnacle of modern Guatemalan gastronomy. For the final act, a fully-guided, premium ascent of Acatenango to witness Fuego&apos;s eruptions under the stars—ensuring you sleep all the way home. Live the definitive Guatemala experience.",
+        image: fuegoVolcan.src,
       },
     ],
   },
@@ -192,8 +263,8 @@ export default function ItineraryDetailPage({ params }: Props) {
       <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
-            <p className="text-xs uppercase tracking-widest text-zinc-400">Social meets Adventure</p>
-            <p className="text-sm font-medium">Ready to travel to Guatemala? &rarr;</p>
+            <p className="text-xs uppercase tracking-widest text-zinc-400">Explore Guatemala in Comfort</p>
+            <p className="text-sm font-medium">Ready to travel with us?</p>
           </div>
           <Link
             href={itinerary.bookingUrl}
