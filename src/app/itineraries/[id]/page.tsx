@@ -13,6 +13,8 @@ import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 import quetzal from "@/assets/images/quetzal-hero.png";
 import tikalVertical from "@/assets/images/tikal.png";
 import semuc from "@/assets/images/semuc.png";
+import jaguar from "@/assets/images/jaguar.png";
+import mayan from "@/assets/images/mayan-heartbeat.png";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -22,7 +24,8 @@ type Props = {
 const lookbookData = {
   "social-surf-summit": {
     heroImage:
-      "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=2500&auto=format&fit=crop",
+      // "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=2500&auto=format&fit=crop" 
+      jaguar.src,
     duration: "7 Days / 6 Nights",
     highlights: ["Volcanic Crater Basecamp", "Pacific Swell Sessions", "Curated Colonial Nightlife"],
     featuredStays: [
@@ -30,7 +33,7 @@ const lookbookData = {
         name: "Basecamp Antigua",
         location: "Antigua, Guatemala",
         description:
-          "Drop your bags in the colonial heart of Guatemala. We’ve secured access to Antigua’s premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
+          "Drop your bags in the colonial heart of Guatemala. We&apos;ve secured access to Antigua&apos;s premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
         image:
           "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop",
       },
@@ -46,7 +49,7 @@ const lookbookData = {
         name: "Driftwood Oasis",
         location: "El Paredon",
         description:
-          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it’s surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
+          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it&apos;s surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
         image:
           "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop",
       },
@@ -61,7 +64,7 @@ const lookbookData = {
         name: "Antigua Culinary Enclave",
         location: "Antigua, Guatemala",
         description:
-          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn’t a standard food tour; it’s a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
+          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn&apos;t a standard food tour; it&apos;s a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
         image:
           "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1000&auto=format&fit=crop",
       },
@@ -107,8 +110,7 @@ const lookbookData = {
         location: "Lake Atitlán & Chichicastenango",
         description:
           "Witness the living colors of the Chichicastenango market before descending to Lake Atitlán. Here, we trade the tourist trail for deep authenticity in San Juan La Laguna. Source fresh ingredients at the local market to cook alongside a Mayan matriarch, capped by a breathtaking panoramic summit of the Rostro Maya.",
-        image:
-          "https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=1000&auto=format&fit=crop",
+        image: mayan.src,
       },
       {
         name: "The Grand Finale",
@@ -265,8 +267,8 @@ export default function ItineraryDetailPage({ params }: Props) {
       <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
-            <p className="text-xs uppercase tracking-widest text-zinc-400">Explore Guatemala in Comfort</p>
-            <p className="text-sm font-medium">Ready to travel with us?</p>
+            <p className="text-xs uppercase tracking-widest text-zinc-400">{itinerary.title}</p>
+            <p className="text-sm font-medium">Ready for Guatemala?</p>
           </div>
           <Link
             href={whatsappUrl}
