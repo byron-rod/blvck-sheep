@@ -15,7 +15,7 @@ export const itinerariesData: Itinerary[] = [
     visualHookKey: "wellness"
   },
   {
-    id: "surf-and-party",
+    id: "social-surf-summit",
     title: "Social, Surf & Summit",
     description: "A high-octane blend of surf, volcanos, and social connection. Conquer the active Fuego volcano, catch waves in El Paredon, and dive headfirst into Guatemala's electrifying nightlife from inside the best party hostels.",
     bookingUrl: "https://wa.me/50255116881?text=Hello!,%20I%20would%20like%20to%20book%20a%20surf%20and%20social%20itinerary",
