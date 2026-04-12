@@ -149,18 +149,36 @@ export default function ItineraryDetailPage({ params }: Props) {
 
   const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent("Hello!, I am interested in booking the " + itinerary.title + " experience!")}`;
 
+  const handleShare = async () => {
+    const shareData = {
+      title: `Blvck Sheep: ${itinerary.title}`,
+      text: `Check out the ${itinerary.title} experience in Guatemala!`,
+      url: window.location.href,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+      }
+    } catch (err) {
+      console.error("Error sharing:", err);
+    }
+  };
+
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
-      {/* Top Nav Overlay */}
-      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 Mix-blend-difference">
+      {/* Top Nav Overlay - Now Fixed and Scrollable */}
+      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
         <button
           onClick={() => router.back()}
-          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
           <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
           Back
         </button>
-        <button className="text-xl hover:opacity-70 transition-opacity">
+        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
           <IoShareOutline />
         </button>
       </nav>
@@ -264,6 +282,20 @@ export default function ItineraryDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+       <nav className="absolute bottom-0 left-3 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+        <button
+          onClick={() => router.back()}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          Back
+        </button>
+        <button onClick={handleShare} className="text-xl hover:opacity-70 mr-6 transition-opacity pointer-events-auto">
+          <IoShareOutline />
+          
+        </button>
+      </nav>
 
       {/* Sticky Bottom Action Bar */}
       <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">

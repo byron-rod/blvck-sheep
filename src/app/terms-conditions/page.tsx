@@ -30,7 +30,7 @@ export default function TermsConditions() {
             trusted providers, that assist us with van or microbus services.
             Delays or schedule adjustments may occur due to traffic, weather, or
             other unforeseen circumstances. We&apos;ll always strive to minimize
-            disruptions and keep you informed.
+            disruptions and keep you informed. Our shared shuttles only run certain routes, not all pick up and drop off locations are available.
           </li>
           <li>
             <strong>Personal Responsibility:</strong> Passengers are responsible
