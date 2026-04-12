@@ -107,6 +107,21 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Travelpayouts Verification */}
+        <Script
+          id="travelpayouts-verification"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                var script = document.createElement("script");
+                script.async = 1;
+                script.src = 'https://emrldtp.cc/NTE3NjUz.js?t=517653';
+                document.head.appendChild(script);
+              })();
+            `,
+          }}
+        />
 
         {/* Google Tag Manager */}
         <Script
