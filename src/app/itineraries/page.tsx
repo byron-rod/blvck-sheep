@@ -21,7 +21,7 @@ export default function ItinerariesPage() {
               key={item.id} 
               title={item.title} 
               description={item.description}
-              bookingUrl={item.bookingUrl} 
+              bookingUrl={`/itineraries/${item.id}`} 
               visualHookKey={item.visualHookKey}
               index={index} 
             />

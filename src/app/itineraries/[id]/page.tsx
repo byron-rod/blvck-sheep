@@ -143,6 +143,8 @@ export default function ItineraryDetailPage({ params }: Props) {
   const heroImage = lookbook?.heroImage || "https://images.unsplash.com/photo-1620925763618-9d41ae648eaf?q=80&w=2500&auto=format&fit=crop";
   const featuredStays = lookbook?.featuredStays || [];
 
+  const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent("Hello!, I am interested in booking the " + itinerary.title + " experience!")}`;
+
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay */}
@@ -267,7 +269,7 @@ export default function ItineraryDetailPage({ params }: Props) {
             <p className="text-sm font-medium">Ready to travel with us?</p>
           </div>
           <Link
-            href={itinerary.bookingUrl}
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
