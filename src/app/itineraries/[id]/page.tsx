@@ -33,7 +33,7 @@ const lookbookData = {
         name: "Basecamp Antigua",
         location: "Antigua, Guatemala",
         description:
-          "Drop your bags in the colonial heart of Guatemala. We&apos;ve secured access to Antigua&apos;s premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
+          "Drop your bags in the colonial heart of Guatemala. We've secured access to Antigua's premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
         image:
           "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop",
       },
@@ -49,7 +49,7 @@ const lookbookData = {
         name: "Driftwood Oasis",
         location: "El Paredon",
         description:
-          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it&apos;s surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
+          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it's surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
         image:
           "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop",
       },
@@ -64,7 +64,7 @@ const lookbookData = {
         name: "Antigua Culinary Enclave",
         location: "Antigua, Guatemala",
         description:
-          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn&apos;t a standard food tour; it&apos;s a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
+          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn't a standard food tour; it's a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
         image:
           "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1000&auto=format&fit=crop",
       },
@@ -116,7 +116,7 @@ const lookbookData = {
         name: "The Grand Finale",
         location: "Antigua & Acatenango",
         description:
-          "Return to colonial elegance. Dine at Antigua&apos;s most exclusive culinary tables, experiencing the absolute pinnacle of modern Guatemalan gastronomy. For the final act, a fully-guided, premium ascent of Acatenango to witness Fuego&apos;s eruptions under the stars—ensuring you sleep all the way home. Live the definitive Guatemala experience.",
+          "Return to colonial elegance. Dine at Antigua's most exclusive culinary tables, experiencing the absolute pinnacle of modern Guatemalan gastronomy. For the final act, a fully-guided, premium ascent of Acatenango to witness Fuego's eruptions under the stars—ensuring you sleep all the way home. Live the definitive Guatemala experience.",
         image: fuegoVolcan.src,
       },
     ],
