@@ -156,7 +156,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white`}
+        className={`${inter.variable} font-sans antialiased bg-black text-white`}
       >
         <noscript>
           <iframe

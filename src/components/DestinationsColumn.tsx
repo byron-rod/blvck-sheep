@@ -31,7 +31,7 @@ export default function DestinationsColumn(props: {
           {destinations.map((destination) => (
             <div
               key={destination.name}
-              className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
+              className="bg-black border border-white/10 rounded-3xl p-6"
             >
               <div className="flex justify-center">
                 <Image

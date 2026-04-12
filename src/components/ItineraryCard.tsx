@@ -36,7 +36,7 @@ export default function ItineraryCard({ title, description, bookingUrl, visualHo
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
-      className="flex flex-col justify-between border border-white/10 p-8 rounded-2xl bg-zinc-950 text-white h-full hover:border-white/30 transition-all duration-500 group"
+      className="flex flex-col justify-between border border-white/10 p-8 rounded-2xl bg-black text-white h-full hover:border-white/30 transition-all duration-500 group"
     >
       <div>
         <div className="mb-8">

@@ -127,7 +127,7 @@ export default function Reviews() {
                 {mockTestimonials.map((testimonial) => (
                   <div
                     key={testimonial.id}
-                    className="bg-neutral-900 border border-white/10 rounded-3xl p-6"
+                    className="bg-black border border-white/10 rounded-3xl p-6"
                   >
                     <div className="flex items-center gap-4">
                       <StarRating rating={testimonial.rating} />

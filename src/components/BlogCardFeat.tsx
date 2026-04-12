@@ -11,7 +11,7 @@ export default function BlogCardFeat(props: {
   return (
     <div
       className={twMerge(
-        "relative bg-neutral-900 border border-white/10 rounded-3xl overflow-hidden -mt-2",
+        "relative bg-black border border-white/10 rounded-3xl overflow-hidden -mt-2",
         className
       )}
     >

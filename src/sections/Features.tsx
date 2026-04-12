@@ -130,7 +130,7 @@ export default function Features() {
           {features.map((feature) => (
             <div
               key={feature}
-              className="bg-neutral-900 border border-blue-400 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center hover:scale-105 transition duration-500 group"
+              className="bg-black border border-blue-400 inline-flex px-3 py-1.5 md:py-2 rounded-3xl gap-3 items-center hover:scale-105 transition duration-500 group"
             >
               <span className="bg-transparent text-nuetral-950 size-5 rounded-full inline-flex items-center justify-center text-xl group-hover:rotate-45 transition duration-500">
                 &#10032;
