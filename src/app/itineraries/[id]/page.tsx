@@ -13,7 +13,6 @@ import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 import quetzal from "@/assets/images/quetzal-hero.png";
 import tikalVertical from "@/assets/images/tikal.png";
 import semuc from "@/assets/images/semuc.png";
-import jaguar from "@/assets/images/jaguar.png";
 import mayan from "@/assets/images/mayan-heartbeat.png";
 import social from "@/assets/images/social-hero.png";
 import arco from "@/assets/images/arco-antigua.png";

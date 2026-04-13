@@ -1,17 +1,5 @@
-import Link from "next/link"; // Import Link from Next.js
-import DestinationsSection from "@/components/DestinationsSection";
-import FeatureAtitlan from "@/components/FeatureAtitlan";
-import smallPicAtitlan from "@/assets/images/lake-atitlan.jpg";
-import smallPicAtitlanFree from "@/assets/images/free-cerveza.jpg";
-import smallPicAntigua from "@/assets/images/adra.jpg";
-import smallPicAntiguaDoozy from "@/assets/images/the-doozy-koala.jpg";
-import smallPicParedon from "@/assets/images/mellow.jpg";
-import smallPicParedonHostel from "@/assets/images/cocori.jpg";
-import smallPicSemuc from "@/assets/images/zephyr.avif";
-import smallPicSemucCaves from "@/assets/images/lanquin.jpg";
-import FeatureAntigua from "@/components/FeatureAntigua";
-import FeatureElParedon from "@/components/FeatureElParedon";
-import FeatureSemuc from "@/components/FeatureSemuc";
+import Link from "next/link";
+import { destinationsData } from "@/data/destinations";
 import CallToAction from "@/sections/CallToAction";
 
 export const metadata = {
@@ -24,138 +12,49 @@ export const metadata = {
 
 export default function Destinations() {
   return (
-    <section className="py-16 px-5 md:px-0">
-      <div className="container max-w-5xl">
-        <div className="flex justify-center items-center">
-          <h1 className="text-5xl">Destinations</h1>
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-black min-h-screen text-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col items-center mb-24">
+          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-white uppercase text-center">
+            Destinations
+          </h1>
+          <p className="text-zinc-400 text-lg md:text-xl font-light text-center max-w-2xl">
+            Explore our curated selection of Guatemala's most captivating locations.
+          </p>
         </div>
-        <div className="">
-          {/* Lake Atitlán Section */}
-          <DestinationsSection
-            tag="Lake Atitlan"
-            featurePost={<FeatureAtitlan />}
-            blogCards={[
-              {
-                title: "Best Towns to Visit",
-                description: "Panajachel, San Marcos, San Pedro, and San Juan.",
-                imageSrc: smallPicAtitlan,
-                imageAlt: "Lake Atitlan",
-              },
-              {
-                title: "Places to Stay",
-                description: (
-                  <>
-                    Discover hostels like Free Cerveza or Amaranto.{" "}
-                    <Link
-                      href="/hostels"
-                      className="text-blue-400 underline"
-                      aria-label="See more information about hostels in Lake Atitlan"
-                    >
-                      More Information
-                    </Link>
-                  </>
-                ),
-                imageSrc: smallPicAtitlanFree,
-                imageAlt: "Hostel at Lake Atitlan",
-              },
-            ]}
-          />
 
-          {/* Antigua Section */}
-          <DestinationsSection
-            tag="Antigua Guatemala"
-            featurePost={<FeatureAntigua />}
-            blogCards={[
-              {
-                title: "Best Hostels",
-                description: (
-                  <>
-                    Stay at Adra Hostel or The Yellow House.{" "}
-                    <Link
-                      href="/hostels"
-                      className="text-blue-400 underline"
-                      aria-label="See more information about hostels in Antigua"
-                    >
-                      More Information
-                    </Link>
-                  </>
-                ),
-                imageSrc: smallPicAntiguaDoozy,
-                imageAlt: "Hostel in Antigua",
-              },
-              {
-                title: "Best Restaurants",
-                description: "Hector's Bistro, Samsara, and Adra Kitchen",
-                imageSrc: smallPicAntigua,
-                imageAlt: "Restaurant in Antigua",
-              },
-            ]}
-          />
-
-          {/* El Paredón Section */}
-          <DestinationsSection
-            tag="El Paredon"
-            featurePost={<FeatureElParedon />}
-            blogCards={[
-              {
-                title: "Best Hostels",
-                description: (
-                  <>
-                    Explore El Puente Hotel, or Mellow Hostel.{" "}
-                    <Link
-                      href="/hostels"
-                      className="text-blue-400 underline"
-                      aria-label="See more information about hostels in El Paredon"
-                    >
-                      More Information
-                    </Link>
-                  </>
-                ),
-                imageSrc: smallPicParedonHostel,
-                imageAlt: "Hostel in El Paredon",
-              },
-              {
-                title: "Best Restaurants",
-                description: "Delicias del Mar, Mellow Hostel, Bora El Paredón",
-                imageSrc: smallPicParedon,
-                imageAlt: "Restaurant in El Paredon",
-              },
-            ]}
-          />
-
-          {/* Semuc Champey Section */}
-          <DestinationsSection
-            tag="Semuc Champey"
-            featurePost={<FeatureSemuc />}
-            blogCards={[
-              {
-                title: "Day Trips in Lanquin",
-                description: "Semuc Champey, Kanba Caves, and Lanquin Caves",
-                imageSrc: smallPicSemucCaves,
-                imageAlt: "Semuc Champey",
-              },
-              {
-                title: "Best Hostels",
-                description: (
-                  <>
-                    Stay at Zephyr Lodge, or El Retiro.{" "}
-                    <Link
-                      href="/hostels"
-                      className="text-blue-400 underline"
-                      aria-label="See more information about hostels in Semuc Champey"
-                    >
-                      More Information
-                    </Link>
-                  </>
-                ),
-                imageSrc: smallPicSemuc,
-                imageAlt: "Hostel in Semuc Champey",
-              },
-            ]}
-          />
+        <div className="flex flex-col gap-16">
+          {destinationsData.map((destination) => (
+            <div key={destination.id} className="relative group block w-full overflow-hidden rounded-none aspect-[16/9] md:aspect-[21/9]">
+              <img 
+                src={destination.heroImage} 
+                alt={destination.title} 
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
+              
+              <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end md:justify-center items-start md:items-center text-left md:text-center">
+                <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-4 group-hover:-translate-y-2 transition-transform duration-500">
+                  {destination.title}
+                </h2>
+                <h3 className="text-lg md:text-2xl text-zinc-300 font-light mb-8 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 delay-100">
+                  {destination.subtitle}
+                </h3>
+                
+                <Link
+                  href={`/destinations/${destination.id}`}
+                  className="mt-auto md:mt-0 inline-block bg-white text-black px-8 md:px-12 py-4 text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 delay-200"
+                >
+                  Explore Guide
+                </Link>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-      <CallToAction />
+      <div className="mt-32">
+        <CallToAction />
+      </div>
     </section>
   );
 }
