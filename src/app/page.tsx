@@ -7,9 +7,12 @@ import CuratedExperiences from "@/sections/CuratedExperiences";
 import CuratedAccommodations from "@/sections/CuratedAccommodations";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
-// import LogoTicker from "@/sections/LogoTicker";
+import TraveloguePreview from "@/sections/TraveloguePreview";
+import { journalData } from "@/data/journal";
 
 export default function Home() {
+  const featuredPosts = journalData.slice(0, 3);
+
   return (
     <>
       <Hero />
@@ -20,6 +23,7 @@ export default function Home() {
       <CuratedAccommodations />
       <Destinations />
       <Reviews />
+      <TraveloguePreview posts={featuredPosts} />
       <Faqs />
       <CallToAction />
     </>

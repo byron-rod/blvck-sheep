@@ -31,7 +31,7 @@ export const journalData: JournalPost[] = [
     content: [
       {
         type: "paragraph",
-        value: "Making the journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, the 2.5 to 3-hour drive through the winding highlands can quickly become overwhelming if you aren't prepared."
+        value: "Making the journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, the 2.5 to 3-hour drive through the highlands can quickly become overwhelming if you aren't prepared. The typical tourist shuttle is funneled through the winding, dizzying mountain roads of Patzún. At Blvck Sheep, we bypass this entirely in favor of the Tecpán route. It offers smoother asphalt and a chance to experience Guatemala's culinary heartland—famous for artisanal cheeses and smoked sausages. More importantly, this route grants access to the ancient Kaqchikel Mayan ruins of Iximché. For those looking to elevate their transit day, we offer an exclusive, guided detour through these ruins before descending to the lake."
       },
       {
         type: "heading",
@@ -39,7 +39,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "While the brightly painted 'chicken buses' are an iconic part of the landscape, they are notoriously uncomfortable, crowded, and require multiple transfers. For travelers carrying luggage or seeking to maximize their time decompressing, relying on public transit is often a false economy. Prices range from $5-$8 depending on the route."
+        value: "While the brightly painted 'chicken buses' are an iconic piece of the landscape, navigating them with luggage is an extreme sport. A ticket might only cost $5 to $8, but the true cost is your time and energy. The journey requires four chaotic transfers: from the Antigua central hub to Chimaltenango, connecting to Los Encuentros, descending to Sololá, and finally dropping into Panajachel. It is a crowded, unpredictable transit that quickly eats up your first day at the lake."
       },
       {
         type: "heading",
@@ -47,7 +47,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Your vacation time is your most valuable asset. Booking a direct, air-conditioned shuttle ensures you arrive in Panajachel refreshed and ready to board a lancha to your final village. Blvck Sheep operates daily routes designed specifically for convenience with our shared shuttles, or you can ride comfortably in a private shuttle any time of day"
+        value: "Your vacation time is your most valuable asset. Blvck Sheep operates daily routes designed for absolute comfort and reliability. Whether you choose the social, budget-friendly atmosphere of our shared minivans that travel to Panajachel or the ultimate flexibility of a private door-to-door transfer, you will arrive in Panajachel, or a direct transfer to any other town in Atitlan (San Pedro, San Marcos, Santa Catarina Palopo, etc)."
       },
       {
         type: "cta",
@@ -60,7 +60,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Once you arrive, the lake offers entirely different energies depending on where you stay. If you are looking for high-energy social spaces, head toward Santa Cruz. If you require absolute luxury and panoramic infinity pools, Santa Catarina Palopó is your sanctuary."
+        value: "Once you arrive, the lake offers entirely different energies depending on where you stay. If you are looking for high-energy social spaces, backpacker crowd, head toward San Pedro La Laguna, for something more hippie chic with yoga and meditaion, San Marcos La Laguna is the place. For more exclusivity and luxury, its Santa Catarina Palopo or Santa Cruz, and the main Tzutuil-Mayan town with the most authentic culture is San Juan La Laguna. If you require a bigger town with more options, then Panajachel is the choice."
       },
       {
         type: "cta",
