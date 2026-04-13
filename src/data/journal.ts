@@ -105,12 +105,12 @@ export const journalData: JournalPost[] = [
       {
         type: "cta",
         value: "Check Guatemala Rates on Airalo",
-        link: "#" // TODO: Paste your Travelpayouts Airalo link here
+        link: "https://airalo.tpx.gr/78RgcRmp" // TODO: Paste your Travelpayouts Airalo link here
       },
       {
         type: "cta",
         value: "Explore Data Plans on Yesim",
-        link: "#" // TODO: Paste your Travelpayouts Yesim link here
+        link: "https://yesim.tpx.gr/5vRANpr6" // TODO: Paste your Travelpayouts Yesim link here
       },
       {
         type: "heading",
