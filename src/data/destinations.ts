@@ -25,6 +25,7 @@ import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 import adra from "@/assets/images/adra.jpg";
 import social from "@/assets/images/social-hero.png";
 import mellow from "@/assets/images/mellow.png";
+import freeCerveza from "@/assets/images/freecerveza.webp";
 
 export const destinationsData: DestinationDetail[] = [
   {
@@ -50,7 +51,7 @@ export const destinationsData: DestinationDetail[] = [
         name: "Free Cerveza",
         hostelId: "free-cerveza",
         description: "The ultimate destination hostel nestled on the shores of Santa Cruz. Glamping, swimming, and an unmatched social atmosphere.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // Replace with your smallPicAtitlanFree
+        image: freeCerveza.src, // Replace with your smallPicAtitlanFree
       }
     ]
   },

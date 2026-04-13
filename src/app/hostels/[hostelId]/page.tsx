@@ -49,19 +49,20 @@ export default function HostelDetailPage({ params }: Props) {
 
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-32">
-      {/* Sticky Top Nav */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
-        <button
-          onClick={() => router.back()}
-          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
-        >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
-          Back
-        </button>
-        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
-          <IoShareOutline />
-        </button>
-      </nav>
+      {/* Top Nav Overlay - Now Fixed and Scrollable */}
+            <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+              <button
+                onClick={() => router.back()}
+                className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+              >
+                <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+                Back
+              </button>
+              <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
+                <IoShareOutline />
+              </button>
+            </nav>
+      
 
       {/* Cinematic Hero */}
       <section className="relative h-[85vh] w-full flex items-end pb-24 px-6 md:px-12 lg:px-24">
