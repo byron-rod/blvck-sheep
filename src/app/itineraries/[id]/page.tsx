@@ -16,6 +16,9 @@ import semuc from "@/assets/images/semuc.png";
 import jaguar from "@/assets/images/jaguar.png";
 import mayan from "@/assets/images/mayan-heartbeat.png";
 import social from "@/assets/images/social-hero.png";
+import arco from "@/assets/images/arco-antigua.png";
+import lakeRetreat from "@/assets/images/lake-retreat.png";
+import coastalHideaway from "@/assets/images/coastal-hideaway.png";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -36,8 +39,7 @@ const lookbookData = {
         location: "Antigua, Guatemala",
         description:
           "Drop your bags in the colonial heart of Guatemala. We've secured access to Antigua's premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
-        image:
-          "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop",
+        image: arco.src,
       },
       {
         name: "Fuego Summit",
@@ -67,24 +69,21 @@ const lookbookData = {
         location: "Antigua, Guatemala",
         description:
           "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn't a standard food tour; it's a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
-        image:
-          "https://images.unsplash.com/photo-1590073242678-70ee3fc28e8e?q=80&w=1000&auto=format&fit=crop",
+        image: arco.src,
       },
       {
         name: "The Lakeside Sanctuary",
         location: "Lake Atitlán",
         description:
           "The centerpiece of your journey. We secure your stay in one of Atitlán's premier eco-luxury havens, completely removed from the noise of the outside world. Your days are anchored in deep meditation, bespoke yoga sessions, and traditional Mayan cacao ceremonies, all performed with the majestic stillness of the volcanic lake as your backdrop.",
-        image:
-          "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=1000&auto=format&fit=crop",
+        image: lakeRetreat.src,
       },
       {
         name: "The Coastal Hideaway",
         location: "El Paredon",
         description:
           "Conclude your retreat where the jungle meets the Pacific. We have selected a boutique beachfront sanctuary designed for ultimate decompression. Trade the social energy of the village for unscripted stillness, organic coastal cuisine, and the restorative power of the equatorial sun. This is wellness in its purest, most relaxed form.",
-        image:
-          "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?q=80&w=1000&auto=format&fit=crop",
+        image: coastalHideaway.src,
       },
     ],
   },
