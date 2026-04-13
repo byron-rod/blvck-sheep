@@ -137,7 +137,7 @@ export default function DestinationDetailPage({ params }: Props) {
         </div>
       </section>
 
-      {/* Curated Stays Grid */}
+      {/* Accommodation Portals Grid */}
       <section className="py-32 px-6 md:px-12 lg:px-24 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -147,40 +147,34 @@ export default function DestinationDetailPage({ params }: Props) {
             className="mb-20"
           >
             <h2 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4">Where to Rest</h2>
-            <h3 className="text-4xl md:text-5xl font-light tracking-tight">Curated Stays</h3>
+            <h3 className="text-4xl md:text-5xl font-light tracking-tight">Accommodation Hubs</h3>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20">
-            {destination.featuredStays.map((stay, index) => (
-              <motion.div
-                 key={stay.name}
-                 initial={{ opacity: 0, y: 50 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true, margin: "-100px" }}
-                 transition={{ duration: 0.8, delay: index * 0.1 }}
-                 className="flex flex-col group cursor-pointer"
-                 onClick={() => router.push(`/hostels/${stay.hostelId}`)}
-              >
-                <div className="relative aspect-[4/5] overflow-hidden mb-8">
-                  <img
-                    src={stay.image}
-                    alt={stay.name}
-                    className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
-                </div>
-                <h4 className="text-3xl font-semibold mb-4 group-hover:text-zinc-300 transition-colors">
-                  {stay.name}
-                </h4>
-                <p className="text-zinc-400 text-lg leading-relaxed mb-8 flex-grow">
-                  {stay.description}
-                </p>
-                <div className="text-sm uppercase tracking-widest font-medium border-b border-white/30 pb-2 self-start group-hover:border-white transition-colors">
-                  View Details
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          {destination.accommodationPortals && destination.accommodationPortals.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+              {destination.accommodationPortals.map((portal) => (
+                <Link key={portal.title} href={portal.link} className="block group">
+                  <div className="relative aspect-[4/5] md:aspect-square overflow-hidden rounded-none">
+                    <img
+                      src={portal.image}
+                      alt={portal.title}
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition-colors duration-500" />
+                    
+                    <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
+                      <h4 className="text-3xl md:text-4xl font-semibold mb-4 text-white group-hover:-translate-y-2 transition-transform duration-500">
+                        {portal.title}
+                      </h4>
+                      <p className="text-zinc-300 text-lg leading-relaxed opacity-0 hidden sm:block md:hidden lg:block group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 delay-100">
+                        {portal.description}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </div>

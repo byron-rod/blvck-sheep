@@ -1,86 +1,49 @@
 import Link from "next/link";
+import { hostelsData } from "@/data/hostels";
 
-const HostelsPage = () => {
+export const metadata = {
+  title: "Premium Hostels - Black Sheep Shuttle Service",
+  description:
+    "Explore our curated selection of Guatemala's top premium hostels and let us handle your shuttle transportation.",
+};
+
+export default function HostelsPage() {
   return (
-    <section className="py-16 px-5 md:px-0">
-      <div className="container max-w-5xl">
-        <div className="inline-flex py-1 px-3 bg-white text-black rounded-md font-semibold">
-          Best Places to Stay in Guatemala
+    <section className="py-32 px-6 md:px-12 lg:px-24 bg-black min-h-screen text-white">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex flex-col items-start mb-24">
+          <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-6 text-white">
+            Explore & Stay in Guatemala
+          </h1>
+          <p className="text-zinc-400 text-lg md:text-xl font-light max-w-2xl">
+            These are our top curated properties to ensure you have the best experience in Guatemala. Select your stay and let us seamlessly handle your shuttle transportation.
+          </p>
         </div>
 
-        {/* Header */}
-        <h1 className="text-5xl lg:text-6xl font-medium mt-10 leading-[2.5rem]">
-          Explore & Stay in Guatemala
-        </h1>
-        <p className="text-xl text-white/70 mt-4">
-          These are our top hostels to ensure you have the best experience in
-          Guatemala. Book your stay and let us handle your shuttle
-          transportation.
-        </p>
-
-        {/* Hostel Categories - Responsive Grid Layout */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
-          {/* First Row: Antigua & Atitlan */}
-          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
-            <h2 className="text-3xl font-medium">Antigua Guatemala</h2>
-            <ul className="mt-3 space-y-2">
-              <li>
-                <Link
-                  href="/hostels/adra-hostel"
-                  className="text-blue-400 hover:underline"
-                >
-                  Adra Hostel
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
-            <h2 className="text-3xl font-medium">Lake Atitlan</h2>
-            <ul className="mt-3 space-y-2">
-              <li>
-                <Link
-                  href="/hostels/free-cerveza"
-                  className="text-blue-400 hover:underline"
-                >
-                  Free Cerveza
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Second Row: Paredon & Lanquin */}
-          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
-            <h2 className="text-3xl font-medium">El Paredón</h2>
-            <ul className="mt-3 space-y-2">
-              <li>
-                <Link
-                  href="/hostels/mellow-surf-hostel"
-                  className="text-blue-400 hover:underline"
-                >
-                  Mellow Surf Hostel
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="bg-neutral-900 border border-white/10 p-6 lg:p-4 rounded-3xl">
-            <h2 className="text-3xl font-medium">Lanquin</h2>
-            <ul className="mt-3 space-y-2">
-              <li>
-                <Link
-                  href="/hostels/zephyr-lodge"
-                  className="text-blue-400 hover:underline"
-                >
-                  Zephyr Lodge
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+          {hostelsData.map((hostel) => (
+            <Link key={hostel.id} href={`/hostels/${hostel.id}`} className="group block">
+              <div className="relative w-full overflow-hidden aspect-[4/3] border border-transparent group-hover:border-zinc-800 transition-colors duration-500">
+                <img 
+                  src={hostel.heroImage} 
+                  alt={hostel.name} 
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                <div className="absolute inset-0 p-8 flex flex-col justify-end items-start text-left">
+                  <h2 className="text-3xl md:text-4xl font-semibold text-white tracking-tight mb-2 group-hover:-translate-y-1 transition-transform duration-500">
+                    {hostel.name}
+                  </h2>
+                  <span className="text-sm uppercase tracking-[0.2em] font-medium text-zinc-300 group-hover:-translate-y-1 transition-transform duration-500 delay-75">
+                    {hostel.location}
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
   );
-};
-
-export default HostelsPage;
+}
