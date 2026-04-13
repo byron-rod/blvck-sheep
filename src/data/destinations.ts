@@ -12,11 +12,11 @@ export type DestinationDetail = {
     actionText?: string;
     actionLink?: string;
   }[];
-  featuredStays: {
-    name: string;
-    hostelId: string; // Links to your existing hostel data
+  accommodationPortals: {
+    title: string;
     description: string;
     image: string;
+    link: string;
   }[];
 };
 
@@ -46,12 +46,18 @@ export const destinationsData: DestinationDetail[] = [
         content: "Hike the Indian Nose (Rostro Maya) before dawn to witness one of the most spectacular sunrises on earth. For cultural immersion, visit San Juan La Laguna to witness authentic textile weaving and organic coffee production.",
       }
     ],
-    featuredStays: [
+    accommodationPortals: [
       {
-        name: "Free Cerveza",
-        hostelId: "free-cerveza",
-        description: "The ultimate destination hostel nestled on the shores of Santa Cruz. Glamping, swimming, and an unmatched social atmosphere.",
-        image: freeCerveza.src, // Replace with your smallPicAtitlanFree
+        title: "Curated Hostels",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        link: "/hostels"
+      },
+      {
+        title: "Boutique Hotels",
+        description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
+        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        link: "/hotels"
       }
     ]
   },
@@ -73,12 +79,18 @@ export const destinationsData: DestinationDetail[] = [
         content: "Spend your mornings cafe-hopping to taste some of the world's best shade-grown coffee. By afternoon, explore the ruins of Santa Clara, and reserve your evening for a high-end culinary experience hidden behind unassuming colonial doors.",
       }
     ],
-    featuredStays: [
+    accommodationPortals: [
       {
-        name: "Adra Hostel",
-        hostelId: "adra-hostel",
-        description: "A Community Harmony Space located in a stunning colonial courtyard. Premium dorms, beautiful architecture, and an unbeatable central location.",
-        image: adra.src, // Replace with your adra.jpg
+        title: "Curated Hostels",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        link: "/hostels"
+      },
+      {
+        title: "Boutique Hotels",
+        description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
+        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        link: "/hotels"
       }
     ]
   },
@@ -100,12 +112,18 @@ export const destinationsData: DestinationDetail[] = [
         content: "Paddle out at dawn for world-class surf breaks, or navigate the dense mangrove forests on a paddleboard. As evening approaches, join the daily migration to the beach to witness the legendary Pacific sunsets before diving into the local nightlife.",
       }
     ],
-    featuredStays: [
+    accommodationPortals: [
       {
-        name: "Mellow Surf Hostel",
-        hostelId: "mellow-surf-hostel",
-        description: "A premium surf and lifestyle hostel located just two blocks from the beach. Featuring a stunning pool, exclusive cocktails, and the best social atmosphere on the coast.",
-        image: mellow.src, // Replace with your mellow.jpg
+        title: "Curated Hostels",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        link: "/hostels"
+      },
+      {
+        title: "Boutique Hotels",
+        description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
+        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        link: "/hotels"
       }
     ]
   },
@@ -127,14 +145,19 @@ export const destinationsData: DestinationDetail[] = [
         content: "Hike to the El Mirador viewpoint for a panoramic shot of the pools, then descend to swim in the tiered turquoise water. For pure adrenaline, wade through the flooded Kanba Caves by candlelight and tube down the Cahabón River.",
       }
     ],
-    featuredStays: [
+   accommodationPortals: [
       {
-        name: "Zephyr Lodge",
-        hostelId: "zephyr-lodge",
-        description: "Perched high in the mountains of Lanquin, featuring a world-famous infinity pool with unobstructed jungle views and a legendary backpacker bar.",
-        image: "https://images.unsplash.com/photo-1545201071-75f058ade69e?q=80&w=1000&auto=format&fit=crop", // Replace with your zephyr.avif
+        title: "Curated Hostels",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        link: "/hostels"
+      },
+      {
+        title: "Boutique Hotels",
+        description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
+        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        link: "/hotels"
       }
     ]
-  }
-  
+}
 ];
