@@ -17,6 +17,8 @@ export type JournalPost = {
   content: ContentBlock[];
 };
 
+import atitlanImage from "@/assets/images/atitlan.jpg";
+
 export const journalData: JournalPost[] = [
   {
     id: "antigua-to-lake-atitlan-guide",
@@ -24,7 +26,7 @@ export const journalData: JournalPost[] = [
     excerpt: "Everything you need to know about navigating Guatemala's most popular route, from avoiding the chaotic chicken buses to finding the perfect lakeside sanctuary.",
     publishDate: "May 15, 2026",
     readTime: "4 MIN READ",
-    heroImage: "https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=2500&auto=format&fit=crop", 
+    heroImage: atitlanImage.src, 
     category: "Transit & Logistics",
     content: [
       {

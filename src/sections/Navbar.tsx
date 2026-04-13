@@ -15,7 +15,8 @@ const navLinks = [
   { label: "Destinations", href: "/destinations" },
   { label: "Itineraries", href: "/itineraries" },
   { label: "Reviews", href: "/#reviews" },
-  { label: "FAQs", href: "/#faqs" },
+  { label: "Blog", href: "/journal" },
+  // { label: "FAQs", href: "/#faqs" },
 ];
 
 export default function Navbar() {
