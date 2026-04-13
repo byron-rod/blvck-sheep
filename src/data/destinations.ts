@@ -22,10 +22,9 @@ export type DestinationDetail = {
 
 import quetzal from "@/assets/images/quetzal-hero.png";
 import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
-import adra from "@/assets/images/adra.jpg";
 import social from "@/assets/images/social-hero.png";
-import mellow from "@/assets/images/mellow.png";
-import freeCerveza from "@/assets/images/freecerveza.webp";
+import hotelMain from "@/assets/images/hotel-main.png";
+import hostelMain from "@/assets/images/hostels-main.png";
 
 export const destinationsData: DestinationDetail[] = [
   {
@@ -50,13 +49,13 @@ export const destinationsData: DestinationDetail[] = [
       {
         title: "Curated Hostels",
         description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        image: hostelMain.src, // A good energetic vibe photo
         link: "/hostels"
       },
       {
         title: "Boutique Hotels",
         description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
-        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        image: hotelMain.src, // A premium colonial/luxury vibe photo
         link: "/hotels"
       }
     ]
@@ -83,13 +82,13 @@ export const destinationsData: DestinationDetail[] = [
       {
         title: "Curated Hostels",
         description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        image: hostelMain.src, // A good energetic vibe photo
         link: "/hostels"
       },
       {
         title: "Boutique Hotels",
         description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
-        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        image: hotelMain.src, // A premium colonial/luxury vibe photo
         link: "/hotels"
       }
     ]
@@ -116,13 +115,13 @@ export const destinationsData: DestinationDetail[] = [
       {
         title: "Curated Hostels",
         description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        image: hostelMain.src, // A good energetic vibe photo
         link: "/hostels"
       },
       {
         title: "Boutique Hotels",
         description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
-        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        image: hotelMain.src, // A premium colonial/luxury vibe photo
         link: "/hotels"
       }
     ]
@@ -149,13 +148,13 @@ export const destinationsData: DestinationDetail[] = [
       {
         title: "Curated Hostels",
         description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
-        image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop", // A good energetic vibe photo
+        image: hostelMain.src, // A good energetic vibe photo
         link: "/hostels"
       },
       {
         title: "Boutique Hotels",
         description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
-        image: "https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop", // A premium colonial/luxury vibe photo
+        image: hotelMain.src, // A premium colonial/luxury vibe photo
         link: "/hotels"
       }
     ]

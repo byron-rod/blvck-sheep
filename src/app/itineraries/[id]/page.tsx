@@ -30,7 +30,7 @@ const lookbookData = {
     heroImage:
       // "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=2500&auto=format&fit=crop" 
       social.src,
-    duration: "7 Days / 6 Nights",
+    duration: "5 Days / 4 Nights",
     highlights: ["Volcanic Crater Basecamp", "Pacific Swell Sessions", "Curated Colonial Nightlife"],
     featuredStays: [
       {
@@ -52,7 +52,7 @@ const lookbookData = {
         name: "Driftwood Oasis",
         location: "El Paredon",
         description:
-          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it's surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy.",
+          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it's surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy. Or switch the beach for the mountains and head to Lake Atitlan.",
         image:
           "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop",
       },
@@ -60,7 +60,7 @@ const lookbookData = {
   },
   "wellness-retreat": {
     heroImage: wellnessAtitlan.src,
-    duration: "10 Days / 9 Nights",
+    duration: "7 Days / 6 Nights",
     highlights: ["Ancestral Cacao Rites", "Private Atitlán Sanctuary", "Coastal Restoration"],
     featuredStays: [
       {

@@ -1,6 +1,9 @@
 import Link from "next/link";
 import React from "react";
 
+import hotelMain from "@/assets/images/hotel-main.png";
+import hostelMain from "@/assets/images/hostels-main.png";
+
 export default function CuratedAccommodations() {
   return (
     <section className="py-24 bg-black text-white border-t border-zinc-900 overflow-hidden" id="curated-accommodations">
@@ -21,7 +24,7 @@ export default function CuratedAccommodations() {
           <Link href="/hotels" className="group block">
             <div className="relative w-full aspect-[4/5] md:aspect-square overflow-hidden border border-transparent hover:border-zinc-800 transition-colors duration-500 rounded-3xl">
               <img 
-                src="https://images.unsplash.com/photo-1551882547-ff40c0d12c56?q=80&w=1000&auto=format&fit=crop" 
+                src={hotelMain.src} 
                 alt="Boutique Hotels" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
@@ -42,7 +45,7 @@ export default function CuratedAccommodations() {
           <Link href="/hostels" className="group block">
             <div className="relative w-full aspect-[4/5] md:aspect-square overflow-hidden border border-transparent hover:border-zinc-800 transition-colors duration-500 rounded-3xl">
               <img 
-                src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?q=80&w=1000&auto=format&fit=crop" 
+                src={hostelMain.src} 
                 alt="Curated Hostels" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
