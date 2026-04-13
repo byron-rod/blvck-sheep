@@ -62,7 +62,7 @@ export const destinationsData: DestinationDetail[] = [
   },
   {
     id: "antigua-guatemala",
-    title: "Antigua Guatemala",
+    title: "Antigua",
     subtitle: "The Colonial Crown Jewel",
     heroImage: social.src, 
     overview: "Wandering through Antigua is like stepping into a living museum framed by three imposing volcanoes. With its cobblestone streets, ruined 16th-century convents, and an explosion of modern gastronomy and specialty coffee, it is the undisputed cultural heart of the country.",
