@@ -28,7 +28,7 @@ export default function CuratedAccommodations() {
                 alt="Boutique Hotels" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
               
               <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end items-start text-left">
                 <h4 className="text-4xl md:text-5xl font-semibold text-white tracking-tight mb-2 group-hover:-translate-y-2 transition-transform duration-500">
@@ -49,7 +49,7 @@ export default function CuratedAccommodations() {
                 alt="Curated Hostels" 
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent" />
               
               <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end items-start text-left">
                 <h4 className="text-4xl md:text-5xl font-semibold text-white tracking-tight mb-2 group-hover:-translate-y-2 transition-transform duration-500">

@@ -50,10 +50,10 @@ export default function HotelDetailPage({ params }: Props) {
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-32">
       {/* Sticky Top Nav */}
-      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
+      <nav className="fixed top-18 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
         <button
           onClick={() => router.back()}
-          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-60 transition-opacity pointer-events-auto"
         >
           <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
           Back
@@ -121,7 +121,7 @@ export default function HotelDetailPage({ params }: Props) {
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
              <p className="text-xs uppercase tracking-widest text-zinc-400">{hotel.name}</p>
-             <p className="text-sm font-medium">Ready to secure your stay?</p>
+             {/* <p className="text-sm font-medium">Ready to secure your stay?</p> */}
           </div>
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
