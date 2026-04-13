@@ -1,123 +1,148 @@
-import { notFound } from "next/navigation";
-import Button from "@/components/Button";
-import Features from "@/sections/Features";
+"use client";
+
+import React, { use } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
+import { hostelsData } from "@/data/hostels";
+import { useRouter } from "next/navigation";
+import { IoChevronBack, IoShareOutline } from "react-icons/io5";
 
-// Define the type for hostels
-type Hostel = {
-  name: string;
-  description: string;
-  whatsappCode: string;
-  bookingLink: string;
-};
-
-// Define the hostel data object
-const hostels: Record<string, Hostel> = {
-  "free-cerveza": {
-    name: "Free Cerveza",
-    description:
-      "Free Cerveza is a popular hostel in Santa Cruz La Laguna, a 10 minute boat ride from Panajachel. The ultimate destination hostel nestled on the shores of Lake Atitlan, with fun activities and amazing people from all over the world. Blvck Sheep brings you a more comfortable shuttle experience to make your journey to Lake Atitlán more enjoyable. Whether it's to or from the airport, Antigua, or El Paredón, we've got your ride covered.",
-    whatsappCode: "Free%20Cerveza",
-    bookingLink: "https://freecervezahostel.com/stay/",
-  },
-  "mellow-surf-hostel": {
-    name: "Mellow Surf Hostel",
-    description:
-      "Mellow is a surf and lifestyle hostel located in a unique surf town on the pacific coast of Guatemala, only 2 blocks from the beach. Book your beach getaway now and visit Guatemala's surf hot spot. Enjoy their pool, exclusive drinks, delicious food, in one of the most beautiful hostels in the area. Blvck Sheep offers an easy way to travel to El Paredón from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
-    whatsappCode: "Mellow%20Surf%20Hostel",
-    bookingLink: "https://mellowsurfhostel.com/",
-  },
-  "zephyr-lodge": {
-    name: "Zephyr Lodge",
-    description:
-      "Zephyr Lodge is located in Lanquin, a place with a world famous infinity pool with unobstructed mountain views that has been known to melt more than one Instagramers heart. Their lively backpackers bar, equipped with cocktails on tap, is the perfect spot to meet fellow travelers with whom you will be able to enjoy unique river tubing and Semuc Champey tours. Blvck Sheep offer an easy way to travel to Lanquín from Guatemala City, Antigua, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
-    whatsappCode: "Zephyr%20Lodge",
-    bookingLink: "https://zephyrlodgelanquin.com/",
-  },
-  "adra-hostel": {
-    name: "Adra Hostel Antigua",
-    description:
-      "Adra Hostel was founded in 2017 in Antigua Guatemala. Its founders opened the doors with a concept of Community Harmony Space, where travelers from all over the world can meet, share stories and create unforgettable memories in the center of Antigua Guatemala. Blvck Sheep offers an easy way to travel to Antigua from Guatemala City, El Paredon, or Lake Atitlán. Book your shuttle directly and experience a more comfortable ride.",
-    whatsappCode: "Adra%20Hostel%20Antigua",
-    bookingLink: "https://adrahostel.com/antigua-guatemala/",
-  },
-};
-
-export default async function HostelPage({
-  params,
-}: {
+type Props = {
   params: Promise<{ hostelId: string }>;
-}) {
-  const { hostelId } = await params;
-  const hostel = hostels[hostelId];
+};
 
-  // If the hostel does not exist, return a 404 page
+export default function HostelDetailPage({ params }: Props) {
+  const resolvedParams = use(params);
+  const { hostelId } = resolvedParams;
+  const router = useRouter();
+
+  const hostel = hostelsData.find((item) => item.id === hostelId);
+
+  // Minimalist 404 Screen
   if (!hostel) {
-    return notFound();
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-black text-white">
+        <h1 className="text-2xl font-light">Properties Spotlight Not Found</h1>
+      </div>
+    );
   }
 
-  const whatsappLink = `https://wa.me/50255116881?text=Hello,%20I%20am%20staying%20at%20${hostel.whatsappCode}%20and%20would%20like%20to%20book%20a%20shuttle!`;
+  const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent("Hello!, I am interested in booking a shuttle to " + hostel.name + "!")}`;
+
+  const handleShare = async () => {
+    const shareData = {
+      title: `Blvck Sheep: ${hostel.name}`,
+      text: `Check out ${hostel.name} in ${hostel.location}!`,
+      url: window.location.href,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Link copied to clipboard!");
+      }
+    } catch (err) {
+      console.error("Error sharing:", err);
+    }
+  };
 
   return (
-    <section className="py-10 px-5 md:px-0">
-      <div className="container max-w-5xl">
-        {/* Badge */}
-        <div className="flex justify-start">
-          <div className="inline-flex py-1 px-3 bg-white text-black rounded-md font-semibold">
-            Explore Guatemala in Comfort
-          </div>
+    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-32">
+      {/* Sticky Top Nav */}
+      <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
+        <button
+          onClick={() => router.back()}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          Back
+        </button>
+        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
+          <IoShareOutline />
+        </button>
+      </nav>
+
+      {/* Cinematic Hero */}
+      <section className="relative h-[85vh] w-full flex items-end pb-24 px-6 md:px-12 lg:px-24">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={hostel.heroImage}
+            alt={hostel.name}
+            className="w-full h-full object-cover"
+          />
+          {/* Dark Vignette Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
         </div>
 
-        {/* Title */}
-        <h1 className="text-5xl lg:text-6xl font-medium mt-10 leading-[2.5rem]">
-          {hostel.name}
-        </h1>
-
-        {/* Description */}
-        <p className="text-xl text-white/70 mt-4">{hostel.description}</p>
-
-        {/* Booking Buttons */}
-        <div className="flex flex-wrap gap-4 mt-8">
-          <Button
-            variant="secondary"
-            className="mt-2 md:mt-8 flex text-center justify-center"
+        {/* Hero Content positioned at bottom left */}
+        <div className="relative z-10 w-full">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            className="max-w-4xl"
           >
+            <div className="mb-4">
+              <span className="text-xs uppercase tracking-[0.3em] font-medium border border-white/30 px-3 py-1 rounded-full">
+                {hostel.vibe}
+              </span>
+            </div>
+            
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-none mb-4">
+              {hostel.name}
+            </h1>
+            
+            <p className="text-lg md:text-2xl text-zinc-300 font-light tracking-wide mix-blend-screen">
+              {hostel.location}
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="py-24 px-6 md:px-12 lg:px-24 bg-black">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="max-w-2xl mx-auto md:mx-0"
+        >
+          <p className="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed">
+            {hostel.description}
+          </p>
+        </motion.div>
+      </section>
+
+      {/* Dual-Action Bottom Bar */}
+      <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900/50 shadow-2xl">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div className="hidden sm:block">
+             <p className="text-xs uppercase tracking-widest text-zinc-400">{hostel.name}</p>
+             <p className="text-sm font-medium">Ready to explore?</p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
-              href={whatsappLink}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`WhatsApp contact for booking a shuttle from ${hostel.name}`}
+              className="w-full sm:w-auto border border-zinc-700 bg-transparent text-white px-8 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-900 transition-colors text-center"
             >
-              Book Now
+              Book Shuttle
             </Link>
-          </Button>
-
-          <Button
-            variant="secondary"
-            className="mt-2 md:mt-8 flex text-center justify-center"
-          >
             <Link
               href={hostel.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group-hover:text-blue-400"
-              aria-label={`Book a stay at ${hostel.name}`}
+              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
             >
-              {hostel.name} Website
+              Check Availability
             </Link>
-          </Button>
-        </div>
-        {/* Back Button */}
-        <div className="flex justify-start mb-8 mt-8">
-          <Link href="/hostels">
-            <Button variant="primary" className="flex items-center text-md">
-              &larr; Back
-            </Button>
-          </Link>
+          </div>
         </div>
       </div>
-
-      <Features />
-    </section>
+    </div>
   );
 }
