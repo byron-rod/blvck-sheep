@@ -31,7 +31,7 @@ export const journalData: JournalPost[] = [
     content: [
       {
         type: "paragraph",
-        value: "Making the journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, the 2.5 to 3-hour drive through the highlands can quickly become overwhelming if you aren't prepared. The typical tourist shuttle is funneled through the winding, dizzying mountain roads of Patzún. At Blvck Sheep, we bypass this entirely in favor of the Tecpán route. It offers smoother asphalt and a chance to experience Guatemala's culinary heartland—famous for artisanal cheeses and smoked sausages. More importantly, this route grants access to the ancient Kaqchikel Mayan ruins of Iximché. For those looking to elevate their transit day, we offer an exclusive, guided detour through these ruins before descending to the lake."
+        value: "Making the journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, the 2.5 to 3-hour (77km distance) drive through the highlands can quickly become overwhelming if you aren't prepared. The typical tourist shuttle is funneled through the winding, dizzying mountain roads of Patzún. At Blvck Sheep, we bypass this entirely in favor of the Tecpán route. It offers smoother asphalt and a chance to experience Guatemala's culinary heartland—famous for artisanal cheeses and smoked sausages. More importantly, this route grants access to the ancient Kaqchikel Mayan ruins of Iximché. For those looking to elevate their transit day, we offer an exclusive, detour through these ruins before descending to the lake."
       },
       {
         type: "heading",
