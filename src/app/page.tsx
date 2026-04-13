@@ -4,6 +4,7 @@ import Destinations from "@/sections/Destinations";
 import Faqs from "@/sections/Faqs";
 import Features from "@/sections/Features";
 import CuratedExperiences from "@/sections/CuratedExperiences";
+import CuratedAccommodations from "@/sections/CuratedAccommodations";
 import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
 // import LogoTicker from "@/sections/LogoTicker";
@@ -16,6 +17,7 @@ export default function Home() {
       <About />
       <Features />
       <CuratedExperiences />
+      <CuratedAccommodations />
       <Destinations />
       <Reviews />
       <Faqs />
