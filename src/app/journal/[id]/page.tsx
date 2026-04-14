@@ -90,9 +90,11 @@ export default function JournalArticlePage({ params }: Props) {
         {article.content.map((block, index) => {
           if (block.type === 'paragraph') {
             return (
-              <p key={index} className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed mb-8">
-                {block.value}
-              </p>
+              <p 
+                key={index} 
+                className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed mb-8"
+                dangerouslySetInnerHTML={{ __html: block.value }}
+              />
             );
           }
           if (block.type === 'heading') {
