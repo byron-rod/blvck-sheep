@@ -24,7 +24,7 @@ export const journalData: JournalPost[] = [
     id: "antigua-to-lake-atitlan-guide",
     title: "The Ultimate Guide: Traveling from Antigua to Lake Atitlán in 2026",
     excerpt: "Everything you need to know about navigating Guatemala's most popular route, from avoiding the chaotic chicken buses to finding the perfect lakeside sanctuary.",
-    publishDate: "May 15, 2026",
+    publishDate: "March 26, 2026",
     readTime: "4 MIN READ",
     heroImage: atitlanImage.src, 
     category: "Transit & Logistics",
@@ -73,7 +73,7 @@ export const journalData: JournalPost[] = [
     id: "guatemala-sim-card-esim-guide",
     title: "How to Get Data in Guatemala: eSIMs vs. Local SIM Cards",
     excerpt: "Navigating mobile data in Guatemala can be surprisingly frustrating due to strict registration laws. Here is the ultimate guide to bypassing the paperwork and getting online the moment you land.",
-    publishDate: "April 15, 2026",
+    publishDate: "April 13, 2026",
     readTime: "5 MIN READ",
     heroImage: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2500&auto=format&fit=crop", 
     category: "Travel Hacks",
@@ -100,7 +100,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "We recommend checking rates on the two most reliable global providers: Airalo and Yesim. Airalo is the industry standard for travelers, while Yesim often features highly competitive packages for Central America."
+        value: "We recommend checking rates on the two most reliable global providers: Airalo and Yesim. Airalo is the industry standard for travelers, Yesim is another good option."
       },
       {
         type: "cta",
