@@ -16,7 +16,7 @@ export default function HostelsPage() {
             Explore & Stay in Guatemala
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl font-light max-w-2xl">
-            These are our top curated properties to ensure you have the best experience in Guatemala. Select your stay and let us seamlessly handle your shuttle transportation.
+            A highly curated selection of Guatemala's most vibrant social spaces. Designed for those who travel to connect. Discover your next destination and let us engineer your arrival.
           </p>
         </div>
 

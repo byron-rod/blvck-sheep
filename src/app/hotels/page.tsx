@@ -13,10 +13,10 @@ export default function HotelsIndexPage() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col items-start mb-24">
           <h1 className="text-5xl md:text-7xl font-light tracking-tighter mb-6 text-white">
-            Curated Hotels
+            Boutique Hotels
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl font-light max-w-2xl">
-            A handpicked collection of Guatemala's most exclusive and beautifully designed properties.
+            A handpicked collection of Guatemala's most beautifully designed properties.
           </p>
         </div>
 

@@ -56,7 +56,7 @@ export default function Footer() {
                     Boutique Hotels
                   </Link>
                   <Link href="/hostels" className="text-white/50 text-sm hover:text-white transition-colors">
-                    Curated Hostels
+                    Social Hostels
                   </Link>
                 </div>
               </div>
