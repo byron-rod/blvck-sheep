@@ -20,7 +20,7 @@ export default function CuratedExperiences() {
             <span className="text-yellow-300">Elevate</span> Your <br className="hidden md:block"/> Journey.
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
-            Discover Guatemala differently. Our boutique travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.
+            Discover Guatemala differently. Our travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.
           </p>
           <Link href="/itineraries">
             <button className="bg-white text-black font-semibold rounded-full px-8 py-3 transition-all hover:bg-neutral-200 hover:scale-105 active:scale-95 text-lg hover:bg-white hover:text-black">
