@@ -220,7 +220,7 @@ export const journalData: JournalPost[] = [
       {
         type: "cta",
         value: "Secure Your Transfer to the Lake",
-        link: "https://wa.me/50255116881?text=Hello!,%20I%20need%20a%20premium%20shuttle%20to%20Lake%20Atitlan!"
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20need%20a%20shuttle%20to%20Lake%20Atitlan!"
       }
     ]
   }
