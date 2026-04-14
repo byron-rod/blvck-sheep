@@ -140,6 +140,15 @@ export default function Footer() {
             </Link>
           </Button>
         </div>
+        {/* Affiliate Disclaimer */}
+<div className="mt-12 pt-8 border-t border-zinc-900 flex flex-col items-center justify-center text-center px-6">
+  <p className="text-[11px] text-zinc-600 font-light leading-relaxed max-w-3xl">
+    Curated with purpose. Some of the stays and experiences featured on Blvck Sheep contain affiliate links. If you reserve through them, we may earn a small commission at no extra cost to you, which directly supports our local curation and operations. In compliance with IAB Guidelines, you can learn more about affiliate marketing <a href="http://paidforadvertising.com/" target="_blank" rel="noopener noreferrer" className="underline decoration-zinc-700 hover:text-zinc-400 transition-colors">here</a>.
+  </p>
+  <p className="text-xs text-zinc-500 font-medium mt-4 tracking-widest uppercase">
+    &copy; {new Date().getFullYear()} BLVCK SHEEP. ALL RIGHTS RESERVED.
+  </p>
+</div>
         <div className="text-white/30 text-xs text-center justify-center mt-12">
           Website by{" "}
           <Link

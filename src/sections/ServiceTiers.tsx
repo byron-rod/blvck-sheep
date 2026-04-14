@@ -4,36 +4,40 @@ const tiers = [
   {
     name: "Shared Shuttle",
     icon: Bus,
-    description: "High-end shared transit engineered for budget-friendly travelers. Longer wait times, specific drop-off points in certain locations, scheduled routes connecting major hubs.\n\nFleet: Toyota Hiace, Nissan Urvan, Hyundai H1.",
+    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off points. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan, Hyundai H1.",
+    textRest: "text-[#85714D]",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-900",
-    bgHover: "bg-[#85714D]/80",
+    bgHover: "bg-gradient-to-b from-[#85714D]/40 via-[#85714D]/10 to-transparent",
     borderHover: "group-hover:border-[#85714D]",
   },
   {
     name: "Private Ride",
     icon: Car,
-    description: "Your personal timeline. Door-to-door direct service with absolute privacy and flexibility on your route.\n\nFleet: Sedans and SUVs.",
+    description: "Our most efficient, 24/7 direct service. Engineered for convenience, offering door-to-door transit, absolute privacy, and total flexibility over your departure times and route.\n\nFleet:  Sedans and SUVs.",
+    textRest: "text-zinc-400",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-900",
-    bgHover: "bg-zinc-400/70",
+    bgHover: "bg-gradient-to-b from-zinc-700/30 via-zinc-700/10 to-transparent",
     borderHover: "group-hover:border-zinc-400",
   },
   {
     name: "Blvck Sheep",
     icon: Key,
-    description: "This is our more comfortable tier. Absolute luxury, complimentary concierge perks, and whisper-quiet rides.\n\nFleet: State-of-the-art Hybrids/Electric Powered Vehicles to travel with comfort while being eco-conscious.",
+    description: "The ultimate premium standard. Absolute luxury featuring whisper-quiet rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
+    textRest: "text-zinc-600",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-900",
-    bgHover: "bg-gradient-to-b from-zinc-900 to-black",
+    bgHover: "bg-gradient-to-b from-zinc-900 via-black to-black",
     borderHover: "group-hover:border-zinc-700",
   }
 ];
 
 export default function ServiceTiers() {
   return (
-    <section className="bg-black py-24 w-full">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative bg-black py-24 w-full overflow-hidden">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/30 via-black to-black pointer-events-none" />
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-16 text-center">
           The Blvck Sheep Rides
         </h2>
@@ -55,16 +59,16 @@ export default function ServiceTiers() {
                 <div className="flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform group-hover:-translate-y-24 group-hover:scale-95 origin-top w-full">
                   <tier.icon
                     strokeWidth={1}
-                    className="w-20 h-20 text-zinc-400 mb-8 transition-all duration-500 ease-in-out group-hover:scale-75 group-hover:text-white"
+                    className={`w-24 h-24 ${tier.textRest} mb-8 transition-all duration-500 ease-in-out group-hover:scale-75 group-hover:text-white`}
                   />
-                  <h3 className="text-2xl font-normal text-white tracking-tight text-center">
+                  <h3 className="text-3xl font-normal text-white tracking-tight text-center">
                     {tier.name}
                   </h3>
                 </div>
 
                 {/* Revealed block */}
                 <div className="absolute left-8 right-8 top-1/2 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-y-0 translate-y-12 pointer-events-none">
-                  <p className="text-white font-light text-[16px] leading-relaxed whitespace-pre-line text-center">
+                  <p className="text-white font-light text-[16px] leading-relaxed whitespace-pre-line text-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform scale-95 group-hover:scale-100">
                     {tier.description}
                   </p>
                 </div>
