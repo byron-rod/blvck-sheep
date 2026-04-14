@@ -1,10 +1,10 @@
-import { Bus, Car, Key } from "lucide-react";
+import { Bus, Car, Key, Leaf } from "lucide-react";
 
 const tiers = [
   {
     name: "Shared Shuttle",
     icon: Bus,
-    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off points. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan, Hyundai H1.",
+    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off points. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan",
     textRest: "text-[#85714D]",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-900",
@@ -23,8 +23,8 @@ const tiers = [
   },
   {
     name: "Blvck Sheep",
-    icon: Key,
-    description: "The ultimate premium standard. Absolute luxury featuring whisper-quiet rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
+    icon: Leaf,
+    description: "The ultimate premium standard. Absolute luxury featuring eco-friendly rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
     textRest: "text-zinc-600",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-900",
