@@ -129,12 +129,17 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "We recommend checking rates on the two most reliable global providers: Airalo and Yesim. Airalo is the industry standard for travelers, Yesim is another good option."
+        value: "We recommend checking rates on three reliable global providers: Airalo, Yesim and Drimsim. Airalo is the industry standard for travelers, they cover pretty much the entire world and it has competitive prices. Drimsim is a new option that has both international SIM cards, which they can deliver to your home address, this is the best option if you want to save some money in the long run, and they also have one of the best prices in the market for eSIMs. Yesim is another good option, although prices vary depending on the region."
       },
       {
         type: "cta",
         value: "Check Guatemala Rates on Airalo",
         link: "https://airalo.tpx.gr/78RgcRmp" // TODO: Paste your Travelpayouts Airalo link here
+      },
+      {
+        type: "cta",
+        value: "Explore eSIms Plans on Drimsim",
+        link: "https://drimsim.tpx.gr/3y3U3LEX" // TODO: Paste your Travelpayouts Yesim link here
       },
       {
         type: "cta",

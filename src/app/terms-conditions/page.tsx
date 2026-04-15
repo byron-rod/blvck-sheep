@@ -1,158 +1,170 @@
-export const metadata = {
-  title: "Terms and Conditions - Black Sheep Shuttle Service",
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms and Conditions | Blvck Sheep Shuttle Service",
   description:
-    "Read the terms and conditions for using Black Sheep's personalized shuttle services in Guatemala.",
+    "Read the terms, conditions, and logistical policies for using Blvck Sheep's shared, private, and premium transit services in Guatemala.",
 };
 
 export default function TermsConditions() {
   return (
-    <main className="container mx-auto max-w-4xl py-8 px-6 lg:px-0">
-      <h1 className="text-4xl font-bold mb-6 text-center text-neutral-700">
-        Blvck Sheep Shuttle Service Terms and Conditions
+    <main className="container mx-auto max-w-4xl py-24 px-6 lg:px-0">
+      <h1 className="text-4xl font-light mb-6 text-center text-white tracking-tight">
+        Blvck Sheep Terms & Conditions
       </h1>
-      <p className="text-lg mb-6 text-neutral-400">
-        Welcome to Blvck Sheep! We provide a personalized and exclusive shuttle
-        service in Guatemala, designed for comfort and convenience. By using our
-        services, you agree to the following terms and conditions:
+      <p className="text-lg mb-10 text-zinc-400 text-center max-w-2xl mx-auto leading-relaxed">
+        Welcome to Blvck Sheep. We are committed to providing safe, reliable, and straightforward transit across Guatemala. By booking our services, you agree to the following policies.
       </p>
 
-      {/* General Terms */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-700">
-          1. General Terms
+      {/* THE QUICK READ (TL;DR) */}
+      <section className="mb-14 bg-zinc-900/40 border border-zinc-800 rounded-xl p-6 md:p-8">
+        <h2 className="text-xl font-medium mb-4 text-white">
+          The Quick Read: Essential Policies
         </h2>
-        <ul className="list-disc pl-6 text-neutral-400 space-y-4">
-          <li>
-            <strong>Service Conditions:</strong> Blvck Sheep operates
-            5-passenger SUVs or Sedans or 7-passenger SUVs with a maximum of 4
-            clients per trip for a more private and comfortable experience. For
-            our shared services or larger groups we have partnerships with
-            trusted providers, that assist us with van or microbus services.
-            Delays or schedule adjustments may occur due to traffic, weather, or
-            other unforeseen circumstances. We&apos;ll always strive to minimize
-            disruptions and keep you informed. Our shared shuttles only run certain routes, not all pick up and drop off locations are available.
-          </li>
-          <li>
-            <strong>Personal Responsibility:</strong> Passengers are responsible
-            for their belongings. While we&apos;ll do our best to assist, we
-            cannot guarantee recovery of lost items. 
-          </li>
-          <li>
-            <strong>Third-Party Factors:</strong> Blvck Sheep is not liable for
-            delays or cancellations caused by roadblocks, mechanical issues,
-            traffic, or natural disasters. We encourage clients to plan
-            accordingly, especially during high-demand seasons (e.g., Holy Week,
-            Christmas, New Year). We can advice on timeframes but are not responsible for any delays or cancellations caused by third-party factors.
-          </li>
-          <li>
-            <strong>Payment Processing Information:</strong> All payments for
-            Blvck Sheep services are securely processed through Recurrente.com,
-            under the legal name of our parent company, Inari Agency. When you
-            receive a payment link or confirmation, you may see Inari Agency
-            listed as the payee. Rest assured, this is the legitimate and
-            authorized business entity for Blvck Sheep. If you have any
-            questions or concerns regarding your payment, please contact us
-            immediately.
-          </li>
-        </ul>
-      </section>
-
-      {/* Booking and Payment Policies */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-700">
-          2. Booking and Payment Policies
-        </h2>
-        <ul className="list-disc pl-6 text-neutral-400 space-y-4">
-          <li>
-            <strong>How to Book:</strong> Reservations can be made via WhatsApp
-            at least 48 hours prior your departure time. Choose your
-            destination, check availability, make your payment, and secure your
-            spot.
-          </li>
-          <li>
-            <strong>Payment Methods:</strong> We accept payments via credit card
-            (Visa or Mastercard) through our partner, Recurrente.com. Bank
-            transfers are also accepted for local travelers. Payments are
-            refundable up to 24 hours before your trip.
-          </li>
-          <li>
-            <strong>Late Bookings:</strong> We can manage last-minute bookings
-            with at least 8 hours prior your departure, but are subject to
-            availability and may incur additional charges.
-          </li>
-        </ul>
-      </section>
-
-      {/* Cancellation and Rescheduling */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-700">
-          3. Cancellation and Rescheduling Policies
-        </h2>
-        <ul className="list-disc pl-6 text-neutral-400 space-y-4">
-          <li>
-            <strong>General Cancellations:</strong> Cancellations made 24 hours
-            or more before departure qualify for a full refund. Cancellations
-            made within 24 hours of the trip will not be refunded.
-          </li>
-          <li>
-            <strong>Rescheduling:</strong> Trips can be rescheduled up to 24
-            hours before departure at no extra cost. Changes within 24 hours may
-            be accommodated but could incur additional fees and are subject to
-            availability.
-          </li>
-          <li>
-            <strong>Private Services:</strong> Rescheduling private services is
-            free if notified 24 hours in advance. Additional stops or route
-            adjustments may incur extra costs.
-          </li>
-        </ul>
-      </section>
-
-      {/* Luggage Policies */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-700">
-          4. Luggage Policies
-        </h2>
-        <ul className="list-disc pl-6 text-neutral-400 space-y-4">
-          <li>
-            <strong>Standard Luggage:</strong> Each passenger is allowed one
-            large suitcase and one personal item. Excess luggage must be
-            disclosed at booking to ensure space availability.
-          </li>
-          <li>
-            <strong>Oversized or Special Luggage:</strong> For oversized items
-            (e.g., surfboards), please notify us in advance. Additional fees may
-            apply.
-          </li>
-          <li>
-            <strong>Unapproved Luggage:</strong> Black Sheep reserves the right
-            to refuse unapproved luggage at pick-up, and no refunds will be
-            given in such cases.
-          </li>
-        </ul>
-      </section>
-
-      {/* Contact Section */}
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-4 text-neutral-700">
-          8. Contact Us
-        </h2>
-        <p className="text-neutral-400">
-          For questions, changes, or additional information, contact us via:
+        <p className="text-zinc-400 mb-4 text-sm">
+          Please review our core rules before traveling. Detailed explanations can be found in the sections below.
         </p>
-        <ul className="list-disc pl-6 text-neutral-400 space-y-2">
+        <ul className="list-disc pl-5 text-zinc-300 space-y-3 text-sm marker:text-blue-500">
+          <li>
+            <strong>Our Service:</strong> Blvck Sheep operates 5-passenger SUVs or Sedans or 7-passenger SUVs with limits on passenger capacity per trip for a more private and comfortable experience. For our <strong>shared services or larger groups (5+ passengers)</strong> we have partnerships with trusted providers, that assist us with vans, microbuses or buses services.
+          </li>
+          <li>
+            <strong>Luggage Rule:</strong> Standard allowance is 1 large bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage</strong> so we can dispatch the correct vehicle size, otherwise, you may face delays or extra fees, read more below.
+          </li>
+          <li>
+            <strong>Shared vs. Private:</strong> Shared shuttles operate on fixed routes with unpredictable wait times (10-60 mins). If you are on a tight schedule, we recommend booking Private transit.
+          </li>
+          <li>
+            <strong>Cancellations:</strong> You must cancel or reschedule at least <strong>24 hours</strong> before departure for a refund or free change.
+          </li>
+          <li>
+            <strong>Payments:</strong> All payments are securely processed via Recurrente.com under our parent company name, <strong>Inari Agency</strong>.
+          </li>
+          <li>
+            <strong>External Factors:</strong> We are not liable for missed flights or delays caused by third-party factors (roadblocks, extreme weather, heavy traffic).
+          </li>
+        </ul>
+      </section>
+
+      {/* 1. Shared Shuttle Logistics */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          1. Shared Shuttle Logistics & Expectations
+        </h2>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>Wait Times & Routing:</strong> Shared shuttles are a highly efficient, budget-friendly option operated in collaboration with our trusted local partners (using vans or microbuses). Because drivers must navigate multiple pick-up locations, <strong>departure and arrival times are estimates, not guarantees.</strong> Please expect pick-up wait windows ranging from 10 to 60 minutes, especially during peak seasons.
+          </li>
+          <li>
+            <strong>Pick-up / Drop-off Zones:</strong> Shared routes only operate at specific hubs. In Antigua, pick-ups are limited to the central zone. In Guatemala City, drop-offs and pick-ups are strictly limited to the airport perimeter and select nearby zones. Door-to-door hotel service is not guaranteed for shared routes.
+          </li>
+          <li>
+            <strong>Tight Schedules:</strong> If you have a strict flight departure, a time-sensitive itinerary, or prefer not to wait on other passengers, <strong>we strongly advise booking an earlier shared departure or upgrading to our Private Transit tiers.</strong>
+          </li>
+        </ul>
+      </section>
+
+      {/* 2. Private & Blvck Tier Policies */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          2. Private & Blvck Tier Policies
+        </h2>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>Service Conditions & Fleet:</strong> For our Private and Blvck tiers, Blvck Sheep operates Sedans, 5-passenger SUVs, or 7-passenger SUVs. To ensure a comfortable experience, we allow a <strong>maximum of 4 clients per trip</strong> in these vehicles. For larger private groups, we utilize our trusted partner network for premium van services.
+          </li>
+          <li>
+            <strong>Schedule Flexibility & Notice:</strong> While we offer total flexibility, any changes to your departure time or route must be requested at least <strong>24 hours in advance</strong> so we can properly manage driver logistics.
+          </li>
+          <li>
+            <strong>Short-Notice Adjustments:</strong> Changes requested within 24 hours of your trip are strictly subject to availability. They may incur additional fees or be declined if they conflict with our drivers' overlapping schedules.
+          </li>
+        </ul>
+      </section>
+
+      {/* 3. Luggage Constraints */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          3. Luggage Constraints & Vehicle Capacity
+        </h2>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>The Standard Allowance (Golden Rule):</strong> The baseline allowance for all passengers is one (1) large suitcase and one (1) personal item (such as a backpack or purse). For shared shuttles, this limit is strictly enforced due to shared cargo space.
+          </li>
+          <li>
+            <strong>Private Transit & Advance Notice:</strong> Because our Private and Blvck tier fleets range from Sedans to larger 7-passenger SUVs, total cargo capacity varies per trip. We can happily accommodate extra luggage on private routes, but <strong>you must notify us at the time of booking</strong> so we can dispatch the correct vehicle size.
+          </li>
+          <li>
+            <strong>Failure to Disclose Excess Luggage:</strong> If you arrive at pick-up with undeclared extra baggage, Blvck Sheep is not liable if it cannot safely fit in your assigned vehicle. The client assumes full responsibility for any resulting consequences, which may include paying for a secondary vehicle, significant travel delays, or the possibility that a larger vehicle is not immediately available.
+          </li>
+          <li>
+            <strong>Oversized Items:</strong> For exceptionally large items (e.g., surfboards, large instruments, or bicycles), please notify us in advance. Additional fees may apply.
+          </li>
+        </ul>
+      </section>
+
+      {/* 4. Third-Party Factors & Liability */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          4. Third-Party Factors & Liability
+        </h2>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>Out of Our Control:</strong> Traveling in Guatemala involves navigating unpredictable elements. Blvck Sheep is not liable for delays, missed flights, or cancellations caused by factors outside our direct control, including roadblocks, political protests, severe weather, mechanical issues, natural disasters, or unexpected heavy traffic. We encourage clients to plan accordingly, especially during high-demand seasons (e.g., Holy Week, Christmas, New Year). We can advise on timeframes but are not responsible for delays caused by third-party factors.
+          </li>
+          <li>
+            <strong>Personal Belongings:</strong> Passengers are entirely responsible for their personal items. While we will assist in locating forgotten belongings, we cannot guarantee the recovery of lost items in our vehicles or partner vans.
+          </li>
+        </ul>
+      </section>
+
+      {/* 5. Booking, Payments & Cancellations */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          5. Payments & Cancellations
+        </h2>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>Secure Processing (Inari Agency):</strong> All payments for Blvck Sheep services are securely processed through Recurrente.com under the legal name of our parent company, <strong>Inari Agency</strong>. When you receive a payment link or confirmation, you will see Inari Agency listed as the payee. Rest assured, this is the legitimate and authorized business entity for Blvck Sheep.
+          </li>
+          <li>
+            <strong>Refund Policy:</strong> Cancellations made 24 hours or more before the scheduled departure time qualify for a full refund. <strong>Cancellations made within 24 hours of the trip are strictly non-refundable.</strong>
+          </li>
+          <li>
+            <strong>Late Bookings:</strong> Last-minute reservations (within 8 hours of departure) are subject to immediate availability and may incur expedited logistics charges.
+          </li>
+        </ul>
+      </section>
+
+      {/* 6. Contact Section */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          6. Contact & Support
+        </h2>
+        <p className="text-zinc-400 mb-4">
+          For questions regarding your booking, logistical changes, or general inquiries, please reach out to our dispatch team:
+        </p>
+        <ul className="list-disc pl-6 text-zinc-400 space-y-2 marker:text-zinc-600">
           <li>
             WhatsApp:{" "}
             <a
               href="https://wa.me/50255116881"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 hover:underline"
+              className="text-blue-500 hover:text-blue-400 transition-colors"
             >
               +502 5511 6881
             </a>
           </li>
-          <li>Email: connect@blvck-sheep.com</li>
+          <li>
+            Email:{" "}
+            <a 
+              href="mailto:connect@blvck-sheep.com" 
+              className="text-blue-500 hover:text-blue-400 transition-colors"
+            >
+              connect@blvck-sheep.com
+            </a>
+          </li>
         </ul>
       </section>
     </main>

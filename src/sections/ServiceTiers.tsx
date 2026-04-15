@@ -4,7 +4,7 @@ const tiers = [
   {
     name: "Shared Shuttle",
     icon: Bus,
-    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off areas in each town. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan",
+    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules, with designated pick-up and drop-off areas in each town. Expect variable wait.\n\nFleet: Toyota Hiace, Nissan Urvan",
     textRest: "text-yellow-600",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-700",
@@ -35,11 +35,11 @@ const tiers = [
 
 export default function ServiceTiers() {
   return (
-    <section className="relative bg-black py-24 w-full overflow-hidden">
+    <section className="relative bg-black py-24 w-full overflow-hidden" id="services">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/30 via-black to-black pointer-events-none" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-16 text-center">
-          The Blvck Sheep Rides
+          Blvck Sheep Services
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
