@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `Traveling through Guatemala is an adventure; getting around shouldn't be. Blvck Sheep was built to give you peace of mind on the road. Whether you are taking one of our shared routes or a direct private ride across the highlands, our priority is your safety and comfort.`;
+const text = `Traveling through Guatemala is an adventure; Blvck Sheep was built to give you peace of mind on the road. Whether you are taking one of our shared routes or a direct private ride across the highlands, our priority is your safety and comfort.`;
 const words = text.split(" ");
 
 export default function About() {
