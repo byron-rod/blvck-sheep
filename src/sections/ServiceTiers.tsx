@@ -1,13 +1,13 @@
-import { Bus, Car, Key, Leaf } from "lucide-react";
+import { Bus, Car, Key, Leaf, Sparkle } from "lucide-react";
 
 const tiers = [
   {
     name: "Shared Shuttle",
     icon: Bus,
-    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off points. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan",
-    textRest: "text-[#85714D]",
+    description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules connecting major hubs, with designated pick-up and drop-off areas in each town. Expect a structured timeline with standard connection wait times.\n\nFleet: Toyota Hiace, Nissan Urvan",
+    textRest: "text-yellow-600",
     bgRest: "bg-zinc-950",
-    borderRest: "border-zinc-900",
+    borderRest: "border-zinc-700",
     bgHover: "bg-gradient-to-b from-[#85714D]/40 via-[#85714D]/10 to-transparent",
     borderHover: "group-hover:border-[#85714D]",
   },
@@ -17,17 +17,17 @@ const tiers = [
     description: "Our most efficient, 24/7 direct service. Engineered for convenience, offering door-to-door transit, absolute privacy, and total flexibility over your departure times and route.\n\nFleet:  Sedans and SUVs.",
     textRest: "text-zinc-400",
     bgRest: "bg-zinc-950",
-    borderRest: "border-zinc-900",
+    borderRest: "border-zinc-700",
     bgHover: "bg-gradient-to-b from-zinc-700/30 via-zinc-700/10 to-transparent",
     borderHover: "group-hover:border-zinc-400",
   },
   {
     name: "Blvck Sheep",
-    icon: Leaf,
-    description: "The ultimate premium standard. Absolute luxury featuring eco-friendly rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
-    textRest: "text-zinc-600",
+    icon: Sparkle,
+    description: "The ultimate premium standard. Absolute comfort featuring eco-friendly rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
+    textRest: "text-zinc-700",
     bgRest: "bg-zinc-950",
-    borderRest: "border-zinc-900",
+    borderRest: "border-zinc-700",
     bgHover: "bg-gradient-to-b from-zinc-900 via-black to-black",
     borderHover: "group-hover:border-zinc-700",
   }

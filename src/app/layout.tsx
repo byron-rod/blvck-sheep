@@ -13,11 +13,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Blvck Sheep Shuttles | Transportation Services in Guatemala",
+  title: "Blvck Sheep | Tourist Services in Guatemala",
   description:
-    "Explore Guatemala in comfort with Blvck Sheep. Offering a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Travel differently.",
+    "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exlcusive concierge services. Travel differently.",
   keywords:
-    "Guatemala shuttles, Itinerary planning Guatemala, transporte en Guatemala, private shuttles Guatemala, shared shuttles Guatemala, Antigua to Lake Atitlan, Guatemala City transport, El Paredon shuttles, premium travel Guatemala, tourist transportation Guatemala",
+    "Guatemala travel concierge, luxury shuttles Guatemala, custom itineraries Guatemala, itinerary planning Guatemala, private transfers Lake Atitlan, premium transit Antigua, hybrid transport Guatemala, VIP travel Guatemala, Guatemala vacation planning, tourist transportation Guatemala, Blvck Sheep",
 };
 
 export default function RootLayout({
@@ -31,11 +31,11 @@ export default function RootLayout({
         {/* SEO Meta Tags */}
         <meta
           property="og:title"
-          content="Blvck Sheep Shuttles | Transportation Services in Guatemala"
+          content="Blvck Sheep | Tourist Services in Guatemala"
         />
         <meta
           property="og:description"
-          content="Explore Guatemala in comfort with Blvck Sheep. Offering a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Travel differently."
+          content="Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exlcusive concierge services. Travel differently."
         />
         <meta property="og:image" content="/blvcksheeplogo.jpg" />
         <meta property="og:image:alt" content="Blvck Sheep Shuttles logo" />
@@ -60,6 +60,7 @@ export default function RootLayout({
               sameAs: [
                 "https://www.instagram.com/blvcksheepgt",
                 "https://www.facebook.com/blvcksheepgt",
+                "https://www.tiktok.com/@blvcksheepgt",
               ],
               contactPoint: {
                 "@type": "ContactPoint",

@@ -15,8 +15,19 @@ import convento from "@/assets/images/convento.png";
 import casaPalopo from "@/assets/images/palopo.png";
 import swell from "@/assets/images/swell.png";
 import lasLagunas from "@/assets/images/lagunas.png";
+import aviva from "@/assets/images/aviva.png";
 
 export const hotelsData: HotelDetail[] = [
+  {
+    id: "the-aviva-hotel",
+    name: "The Aviva Hotel",
+    location: "Tzununa",
+    heroImage: aviva.src, 
+    description: "Place of Hummingbirds is the meaning of Tzununa, and this hotel is a sanctuary for those seeking peace, nature, and connection. With stunning views of Lake Atitlán and the surrounding volcanoes, The Aviva Hotel offers a unique and unforgettable experience.",
+    vibe: "Luxury, Romantic Sanctuary, Nature",
+    whatsappCode: "The%20aviva%20hotel",
+    bookingLink: "https://tidd.ly/4tfrCTl", // Placeholder for future Booking.com affiliate link
+  },
   {
     id: "el-convento",
     name: "El Convento Boutique Hotel",
@@ -25,7 +36,7 @@ export const hotelsData: HotelDetail[] = [
     description: "Located on a cobblestone street facing the iconic Capuchinas convent. El Convento offers an atmosphere of absolute serenity and colonial elegance. With private courtyards, vaulted brick ceilings, and world-class gastronomy, it is the premier luxury sanctuary in the heart of Antigua.",
     vibe: "Colonial Luxury, Romantic Sanctuary, Fine Dining",
     whatsappCode: "El%20Convento%20Antigua",
-    bookingLink: "https://www.elconventoantigua.com/", // Placeholder for future Booking.com affiliate link
+    bookingLink: "https://tidd.ly/42dK5DD", // Placeholder for future Booking.com affiliate link
   },
   {
     id: "casa-palopo",
@@ -35,7 +46,7 @@ export const hotelsData: HotelDetail[] = [
     description: "Perched on the hills surrounding Santa Catarina Palopó, this exclusive boutique hotel offers breathtaking, uninterrupted views of Lake Atitlán and its three majestic volcanoes. Featuring curated indigenous artwork, a spectacular infinity pool, and an onsite helipad, it redefines high-end travel in Guatemala.",
     vibe: "Exclusive Retreat, Panoramic Views, Relais & Châteaux",
     whatsappCode: "Casa%20Palopo",
-    bookingLink: "https://www.casapalopo.com/",
+    bookingLink: "https://tidd.ly/4cJor06",
   },
   {
     id: "swell-surf",
@@ -45,7 +56,7 @@ export const hotelsData: HotelDetail[] = [
     description: "A masterclass in tropical 'barefoot luxury' design. Swell features thatched-roof suites, polished concrete aesthetics, and a stunning 20-meter pool surrounded by lush lounge areas. It is a highly curated, sophisticated oasis for surfers and coastal wanderers alike.",
     vibe: "Barefoot Luxury, Tropical Design, Surf Boutique",
     whatsappCode: "Swell%20El%20Paredon",
-    bookingLink: "https://swellelparedon.com/",
+    bookingLink: "https://tidd.ly/4myMdPV",
   },
   {
     id: "las-lagunas",
@@ -55,6 +66,6 @@ export const hotelsData: HotelDetail[] = [
     description: "Suspended over the water of the Quexil Lagoon within a private 300-acre jungle reserve. This is the ultimate luxury basecamp for your Northern Expedition. After exploring the ancient pyramids of Tikal, retreat to your private overwater bungalow featuring a personal deck and jacuzzi.",
     vibe: "Jungle Luxury, Overwater Bungalows, Eco-Reserve",
     whatsappCode: "Las%20Lagunas%20Peten",
-    bookingLink: "https://www.laslagunashotel.com/",
+    bookingLink: "https://tidd.ly/4dPaDlR",
   }
 ];
