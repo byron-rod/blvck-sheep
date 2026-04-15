@@ -24,35 +24,59 @@ export const journalData: JournalPost[] = [
   {
     id: "antigua-to-lake-atitlan-guide",
     title: "The Ultimate Guide: Traveling from Antigua to Lake Atitlán in 2026",
-    excerpt: "Everything you need to know about navigating Guatemala's most popular route, from avoiding the chaotic chicken buses to finding the perfect lakeside sanctuary.",
-    publishDate: "March 26, 2026",
-    readTime: "4 MIN READ",
+    excerpt: "Everything you need to know about navigating Guatemala's most popular route. From surviving the chaotic 'chicken buses' to finding the perfect lakeside sanctuary.",
+    publishDate: "April 15, 2026",
+    readTime: "8 MIN READ",
     heroImage: atitlanImage.src, 
     category: "Transit & Logistics",
     content: [
       {
         type: "paragraph",
-        value: "Making the journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, the 2.5 to 3-hour (77km distance) drive through the highlands can quickly become overwhelming if you aren't prepared. The typical tourist shuttle is funneled through the winding, dizzying mountain roads of Patzún. At Blvck Sheep, we bypass this entirely in favor of the Tecpán route. It offers smoother asphalt and a chance to experience Guatemala's culinary heartland—famous for artisanal cheeses and smoked sausages. More importantly, this route grants access to the ancient Kaqchikel Mayan ruins of Iximché. For those looking to elevate their transit day, we offer an exclusive, detour through these ruins before descending to the lake."
+        value: "Making the 77-kilometer journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, this 2.5 to 3-hour drive through the highlands is not a simple straight line. Depending on your budget, your timeline, and your tolerance for dizzying mountain curves, there are three distinct ways to make this transit. After half a decade of navigating these exact roads, here is the unfiltered truth about how to get to the lake."
       },
       {
         type: "heading",
-        value: "The Reality of Public Transport"
+        value: "Option 1: The 'Chicken Bus' (Camioneta) Reality"
       },
       {
         type: "paragraph",
-        value: "While the brightly painted 'chicken buses' are an iconic piece of the landscape, navigating them with luggage is an extreme sport. A ticket might only cost $5 to $8, but the true cost is your time and energy. The journey requires four chaotic transfers: from the Antigua central hub to Chimaltenango, connecting to Los Encuentros, descending to Sololá, and finally dropping into Panajachel. It is a crowded, unpredictable transit that quickly eats up your first day at the lake."
+        value: "These brightly painted, souped-up former North American school buses are an iconic piece of the Guatemalan landscape. Traveling this way is incredibly cheap, but the true cost is your time and energy. It requires four separate transfers. You begin at the Antigua bus terminal (located behind the central market near Pollo Campero). You catch a bus heading to Chimaltenango (approx. 20 GTQ) and ask the 'ayudante' (the driver's assistant) to drop you off at the highway corner for Los Encuentros. From there, you flag down a bus heading toward Quiché or Xela, taking it to the Los Encuentros crossroads (10-20 GTQ). Next, you catch a bus dropping down into the Sololá department (5 GTQ), and finally, take your last bus descending into Panajachel. If you are catching a public boat, get off at the very first stop in Pana—it is a short walk down to Muelle Tzanjuyú."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The Brutal Truth:</strong> There is a famous local saying: <em>'Donde caben 3, caben 4'</em> (Where three fit, four fit). This perfectly sums up the camioneta experience. Drivers maximize profits by cramming as many people as physically possible into the seats and aisles. Your luggage will likely go on the roof, you will have zero personal space, and the drivers take the winding mountain curves at alarming speeds. We highly recommend taking a chicken bus for a short, 15-minute trip just for the cultural experience, but for a 3-hour transit with heavy bags? It is an extreme sport."
       },
       {
         type: "heading",
-        value: "The Premium Alternative"
+        value: "Option 2: The Shared Tourist Shuttle"
       },
       {
         type: "paragraph",
-        value: "Your vacation time is your most valuable asset. Blvck Sheep operates daily routes designed for absolute comfort and reliability. Whether you choose the social, budget-friendly atmosphere of our shared minivans that travel to Panajachel or the ultimate flexibility of a private door-to-door transfer, you will arrive in Panajachel, or a direct transfer to any other town in Atitlan (San Pedro, San Marcos, Santa Catarina Palopo, etc)."
+        value: "This is the standard backpacker choice. For about 125 to 150 GTQ ($16 - $20 USD), you book a seat in a 15-passenger van (Toyota Hiace or Nissan Urvan). They leave at specific, scheduled times daily. Depending on the season and traffic in Antigua, they will either pick you up at your hotel, or require you to meet at central hubs like Café Condesa at Central Park or popular hostels like Bloom."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The Route:</strong> Shared shuttles almost exclusively take the Patzún route to save time. This road cuts through deep agricultural valleys, crosses a small river gorge, and drops down through San Andrés Semetabaj before arriving in Pana. It is highly efficient, but the roads are incredibly narrow and aggressively winding. If you are prone to motion sickness, this route can be tough."
+      },
+      {
+        type: "heading",
+        value: "Option 3: The Private Alternative (Blvck Sheep)"
+      },
+      {
+        type: "paragraph",
+        value: "Your vacation time is your most valuable asset. For those who want to avoid the nausea of the Patzún curves and the strict schedules of shared vans, booking a private transfer changes the entire tone of your travel day. At Blvck Sheep, our private transit routes bypass Patzún entirely. Instead, we take the Tecpán route."
+      },
+      {
+        type: "paragraph",
+        value: "Tecpán is located on Guatemala's primary artery, the CA-1 (Pan-American Highway). While the total distance is slightly longer than the Patzún shortcut, this highway offers significantly more room to breathe. Instead of navigating tight, single-lane mountain passes, the CA-1 features two wide lanes in each direction and vastly superior road conditions, making for a much smoother ride. Furthermore, Tecpán happens to be a celebrated culinary destination, famous for its artisanal cheeses, smoked sausages, and highway steakhouses."
+      },
+      {
+        type: "paragraph",
+        value: "More importantly, this route grants immediate access to the ancient Kaqchikel Mayan ruins of Iximché. We highly recommend a quick detour on your way to or from the lake. Our private drivers can pause your transit, allowing you to explore the ruins and enjoy an authentic local lunch before making the final descent to the water via the 'Las Trampas' route. This specific approach offers breathtaking, high-altitude views of the lake, plus all three volcanos, from the mountains before winding down through San Andrés Semetabaj and into Pana."
       },
       {
         type: "cta",
-        value: "Book Your Shuttle to Lake Atitlán",
+        value: "Secure Your Transfer to the Lake",
         link: "https://wa.me/50255116881?text=Hello!,%20I%20want%20to%20book%20a%20shuttle%20from%20Antigua%20to%20Atitlan!"
       },
       {
@@ -61,12 +85,12 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Once you arrive, the lake offers entirely different energies depending on where you stay. If you are looking for high-energy social spaces, backpacker crowd, head toward San Pedro La Laguna, for something more hippie chic with yoga and meditaion, San Marcos La Laguna is the place. For more exclusivity and luxury, its Santa Catarina Palopo or Santa Cruz, and the main Tzutuil-Mayan town with the most authentic culture is San Juan La Laguna. If you require a bigger town with more options, then Panajachel is the choice."
+        value: "While Panajachel is the main logistical hub, our private transfers offer direct routes to several other accessible villages around Atitlan. The lake offers entirely different energies depending on which shoreline you choose. If you want high-energy social spaces and the backpacker crowd, head to San Pedro La Laguna. For a 'hippie-chic' vibe centered on yoga and meditation retreats, San Marcos is the place. If authentic Tz'utujil Mayan culture and incredible textile arts are your priority, San Juan La Laguna is unmatched. Finally, for absolute exclusivity, world-class boutique hotels, and silence, look toward Santa Catarina Palopó or Santa Cruz. If you require stable infrastructure, fast internet, and the convenience of a larger town, making Panajachel your basecamp is the smartest move."
       },
       {
         type: "cta",
         value: "Explore Our Curated Lake Atitlán Stays",
-        link: "/destinations/lake-atitlan"
+        link: "/hostels" 
       }
     ]
   },

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { hostelsData } from "@/data/hostels";
 
 export const metadata = {
-  title: "Premium Hostels - Black Sheep Shuttle Service",
+  title: "Social Hostels - Black Sheep Services",
   description:
     "Explore our curated selection of Guatemala's top premium hostels and let us handle your shuttle transportation.",
 };
