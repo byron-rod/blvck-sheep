@@ -17,8 +17,12 @@ export type JournalPost = {
   content: ContentBlock[];
 };
 
+import decodingJournalImage from "@/assets/images/decoding-journal.png";
+import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
+import simJournalImage from "@/assets/images/sim-journal.png";
+
 import atitlanImage from "@/assets/images/atitlan.jpg";
-import wellnessAtitlanImage from "@/assets/images/wellness-atitlan.png";
+
 
 export const journalData: JournalPost[] = [
   {
@@ -27,7 +31,7 @@ export const journalData: JournalPost[] = [
     excerpt: "Everything you need to know about navigating Guatemala's most popular route. From surviving the chaotic 'chicken buses' to finding the perfect lakeside sanctuary.",
     publishDate: "April 15, 2026",
     readTime: "8 MIN READ",
-    heroImage: atitlanImage.src, 
+    heroImage: roadguideJournalImage.src, 
     category: "Transit & Logistics",
     content: [
       {
@@ -64,15 +68,15 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Your vacation time is your most valuable asset. For those who want to avoid the nausea of the Patzún curves and the strict schedules of shared vans, booking a private transfer changes the entire tone of your travel day. At Blvck Sheep, our private transit routes bypass Patzún entirely. Instead, we take the Tecpán route."
+        value: "Your vacation time is your most valuable asset. For those who want to avoid the dizziness of the Patzún curves and the strict schedules of shared vans, booking a private transfer changes the entire tone of your travel day. At Blvck Sheep, our private transit routes bypass Patzún entirely. Instead, we take the Tecpán route."
       },
       {
         type: "paragraph",
-        value: "Tecpán is located on Guatemala's primary artery, the CA-1 (Pan-American Highway). While the total distance is slightly longer than the Patzún shortcut, this highway offers significantly more room to breathe. Instead of navigating tight, single-lane mountain passes, the CA-1 features two wide lanes in each direction and vastly superior road conditions, making for a much smoother ride. Furthermore, Tecpán happens to be a celebrated culinary destination, famous for its artisanal cheeses, smoked sausages, and highway steakhouses."
+        value: "Tecpán is located on Guatemala's primary highways, the CA-1 (Pan-American Highway). While the total distance is slightly longer than the Patzún shortcut, this highway offers significantly more room to breathe. Instead of navigating tight, single-lane mountain passes, the CA-1 features two wide lanes in each direction and vastly superior road conditions, making for a much smoother ride. Furthermore, Tecpán happens to be a celebrated culinary destination, famous for its artisanal cheeses, smoked sausages, and highway steakhouses."
       },
       {
         type: "paragraph",
-        value: "More importantly, this route grants immediate access to the ancient Kaqchikel Mayan ruins of Iximché. We highly recommend a quick detour on your way to or from the lake. Our private drivers can pause your transit, allowing you to explore the ruins and enjoy an authentic local lunch before making the final descent to the water via the 'Las Trampas' route. This specific approach offers breathtaking, high-altitude views of the lake, plus all three volcanos, from the mountains before winding down through San Andrés Semetabaj and into Pana."
+        value: "More importantly, this route grants immediate access to the ancient Kaqchikel Mayan ruins of Iximché, the entrance is only Q5, if you are lucky you can get to witness a traditional mayan ceremony while exploring the ruins. We highly recommend this quick detour on your way to or from the lake. Our private drivers can pause your transit, allowing you to explore the ruins and enjoy an authentic local lunch before making the final descent to the water via the 'Las Trampas' route. This specific approach offers breathtaking, high-altitude views of the lake, plus all three volcanos, from the mountains before winding down through San Andrés Semetabaj and into Pana."
       },
       {
         type: "cta",
@@ -100,7 +104,7 @@ export const journalData: JournalPost[] = [
     excerpt: "Navigating mobile data in Guatemala can be surprisingly frustrating due to strict registration laws. Here is the ultimate guide to bypassing the paperwork and getting online the moment you land.",
     publishDate: "April 13, 2026",
     readTime: "5 MIN READ",
-    heroImage: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2500&auto=format&fit=crop", 
+    heroImage: simJournalImage.src, 
     category: "Travel Hacks",
     content: [
       {
@@ -162,7 +166,7 @@ export const journalData: JournalPost[] = [
     excerpt: "Lake Atitlán is not a single destination; it is a complex network of distinct micro-cultures. Here is the insider’s guide to choosing the perfect shoreline for your aesthetic and energy.",
     publishDate: "April 20, 2026",
     readTime: "8 MIN READ",
-    heroImage: wellnessAtitlanImage.src, 
+    heroImage: decodingJournalImage.src, 
     category: "Insider Guides",
     content: [
       {

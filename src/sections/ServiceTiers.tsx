@@ -24,7 +24,7 @@ const tiers = [
   {
     name: "Blvck Sheep",
     icon: Sparkle,
-    description: "The ultimate premium standard. Absolute comfort featuring eco-friendly rides, complimentary concierge perks, and total control over your curated experience with our highest-tier vehicles.\n\nFleet: State-of-the-art Hybrids SUVs.",
+    description: "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary concierge perks, our most refined service. \n\nFleet: Hybrid SUVs.",
     textRest: "text-zinc-700",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-700",

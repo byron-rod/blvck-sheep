@@ -19,8 +19,8 @@ export default function Home() {
       <Hero />
       {/* <LogoTicker /> */}
       <About />
-      <ServiceTiers />
       <Features />
+      <ServiceTiers />
       <CuratedExperiences />
       <CuratedAccommodations />
       <Destinations />
