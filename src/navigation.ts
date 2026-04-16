@@ -6,4 +6,5 @@ export const routing = defineRouting({
   defaultLocale: 'en'
 });
 
+// Esto exporta los componentes de navegación que Next-Intl necesita
 export const { Link, redirect, usePathname, useRouter } = createNavigation(routing);

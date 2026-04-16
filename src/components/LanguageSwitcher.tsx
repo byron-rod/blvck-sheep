@@ -14,10 +14,11 @@ export default function LanguageSwitcher() {
   };
 
   return (
-    <div className="fixed top-28 right-6 z-50 bg-black/50 backdrop-blur-md border border-zinc-800 rounded-full px-4 py-2 flex items-center gap-2 transition-all duration-300">
+    // Regresamos a 'absolute' para que se quede arriba, pero con z-[999] para que nada lo tape
+    <div className="absolute top-28 right-6 md:right-32 z-[999] bg-black/50 backdrop-blur-md border border-zinc-800 rounded-full px-4 py-2 flex items-center gap-2 transition-all duration-300">
       <button
         onClick={toggleLocale}
-        className="text-xs font-medium tracking-widest flex gap-2"
+        className="text-xs font-medium tracking-widest flex gap-2 cursor-pointer"
         aria-label="Toggle language"
       >
         <span className={`transition-colors ${locale === 'en' ? 'text-white' : 'text-zinc-500'}`}>
