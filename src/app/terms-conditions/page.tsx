@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms and Conditions | Blvck Sheep Shuttle Service",
@@ -9,6 +10,15 @@ export const metadata: Metadata = {
 export default function TermsConditions() {
   return (
     <main className="container mx-auto max-w-4xl py-24 px-6 lg:px-0">
+      {/* Botón para regresar a la versión en inglés */}
+      <div className="flex justify-end mb-8">
+        <Link 
+          href="/terminos" 
+          className="text-xs font-medium tracking-widest text-zinc-500 hover:text-white transition-colors border border-zinc-800 rounded-full px-4 py-2"
+        >
+          LEER EN ESPAÑOL
+        </Link>
+      </div>
       <h1 className="text-4xl font-light mb-6 text-center text-white tracking-tight">
         Blvck Sheep Terms & Conditions
       </h1>
@@ -26,7 +36,7 @@ export default function TermsConditions() {
         </p>
         <ul className="list-disc pl-5 text-zinc-300 space-y-3 text-sm marker:text-blue-500">
           <li>
-            <strong>Our Service:</strong> Blvck Sheep operates 5-passenger SUVs or Sedans or 7-passenger SUVs with limits on passenger capacity per trip for a more private and comfortable experience. For our <strong>shared services or larger groups (5+ passengers)</strong> we have partnerships with trusted providers, that assist us with vans, microbuses or buses services.
+            <strong>Our Service:</strong> Blvck Sheep operates 5-passenger to 7-passenger vehicles SUVs or Sedans with limits on passenger capacity per trip for a more private and comfortable experience. For our <strong>shared services or larger groups (5+ passengers)</strong> we have partnerships with trusted providers, that assist us with vans, microbuses or buses services.
           </li>
           <li>
             <strong>Luggage Rule:</strong> Standard allowance is 1 large bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage</strong> so we can dispatch the correct vehicle size, otherwise, you may face delays or extra fees, read more below.
