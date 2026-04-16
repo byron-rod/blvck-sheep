@@ -88,7 +88,7 @@ export default function TerminosYCondiciones() {
             <strong>Flexibilidad de Horarios y Avisos:</strong> Aunque ofrecemos total flexibilidad, cualquier cambio en tu hora de salida o ruta debe solicitarse con al menos <strong>24 horas de anticipación</strong> para que podamos gestionar adecuadamente la logística de los conductores.
           </li>
           <li>
-            <strong>Ajustes de Última Hora:</strong> Los cambios solicitados dentro de las 24 horas previas a tu viaje están estrictamente sujetos a disponibilidad. Podrían incurrir en tarifas adicionales o ser rechazados si entran en conflicto con los horarios de otros conductores.
+            <strong>Ajustes de Última Hora:</strong> Los cambios solicitados dentro de las 24 horas previas a tu viaje están estrictamente sujetos a disponibilidad. Podrían incurrir en tarifas adicionales o ser rechazados si entran en conflicto con los horarios de otros clientes.
           </li>
         </ul>
       </section>
