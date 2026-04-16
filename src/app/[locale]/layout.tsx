@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/sections/Navbar";
 import Footer from "@/sections/Footer";
 import Script from "next/script";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,13 +23,18 @@ export const metadata: Metadata = {
     "Guatemala travel concierge, luxury shuttles Guatemala, custom itineraries Guatemala, itinerary planning Guatemala, private transfers Lake Atitlan, premium transit Antigua, hybrid transport Guatemala, VIP travel Guatemala, Guatemala vacation planning, tourist transportation Guatemala, Blvck Sheep",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages({ locale });
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         {/* SEO Meta Tags */}
         <meta
@@ -167,9 +175,12 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
-        <Navbar />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <LanguageSwitcher />
+          <Navbar />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
