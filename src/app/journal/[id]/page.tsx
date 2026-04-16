@@ -45,19 +45,19 @@ export default function JournalArticlePage({ params }: Props) {
 
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
-      {/* Top Nav Overlay - Now Fixed and Scrollable */}
-            <nav className="fixed top-14 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
-              <button
-                onClick={() => router.back()}
-                className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
-              >
-                <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
-                Back
-              </button>
-              <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
-                <IoShareOutline />
-              </button>
-            </nav>
+      {/* Top Nav Overlay */}
+      <nav className="fixed top-14 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+        <button
+          onClick={() => router.back()}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          Back
+        </button>
+        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
+          <IoShareOutline />
+        </button>
+      </nav>
 
       {/* Cinematic Hero */}
       <section className="relative h-[70vh] w-full flex items-end px-6 md:px-12 lg:px-24 pb-16">
@@ -93,7 +93,7 @@ export default function JournalArticlePage({ params }: Props) {
               <p 
                 key={index} 
                 className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed mb-8"
-                dangerouslySetInnerHTML={{ __html: block.value }}
+                dangerouslySetInnerHTML={{ __html: block.value || "" }}
               />
             );
           }
@@ -102,6 +102,22 @@ export default function JournalArticlePage({ params }: Props) {
               <h2 key={index} className="text-3xl md:text-4xl font-semibold mt-16 mb-8 tracking-tight text-white">
                 {block.value}
               </h2>
+            );
+          }
+          if (block.type === 'image') {
+            return (
+              <figure key={index} className="my-14 w-full">
+                <img 
+                  src={block.url} 
+                  alt={block.caption || "Article image"} 
+                  className="w-full h-auto object-cover rounded-sm"
+                />
+                {block.caption && (
+                  <figcaption className="text-zinc-500 text-sm mt-4 text-center tracking-wide">
+                    {block.caption}
+                  </figcaption>
+                )}
+              </figure>
             );
           }
           if (block.type === 'cta') {
@@ -120,7 +136,6 @@ export default function JournalArticlePage({ params }: Props) {
           return null;
         })}
       </article>
-
     </div>
   );
 }

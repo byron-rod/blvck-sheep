@@ -2,8 +2,10 @@
 
 export type ContentBlock = {
   type: 'heading' | 'paragraph' | 'image' | 'cta';
-  value: string;
+  value?: string;
   link?: string; // Used if type is 'cta'
+  url?: string;     // <-- Agregamos esto
+  caption?: string;
 };
 
 export type JournalPost = {
@@ -21,7 +23,6 @@ import decodingJournalImage from "@/assets/images/decoding-journal.png";
 import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
 import simJournalImage from "@/assets/images/sim-journal.png";
 
-import atitlanImage from "@/assets/images/atitlan.jpg";
 
 
 export const journalData: JournalPost[] = [
@@ -29,7 +30,7 @@ export const journalData: JournalPost[] = [
     id: "antigua-to-lake-atitlan-guide",
     title: "The Ultimate Guide: Traveling from Antigua to Lake Atitlán in 2026",
     excerpt: "Everything you need to know about navigating Guatemala's most popular route. From surviving the chaotic 'chicken buses' to finding the perfect lakeside sanctuary.",
-    publishDate: "April 15, 2026",
+    publishDate: "February 12, 2026",
     readTime: "8 MIN READ",
     heroImage: roadguideJournalImage.src, 
     category: "Transit & Logistics",
@@ -102,7 +103,7 @@ export const journalData: JournalPost[] = [
     id: "guatemala-sim-card-esim-guide",
     title: "How to Get Data in Guatemala: eSIMs vs. Local SIM Cards",
     excerpt: "Navigating mobile data in Guatemala can be surprisingly frustrating due to strict registration laws. Here is the ultimate guide to bypassing the paperwork and getting online the moment you land.",
-    publishDate: "April 13, 2026",
+    publishDate: "March 16, 2026",
     readTime: "5 MIN READ",
     heroImage: simJournalImage.src, 
     category: "Travel Hacks",
@@ -169,7 +170,7 @@ export const journalData: JournalPost[] = [
     id: "lake-atitlan-villages-guide",
     title: "Decoding Lake Atitlán: Which Village is Right for You?",
     excerpt: "Lake Atitlán is not a single destination; it is a complex network of distinct micro-cultures. Here is the insider’s guide to choosing the perfect shoreline for your aesthetic and energy.",
-    publishDate: "April 20, 2026",
+    publishDate: "April 15, 2026",
     readTime: "8 MIN READ",
     heroImage: decodingJournalImage.src, 
     category: "Insider Guides",
@@ -254,6 +255,244 @@ export const journalData: JournalPost[] = [
         type: "cta",
         value: "Secure Your Transfer to the Lake",
         link: "https://wa.me/50255116881?text=Hello!,%20I%20need%20a%20shuttle%20to%20Lake%20Atitlan!"
+      }
+    ]
+  },
+  {
+    id: "where-to-eat-antigua-guatemala-part-1",
+    title: "Where to Eat in Antigua, Part 1: My Top 10 Favorite Spots",
+    excerpt: "Navigating cobblestone streets to find new restaurants in Antigua is one of my favorite things to do. Here are 10 of my favorite spots to eat in this colonial city. From fancy dining to the best spots for a hangover cure, I've got you covered.",
+    publishDate: "April 16, 2026",
+    readTime: "6 MIN READ",
+    heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
+    category: "Food & Culture",
+    content: [
+      {
+        type: "paragraph",
+        value: "One of my favorite things to do is discover new restaurants in Antigua. This city is the culinary capital of Guatemala, and there are so many amazing places to eat. I've been through the trial and error search so you don't have to."
+      },
+      {
+        type: "paragraph",
+        value: "For Part 1 of our dining, and maybe some wining, guide, I'm sharing 10 of my favorite local spots. From the classic Guatemalan hangover cures, the Picositas, to high-end culinary fusion, these environments offer the service, atmosphere, and above all else, flavor."
+      },
+      {
+        type: "heading",
+        value: "Luna de Miel"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Sweet Cravings & Casual Comfort.</strong> If your body is asking for sugar after hiking a volcano, this is the safest bet in town. Luna de Miel is an Antigua institution famous for their massive, perfectly folded crepes. It&apos;s laid-back, consistently good, and undeniably comforting. <br/><br/><a href='https://www.instagram.com/lunademielantigua' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+      },
+      {
+        type: "heading",
+        value: "Hector's Deli & Bistro"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Reliable High-Quality Comfort - with killer sandwiches.</strong> When you just want an incredibly well-made meal and a glass of wine without a stiff, overly formal atmosphere. Hector's is intimate, deeply reliable, and offers food that feels like a warm hug. <br/><br/><a href='https://www.instagram.com/hectorsbistro' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1600&auto=format&fit=crop",
+        caption: "Finding a comfortable, reliable meal is the best way to anchor yourself in a new city."
+      },
+      {
+        type: "heading",
+        value: "Samsara"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Ayurvedic Wellness & With a Dash of Mysticism.</strong> Since 2014, Samsara has been Antigua's definitive sanctuary for functional, plant-based nutrition. Inspired by Ayurvedic philosophy, their menu acts as a deliberate reset button for tired travelers. From their on-tap kombucha and house-made ferments (like kimchi and tempeh) to healing, spiced bowls of kitchary, every ingredient is chosen to restore your energy and balance your system. It is the ultimate spot to nourish your body cleanly and intentionally after days of heavy travel. This restuarant is one of my favorites spots. <br/><br/><a href='https://www.samsara.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+      },
+      {
+        type: "heading",
+        value: "Arbol"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Authentic & Precise Japanese.</strong> You might not expect exceptional Japanese food in the colonial highlands of Central America, but Arbol delivers. It&apos;s authentic, minimalist, and provides a quiet, focused dining experience when you want a break from heavier local cuisines. <br/><br/><a href='https://www.instagram.com/arbol_coffee_gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+      },
+      {
+        type: "heading",
+        value: "La Bruja"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Conscious, Elevated Plant-Based Dining.</strong> Built on the philosophy that food is a way to connect with purpose, La Bruja takes full advantage of Antigua's rich volcanic soil and eternal spring. They offer a premium, 100% vegan menu packed with fresh, locally sourced ingredients. It is the perfect sanctuary when you want a meal that is as deeply nourishing as it is beautifully crafted, leaving you energized rather than weighed down. <br/><br/><a href='https://www.labrujaveganfood.com/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1600&auto=format&fit=crop",
+        caption: "From street-side authentic bites to elevated fusion, Antigua's food scene is dynamic."
+      },
+      {
+        type: "heading",
+        value: "Hugo's"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Ceviche & The Legendary 'Picosita'.</strong> This is your crash course in local street-level culture. Hugo's is famous for seafood and micheladas, but you are here for the <em>Picosita</em>. They are the pioneers of this drink. What is a Picosita? It is a quintessential Guatemalan lifesaver—usually an ice-cold local beer served right in the can, dressed heavily with lime, salt, pepper, Worcestershire sauce, hot sauce, and topped with fresh ceviche juices and spices. It is the ultimate afternoon refresher or hangover cure. <br/><br/><a href='https://www.instagram.com/hugosrestauranteantigua/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+      },
+      {
+        type: "heading",
+        value: "El Portón Típico"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Best Guatemalan Food on a Budget.</strong> Traveling smart means knowing where the locals eat. El Portón Típico offers rich, traditional Guatemalan plates at prices that make sense. It&apos;s an accessible, unpretentious, and highly satisfying way to explore the local palate."
+      },
+      {
+        type: "heading",
+        value: "7A Norte"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Rooftop Pizzas & Cold Beers.</strong> When the sun goes down and you just want to decompress. 7A Norte offers great pizza, cold beer, and a rooftop view that reminds you exactly why you traveled to Antigua in the first place. Simple, effective, and deeply relaxing. <br/><br/><a href='https://www.instagram.com/7anorte' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1600&auto=format&fit=crop",
+        caption: "Sometimes, peace of mind looks exactly like a rooftop pizza after a long day of travel."
+      },
+      {
+        type: "heading",
+        value: "Itzam"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Elevated Fusion & High Cuisine.</strong> For the nights you want to dress up and experience the modern edge of Guatemalan gastronomy. Itzam blends coffee culture, local ingredients, and world-class cocktails into a sophisticated, highly intentional dining experience. <br/><br/><a href='https://www.itzam.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+      },
+      {
+        type: "heading",
+        value: "Mesón Panza Verde"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Classic, Atmospheric Excellence.</strong> Arguably the most romantic and established fine-dining room in the city. If you are looking for the best steak in Antigua, paired with an unmatched colonial ambiance and live music, Panza Verde is the definitive premium choice. <br/><br/><a href='https://www.panzaverde.com' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+      },
+      {
+        type: "cta",
+        value: "Book your ride to Antigua",
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20am%20ready%20to%20travel%20safely!"
+      }
+    ]
+  },
+{
+    id: "donde-comer-antigua-guatemala-parte-1",
+    title: "Dónde Comer en Antigua, Parte 1: Mis 10 Lugares Favoritos",
+    excerpt: "¿Con hambre en la ciudad colonial? Te ahorramos la búsqueda con nuestra selección personal de los 10 mejores spots en Antigua Guatemala: desde ceviches legendarios hasta alta cocina volcánica.",
+    publishDate: "16 de Abril, 2026",
+    readTime: "6 MIN DE LECTURA",
+    heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
+    category: "Gastronomía y Cultura",
+    content: [
+      {
+        type: "paragraph",
+        value: "Antigua ha sido mi lugar favorito para buscar nuevos restaurantes, cada semana hay algo nuevo, nuevos sabores, nuevos ambientes. Hay tantas opciones que a veces no es facil decidir a donde ir. Especialmente en Antigua, una ciudad que cuenta con cientos de opciones culinarias. A veces, después de un largo día de exploración, no quieres apostar por un menú al azar; solo necesitas un lugar donde puedas sentarte, sentirte completamente a gusto y comer algo que te recargue las energías."
+      },
+      {
+        type: "paragraph",
+        value: "Para la Parte 1 de nuestra guía gastronómica, les comparto 10 de mis lugares locales favoritos en Antigua Guatemala. Desde remedios casuales para la resaca, o como le decimos en Guate, la Goma, hasta fusión culinaria de alta gama, estos entornos ofrecen el servicio y la atmósfera, pero sobre todo el sabor."
+      },
+      {
+        type: "heading",
+        value: "Luna de Miel"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Antojos Dulces y Comodidad Casual.</strong> Si tu cuerpo pide azúcar después de escalar un volcán, esta es la apuesta más segura de la ciudad. Luna de Miel es una institución en Antigua famosa por sus crepas masivas y perfectamente preparadas. Es un lugar relajado, consistentemente bueno e innegablemente reconfortante. <br/><br/><a href='https://www.instagram.com/lunademielantigua' target='_blank' class='text-blue-400 hover:underline'>Ver en Instagram</a>"
+      },
+      {
+        type: "heading",
+        value: "Hector's Deli & Bistro"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Comodidad Confiable de Alta Calidad.</strong> Cuando solo quieres un sándwich increíblemente bien hecho y una copa de vino sin una atmósfera rígida y demasiado formal. Hector's es íntimo, profundamente confiable y ofrece comida que se siente como un abrazo cálido después de un largo día de viaje. <br/><br/><a href='https://www.instagram.com/hectorsbistro' target='_blank' class='text-blue-400 hover:underline'>Ver en Instagram</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1600&auto=format&fit=crop",
+        caption: "Encontrar una comida cómoda y confiable es la mejor manera de anclarte en una nueva ciudad."
+      },
+      {
+        type: "heading",
+        value: "Samsara"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Bienestar Ayurvédico y Nutrición Intencional.</strong> Desde 2014, Samsara ha sido el santuario definitivo de Antigua para la nutrición funcional basada en plantas. Inspirado en la filosofía ayurvédica, su menú actúa como un botón de reinicio para el viajero cansado. Desde su kombucha de barril y fermentos caseros (como kimchi y tempeh) hasta sus tazones curativos de kitchary con especias, cada ingrediente se elige para restaurar tu energía y equilibrar tu sistema. Es el lugar ideal para nutrir tu cuerpo de manera limpia e intencional. <br/><br/><a href='https://www.samsara.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visitar Sitio Web</a>"
+      },
+      {
+        type: "heading",
+        value: "Arbol"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Japonés Auténtico y Preciso.</strong> Puede que no esperes comida japonesa excepcional en las tierras altas de Centroamérica, pero Arbol cumple con creces. Es auténtico, minimalista y proporciona una experiencia gastronómica tranquila y enfocada cuando deseas un descanso de las cocinas locales más pesadas. <br/><br/><a href='https://www.instagram.com/arbol_coffee_gt/' target='_blank' class='text-blue-400 hover:underline'>Ver en Instagram</a>"
+      },
+      {
+        type: "heading",
+        value: "La Bruja"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Cocina Vegana Consciente y Elevada.</strong> Construida sobre la filosofía de que la comida es una forma de conectar con un propósito, La Bruja aprovecha al máximo el rico suelo volcánico de Antigua y su eterna primavera. Ofrecen un menú premium, 100% vegano, repleto de ingredientes frescos de origen local. Es el santuario perfecto cuando deseas una comida que sea tan profundamente nutritiva como bellamente elaborada, dejándote lleno de energía en lugar de pesado después de un día de exploración. <br/><br/><a href='https://www.labrujaveganfood.com/' target='_blank' class='text-blue-400 hover:underline'>Visitar Sitio Web</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1600&auto=format&fit=crop",
+        caption: "Desde auténticos bocados en la calle hasta fusión elevada, la escena gastronómica de Antigua es dinámica."
+      },
+      {
+        type: "heading",
+        value: "Hugo's"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Ceviche y la Legendaria 'Picosita'.</strong> Este es tu curso intensivo sobre cultura local de calle. Hugo's es famoso por sus mariscos y micheladas, pero estás aquí por la <em>Picosita</em>. ¿Qué es una Picosita? Es un salvavidas guatemalteco por excelencia—usualmente una cerveza local bien fría servida directamente en la lata, aderezada con limón, sal, pimienta, salsa inglesa, picante y coronada con jugos de ceviche fresco y especias. Es el máximo refresco de tarde o cura para la resaca."
+      },
+      {
+        type: "heading",
+        value: "El Portón Típico"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: La Mejor Comida Guatemalteca a Buen Precio.</strong> Viajar de manera inteligente significa saber dónde comen los locales. El Portón Típico ofrece platos guatemaltecos ricos y tradicionales a precios que tienen sentido. Es una forma accesible, sin pretensiones y muy satisfactoria de explorar el paladar local."
+      },
+      {
+        type: "heading",
+        value: "7A Norte"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Pizzas en la Terraza y Cervezas Frías.</strong> Cuando se pone el sol y solo quieres descomprimir. 7A Norte ofrece excelente pizza, cerveza fría y una vista desde la terraza que te recuerda exactamente por qué viajaste a Antigua en primer lugar. Simple, efectivo y profundamente relajante. <br/><br/><a href='https://www.instagram.com/7anorte' target='_blank' class='text-blue-400 hover:underline'>Ver en Instagram</a>"
+      },
+      {
+        type: "image",
+        url: "https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1600&auto=format&fit=crop",
+        caption: "A veces, la tranquilidad se ve exactamente como una pizza en una terraza después de un largo día de viaje."
+      },
+      {
+        type: "heading",
+        value: "Itzam"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Fusión Elevada y Alta Cocina.</strong> Para las noches en las que quieres arreglarte y experimentar la vanguardia de la gastronomía guatemalteca. Itzam fusiona la cultura del café, ingredientes locales y coctelería de clase mundial en una experiencia culinaria sofisticada y altamente intencional. <br/><br/><a href='https://www.itzam.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visitar Sitio Web</a>"
+      },
+      {
+        type: "heading",
+        value: "Mesón Panza Verde"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Excelencia Clásica y Atmosférica.</strong> Posiblemente el salón de alta cocina más romántico y consolidado de la ciudad. Si buscas el mejor corte de carne en Antigua, combinado con un ambiente colonial inigualable y música en vivo, Panza Verde es la opción premium definitiva. <br/><br/><a href='https://www.panzaverde.com' target='_blank' class='text-blue-400 hover:underline'>Visitar Sitio Web</a>"
+      },
+      {
+        type: "cta",
+        value: "Reserva tu viaje a Antigua",
+        link: "https://wa.me/50255116881?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20reservar%20un%20viaje%20seguro%20a%20Antigua."
       }
     ]
   }
