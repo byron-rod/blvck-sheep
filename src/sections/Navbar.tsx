@@ -7,6 +7,7 @@ import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl"; 
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -21,6 +22,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const t = useTranslations("Navigation");
   const [isOpen, setIsOpen] = useState(false);
 
   return (

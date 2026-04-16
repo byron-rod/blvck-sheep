@@ -1,7 +1,20 @@
 {
   "Navigation": {
     "home": "Inicio",
-    "about": "Acerca de",
-    "services": "Servicios"
+    "about": "Nosotros",
+    "services": "Servicios",
+    "destinations": "Destinos",
+    "itineraries": "Itinerarios",
+    "reviews": "Reseñas",
+    "blog": "Blog",
+    "faqs": "FAQs",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "badge": "Explora Guatemala con Comodidad",
+    "title": "Blvck Sheep",
+    "subtitlePart1": "Servicios Turísticos,",
+    "subtitlePart2": " ahora son mejores.",
+    "cta": "Reserva tu Viaje Ahora"
   }
 }
