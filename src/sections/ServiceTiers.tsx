@@ -37,6 +37,7 @@ const tiers = [
 
 export default function ServiceTiers() {
   return (
+    <>
     <section className="relative bg-black py-24 w-full overflow-hidden" id="services">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/30 via-black to-black pointer-events-none" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -79,15 +80,17 @@ export default function ServiceTiers() {
           ))}
         </div>
       </div>
-      <div className="mt-16 flex justify-center">
+  
+    </section>
+     <div className=" flex justify-center">
   <Link 
     href="/services" 
-    className="group flex items-center gap-3 text-sm uppercase tracking-widest font-bold text-white bg-zinc-900 border border-zinc-800 hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 rounded-sm"
+    className="group flex items-center gap-3 text-sm uppercase tracking-widest font-bold text-black bg-white border border-white hover:bg-black hover:text-white transition-all duration-300 px-10 py-5 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.15)] hover:shadow-[0_0_35px_rgba(255,255,255,0.3)] hover:-translate-y-1"
   >
     Compare Details & Perks
     <IoArrowForward className="text-xl group-hover:translate-x-1 transition-transform" />
   </Link>
 </div>
-    </section>
+    </>
   );
 }
