@@ -268,7 +268,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "heading",
-        value: "Option 2: The Blvck Sheep Concierge (The Ultimate Hack)"
+        value: "Option 2: The Blvck Sheep Perks (The Ultimate Hack)"
       },
       {
         type: "paragraph",
@@ -276,7 +276,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "To get you the best of both worlds—local prices without the frustrating paperwork—we introduced the Blvck Sheep SIM Concierge. When you book a private shuttle with us, simply request a SIM card add-on. We handle the logistics ahead of time. When you step into our ride, your fully loaded local SIM card will be waiting for you. You get instant connectivity at local rates, zero queues required."
+        value: "To get you the best of both worlds—local prices without the frustrating paperwork—we introduced the Blvck Sheep SIM Perk. When you book a private shuttle with us, simply request a SIM card add-on. We handle the logistics ahead of time. When you step into our ride, your fully loaded local SIM card will be waiting for you. You get instant connectivity at local rates, zero queues required."
       },
       {
         type: "cta",

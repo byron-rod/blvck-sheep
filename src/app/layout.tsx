@@ -12,12 +12,34 @@ const inter = Inter({
   axes: ["opsz"],
 });
 
+// 1. OPTIMIZACIÓN SEO: Movimos los meta tags manuales al objeto nativo de Next.js
 export const metadata: Metadata = {
   title: "Blvck Sheep | Tourist Services in Guatemala",
   description:
     "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exclusive concierge services. Travel differently.",
   keywords:
     "Guatemala travel concierge, luxury shuttles Guatemala, custom itineraries Guatemala, itinerary planning Guatemala, private transfers Lake Atitlan, premium transit Antigua, hybrid transport Guatemala, VIP travel Guatemala, Guatemala vacation planning, tourist transportation Guatemala, Blvck Sheep",
+  openGraph: {
+    title: "Blvck Sheep | Tourist Services in Guatemala",
+    description: "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon.",
+    url: "https://www.blvck-sheep.com",
+    siteName: "Blvck Sheep",
+    images: [
+      {
+        url: "/blvcksheeplogo.jpg",
+        width: 500,
+        height: 500,
+        alt: "Blvck Sheep Shuttles logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blvck Sheep | Tourist Services in Guatemala",
+    description: "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon.",
+    images: ["/blvcksheeplogo.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -28,24 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* SEO Meta Tags */}
-        <meta
-          property="og:title"
-          content="Blvck Sheep | Tourist Services in Guatemala"
-        />
-        <meta
-          property="og:description"
-          content="Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exclusive concierge services. Travel differently."
-        />
-        <meta property="og:image" content="/blvcksheeplogo.jpg" />
-        <meta property="og:image:alt" content="Blvck Sheep Shuttles logo" />
-        <meta property="og:image:width" content="500" />
-        <meta property="og:image:height" content="500" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content="/blvcksheeplogo.jpg" />
-        <meta name="twitter:image:alt" content="Blvck Sheep Shuttles logo" />
-
-        {/* Structured Data */}
+        {/* Structured Data (Local Business) */}
         <Script
           id="structured-data-transportation"
           type="application/ld+json"
@@ -54,7 +59,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Blvck Sheep Shuttles",
-              description: metadata.description,
+              description: "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon.",
               url: "https://www.blvck-sheep.com",
               logo: "https://www.blvck-sheep.com/blvcksheeplogo.jpg",
               sameAs: [
@@ -78,8 +83,7 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "Antigua to Lake Atitlan",
-                      description:
-                        "Shuttle services from Antigua to Panajachel",
+                      description: "Shuttle services from Antigua to Panajachel",
                       category: "Shuttle Service",
                     },
                   },
@@ -88,8 +92,7 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "Guatemala City to Lake Atitlan",
-                      description:
-                        "Shuttle services from Guatemala City to Panajachel",
+                      description: "Shuttle services from Guatemala City to Panajachel",
                       category: "Shuttle Service",
                     },
                   },
@@ -98,8 +101,7 @@ export default function RootLayout({
                     itemOffered: {
                       "@type": "Service",
                       name: "Antigua to El Paredon",
-                      description:
-                        "Shuttle services from Antigua to El Paredon",
+                      description: "Shuttle services from Antigua to El Paredon",
                       category: "Shuttle Service",
                     },
                   },
@@ -108,6 +110,7 @@ export default function RootLayout({
             }),
           }}
         />
+        
         {/* Travelpayouts Verification */}
         <Script
           id="travelpayouts-verification"
@@ -156,19 +159,25 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body
-        className={`${inter.variable} font-sans antialiased bg-black text-white`}
-      >
+      
+      {/* 2. OPTIMIZACIÓN ACCESIBILIDAD/UI: Agregamos flexbox para el footer sticky y la etiqueta <main> */}
+      <body className={`${inter.variable} font-sans antialiased bg-black text-white flex flex-col min-h-screen`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T4HH8JKL"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
+            title="Google Tag Manager"
           ></iframe>
         </noscript>
+        
         <Navbar />
-        {children}
+        
+        <main id="main-content" className="flex-grow">
+          {children}
+        </main>
+        
         <Footer />
       </body>
     </html>

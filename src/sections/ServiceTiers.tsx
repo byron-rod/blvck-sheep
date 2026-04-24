@@ -1,6 +1,5 @@
-import { Bus, Car, Key, Leaf, Sparkle } from "lucide-react";
+import { Bus, Car, Sparkle } from "lucide-react";
 import Link from "next/link";
-import { IoArrowForward } from "react-icons/io5";
 
 const tiers = [
   {
@@ -38,36 +37,45 @@ const tiers = [
 export default function ServiceTiers() {
   return (
     <>
-    <section className="relative bg-black py-24 w-full overflow-hidden" id="services">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/30 via-black to-black pointer-events-none" />
+    <section className="relative bg-black py-24 w-full overflow-hidden" id="services" aria-labelledby="services-heading">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-zinc-900/30 via-black to-black pointer-events-none" aria-hidden="true" />
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-light tracking-tight text-white mb-16 text-center">
-          Blvck Sheep Services
-        </h2>
+        <header>
+          <h2 id="services-heading" className="text-4xl md:text-5xl font-light tracking-tight text-white mb-16 text-center">
+            Blvck Sheep Services
+          </h2>
+        </header>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {tiers.map((tier) => (
-            <div
+            <article
               key={tier.name}
               className={`group relative aspect-[4/5] ${tier.bgRest} border ${tier.borderRest} ${tier.borderHover} overflow-hidden rounded-xl transition-all duration-500 ease-in-out cursor-pointer`}
+              aria-labelledby={`tier-${tier.name.toLowerCase().replace(/\s+/g, '-')}`}
             >
               {/* Hover Background overlay */}
               <div
                 className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out ${tier.bgHover}`}
+                aria-hidden="true"
               />
 
               {/* Content Layer */}
               <div className="relative z-10 w-full h-full p-8 flex flex-col justify-center items-center">
                 {/* Resting block */}
-                <div className="flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform group-hover:-translate-y-24 group-hover:scale-95 origin-top w-full">
+                <header className="flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform group-hover:-translate-y-24 group-hover:scale-95 origin-top w-full">
                   <tier.icon
                     strokeWidth={1}
                     className={`w-24 h-24 ${tier.textRest} mb-8 transition-all duration-500 ease-in-out group-hover:scale-75 group-hover:text-white`}
+                    aria-hidden="true"
+                    focusable="false"
                   />
-                  <h3 className="text-3xl font-normal text-white tracking-tight text-center">
+                  <h3 
+                    id={`tier-${tier.name.toLowerCase().replace(/\s+/g, '-')}`}
+                    className="text-3xl font-normal text-white tracking-tight text-center"
+                  >
                     {tier.name}
                   </h3>
-                </div>
+                </header>
 
                 {/* Revealed block */}
                 <div className="absolute left-8 right-8 top-1/2 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-y-0 translate-y-12 pointer-events-none">
@@ -76,21 +84,21 @@ export default function ServiceTiers() {
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
   
     </section>
-     <div className=" flex justify-center">
+     <nav aria-label="Service options navigation" className="flex justify-center">
   <Link 
     href="/services" 
     className="bg-white text-black font-semibold rounded-full px-8 py-3 transition-all hover:bg-neutral-200 hover:scale-105 active:scale-95 text-lg hover:bg-white hover:text-black"
+    aria-label="Compare all service tier options"
   >
     Compare Options
-    {/* <IoArrowForward className="text-xl group-hover:translate-x-1 transition-transform" /> */}
   </Link>
-</div>
+</nav>
     </>
   );
 }
