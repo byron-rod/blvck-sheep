@@ -14,11 +14,12 @@ const inter = Inter({
 
 // 1. OPTIMIZACIÓN SEO: Movimos los meta tags manuales al objeto nativo de Next.js
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.blvck-sheep.com"), // <-- ESTA ES LA LÍNEA MÁGICA
   title: "Blvck Sheep | Tourist Services in Guatemala",
   description:
-    "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exclusive concierge services. Travel differently.",
+    "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon. Redefining travel in Guatemala with custom itineraries, and exclusive services. Travel differently.",
   keywords:
-    "Guatemala travel concierge, luxury shuttles Guatemala, custom itineraries Guatemala, itinerary planning Guatemala, private transfers Lake Atitlan, premium transit Antigua, hybrid transport Guatemala, VIP travel Guatemala, Guatemala vacation planning, tourist transportation Guatemala, Blvck Sheep",
+    "Guatemala travel, luxury shuttles Guatemala, custom itineraries Guatemala, itinerary planning Guatemala, private transfers Lake Atitlan, premium transit Antigua, hybrid transport Guatemala, VIP travel Guatemala, Guatemala vacation planning, tourist transportation Guatemala, Blvck Sheep",
   openGraph: {
     title: "Blvck Sheep | Tourist Services in Guatemala",
     description: "Explore Guatemala in comfort. Blvck Sheep offers a more exclusive, reliable, and comfortable transportation to top destinations like Antigua, Lake Atitlan, Lanquin, and El Paredon.",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "Blvck Sheep",
     images: [
       {
-        url: "/blvcksheeplogo.jpg",
+        url: "/blvcksheeplogo.jpg", // Ahora Next.js sabe que esto es https://www.blvck-sheep.com/blvcksheeplogo.jpg
         width: 500,
         height: 500,
         alt: "Blvck Sheep Shuttles logo",
