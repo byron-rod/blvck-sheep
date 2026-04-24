@@ -30,7 +30,7 @@ export default function TraveloguePreview({ posts }: { posts: JournalPost[] }) {
               transition={{ duration: 0.8, delay: index * 0.1 }}
             >
               <Link href={`/journal/${post.id}`} className="group block h-full">
-                <article className="relative w-full aspect-video md:aspect-[4/5] lg:aspect-[4/3] overflow-hidden border border-zinc-900 hover:border-zinc-700 transition-colors duration-500 rounded-none bg-zinc-900">
+                <article className="relative w-full aspect-video md:aspect-[4/5] lg:aspect-[4/3] overflow-hidden border border-zinc-900 hover:border-zinc-700 transition-colors duration-500 rounded-xl bg-zinc-900">
                   <img
                     src={post.heroImage}
                     alt={post.title}

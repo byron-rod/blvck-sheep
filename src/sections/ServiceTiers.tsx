@@ -26,7 +26,7 @@ const tiers = [
   {
     name: "Blvck Sheep",
     icon: Sparkle,
-    description: "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary concierge perks, our most refined service. \n\nFleet: Electric SUVs.",
+    description: "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary perks, our most refined service. \n\nFleet: Electric SUVs.",
     textRest: "text-zinc-700",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-700",
@@ -85,10 +85,10 @@ export default function ServiceTiers() {
      <div className=" flex justify-center">
   <Link 
     href="/services" 
-    className="group flex items-center gap-3 text-sm uppercase tracking-widest font-bold text-black bg-white border border-white hover:bg-black hover:text-white transition-all duration-300 px-10 py-5 rounded-xl shadow-[0_0_25px_rgba(255,255,255,0.15)] hover:shadow-[0_0_35px_rgba(255,255,255,0.3)] hover:-translate-y-1"
+    className="bg-white text-black font-semibold rounded-full px-8 py-3 transition-all hover:bg-neutral-200 hover:scale-105 active:scale-95 text-lg hover:bg-white hover:text-black"
   >
-    Compare Details & Perks
-    <IoArrowForward className="text-xl group-hover:translate-x-1 transition-transform" />
+    Compare Options
+    {/* <IoArrowForward className="text-xl group-hover:translate-x-1 transition-transform" /> */}
   </Link>
 </div>
     </>

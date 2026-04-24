@@ -136,7 +136,7 @@ export default function HotelDetailPage({ params }: Props) {
               href={hotel.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
+              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
             >
               Check Availability
             </Link>

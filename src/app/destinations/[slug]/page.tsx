@@ -126,7 +126,7 @@ export default function DestinationDetailPage({ params }: Props) {
                      href={section.actionLink}
                      target="_blank"
                      rel="noopener noreferrer"
-                     className="inline-block bg-white text-black px-10 py-4 text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors"
+                     className="inline-block bg-white text-black px-10 py-4 text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors rounded-xl"
                    >
                      {section.actionText}
                    </Link>

@@ -4,7 +4,7 @@ import Tag from "@/components/Tag";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-const text = `Explore Guatemala meanwhile we handle the logistics to give you peace of mind on the road. Whether you are taking one of our shared routes or a private ride, our priority is your safety and comfort.`;
+const text = `Discover Guatemala while we handle the logistics to give you peace of mind on the road. Whether you are taking one of our shared routes or a private ride, our priority is your safety and comfort.`;
 const words = text.split(" ");
 
 export default function About() {

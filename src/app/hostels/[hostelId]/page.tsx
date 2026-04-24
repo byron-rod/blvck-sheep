@@ -120,16 +120,16 @@ export default function HostelDetailPage({ params }: Props) {
       {/* Dual-Action Bottom Bar */}
       <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900/50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <div className="hidden sm:block">
+          {/* <div className="hidden sm:block">
              <p className="text-xs uppercase tracking-widest text-zinc-400">{hostel.name}</p>
              <p className="text-sm font-medium">Ready to explore?</p>
-          </div>
+          </div> */}
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <Link
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto border border-zinc-700 bg-transparent text-white px-8 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-900 transition-colors text-center"
+              className="w-full sm:w-auto border border-zinc-700 bg-transparent text-white px-6 py-3 rounded-xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-900 transition-colors text-center"
             >
               Book Shuttle
             </Link>
@@ -137,7 +137,7 @@ export default function HostelDetailPage({ params }: Props) {
               href={hostel.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white text-black px-8 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
+              className="w-full sm:w-auto bg-white text-black px-6 py-3 rounded-xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
             >
               Check Availability
             </Link>

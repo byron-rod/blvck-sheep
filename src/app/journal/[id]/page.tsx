@@ -125,7 +125,7 @@ export default function JournalArticlePage({ params }: Props) {
               <Link 
                 key={index} 
                 href={block.link || "#"} 
-                className="block w-fit bg-white text-black px-10 py-5 uppercase tracking-widest text-sm font-bold my-12 hover:bg-zinc-200 transition-colors"
+                className="block w-fit bg-white text-black px-10 py-5 uppercase tracking-widest text-sm font-bold my-12 hover:bg-zinc-200 transition-colors rounded-2xl"
                 target={block.link?.startsWith('http') ? "_blank" : "_self"}
                 rel={block.link?.startsWith('http') ? "noopener noreferrer" : ""}
               >

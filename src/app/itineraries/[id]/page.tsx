@@ -300,13 +300,13 @@ export default function ItineraryDetailPage({ params }: Props) {
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
             <p className="text-xs uppercase tracking-widest text-zinc-400">{itinerary.title}</p>
-            <p className="text-sm font-medium">Ready for Guatemala?</p>
+            <p className="text-sm font-medium">More information?</p>
           </div>
           <Link
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-none text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
+            className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-2xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
           >
             Inquire to Book
           </Link>

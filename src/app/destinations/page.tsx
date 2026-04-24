@@ -43,7 +43,7 @@ export default function Destinations() {
                 
                 <Link
                   href={`/destinations/${destination.id}`}
-                  className="mt-auto md:mt-0 inline-block bg-white text-black px-8 md:px-12 py-4 text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 delay-200"
+                  className="mt-auto md:mt-0 inline-block bg-white text-black px-8 md:px-12 py-4 text-sm uppercase tracking-[0.2em] rounded-xl font-semibold hover:bg-zinc-200 transition-colors translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 duration-500 delay-200"
                 >
                   Explore Guide
                 </Link>
