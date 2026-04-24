@@ -1,4 +1,6 @@
 import { Bus, Car, Key, Leaf, Sparkle } from "lucide-react";
+import Link from "next/link";
+import { IoArrowForward } from "react-icons/io5";
 
 const tiers = [
   {
@@ -24,7 +26,7 @@ const tiers = [
   {
     name: "Blvck Sheep",
     icon: Sparkle,
-    description: "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary concierge perks, our most refined service. \n\nFleet: Hybrid SUVs.",
+    description: "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary concierge perks, our most refined service. \n\nFleet: Electric SUVs.",
     textRest: "text-zinc-700",
     bgRest: "bg-zinc-950",
     borderRest: "border-zinc-700",
@@ -68,7 +70,7 @@ export default function ServiceTiers() {
 
                 {/* Revealed block */}
                 <div className="absolute left-8 right-8 top-1/2 opacity-0 group-hover:opacity-100 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] group-hover:translate-y-0 translate-y-12 pointer-events-none">
-                  <p className="text-white font-light text-[16px] leading-relaxed whitespace-pre-line text-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform scale-95 group-hover:scale-100">
+                  <p className="text-white font-light text-[14px] leading-relaxed whitespace-pre-line text-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform scale-95 group-hover:scale-100">
                     {tier.description}
                   </p>
                 </div>
@@ -77,6 +79,15 @@ export default function ServiceTiers() {
           ))}
         </div>
       </div>
+      <div className="mt-16 flex justify-center">
+  <Link 
+    href="/services" 
+    className="group flex items-center gap-3 text-sm uppercase tracking-widest font-bold text-white bg-zinc-900 border border-zinc-800 hover:bg-white hover:text-black transition-all duration-300 px-8 py-4 rounded-sm"
+  >
+    Compare Details & Perks
+    <IoArrowForward className="text-xl group-hover:translate-x-1 transition-transform" />
+  </Link>
+</div>
     </section>
   );
 }
