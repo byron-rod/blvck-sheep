@@ -11,7 +11,7 @@ export default function ItinerariesPage() {
           </h1>
           <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
             Exclusive experiences tailored to your distinctive travel style. 
-            Select your path and begin the adventure.
+            Select your path and begin the adventure. Our team can also create custom itineraries for you.
           </p>
         </div>
         
