@@ -100,7 +100,7 @@ export default function TerminosYCondiciones() {
         </h2>
         <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
           <li>
-            <strong>El Límite Estándar (Regla de Oro):</strong> El límite base para todos los pasajeros es de una (1) maleta grande y un (1) artículo personal (como una mochila o bolso). Para los traslados compartidos, este límite se aplica estrictamente debido al espacio de carga compartido.
+            <strong>El Límite Estándar (Regla de Oro):</strong> El límite base para todos los pasajeros es de una (1) maleta grande y un (1) artículo personal (como una mochila o bolso). Para los traslados compartidos, pueden aceptar mas dependiendo de la cantidad de pasajeros ese dia y el tamaño de sus maletas. Por favor notifica si llevas algo extra.
           </li>
           <li>
             <strong>Transporte Privado y Aviso Previo:</strong> Debido a que nuestra flota de nivel Privado y Blvck varía desde Sedanes hasta SUVs más grandes, la capacidad total de carga varía por viaje. Podemos acomodar equipaje extra en rutas privadas, pero <strong>debes notificarnos al momento de la reserva</strong> para que podamos despachar el tamaño de vehículo correcto.

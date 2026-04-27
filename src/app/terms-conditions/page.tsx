@@ -99,7 +99,7 @@ export default function TermsConditions() {
         </h2>
         <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
           <li>
-            <strong>The Standard Allowance (Golden Rule):</strong> The baseline allowance for all passengers is one (1) large suitcase and one (1) personal item (such as a backpack or purse). For shared shuttles, this limit is strictly enforced due to shared cargo space.
+            <strong>The Standard Allowance (Golden Rule):</strong> The baseline allowance for all passengers is one (1) large suitcase and one (1) personal item (such as a backpack or purse). For shared shuttles, there are exceptions to this rule but depends on the number of passengers and the size of their luggage. Please notify if you bring any extras.
           </li>
           <li>
             <strong>Private Transit & Advance Notice:</strong> Because our Private and Blvck tier fleets range from Sedans to larger 7-passenger SUVs, total cargo capacity varies per trip. We can happily accommodate extra luggage on private routes, but <strong>you must notify us at the time of booking</strong> so we can dispatch the correct vehicle size.
