@@ -45,6 +45,14 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "heading",
+        value: "Coffea Cafés"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibra: Top 100 de Mejores Cafeterias del Mundo.</strong> Coffea Cafés Especiales es una cafetería de especialidad ubicada en el corazón de Antigua Guatemala. Sirven cafés de alta calidad y trazabilidad, obtenidos directamente de pequeños caficultores guatemaltecos, con procesos diversos como natural, lavado y honey. Estas en Guatemala, por favor deja de tomar cafe de Starbucks, somos reconocidos mundialmente por nuestro café, apoyemos a los caficultores locales. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+      },
+      {
+        type: "heading",
         value: "Luna de Miel"
       },
       {
@@ -393,6 +401,14 @@ export const journalData: JournalPost[] = [
       {
         type: "paragraph",
         value: "For Part 1 of our dining, and maybe some wining, guide, I'm sharing 10 of my favorite local spots. From the classic Guatemalan hangover cures, the Picositas, to high-end culinary fusion, these environments offer the service, atmosphere, and above all else, flavor."
+      },
+      {
+        type: "heading",
+        value: "Coffea Antigua"
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Vibe: Top 100 Coffee Shops in the World.</strong> Guatemala is well know of its world class coffee, this is one of the best spots to enjoy it. You are visiting a new country, support local coffee producers, please dont be that person that goes to Starbucks. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
       },
       {
         type: "heading",
