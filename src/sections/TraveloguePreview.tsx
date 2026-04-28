@@ -61,7 +61,7 @@ export default function TraveloguePreview({ posts }: { posts: JournalPost[] }) {
         <div className="mt-20 flex justify-center">
           <Link 
             href="/journal"
-            className="border border-white text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-colors"
+            className="border border-white text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-colors rounded-full"
           >
             View All Articles
           </Link>

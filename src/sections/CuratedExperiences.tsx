@@ -23,7 +23,7 @@ export default function CuratedExperiences() {
             Discover Guatemala differently. Our travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.
           </p>
           <Link href="/itineraries">
-            <button className="bg-white text-black font-semibold rounded-full px-8 py-3 transition-all hover:bg-neutral-200 hover:scale-105 active:scale-95 text-lg hover:bg-white hover:text-black">
+            <button className="border border-white text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-colors rounded-full">
               Explore Itineraries
             </button>
           </Link>
