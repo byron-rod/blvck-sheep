@@ -16,7 +16,7 @@ export default function JournalClient() {
         <div>
           {/* TEXTO DINÁMICO: Título */}
           <h1 className="text-6xl md:text-8xl font-light tracking-tighter">
-            {activeLanguage === "en" ? "The Travelogue" : "Diarios de Viaje"}
+            {activeLanguage === "en" ? "The Travelogue" : "The Travelogue"}
           </h1>
           {/* TEXTO DINÁMICO: Subtítulo */}
           <p className="mt-6 text-xl md:text-2xl text-zinc-400 font-light max-w-2xl">

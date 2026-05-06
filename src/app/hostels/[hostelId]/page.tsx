@@ -137,7 +137,7 @@ export default function HostelDetailPage({ params }: Props) {
               href={hostel.bookingLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-white text-black px-6 py-3 rounded-xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
+              className="w-full sm:w-auto bg-white text-black px-6 py-3 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
             >
               Check Availability
             </Link>

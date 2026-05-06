@@ -23,7 +23,7 @@ export default function ItinerariesPage() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-tight">
               {activeLanguage === "en" ? (
                 <>
-                  Curated <br className="hidden md:block"/> Journeys
+                  Curated <br className="hidden md:block"/> Trips
                 </>
               ) : (
                 <>
@@ -34,7 +34,7 @@ export default function ItinerariesPage() {
             <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
               {activeLanguage === "en"
                 ? "Exclusive experiences tailored to your distinctive travel style. Select your path and begin the adventure. Our team can also create custom itineraries for you."
-                : "Experiencias exclusivas adaptadas a tu estilo de viaje. Selecciona tu ruta y comienza la aventura. Nuestro equipo también diseña itinerarios 100% a la medida."}
+                : "Experiencias exclusivas adaptadas a tu estilo de viaje. Selecciona tu ruta y comienza la aventura. Nuestro equipo también diseña itinerarios a tu medida."}
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function ItinerariesPage() {
             <div className="bg-zinc-950 border border-zinc-800/50 p-10 rounded-2xl hover:bg-zinc-900 hover:border-zinc-700 transition-colors duration-500">
               <Map strokeWidth={1} className="w-8 h-8 text-zinc-400 mb-6" />
               <h4 className="text-xl font-medium mb-4">
-                {activeLanguage === "en" ? "Seamless Transit Logistics" : "Logística de Tránsito Impecable"}
+                {activeLanguage === "en" ? "Seamless Transit Logistics" : "Logística de Tránsito"}
               </h4>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
@@ -145,7 +145,7 @@ export default function ItinerariesPage() {
               className="group inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-zinc-200 transition-colors"
             >
               {activeLanguage === "en" ? "Craft Your Custom Route" : "Diseña tu Ruta Personalizada"}
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              
             </Link>
           </div>
         </section>

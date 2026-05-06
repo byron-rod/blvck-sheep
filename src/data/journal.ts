@@ -588,6 +588,80 @@ export const journalData: JournalPost[] = [
     ]
   },
   {
+    id: "guia-antigua-lago-atitlan",
+    title: "La Guía Definitiva: Viajar de Antigua al Lago de Atitlán en 2026",
+    excerpt: "Todo lo que necesitas saber para navegar por la ruta más popular de Guatemala. Desde sobrevivir a las 'camionetas' hasta encontrar el santuario perfecto a orillas del lago.",
+    publishDate: "12 de febrero de 2026",
+    readTime: "8 MIN DE LECTURA",
+    heroImage: roadguideJournalImage.src, 
+    category: "Tránsito y Logística",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "Hacer el viaje de 77 kilómetros desde las calles empedradas de Antigua hasta las costas volcánicas del Lago de Atitlán es un rito de iniciación para cualquiera que visite Guatemala. Sin embargo, este viaje de 2.5 a 3 horas a través del altiplano no es una simple línea recta. Dependiendo de tu presupuesto, tu tiempo y tu tolerancia a las curvas cerradas en la montaña, hay tres formas distintas de hacer este trayecto. Después de media década navegando exactamente por estas carreteras, aquí tienes la verdad sin filtros sobre cómo llegar al lago."
+      },
+      {
+        type: "heading",
+        value: "Opción 1: La realidad de la 'Camioneta' (Chicken Bus)"
+      },
+      {
+        type: "paragraph",
+        value: "Estos antiguos autobuses escolares norteamericanos, modificados y pintados con colores brillantes, son una pieza icónica del paisaje guatemalteco. Viajar de esta manera es increíblemente barato, pero el verdadero costo es tu tiempo y energía. Requiere cuatro transbordos separados. Empiezas en la terminal de autobuses de Antigua (ubicada detrás del mercado central cerca de Pollo Campero). Tomas un autobús en dirección a Chimaltenango (aprox. 20 GTQ) y le pides al 'ayudante' que te baje en la esquina de la carretera para Los Encuentros. Desde allí, haces señas a un autobús que vaya hacia Quiché o Xela, tomándolo hasta el cruce de Los Encuentros (10-20 GTQ). Luego, tomas un autobús que desciende hacia el departamento de Sololá (5 GTQ), y finalmente, tomas tu último autobús que baja hacia Panajachel. Si vas a tomar una lancha pública, bájate en la primera parada en Pana—es una caminata corta hasta el Muelle Tzanjuyú."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>La Verdad Brutal:</strong> Hay un dicho local famoso: <em>'Donde caben 3, caben 4'</em>. Esto resume perfectamente la experiencia de la camioneta. Los conductores maximizan las ganancias apretujando a la mayor cantidad de personas físicamente posible en los asientos y pasillos. Es probable que tu equipaje vaya en el techo, tendrás cero espacio personal, y los conductores toman las curvas sinuosas de la montaña a velocidades alarmantes. Recomendamos encarecidamente tomar una camioneta para un viaje corto de 15 minutos solo por la experiencia cultural, pero ¿para un viaje de 3 horas con maletas pesadas? Es un deporte extremo."
+      },
+      {
+        type: "heading",
+        value: "Opción 2: El Shuttle Turístico Compartido"
+      },
+      {
+        type: "paragraph",
+        value: "Esta es la opción estándar para los mochileros. Por unos 125 a 150 GTQ ($16 - $20 USD), reservas un asiento en una camioneta de 15 pasajeros (Toyota Hiace o Nissan Urvan). Salen a horas específicas programadas todos los días. Dependiendo de la temporada y el tráfico en Antigua, te recogerán en tu hotel o te pedirán que te reúnas en puntos céntricos como el Café Condesa en el Parque Central o en hostales populares como Bloom."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>La Ruta:</strong> Los shuttles compartidos toman casi exclusivamente la ruta de Patzún para ahorrar tiempo. Este camino atraviesa profundos valles agrícolas, cruza un pequeño desfiladero con un río, y desciende a través de San Andrés Semetabaj antes de llegar a Pana. Es muy eficiente, pero las carreteras son increíblemente estrechas y con curvas agresivas. Si eres propenso al mareo, esta ruta puede ser difícil."
+      },
+      {
+        type: "heading",
+        value: "Opción 3: La Alternativa Privada (Blvck Sheep)"
+      },
+      {
+        type: "paragraph",
+        value: "Tu tiempo de vacaciones es tu activo más valioso. Para aquellos que quieren evitar el mareo de las curvas de Patzún y los horarios estrictos de las camionetas compartidas, reservar un traslado privado cambia todo el tono de tu día de viaje. En Blvck Sheep, nuestras rutas de tránsito privado evitan Patzún por completo. En su lugar, tomamos la ruta de Tecpán."
+      },
+      {
+        type: "paragraph",
+        value: "Tecpán está ubicado en las carreteras principales de Guatemala, la CA-1 (Carretera Interamericana). Si bien la distancia total es ligeramente más larga que el atajo de Patzún, esta carretera ofrece mucho más espacio para respirar. En lugar de navegar por pasos de montaña estrechos de un solo carril, la CA-1 cuenta con dos carriles anchos en cada dirección y condiciones de carretera muy superiores, lo que hace que el viaje sea mucho más suave. Además, Tecpán resulta ser un célebre destino culinario, famoso por sus quesos artesanales, embutidos ahumados y asadores de carretera."
+      },
+      {
+        type: "paragraph",
+        value: "Aún más importante, esta ruta otorga acceso inmediato a las antiguas ruinas mayas kaqchikeles de Iximché; la entrada cuesta solo Q5 y, si tienes suerte, podrás presenciar una ceremonia maya tradicional mientras exploras las ruinas. Recomendamos encarecidamente este rápido desvío en tu camino hacia o desde el lago. Nuestros conductores privados pueden pausar tu viaje, permitiéndote explorar las ruinas y disfrutar de un auténtico almuerzo local antes de hacer el descenso final hacia el agua por la ruta de 'Las Trampas'. Este enfoque específico ofrece impresionantes vistas de gran altitud del lago y de los tres volcanes desde las montañas, antes de bajar serpenteando por San Andrés Semetabaj hasta Pana."
+      },
+      {
+        type: "cta",
+        value: "Asegura tu Traslado al Lago",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20de%20Antigua%20a%20Atitlán!"
+      },
+      {
+        type: "heading",
+        value: "Dónde Dejar tus Maletas"
+      },
+      {
+        type: "paragraph",
+        value: "Si bien Panajachel es el centro logístico principal, nuestros traslados privados ofrecen rutas directas a varios otros pueblos accesibles alrededor de Atitlán. El lago ofrece energías completamente diferentes dependiendo de qué orilla elijas. Si buscas espacios sociales de alta energía y un ambiente mochilero, dirígete a San Pedro La Laguna. Para una vibra 'hippie-chic' centrada en retiros de yoga y meditación, San Marcos es el lugar. Si tu prioridad es la auténtica cultura maya tz'utujil y el increíble arte textil, San Juan La Laguna es inigualable. Finalmente, para exclusividad absoluta, hoteles boutique de clase mundial y silencio, mira hacia Santa Catarina Palopó o Santa Cruz. Si requieres infraestructura estable, internet rápido y la conveniencia de un pueblo más grande, hacer de Panajachel tu campamento base es la decisión más inteligente."
+      },
+      {
+        type: "cta",
+        value: "Explora Nuestras Estadías Curadas en Atitlán",
+        link: "/hostels" 
+      }
+    ]
+  },
+  {
     id: "where-to-eat-antigua-guatemala-part-1",
     title: "Where to Eat in Antigua, Part 1: My Top 10 Favorite Spots",
     excerpt: "Navigating cobblestone streets to find new restaurants in Antigua is one of my favorite things to do. Here are 10 of my favorite spots to eat in this colonial city. From fancy dining to the best spots for a hangover cure, I've got you covered.",
@@ -784,7 +858,7 @@ export const journalData: JournalPost[] = [
     ]
   },
   {
-    id: "5-6-day-acatenango-volcano-itinerary",
+    id: "5-day-acatenango-volcano-itinerary",
     title: "The 5-6 Day Itinerary to Conquer the Acatenango Volcano",
     excerpt: "If you are traveling to Guatemala to see the Fuego Volcano erupt, this is the perfect logistical plan. How to acclimatize first in Atitlán, what to expect from the ascent, and where to recover your legs after the mountain.",
     publishDate: "May 12, 2026",

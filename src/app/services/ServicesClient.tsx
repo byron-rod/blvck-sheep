@@ -263,7 +263,7 @@ export default function ServicesClient() {
         </h2>
         <Link 
           href="/contact" 
-          className="group relative inline-flex items-center justify-center gap-3 bg-white text-black px-10 py-5 text-sm uppercase tracking-widest font-bold overflow-hidden rounded-xl transition-transform hover:scale-[1.02] active:scale-[0.98]"
+          className="group relative inline-flex items-center justify-center gap-3 bg-white text-black px-10 py-5 text-sm uppercase tracking-widest font-bold overflow-hidden rounded-full transition-transform hover:scale-[1.02] active:scale-[0.98]"
         >
           <span className="relative z-10 flex items-center gap-3">
             Book Your Ride
@@ -272,7 +272,19 @@ export default function ServicesClient() {
           <div className="absolute inset-0 bg-zinc-200 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
         </Link>
       </section>
-
+{/* Bottom Nav Overlay (Back & Share) */}
+      <nav className="absolute bottom-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
+        <button
+          onClick={() => router.back()}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto text-white"
+        >
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          Back
+        </button>
+        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto text-white">
+          <IoShareOutline />
+        </button>
+      </nav>
     </div>
   );
 }
