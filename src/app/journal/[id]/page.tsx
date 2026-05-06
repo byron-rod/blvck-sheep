@@ -46,7 +46,7 @@ export default function JournalArticlePage({ params }: Props) {
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay */}
-      <nav className="fixed top-14 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+      <nav className="fixed top-14 left-0 w-full z-40 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
         <button
           onClick={() => router.back()}
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
@@ -92,7 +92,8 @@ export default function JournalArticlePage({ params }: Props) {
             return (
               <p 
                 key={index} 
-                className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed mb-8"
+                // EL ARREGLO: Agregamos las clases [&_a] para forzar el estilo a todos los enlaces <a> que vengan en el texto
+                className="text-zinc-300 text-lg md:text-xl font-light leading-relaxed mb-8 [&_a]:text-white [&_a]:font-medium [&_a]:underline [&_a]:underline-offset-4 [&_a]:decoration-white/30 hover:[&_a]:decoration-white hover:[&_a]:opacity-80 [&_a]:transition-all"
                 dangerouslySetInnerHTML={{ __html: block.value || "" }}
               />
             );

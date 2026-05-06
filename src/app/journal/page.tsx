@@ -17,7 +17,7 @@ export default function JournalIndexPage() {
           </p>
         </header>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 z-10">
           {journalData.map((post) => (
             <Link key={post.id} href={`/journal/${post.id}`} className="group block">
               <article className="flex flex-col gap-6">

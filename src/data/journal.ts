@@ -22,10 +22,103 @@ export type JournalPost = {
 import decodingJournalImage from "@/assets/images/decoding-journal.png";
 import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
 import simJournalImage from "@/assets/images/sim-journal.png";
+import acatenangoJournalImage from "@/assets/images/fuego-volcano.png";
 
 
 
 export const journalData: JournalPost[] = [
+  {
+    id: "guia-pueblos-lago-atitlan",
+    title: "Descifrando el Lago de Atitlán: ¿Qué pueblo es el ideal para ti?",
+    excerpt: "El Lago de Atitlán no es un destino único; es una red compleja de microculturas distintas. Aquí tienes la guía de un experto local para elegir la orilla perfecta según tu estética y energía.",
+    publishDate: "5 de mayo de 2026",
+    readTime: "8 MIN DE LECTURA",
+    heroImage: decodingJournalImage.src, 
+    category: "Guías Exclusivas",
+    content: [
+      {
+        type: "paragraph",
+        value: "Uno de los errores más comunes que cometen los viajeros al reservar su itinerario por Guatemala es tratar al Lago de Atitlán como un destino único y uniforme. La realidad es que el lago es una enorme caldera rodeada por una docena de pueblos distintos, cada uno ferozmente independiente y vibrando con una energía completamente diferente. Después de media década recibiendo y navegando por estas aguas, hemos visto a innumerables viajeros reservar el pueblo equivocado para su vibra—terminando en un ruidoso centro de mochileros cuando querían lujo silencioso, o viceversa."
+      },
+      {
+        type: "heading",
+        value: "Panajachel: La Puerta Estratégica"
+      },
+      {
+        type: "paragraph",
+        value: "Conocido localmente como 'Pana', este es el motor económico del lago, el punto de entrada principal y el pueblo al que Blvck Sheep llama orgullosamente su hogar. Si bien es el pueblo más concurrido, ofrece la mejor infraestructura: la red eléctrica y de internet de fibra óptica más estable del lago (otros pueblos sufren de apagones frecuentes), el mercado de agricultores más grande de Sololá, bancos para cambios de dolares, y los muelles públicos principales. Dado que Pana es el centro principal de transporte, los muelles operan hasta más tarde que en cualquier otro pueblo, hasta las 7:30 PM. Si llegas después de esta hora, podemos organizar una lancha privada que funciona las 24 horas del día, los 7 días de la semana; solo solicita este servicio al reservar tu traslado. Para los nómadas digitales y las familias, es el campamento base más seguro y conveniente. Cuenta con una hermosa playa pública (la única en el lago) y una vibrante comunidad internacional asegura que siempre haya una cena, evento o reunión curada en marcha. Pana se siente menos como un retiro aislado o lo lo que se le conocen como 'pueblitos mágicos', y más como un pueblo a orillas del lago completamente funcional y dinámico."
+      },
+      {
+        type: "heading",
+        value: "San Marcos La Laguna: El Santuario Holístico"
+      },
+      {
+        type: "paragraph",
+        value: "Si tu itinerario incluye ceremonias de cacao, retiros de yoga, hongos psicodélicos y una inmersión profunda en el bienestar, San Marcos es tu santuario. Es un paraíso bohemio famoso por sus senderos estrechos cubiertos de selva y su comunidad espiritual. Yo lo llamo 'hippie chic'. La vibra aquí es increíblemente relajada, lo que lo convierte en uno de los lugares más buscados por los turistas que buscan restauración. Ten en cuenta que el pueblo se queda completamente en silencio temprano en la noche; está diseñado para la sanación, no para la vida nocturna. La reciente afluencia de turismo de bienestar internacional lo convierte en uno de los pueblos con precios más premium. Es importante señalar que esta rápida gentrificación ha afectado negativamente a la comunidad local, creando una dinámica interesante entre los locales profundamente arraigados y la multitud de turistas transeúntes."
+      },
+      {
+        type: "heading",
+        value: "San Juan La Laguna: El Latido Maya"
+      },
+      {
+        type: "paragraph",
+        value: "San Juan es posiblemente el pueblo visualmente más impresionante y culturalmente mejor conservado del lago. Gobernado por fuertes cooperativas locales, la comunidad maya se mantiene unida para mantener un pueblo autosustentable y profundamente respetuoso de sus raíces indígenas. Es el epicentro absoluto del tejido textil auténtico, los procesos de teñido natural y las galerías de arte indígena (puedes explorar más sobre sus increíbles iniciativas comunitarias en <a href=\"https://www.sanjuanlalaguna.com.gt/\" target=\"_blank\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">sanjuanlalaguna.com.gt</a>). Es más limpio, más tranquilo y muy recomendable para una estancia culturalmente inmersiva. San Juan también es el punto de partida para la caminata al <a href=\"https://www.sanjuanlalaguna.com.gt/es/atractivos-turisticos/rostro-maya\" target=\"_blank\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Rostro Maya (Nariz del Indio)</a>, una de nuestras caminatas guiadas favoritas absolutas para ver el amanecer en Atitlan desde lo alto."
+      },
+      {
+        type: "heading",
+        value: "Santa Cruz La Laguna: El Escape Lujoso"
+      },
+      {
+        type: "paragraph",
+        value: "Accesible casi exclusivamente por bote, Santa Cruz es un pueblo tranquilo construido escarpado en el acantilado. Ofrece hermosas propiedades frente al lago, excelentes restaurantes y paisajes dramáticos. Es un pueblo de contrastes brillantes: puedes encontrar un aislamiento absoluto en Airbnbs privados, o puedes encontrar una conexión de alta energía en <a href=\"/hostels/free-cerveza\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Free Cerveza</a>, uno de los hostales sociales más legendarios de Guatemala, famoso por su ambiente de campamento de verano y su vibrante atmósfera social."
+      },
+      {
+        type: "heading",
+        value: "San Pedro La Laguna: El Centro Mochilero"
+      },
+      {
+        type: "paragraph",
+        value: "Conocido cariñosamente por los locales como 'San Pedro La Locura', este es el epicentro indiscutible para el público mochilero más joven: el mejor pueblo de fiesta. Es un laberinto de calles estrechas y vibrantes cubiertas de arte de grafiti, repletas de centros sociales, hostales de fiesta y una enérgica vida nocturna. Navegar por sus callejones estrechos en un tuk-tuk es un rito de iniciación, especialmente después de una noche divertida con nuevos amigos. Mantente atento: pronto publicaremos una entrada en el blog dedicada a detallar nuestros lugares favoritos de comida solo para locales, bares escondidos y cosas para hacer en San Pedro que solo los lugareños conocen."
+      },
+      {
+        type: "heading",
+        value: "Santiago Atitlán: El Epicentro Cultural"
+      },
+      {
+        type: "paragraph",
+        value: "Como la comunidad indígena más grande del lago, Santiago ofrece una experiencia guatemalteca profundamente auténtica. Si quieres presenciar el verdadero latido comercial del lago, visítalo durante sus enormes días de mercado los jueves y domingos, donde las calles explotan con textiles vibrantes, productos frescos y artesanos locales. También alberga el santuario de Maximón, una fascinante mezcla de tradiciones mayas y católicas."
+      },
+      {
+        type: "heading",
+        value: "Cerro de Oro: La Joya Escondida"
+      },
+      {
+        type: "paragraph",
+        value: "Escondido entre San Lucas Tolimán y Santiago, Cerro de Oro es el secreto mejor guardado del lago. Si buscas desconectarte completamente de la escena social, aquí es adonde debes ir. Alberga algunos de los Airbnbs más espectaculares y aislados sobre el agua: piensa en exuberantes jardines privados, jacuzzis, chimeneas rugientes y muelles para nadar prístinos y privados. Es la mejor opción para un retiro privado con familia o amigos cercanos. Dale un vistazo a este bello lugar: <a href=\"https://www.tiktok.com/@blvcksheepgt/video/7622522484465896711\" target=\"_blank\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Cerro de Oro</a>."
+      },
+      {
+        type: "heading",
+        value: "Los Palopos: La Costa Artesanal y de Lujo"
+      },
+      {
+        type: "paragraph",
+        value: "Santa Catarina Palopó y San Antonio Palopó se encuentran en el extremo oriental del lago, lejos de los principales circuitos turísticos. Santa Catarina está a unos 15 minutos en coche de Panajachel, y San Antonio está a unos 30 minutos en coche de Pana. Santa Catarina es famosa por sus casas pintadas de colores vibrantes y sus aguas termales. También alberga estancias boutique de lujo de clase mundial como <a href=\"/hotels/casa-palopo\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Casa Palopó</a>, lo que la hace perfecta para una escapada romántica de alto nivel. Justo bajando por la calle, San Antonio Palopó sigue siendo un pueblo tranquilo y auténtico, mundialmente conocido por su magistral cerámica."
+      },
+      {
+        type: "heading",
+        value: "La Estrategia de Llegada de Blvck Sheep"
+      },
+      {
+        type: "paragraph",
+        value: "Mientras que los shuttles estándar (y nuestras opciones compartidas) te dejarán en el Muelle Tzanjuyú, el muelle principal en Pana, el servicio privado de Blvck Sheep opera de manera diferente. Con nuestros traslados privados, puedes viajar en cualquier momento. Podemos llevarte directamente a cualquier pueblo del Lago de Atitlán desde cualquier parte del país, ya sea que vengas de Antigua, la Ciudad de Guatemala, El Paredón o Semuc Champey."
+      },
+      {
+        type: "cta",
+        value: "Asegura tu Traslado al Lago",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Necesito%20un%20shuttle%20al%20Lago%20de%20Atitlán!"
+      }
+    ]
+},
   {
     id: "donde-comer-antigua-guatemala-parte-1",
     title: "Dónde Comer en Antigua, Parte 1: Mis 10 Lugares Favoritos",
@@ -151,6 +244,108 @@ export const journalData: JournalPost[] = [
         value: "Reserva tu viaje a Antigua",
         link: "https://wa.me/50255116881?text=%C2%A1Hola!%20Me%20gustar%C3%ADa%20reservar%20un%20viaje%20seguro%20a%20Antigua."
       }
+    ]
+  },
+  {
+    id: "itinerario-5-dias-volcan-acatenango",
+    title: "El Itinerario de 5-6 Días para Conquistar el Volcán Acatenango",
+    excerpt: "Si viajas a Guatemala para ver el Volcán de Fuego en erupción, este es el plan logístico perfecto. Cómo aclimatarte primero en Atitlán, qué esperar del ascenso y dónde recuperar tus piernas después de la montaña.",
+    publishDate: "6 de mayo de 2026",
+    readTime: "6 MIN DE LECTURA",
+    heroImage: acatenangoJournalImage.src, 
+    category: "Itinerarios",
+    content: [
+      {
+        type: "paragraph",
+        value: "Sabemos por qué estás aquí. Una gran mayoría de los viajeros que llegan a Guatemala tienen un objetivo principal en mente: pararse en la cima del Volcán Acatenango a casi 4,000 metros de altura y ver al vecino Volcán de Fuego escupir lava bajo un cielo estrellado. Es una de las experiencias más crudas e impresionantes del planeta."
+      },
+      {
+        type: "paragraph",
+        value: "Pero aquí está el secreto que muchos ignoran: el Acatenango es físicamente exigente. En lo personal yo al viajar camino bastante, me gusta caminar por las calles de los pueblos o ciudades, por lo que recomiendo dejar al volcan para el final. Este es el itinerario perfecto de 5 a 6 días enfocado en el volcán, pero aclimatándote de la manera correcta."
+      },
+      {
+        type: "heading",
+        value: "Día 1: Aterrizaje y Aclimatación en el Lago"
+      },
+      {
+        type: "paragraph",
+        value: "El mayor error de los novatos es intentar subir al volcán el mismo día o al día siguiente de aterrizar. Tu cuerpo necesita adaptarse a la altitud progresivamente. Al llegar al Aeropuerto Internacional La Aurora (GUA), toma un transporte directo a Panajachel, Lago de Atitlán. Primero, hay que disfrutar de las bellezas de Guatemala."
+      },
+      {
+        type: "paragraph",
+        value: "Tenemos 3 horarios de salida disponibles desde el aeropuerto para viajes compartidos (6:00 a.m., 10:30 a.m. y 1:30 p.m.), y nuestros viajes privados salen al horario exacto que necesites. Atitlán tiene bastantes pueblos que recorrer, por lo que es mejor tener las piernas frescas y empezar a aclimatarte en el lago más lindo del mundo. Para decidir en qué pueblo hospedarte, revisa nuestra <a href=\"/journal/guia-pueblos-lago-atitlan\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Guía de Pueblos de Atitlán</a>."
+      },
+      {
+        type: "heading",
+        value: "Día 2: Conoce tus Pueblos Favoritos de Atitlán"
+      },
+      {
+        type: "paragraph",
+        value: "Aprovecha la mañana para moverte en lancha y explorar la magia del lago. Puedes buscar paz y bienestar en San Marcos La Laguna, sumergirte en el arte y el tejido tradicional en San Juan La Laguna, o disfrutar de la energía y los cafés en San Pedro La Laguna."
+      },
+      {
+        type: "cta",
+        value: "Reservar Shuttle de Panajachel a Antigua",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20Necesito%20un%20shuttle%20de%20Panajachel%20hacia%20Antigua."
+      },
+      {
+        type: "heading",
+        value: "Día 3: Ultimas horas de Atitlan y viaje a Antigua"
+      },
+      {
+        type: "paragraph",
+        value: "Lo ideal es aprovechar al máximo la mañana en el lago, si vienen desde San Marcos, San Juan o San Pedro, pueden pasar la manana en Panajachel, conocer Santa Catarina Palopó o visitar la Reserva Atitlan, y salir a mediodía o por la tarde hacia Antigua Guatemala, para así estar listo para la montaña. Los horarios de salida de nuestros shuttles compartidos desde Panajachel hacia Antigua son a las 5:00 a.m., 9:00 a.m., 12:00 p.m. y 4:00 p.m."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Opción B (El Detour Express):</strong> Si prefieres transformar un simple día de tránsito en una expedición cultural, puedes personalizar tu ruta hacia Antigua con nuestras paradas estratégicas. Desvíate hacia Zunil para sumergirte en sus místicas aguas termales volcánicas envueltas en la niebla de la montaña. Si viajas un jueves o domingo, el icónico y vibrante mercado de Chichicastenango es una parada obligatoria. Finalmente, puedes hacer una pausa para disfrutar de la alta gastronomía local en Tecpán y caminar entre la historia viva de las antiguas ruinas kaqchikeles de Iximché."
+      },
+      {
+        type: "cta",
+        value: "Planifica tu Detour Express hacia Antigua",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20Me%20interesa%20planificar%20un%20traslado%20privado%20con%20un%20Detour%20Express%20hacia%20Antigua."
+      },
+      {
+        type: "paragraph",
+        value: "Al llegar a la ciudad colonial de Antigua, tu único objetivo de hoy es ir por algo rico de comer y preparte para el ascenso de mañana. Renta ropa de frío si te hace falta, prepara tu mochila y, sobre todo, ten una cena rica en carbohidratos para cargar energías para mañana. La ciudad está llena de opciones gastronómicas increíbles; échale un vistazo a nuestra guía sobre <a href=\"/journal/donde-comer-antigua-guatemala-parte-1\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">dónde comer en Antigua</a>. Vete a dormir temprano, porque mañana empieza el reto."
+      },
+      {
+        type: "heading",
+        value: "Día 4: El Volcán Acatenango"
+      },
+      {
+        type: "paragraph",
+        value: "Las agencias te recogerán temprano para llevarte a La Soledad, el punto de inicio. El ascenso toma entre 5 y 6 horas, atravesando tierras de cultivo, un místico bosque nuboso y, finalmente, arena volcánica alpina. Un consejo de oro de los expertos: lleva contigo varios bananos y cómelos durante el trayecto. El potasio te ayudará enormemente a evitar que las piernas se te acalambren por el esfuerzo constante."
+      },
+      {
+        type: "paragraph",
+        value: "Una vez en el campamento base (a unos 3,600 metros de altura), tendrás la vista en primera fila de las erupciones del Volcán de Fuego. Si tus piernas aún responden y quieres la experiencia definitiva, puedes pagar un extra a tu guía local para realizar la caminata adicional a la 'horqueta' (la cresta que conecta al Volcán de Fuego). Esto suma unas 3 a 4 horas extra de ida y vuelta al atardecer, pero te permite ver la lava expulsada a una distancia asombrosamente cerca. Es brutalmente cansado, pero vale cada gota de sudor."
+      },
+      {
+        type: "heading",
+        value: "Día 5: La Cumbre, el Descenso y el Descanso"
+      },
+      {
+        type: "paragraph",
+        value: "Te despertarás a las 4:00 a.m. en el frío extremo para el último empujón hacia la cumbre del Acatenango y presenciar un amanecer por encima de las nubes. Después de las fotos, comienza el descenso. Bajar toma unas 3 horas y es destructivo para las rodillas, asi que baja con paciencia y ciudado. Regresarás a Antigua alrededor del mediodía: exhausto, polvoriento y con las piernas temblando, pero mas feliz que nunca."
+      },
+      {
+        type: "paragraph",
+        value: "Ahora toca decidir cómo quieres consentir a tu cuerpo destruido:<br><br><strong>Opción A (Relajación local):</strong> Quédate en Antigua, disfruta de ciudad, una noche de fiesta para celebrar sobrevivir al volcan, o date un merecido banquete en tus restaurantes favoritos antes de volar al día siguiente.<br><br><strong>Opción B (Descompresión tropical):</strong> Viaja hacia la costa del Pacífico a <a href=\"/destinations/el-paredon\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">El Paredón</a>. Cambia tus botas de montaña por sandalias, recuéstate en una hamaca en un club de playa y deja que el calor del nivel del mar relaje tus músculos por completo."
+      },
+      {
+        type: "cta",
+        value: "Shuttles Cómodos a tu Siguiente Destino",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20Acabo%20de%20bajar%20del%20volcán%20y%20necesito%20un%20viaje%20cómodo."
+      },
+      {
+        type: "heading",
+        value: "Día 6: El Regreso Inteligente"
+      },
+      {
+        type: "paragraph",
+        value: "Dependiendo de a qué hora sea tu vuelo, puedes organizar un traslado directo desde Antigua o desde la playa de El Paredón hacia el Aeropuerto Internacional La Aurora. Asegúrate de coordinar este viaje con suficiente anticipación para no tener estrés en tu último día. Debes de llegar al aeropuerto con al menos 2 horas de anticipacion."
+      },
     ]
   },
   {
@@ -509,6 +704,175 @@ export const journalData: JournalPost[] = [
         type: "cta",
         value: "Book your ride to Antigua",
         link: "https://wa.me/50255116881?text=Hello!,%20I%20am%20ready%20to%20travel%20safely!"
+      }
+    ]
+  },
+  {
+    id: "guia-sim-card-esim-guatemala",
+    title: "Cómo obtener datos en Guatemala: eSIMs vs. Tarjetas SIM locales",
+    excerpt: "Navegar por los datos móviles en Guatemala puede ser sorprendentemente frustrante debido a las estrictas leyes de registro. Aquí tienes la guía definitiva para evitar el papeleo y conectarte desde el momento en que aterrizas.",
+    publishDate: "16 de marzo de 2026",
+    readTime: "5 MIN DE LECTURA",
+    heroImage: simJournalImage.src, 
+    category: "Trucos de Viaje",
+    content: [
+      {
+        type: "paragraph",
+        value: "Bajar del avión en el Aeropuerto Internacional La Aurora y darte cuenta de que no tienes acceso a internet para buscar la dirección de tu hotel o pedir un transporte es una clásica pesadilla de viaje. Aunque Guatemala tiene una excelente cobertura móvil, conectarse no es tan simple como comprar una tarjeta SIM en una tienda de conveniencia."
+      },
+      {
+        type: "heading",
+        value: "La realidad de las redes móviles guatemaltecas"
+      },
+      {
+        type: "paragraph",
+        value: "El país funciona con dos grandes gigantes de las telecomunicaciones: Tigo y Claro. Ambos ofrecen una excelente cobertura 4G/LTE, aunque Tigo generalmente tiene una ligera ventaja en áreas remotas como Semuc Champey o los pueblos más pequeños alrededor del Lago de Atitlán. Sin embargo, Guatemala aplica estrictas leyes de registro. Para comprar una tarjeta SIM física, debes presentar tu pasaporte físico original (a menudo no se aceptan copias) y esperar a que un empleado registre manualmente tu dispositivo en la base de datos nacional. Hacer esto en el aeropuerto significa esperar en filas enormes, y hacerlo en la ciudad consume tu valioso tiempo de vacaciones."
+      },
+      {
+        type: "heading",
+        value: "Opción 1: La solución instantánea (eSIMs)"
+      },
+      {
+        type: "paragraph",
+        value: "Si tu teléfono está desbloqueado y es compatible con eSIM, puedes evitar por completo el papeleo físico. Compras el plan en línea antes de tu vuelo, instalas el perfil digital y lo activas en el instante en que tu avión toca la pista. Es increíblemente conveniente, aunque pagarás un precio premium por los datos en comparación con las tarifas locales."
+      },
+      {
+        type: "paragraph",
+        value: "Recomendamos verificar las tarifas en tres proveedores globales confiables: Airalo, Yesim y Drimsim. Airalo es el estándar de la industria para los viajeros, cubren prácticamente todo el mundo y tienen precios muy competitivos. Drimsim es una excelente opción que ofrece tarjetas SIM internacionales que pueden enviar a la dirección de tu casa (ideal si quieres ahorrar dinero a largo plazo), y también tienen uno de los mejores precios en el mercado para eSIMs. Yesim es otra buena alternativa, aunque los precios varían dependiendo de la región."
+      },
+      {
+        type: "cta",
+        value: "Consulta las tarifas para Guatemala en Airalo",
+        link: "https://airalo.tpx.gr/78RgcRmp" 
+      },
+      {
+        type: "cta",
+        value: "Explora los planes de eSIMs en Drimsim",
+        link: "https://drimsim.tpx.gr/3y3U3LEX" 
+      },
+      {
+        type: "cta",
+        value: "Explora los planes de datos en Yesim",
+        link: "https://yesim.tpx.gr/5vRANpr6" 
+      },
+      {
+        type: "heading",
+        value: "Opción 2: Los beneficios de Blvck Sheep (El mejor truco)"
+      },
+      {
+        type: "paragraph",
+        value: "Aunque las eSIMs son muy convenientes, nada supera el valor real y la fuerza de la señal de una tarjeta SIM física local de Tigo o Claro. Los paquetes de datos locales son increíblemente baratos, haciendo de esta la mejor opción si te vas a quedar en el país por más de unos pocos días."
+      },
+      {
+        type: "paragraph",
+        value: "Para ofrecerte lo mejor de ambos mundos—precios locales sin el frustrante papeleo—hemos creado el Blvck Sheep SIM Perk. Cuando reservas un traslado privado con nosotros, simplemente solicita una tarjeta SIM como servicio adicional. Nosotros nos encargamos de la logística con anticipación. Cuando subas a nuestro vehículo, tu tarjeta SIM local completamente cargada y lista para usarse estará esperándote. Obtienes conectividad instantánea con tarifas locales y sin hacer ni una sola fila."
+      },
+      {
+        type: "cta",
+        value: "Reserva un traslado y solicita tu SIM local",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20y%20solicitar%20una%20tarjeta%20SIM%20local!"
+      }
+    ]
+  },
+  {
+    id: "5-6-day-acatenango-volcano-itinerary",
+    title: "The 5-6 Day Itinerary to Conquer the Acatenango Volcano",
+    excerpt: "If you are traveling to Guatemala to see the Fuego Volcano erupt, this is the perfect logistical plan. How to acclimatize first in Atitlán, what to expect from the ascent, and where to recover your legs after the mountain.",
+    publishDate: "May 12, 2026",
+    readTime: "6 MIN READ",
+    heroImage: acatenangoJournalImage.src, 
+    category: "Itineraries",
+    content: [
+      {
+        type: "paragraph",
+        value: "We know why you are here. A vast majority of travelers coming to Guatemala have one main goal in mind: standing at the summit of the Acatenango Volcano at nearly 4,000 meters high and watching the neighboring Fuego Volcano spit lava under a starry sky. It is one of the most raw and breathtaking experiences on the planet."
+      },
+      {
+        type: "paragraph",
+        value: "But here is the secret that many ignore: Acatenango is physically demanding. Personally, when I travel I walk a lot, I like walking through the streets of towns or cities, so I recommend leaving the volcano for the end. This is the perfect 5 to 6-day itinerary focused on the volcano, but acclimatizing the right way."
+      },
+      {
+        type: "heading",
+        value: "Day 1: Landing and Acclimatization at the Lake"
+      },
+      {
+        type: "paragraph",
+        value: "The biggest mistake rookies make is trying to hike the volcano the same day or the day after landing. Your body needs to adapt to the altitude progressively. Upon arriving at La Aurora International Airport (GUA), take a direct transport to Panajachel, Lake Atitlán. First, you must enjoy the beauties of Guatemala."
+      },
+      {
+        type: "paragraph",
+        value: "We have 3 departure times available from the airport for shared shuttles (6:00 a.m., 10:30 a.m., and 1:30 p.m.), and our private transit departs at the exact time you need. Atitlán has plenty of villages to explore, so it is better to have fresh legs and start acclimatizing in the most beautiful lake in the world. To decide which village to stay in, check out our <a href=\"/journal/lake-atitlan-villages-guide\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Lake Atitlán Villages Guide</a>."
+      },
+      {
+        type: "heading",
+        value: "Day 2: Get to Know Your Favorite Atitlán Villages"
+      },
+      {
+        type: "paragraph",
+        value: "Take advantage of the morning to move around by boat and explore the magic of the lake. You can seek peace and wellness in San Marcos La Laguna, immerse yourself in art and traditional weaving in San Juan La Laguna, or enjoy the energy and cafes in San Pedro La Laguna."
+      },
+      {
+        type: "cta",
+        value: "Book your Shuttle from Panajachel to Antigua",
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20need%20a%20shuttle%20from%20Panajachel%20to%20Antigua."
+      },
+      {
+        type: "heading",
+        value: "Day 3: Final Hours in Atitlán and Journey to Antigua"
+      },
+      {
+        type: "paragraph",
+        value: "The ideal plan is to make the most of your morning at the lake. If you are coming from San Marcos, San Juan, or San Pedro, you can spend the morning in Panajachel, visit Santa Catarina Palopó or the Atitlán Nature Reserve, and leave around noon or in the afternoon for Antigua Guatemala, so you are ready for the mountain. The departure times for our shared shuttles from Panajachel to Antigua are 5:00 a.m., 9:00 a.m., 12:00 p.m., and 4:00 p.m."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Option B (The Express Detour):</strong> If you prefer to transform a simple transit day into a cultural expedition, you can customize your route to Antigua with our strategic stops. Detour to Zunil to soak in its mystical volcanic hot springs enveloped in mountain mist. If you are traveling on a Thursday or Sunday, the iconic and vibrant Chichicastenango market is a must-stop. Finally, you can take a break to enjoy high-end local gastronomy in Tecpán and walk through the living history of the ancient Kaqchikel ruins of Iximché."
+      },
+      {
+        type: "cta",
+        value: "Plan your Express Detour to Antigua",
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20am%20interested%20in%20planning%20a%20private%20transfer%20with%20an%20Express%20Detour%20to%20Antigua."
+      },
+      {
+        type: "paragraph",
+        value: "Upon arriving at the colonial city of Antigua, your only goal today is to go out for a nice meal and prepare for tomorrow's ascent. Rent warm clothes if you need them, pack your backpack, and above all, have a carb-rich dinner to load up on energy for tomorrow. The city is full of incredible dining options; check out our guide on <a href=\"/journal/where-to-eat-antigua-guatemala-part-1\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">where to eat in Antigua</a>. Go to sleep early, because tomorrow the challenge begins."
+      },
+      {
+        type: "heading",
+        value: "Day 4: The Acatenango Volcano"
+      },
+      {
+        type: "paragraph",
+        value: "The agencies will pick you up early to take you to La Soledad, the starting point. The ascent takes between 5 and 6 hours, passing through farmlands, a mystical cloud forest, and finally, alpine volcanic sand. A golden tip from the experts: take several bananas with you and eat them along the way. The potassium will help you enormously to prevent your legs from cramping due to the constant effort."
+      },
+      {
+        type: "paragraph",
+        value: "Once at base camp (at about 3,600 meters high), you will have a front-row seat to the Fuego Volcano eruptions. If your legs are still responding and you want the ultimate experience, you can pay an extra fee to your local guide to do the additional hike to the 'horqueta' (the ridge connecting to the Fuego Volcano). This adds about 3 to 4 extra hours round trip at sunset, but it allows you to see the erupting lava from an astonishingly close distance. It is brutally exhausting, but worth every drop of sweat."
+      },
+      {
+        type: "heading",
+        value: "Day 5: The Summit, the Descent, and the Rest"
+      },
+      {
+        type: "paragraph",
+        value: "You will wake up at 4:00 a.m. in the extreme cold for the final push to the Acatenango summit to witness a sunrise above the clouds. After taking photos, the descent begins. Going down takes about 3 hours and is destructive to the knees, so hike down with patience and care. You will return to Antigua around noon: exhausted, dusty, and with trembling legs, but happier than ever."
+      },
+      {
+        type: "paragraph",
+        value: "Now it's time to decide how you want to pamper your destroyed body:<br><br><strong>Option A (Local Relaxation):</strong> Stay in Antigua, enjoy the city, have a party night to celebrate surviving the volcano, or treat yourself to a well-deserved feast at your favorite restaurants before flying out the next day.<br><br><strong>Option B (Tropical Decompression):</strong> Travel to the Pacific coast to <a href=\"/destinations/el-paredon\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">El Paredón</a>. Trade your hiking boots for sandals, lie back in a hammock at a beach club, and let the sea-level heat completely relax your muscles."
+      },
+      {
+        type: "cta",
+        value: "Comfortable Shuttles to your Next Destination",
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20just%20came%20down%20from%20the%20volcano%20and%20need%20a%20comfortable%20ride."
+      },
+      {
+        type: "heading",
+        value: "Day 6: The Smart Return"
+      },
+      {
+        type: "paragraph",
+        value: "Depending on what time your flight is, you can arrange a direct transfer from Antigua or from the beach in El Paredón to La Aurora International Airport. Make sure to coordinate this trip well in advance to avoid any stress on your last day. You should arrive at the airport at least 2 hours in advance."
       }
     ]
   },
