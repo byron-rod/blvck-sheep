@@ -141,7 +141,7 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Conversion Tracking */}
+        {/* Google Tags (Conversion Tracking & Analytics) */}
         <Script
           id="google-tag"
           strategy="afterInteractive"
@@ -155,7 +155,12 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
+              
+              /* Google Ads Conversion */
               gtag('config', 'AW-11538548523');
+              
+              /* Google Analytics 4 (NUEVO) */
+              gtag('config', 'G-GK9FX1JPWS');
             `,
           }}
         />
