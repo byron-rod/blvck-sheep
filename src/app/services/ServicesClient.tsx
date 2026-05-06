@@ -136,7 +136,7 @@ export default function ServicesClient() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>Direct door-to-door service. You have total control of your journey.</span>
+                      <span>Direct door-to-door service. You have more control of your journey.</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
@@ -168,7 +168,7 @@ export default function ServicesClient() {
                 <p className="text-zinc-200 text-sm font-medium tracking-wide uppercase">Conscious Comfort</p>
               </div>
               <p className="text-white font-light leading-relaxed mb-8 relative z-10">
-                Travel in absolute comfort while reducing your footprint in our eco-friendly electric fleet. 
+                Travel in absolute comfort while reducing your footprint in our premium eco-friendly electric fleet. 
               </p>
               <div className="space-y-6 flex-grow relative z-10">
                 <div>

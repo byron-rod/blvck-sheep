@@ -136,7 +136,7 @@ export default function ServiciosPage() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>Servicio directo puerta a puerta. Tienes control total de tu viaje.</span>
+                      <span>Servicio directo puerta a puerta. Mayor control de tu viaje.</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
@@ -168,7 +168,7 @@ export default function ServiciosPage() {
                 <p className="text-zinc-200 text-sm font-medium tracking-wide uppercase">Comodidad Consciente</p>
               </div>
               <p className="text-white font-light leading-relaxed mb-8 relative z-10">
-                Viaja con absoluta comodidad mientras reduces tu huella en nuestra flota ecológica.
+                Viaja con absoluta comodidad mientras reduces tu huella en nuestra flota ecológica de lujo.
               </p>
               <div className="space-y-6 flex-grow relative z-10">
                 <div>
