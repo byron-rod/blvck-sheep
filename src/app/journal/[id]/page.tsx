@@ -46,7 +46,7 @@ export default function JournalArticlePage({ params }: Props) {
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay */}
-      <nav className="fixed top-14 left-0 w-full z-10 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
+      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
         <button
           onClick={() => router.back()}
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
@@ -137,6 +137,19 @@ export default function JournalArticlePage({ params }: Props) {
           return null;
         })}
       </article>
+      {/* Bottom Nav Overlay */}
+      <nav className="absolute bottom-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
+        <button
+          onClick={() => router.back()}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          Back
+        </button>
+        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
+          <IoShareOutline />
+        </button>
+      </nav>
     </div>
   );
 }

@@ -54,7 +54,7 @@ export default function ServiciosPage() {
       <div className="w-full pt-32 px-6 md:px-12 max-w-7xl mx-auto flex justify-end relative z-40">
         <Link 
           href="/services" 
-          className="text-xs font-medium tracking-widest text-zinc-500 hover:text-white transition-colors border border-zinc-800 rounded-full px-4 py-2"
+          className="text-xs font-medium tracking-widest text-zinc-200 hover:text-white transition-colors border border-zinc-400 rounded-full px-4 py-2"
         >
           READ IN ENGLISH
         </Link>

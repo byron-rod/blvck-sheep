@@ -14,25 +14,31 @@ export default function JournalClient() {
     <>
       <header className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
-          <h1 className="text-6xl md:text-8xl font-light tracking-tighter">The Travelogue</h1>
+          {/* TEXTO DINÁMICO: Título */}
+          <h1 className="text-6xl md:text-8xl font-light tracking-tighter">
+            {activeLanguage === "en" ? "The Travelogue" : "Diarios de Viaje"}
+          </h1>
+          {/* TEXTO DINÁMICO: Subtítulo */}
           <p className="mt-6 text-xl md:text-2xl text-zinc-400 font-light max-w-2xl">
-            Essays, guides, and logistical insights for navigating Guatemala with intent. Descubre nuestro pais mejor con nuestras guias.
+            {activeLanguage === "en"
+              ? "Essays, guides, and logistical insights for navigating Guatemala with intent."
+              : "Ensayos, guías y consejos logísticos para explorar Guatemala con verdadero propósito."}
           </p>
         </div>
 
         {/* Toggle Button */}
         <div className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0">
-          {["en", "es"].map((lang) => (
+          {(["en", "es"] as const).map((lang) => (
             <button
               key={lang}
-              onClick={() => setActiveLanguage(lang as "en" | "es")}
+              onClick={() => setActiveLanguage(lang)}
               className={`relative px-6 py-2.5 text-sm font-medium uppercase tracking-widest rounded-full transition-colors z-10 ${
                 activeLanguage === lang ? "text-black" : "text-zinc-400 hover:text-white"
               }`}
             >
               {activeLanguage === lang && (
                 <motion.div
-                  layoutId="active-language"
+                  layoutId="active-lang-journal" // ACTUALIZADO: Para no chocar con itinerarios
                   className="absolute inset-0 bg-white rounded-full -z-10"
                   transition={{ type: "spring", stiffness: 400, damping: 30 }}
                 />
