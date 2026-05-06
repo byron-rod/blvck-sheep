@@ -368,7 +368,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Santa Catarina Palopó and San Antonio Palopó sit on the eastern edge of the lake, far from the main tourist circuits. Santa Catarina is about a 15-minute drive from Panajachel, and San Antonio is about a 30-minute drive from Pana. Santa Catarina is famous for its vibrantly painted houses and thermal hot springs. It is also home to world-class luxury boutique stays like <a href=\"/stays/casa-palopo\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Casa Palopó</a>, making it perfect for a romantic, high-end getaway. Just down the road, San Antonio Palopó remains a quiet, authentic village globally renowned for its masterful ceramic pottery."
+        value: "Santa Catarina Palopó and San Antonio Palopó sit on the eastern edge of the lake, far from the main tourist circuits. Santa Catarina is about a 15-minute drive from Panajachel, and San Antonio is about a 30-minute drive from Pana. Santa Catarina is famous for its vibrantly painted houses and thermal hot springs. It is also home to world-class luxury boutique stays like <a href=\"/hotels/casa-palopo\" className=\"text-blue-400 hover:text-blue-300 underline decoration-blue-400/50 underline-offset-4 transition-colors font-medium\">Casa Palopó</a>, making it perfect for a romantic, high-end getaway. Just down the road, San Antonio Palopó remains a quiet, authentic village globally renowned for its masterful ceramic pottery."
       },
       {
         type: "heading",
