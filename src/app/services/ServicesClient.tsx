@@ -315,7 +315,7 @@ export default function ServicesClient() {
         >
           <span className="relative z-10 flex items-center gap-3">
             {activeLanguage === "en" ? "Book Your Ride" : "Reserva Tu Viaje"}
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            
           </span>
           <div className="absolute inset-0 bg-zinc-200 translate-y-[100%] group-hover:translate-y-0 transition-transform duration-300 ease-in-out" />
         </Link>

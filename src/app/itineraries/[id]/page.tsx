@@ -23,7 +23,6 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
-
 // Mock Data specifically for Lookbook
 const lookbookData = {
   "social-surf-summit": {
@@ -133,9 +132,9 @@ export default function ItineraryDetailPage({ params }: Props) {
   // If not found, show minimal 404
   if (!itinerary) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-black text-white">
+      <main className="min-h-screen flex items-center justify-center bg-black text-white">
         <h1 className="text-2xl font-light">Itinerary Not Found</h1>
-      </div>
+      </main>
     );
   }
 
@@ -166,32 +165,37 @@ export default function ItineraryDetailPage({ params }: Props) {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
+    <main className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay - Now Fixed and Scrollable */}
-      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+      <nav aria-label="Top navigation" className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
         <button
           onClick={() => router.back()}
+          aria-label="Go back to itineraries"
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
           Back
         </button>
-        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
-          <IoShareOutline />
+        <button 
+          onClick={handleShare} 
+          aria-label="Share this itinerary"
+          className="text-xl hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoShareOutline aria-hidden="true" focusable="false" />
         </button>
       </nav>
 
       {/* Cinematic Hero */}
-      <section className="relative h-[85vh] w-full flex items-end pb-20 px-6 md:px-12 lg:px-24">
+      <header className="relative h-[85vh] w-full flex items-end pb-20 px-6 md:px-12 lg:px-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
             src={heroImage}
-            alt={itinerary.title}
+            alt={`${itinerary.title} cover`}
             className="w-full h-full object-cover"
           />
           {/* Magazine-style vignette gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" aria-hidden="true" />
         </div>
 
         {/* Hero Content */}
@@ -219,10 +223,10 @@ export default function ItineraryDetailPage({ params }: Props) {
             </p>
           </motion.div>
         </div>
-      </section>
+      </header>
 
       {/* Lookbook: Featured Stays */}
-      <section className="py-32 px-6 md:px-12 lg:px-24">
+      <section aria-labelledby="featured-stays-heading" className="py-32 px-6 md:px-12 lg:px-24">
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -230,13 +234,13 @@ export default function ItineraryDetailPage({ params }: Props) {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <h2 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4">Edition / 01</h2>
-            <h3 className="text-4xl md:text-5xl font-light tracking-tight">Featured Stays</h3>
+            <p className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4" aria-hidden="true">Edition / 01</p>
+            <h2 id="featured-stays-heading" className="text-4xl md:text-5xl font-light tracking-tight">Featured Stays</h2>
           </motion.div>
 
           <div className="flex flex-col gap-32">
             {featuredStays.map((stay, index) => (
-              <div 
+              <article 
                 key={stay.name} 
                 className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-10 md:gap-20`}
               >
@@ -248,13 +252,13 @@ export default function ItineraryDetailPage({ params }: Props) {
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                   className="w-full md:w-3/5"
                 >
-                  <div className="relative aspect-[3/4] md:aspect-[4/5] overflow-hidden group">
+                  <figure className="relative aspect-[3/4] md:aspect-[4/5] overflow-hidden group m-0">
                     <img 
                       src={stay.image} 
-                      alt={stay.name} 
+                      alt={`View of ${stay.name}`} 
                       className="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                     />
-                  </div>
+                  </figure>
                 </motion.div>
 
                 {/* Text Content */}
@@ -265,38 +269,42 @@ export default function ItineraryDetailPage({ params }: Props) {
                   transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                   className="w-full md:w-2/5 flex flex-col justify-center"
                 >
-                  <span className="text-sm font-mono text-zinc-500 mb-6">
+                  <span className="text-sm font-mono text-zinc-500 mb-6" aria-hidden="true">
                     {String(index + 1).padStart(2, '0')} // {stay.location}
                   </span>
-                  <h4 className="text-3xl md:text-4xl font-semibold mb-6">
+                  <h3 className="text-3xl md:text-4xl font-semibold mb-6">
                     {stay.name}
-                  </h4>
+                  </h3>
                   <p className="text-zinc-400 text-lg leading-relaxed">
                     {stay.description}
                   </p>
                 </motion.div>
-              </div>
+              </article>
             ))}
           </div>
         </div>
       </section>
 
-       <nav className="absolute bottom-0 left-3 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+       <nav aria-label="Bottom navigation" className="absolute bottom-0 left-3 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
         <button
           onClick={() => router.back()}
+          aria-label="Go back to itineraries"
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
           Back
         </button>
-        <button onClick={handleShare} className="text-xl hover:opacity-70 mr-6 transition-opacity pointer-events-auto">
-          <IoShareOutline />
-          
+        <button 
+          onClick={handleShare} 
+          aria-label="Share this itinerary"
+          className="text-xl hover:opacity-70 mr-6 transition-opacity pointer-events-auto"
+        >
+          <IoShareOutline aria-hidden="true" focusable="false" />
         </button>
       </nav>
 
       {/* Sticky Bottom Action Bar */}
-      <div className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">
+      <aside aria-label="Booking actions" className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
             <p className="text-xs uppercase tracking-widest text-zinc-400">{itinerary.title}</p>
@@ -306,12 +314,13 @@ export default function ItineraryDetailPage({ params }: Props) {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-2xl text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
+            aria-label={`Inquire to book ${itinerary.title} via WhatsApp`}
+            className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
           >
             Inquire to Book
           </Link>
         </div>
-      </div>
-    </div>
+      </aside>
+    </main>
   );
 }

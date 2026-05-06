@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import lotusIcon from "@/assets/images/icons-lotus.png";
 import sssIcon from "@/assets/images/icons-sss.png";
 import mayaIcon from "@/assets/images/icons-maya.png";
@@ -32,18 +33,18 @@ export default function ItineraryCard({ title, description, bookingUrl, visualHo
   const imageSrc = getHookImage(visualHookKey);
 
   return (
-    <motion.div
+    <motion.article
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.2, ease: "easeOut" }}
       className="flex flex-col justify-between border border-white/10 p-8 rounded-2xl bg-black text-white h-full hover:border-white/30 transition-all duration-500 group"
     >
       <div>
-        <div className="mb-8">
+        <div className="mb-8" aria-hidden="true">
           {imageSrc && (
             <Image 
               src={imageSrc} 
-              alt={`${visualHookKey} icon`}
+              alt="Itinerary icon"
               width={68}
               height={68}
               className="opacity-80 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500 ease-out mix-blend-screen object-contain"
@@ -56,18 +57,17 @@ export default function ItineraryCard({ title, description, bookingUrl, visualHo
         </p>
       </div>
       <div className="flex justify-start mt-auto">
-        <a 
+        <Link 
           href={bookingUrl || "#"} 
-          className="inline-block"
+          aria-label={`Book Experience: ${title}`}
           onClick={(e) => {
             if (!bookingUrl) e.preventDefault();
           }}
+          className="border border-white/20 rounded-full px-6 py-3 font-medium text-sm transition-colors hover:bg-white hover:text-black inline-block text-center"
         >
-          <button className="border border-white/20 rounded-full px-6 py-3 font-medium text-sm transition-colors hover:bg-white hover:text-black">
-            Book Experience
-          </button>
-        </a>
+          Book Experience
+        </Link>
       </div>
-    </motion.div>
+    </motion.article>
   );
 }
