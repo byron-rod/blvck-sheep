@@ -167,7 +167,10 @@ export default function RootLayout({
       </head>
       
       {/* 2. OPTIMIZACIÓN ACCESIBILIDAD/UI: Agregamos flexbox para el footer sticky y la etiqueta <main> */}
-      <body className={`${inter.variable} font-sans antialiased bg-black text-white flex flex-col min-h-screen`}>
+      <body 
+        className={`${inter.variable} font-sans antialiased bg-black text-white flex flex-col min-h-screen`}
+        suppressHydrationWarning
+      >
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T4HH8JKL"

@@ -46,7 +46,7 @@ export default function JournalArticlePage({ params }: Props) {
   return (
     <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay */}
-      <nav className="fixed top-14 left-0 w-full z-40 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
+      <nav className="fixed top-14 left-0 w-full z-10 flex justify-between items-center px-6 py-8 mix-blend-difference pointer-events-none">
         <button
           onClick={() => router.back()}
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
@@ -61,7 +61,7 @@ export default function JournalArticlePage({ params }: Props) {
 
       {/* Cinematic Hero */}
       <section className="relative h-[70vh] w-full flex items-end px-6 md:px-12 lg:px-24 pb-16">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 z-10">
           <img
             src={article.heroImage}
             alt={article.title}

@@ -16,6 +16,7 @@ export type JournalPost = {
   readTime: string;
   heroImage: string;
   category: string;
+  language: "en" | "es";
   content: ContentBlock[];
 };
 
@@ -35,6 +36,7 @@ export const journalData: JournalPost[] = [
     readTime: "8 MIN DE LECTURA",
     heroImage: decodingJournalImage.src, 
     category: "Guías Exclusivas",
+    language: "es",
     content: [
       {
         type: "paragraph",
@@ -127,6 +129,7 @@ export const journalData: JournalPost[] = [
     readTime: "6 MIN DE LECTURA",
     heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
     category: "Gastronomía y Cultura",
+    language: "es",
     content: [
       {
         type: "paragraph",
@@ -254,6 +257,7 @@ export const journalData: JournalPost[] = [
     readTime: "6 MIN DE LECTURA",
     heroImage: acatenangoJournalImage.src, 
     category: "Itinerarios",
+    language: "es",
     content: [
       {
         type: "paragraph",
@@ -261,7 +265,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Pero aquí está el secreto que muchos ignoran: el Acatenango es físicamente exigente. En lo personal yo al viajar camino bastante, me gusta caminar por las calles de los pueblos o ciudades, por lo que recomiendo dejar al volcan para el final. Este es el itinerario perfecto de 5 a 6 días enfocado en el volcán, pero aclimatándote de la manera correcta."
+        value: "No es ningun secreto, pero por si no lo sabias: el Acatenango es físicamente extenuante. En lo personal yo al viajar camino bastante, me gusta caminar por las calles de los pueblos o ciudades, por lo que recomiendo dejar al volcan para el final, asi tienen sus dias de caminar para un calentamiento. Este es el itinerario perfecto de 5 a 6 días enfocado en el volcán, pero aclimatándote de la manera correcta."
       },
       {
         type: "heading",
@@ -356,6 +360,7 @@ export const journalData: JournalPost[] = [
     readTime: "8 MIN READ",
     heroImage: roadguideJournalImage.src, 
     category: "Transit & Logistics",
+    language: "en",
     content: [
       {
         type: "paragraph",
@@ -429,6 +434,7 @@ export const journalData: JournalPost[] = [
     readTime: "5 MIN READ",
     heroImage: simJournalImage.src, 
     category: "Travel Hacks",
+    language: "en",
     content: [
       {
         type: "paragraph",
@@ -496,6 +502,7 @@ export const journalData: JournalPost[] = [
     readTime: "8 MIN READ",
     heroImage: decodingJournalImage.src, 
     category: "Insider Guides",
+    language: "en",
     content: [
       {
         type: "paragraph",
@@ -588,6 +595,7 @@ export const journalData: JournalPost[] = [
     readTime: "6 MIN READ",
     heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
     category: "Food & Culture",
+    language: "en",
     content: [
       {
         type: "paragraph",
@@ -715,6 +723,7 @@ export const journalData: JournalPost[] = [
     readTime: "5 MIN DE LECTURA",
     heroImage: simJournalImage.src, 
     category: "Trucos de Viaje",
+    language: "es",
     content: [
       {
         type: "paragraph",
@@ -782,6 +791,7 @@ export const journalData: JournalPost[] = [
     readTime: "6 MIN READ",
     heroImage: acatenangoJournalImage.src, 
     category: "Itineraries",
+    language: "en",
     content: [
       {
         type: "paragraph",
@@ -789,7 +799,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "But here is the secret that many ignore: Acatenango is physically demanding. Personally, when I travel I walk a lot, I like walking through the streets of towns or cities, so I recommend leaving the volcano for the end. This is the perfect 5 to 6-day itinerary focused on the volcano, but acclimatizing the right way."
+        value: "It's no secret, but just in case you didn't know: Acatenango is very physically demanding. Personally, when I travel I walk a lot, I like walking through the streets of towns or cities, so I recommend leaving the volcano for the end, that way your legs will get warmed up exploring the beautiful villages in Atitlán. This is the perfect 5 to 6-day itinerary focused on the volcano, but acclimatizing the right way."
       },
       {
         type: "heading",
