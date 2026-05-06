@@ -1,6 +1,12 @@
 import ItineraryCard from "@/components/ItineraryCard";
 import { itinerariesData } from "@/data/itineraries";
 
+export const metadata = {
+  title: "Curated Journeys - Black Sheep Tourist Services",
+  description:
+    "Explore our curated selection of Guatemala's most traveled journeys and let us handle your shuttle transportation.",
+};
+
 export default function ItinerariesPage() {
   return (
     <div className="min-h-screen bg-black text-white pt-24 pb-20 px-6 md:px-12 lg:px-24 font-sans">

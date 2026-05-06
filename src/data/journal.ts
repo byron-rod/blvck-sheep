@@ -49,7 +49,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "<strong>Vibra: Top 100 de Mejores Cafeterias del Mundo.</strong> Coffea Cafés Especiales es una cafetería de especialidad ubicada en el corazón de Antigua Guatemala. Sirven cafés de alta calidad y trazabilidad, obtenidos directamente de pequeños caficultores guatemaltecos, con procesos diversos como natural, lavado y honey. Estas en Guatemala, por favor deja de tomar cafe de Starbucks, somos reconocidos mundialmente por nuestro café, apoyemos a los caficultores locales. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+        value: "<strong>Vibra: Top 100 de Mejores Cafeterias del Mundo.</strong> Coffea Cafés Especiales es una cafetería de especialidad ubicada en el corazón de Antigua Guatemala. Sirven cafés de alta calidad y trazabilidad, obtenidos directamente de pequeños caficultores guatemaltecos, con procesos diversos como natural, lavado y honey. Estas en Guatemala, por favor hay mas opciones que Starbucks, somos reconocidos mundialmente por nuestro café, apoyemos a los caficultores locales. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
       },
       {
         type: "heading",
@@ -408,7 +408,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "<strong>Vibe: Top 100 Coffee Shops in the World.</strong> Guatemala is well know of its world class coffee, this is one of the best spots to enjoy it. You are visiting a new country, support local coffee producers, please dont be that person that goes to Starbucks. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
+        value: "<strong>Vibe: Top 100 Coffee Shops in the World.</strong> Guatemala is well know of its world class coffee, this is one of the best spots to enjoy it. Support local coffee producers, we have some of the best coffee in the world. <br/><br/><a href='https://www.instagram.com/coffea.gt/' target='_blank' class='text-blue-400 hover:underline'>View on Instagram</a>"
       },
       {
         type: "heading",

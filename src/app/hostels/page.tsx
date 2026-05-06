@@ -4,7 +4,7 @@ import { hostelsData } from "@/data/hostels";
 export const metadata = {
   title: "Social Hostels - Black Sheep Services",
   description:
-    "Explore our curated selection of Guatemala's top premium hostels and let us handle your shuttle transportation.",
+    "Explore our curated selection of Guatemala's top social hostels and let us handle your shuttle transportation.",
 };
 
 export default function HostelsPage() {

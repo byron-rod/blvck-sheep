@@ -3,11 +3,11 @@ import { destinationsData } from "@/data/destinations";
 import CallToAction from "@/sections/CallToAction";
 
 export const metadata = {
-  title: "Our Destinations - Black Sheep Shuttle Service",
+  title: "Our Destinations - Black Sheep Tourist Services",
   description:
-    "General information about the destinations you can visit with Black Sheep's personalized shuttle services in Guatemala.",
+    "Usefull information about the destinations you can visit with Black Sheep's personalized shuttle services in Guatemala.",
   keywords:
-    "Panajachel, Antigua, El Paredon, Semuc Champey, Guatemala, shuttle, service, Black Sheep, transportation, travel",
+    "Panajachel, Antigua, El Paredon, Semuc Champey, Flores, Lake Izabal, Guatemala",
 };
 
 export default function Destinations() {
