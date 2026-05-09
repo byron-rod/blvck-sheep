@@ -44,14 +44,10 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     }
   };
 
-  // 3. EVITAMOS EL ERROR DE HYDRATION
-  // Si todavía estamos en el servidor de Vercel, no renderizamos el contenido
-  // que depende de la lectura del localStorage.
-  if (!isClient) {
-    // Renderizamos un 'cascarón' temporal para que el build pase limpiamente
-    return null; 
-  }
-
+  // 3. EVITAMOS EL ERROR DE HYDRATION Y MANTENEMOS EL SEO
+  // En lugar de retornar null (lo cual dejaría la página en blanco en el servidor y arruinaría el SEO),
+  // SIEMPRE retornamos el Provider con los children.
+  // Next.js ignorará las diferencias menores de texto gracias a suppressHydrationWarning en el body.
   return (
     <LanguageContext.Provider value={{ activeLanguage, setActiveLanguage }}>
       {children}
