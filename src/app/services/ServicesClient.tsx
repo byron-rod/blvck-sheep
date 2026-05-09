@@ -222,7 +222,7 @@ export default function ServicesClient() {
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Total schedule flexibility - more personalized experience" : "Flexibilidad total de horarios - una experiencia más personalizada"}</span>
+                      <span>{activeLanguage === "en" ? "Total control - more personalized experience" : "Control total - una experiencia más personalizada"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
