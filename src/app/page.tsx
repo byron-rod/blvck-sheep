@@ -21,32 +21,8 @@ export default function Home() {
 
   return (
     <>
-      <div className="container max-w-5xl pt-12 flex justify-end px-5 md:px-0">
-        <nav aria-label={activeLanguage === "en" ? "Language selector" : "Selector de idioma"} className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 shrink-0 w-fit">
-          {(["en", "es"] as const).map((lang) => (
-            <button
-              key={lang}
-              onClick={() => setActiveLanguage(lang)}
-              aria-label={lang === "en" ? "Switch to English" : "Cambiar a Español"}
-              aria-pressed={activeLanguage === lang}
-              className={`relative px-6 py-2.5 text-sm font-medium uppercase tracking-widest rounded-full transition-colors z-10 ${
-                activeLanguage === lang ? "text-black" : "text-zinc-400 hover:text-white"
-              }`}
-            >
-              {activeLanguage === lang && (
-                <motion.div
-                  layoutId="active-lang-home"
-                  className="absolute inset-0 bg-white rounded-full -z-10"
-                  transition={{ type: "spring", stiffness: 400, damping: 30 }}
-                />
-              )}
-              {lang === "en" ? "ENG" : "ESP"}
-            </button>
-          ))}
-        </nav>
-      </div>
 
-      <Hero activeLanguage={activeLanguage} />
+      <Hero activeLanguage={activeLanguage} setActiveLanguage={setActiveLanguage} />
       <About activeLanguage={activeLanguage} />
       <Features activeLanguage={activeLanguage} />
       <ServiceTiers activeLanguage={activeLanguage} />
