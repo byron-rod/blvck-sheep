@@ -110,8 +110,8 @@ export default function ItinerariesPage() {
               </h3>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
-                  ? "More than just a ride. We engineer your entire logistical route across Guatemala, ensuring flawless, private transitions between destinations in our premium fleet."
-                  : "Algo más que un simple viaje. Diseñamos toda tu ruta logística por Guatemala, garantizando transiciones privadas y sin contratiempos en nuestra flota premium."}
+                  ? "More than just a ride. We engineer your entire logistical route across Guatemala, ensuring flawless, private transitions between destinations in our fleet."
+                  : "Algo más que un simple viaje. Diseñamos toda tu ruta logística por Guatemala, garantizando transiciones privadas y sin contratiempos en nuestra flota."}
               </p>
             </article>
 
@@ -122,8 +122,8 @@ export default function ItinerariesPage() {
               </h3>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
-                  ? "Not sure how many nights to spend at the lake? We provide expert guidance on pacing your trip and unlock our hand-picked portfolio of boutique stays and eco-luxury lodges."
-                  : "¿No estás seguro de cuántas noches pasar en el lago? Te brindamos asesoría experta sobre el ritmo de tu viaje y te damos acceso a nuestro portafolio seleccionado de hoteles boutique."}
+                  ? "Not sure how many nights to spend at the lake? We provide expert guidance on pacing your trip and unlock our hand-picked portfolio of our favorite accommodations."
+                  : "¿No estás seguro de cuántas noches pasar en el lago? Te brindamos asesoría experta sobre el ritmo de tu viaje y te damos acceso a nuestro portafolio seleccionado de nuestros hospedajes favoritos."}
               </p>
             </article>
 
