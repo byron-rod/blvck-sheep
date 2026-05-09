@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/sections/Navbar";
 import Footer from "@/sections/Footer";
 import Script from "next/script";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -181,13 +182,15 @@ export default function RootLayout({
           ></iframe>
         </noscript>
         
-        <Navbar />
-        
-        <main id="main-content" className="flex-grow">
-          {children}
-        </main>
-        
-        <Footer />
+        <LanguageProvider>
+          <Navbar />
+          
+          <main id="main-content" className="flex-grow">
+            {children}
+          </main>
+          
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

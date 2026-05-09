@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ItineraryCard from "@/components/ItineraryCard";
 import { itinerariesData } from "@/data/itineraries";
 import { Map, Home, Compass } from "lucide-react";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ItinerariesPage() {
-  const [activeLanguage, setActiveLanguage] = useState<"en" | "es">("en");
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
   const filteredItineraries = itinerariesData.filter((item) => item.language === activeLanguage);
 

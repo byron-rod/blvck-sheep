@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { journalData } from "@/data/journal";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function JournalClient() {
-  const [activeLanguage, setActiveLanguage] = useState<"en" | "es">("en");
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
   const filteredPosts = journalData.filter(post => post.language === activeLanguage);
 

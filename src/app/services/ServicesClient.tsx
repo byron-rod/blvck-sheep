@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { useRouter } from "next/navigation";
 import { IoChevronBack, IoShareOutline } from "react-icons/io5";
@@ -11,10 +11,11 @@ import {
   Check
 } from 'lucide-react';
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ServicesClient() {
   const router = useRouter();
-  const [activeLanguage, setActiveLanguage] = useState<"en" | "es">("en");
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
   const handleShare = async () => {
     const shareData = {

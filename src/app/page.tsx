@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
 import About from "@/sections/About";
 import CallToAction from "@/sections/CallToAction";
@@ -14,9 +13,10 @@ import Hero from "@/sections/Hero";
 import Reviews from "@/sections/Reviews";
 import TraveloguePreview from "@/sections/TraveloguePreview";
 import { journalData } from "@/data/journal";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Home() {
-  const [activeLanguage, setActiveLanguage] = useState<"en" | "es">("en");
+  const { activeLanguage, setActiveLanguage } = useLanguage();
   const featuredPosts = journalData.filter(post => post.language === activeLanguage).slice(0, 3);
 
   return (
