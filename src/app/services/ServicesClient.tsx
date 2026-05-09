@@ -274,7 +274,7 @@ export default function ServicesClient() {
                 {activeLanguage === "en" ? "The Road Cooler" : "La Hielera de Viaje"}
               </h3>
               <p className="text-sm text-zinc-400 font-light leading-relaxed">
-                {activeLanguage === "en" ? "Pre-stocked and ready for the highlands. Enjoy ice-cold local beverages, mineral water, or select snacks waiting for you as soon as you board." : "Pre-abastecida y lista para el camino. Disfruta de bebidas refrescantes, agua mineral o snacks seleccionados esperándote al abordar."}
+                {activeLanguage === "en" ? "Long trip? We can add a cooler to keep drinks cold. Enjoy ice-cold local beverages, mineral water, or select snacks waiting for you as soon as you board." : "¿Viaje largo? Podemos agregar una hielera para mantener tus bebidas frías. Disfruta de bebidas refrescantes, agua mineral o snacks durante todo el viaje."}
               </p>
             </div>
 
