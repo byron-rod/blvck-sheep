@@ -218,7 +218,7 @@ export default function ServicesClient() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Travel in absolute comfort while reducing your footprint in our electric/hybrid fleet" : "Viaja con absoluta comodidad mientras reduces tu huella en nuestra flota eléctrica/híbrida"}</span>
+                      <span>{activeLanguage === "en" ? "Hybrid Plug-in (PHEV) crossover SUV" : "Crossover SUV híbrido enchufable (PHEV)"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
