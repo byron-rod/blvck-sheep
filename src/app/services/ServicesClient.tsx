@@ -172,11 +172,11 @@ export default function ServicesClient() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Direct door-to-door service. You have more control of your journey." : "Servicio directo puerta a puerta. Mayor control de tu viaje."}</span>
+                      <span>{activeLanguage === "en" ? "Direct door-to-door service. You have more control of your journey" : "Servicio directo puerta a puerta. Mayor control de tu viaje"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "We work 24/7. You choose the exact departure time. No waiting times." : "Trabajamos las 24 horas. Tú eliges la hora exacta de salida. Sin tiempos de espera."}</span>
+                      <span>{activeLanguage === "en" ? "We work 24/7. You choose the exact departure time. No waiting times" : "Trabajamos las 24 horas. Tú eliges la hora exacta de salida. Sin tiempos de espera"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
@@ -218,7 +218,7 @@ export default function ServicesClient() {
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Help the planet while enjoying full comfort" : "Ayuda al planeta mientras disfrutas el viaje con confort total"}</span>
+                      <span>{activeLanguage === "en" ? "Travel in absolute comfort while reducing your footprint in our electric/hybrid fleet" : "Viaja con absoluta comodidad mientras reduces tu huella en nuestra flota eléctrica/híbrida"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
