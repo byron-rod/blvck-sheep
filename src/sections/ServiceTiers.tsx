@@ -10,7 +10,7 @@ const content = {
       {
         name: "Shared Shuttle",
         icon: Bus,
-        description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules, with designated pick-up and drop-off areas in each town. Expect variable wait.\n\nFleet: Toyota Hiace, Nissan Urvan",
+        description: "Shared transit designed for the budget-conscious traveler. Operates on fixed daily schedules, with designated pick-up and drop-off areas in each town. Expect variable wait.\n\nFleet: Microbuses - Minivans",
         textRest: "text-yellow-600",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
@@ -47,7 +47,7 @@ const content = {
       {
         name: "Viaje Compartido",
         icon: Bus,
-        description: "Transporte compartido diseñado para el viajero con presupuesto. Opera en horarios fijos diarios, con áreas designadas de recogida y llegada en cada ciudad. Espera variable.\n\nFlota: Toyota Hiace, Nissan Urvan",
+        description: "Transporte compartido diseñado para el viajero con presupuesto. Opera en horarios fijos diarios, con áreas designadas de recogida y llegada en cada ciudad. Espera variable.\n\nFlota: Microbuses - Minivans",
         textRest: "text-yellow-600",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
