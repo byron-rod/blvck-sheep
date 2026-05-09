@@ -19,9 +19,9 @@ export default function JournalArticlePage({ params }: Props) {
 
   if (!article) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-black text-white">
+      <main className="min-h-screen flex items-center justify-center bg-black text-white">
         <h1 className="text-2xl font-light">Article Not Found</h1>
-      </div>
+      </main>
     );
   }
 
@@ -44,38 +44,43 @@ export default function JournalArticlePage({ params }: Props) {
   };
 
   return (
-    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
+    <main className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
       {/* Top Nav Overlay */}
-      <nav className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
+      <nav aria-label="Top navigation" className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
         <button
           onClick={() => router.back()}
+          aria-label="Go back to journal"
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
           Back
         </button>
-        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
-          <IoShareOutline />
+        <button 
+          onClick={handleShare} 
+          aria-label="Share this article"
+          className="text-xl hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoShareOutline aria-hidden="true" focusable="false" />
         </button>
       </nav>
 
       {/* Cinematic Hero */}
-      <section className="relative h-[70vh] w-full flex items-end px-6 md:px-12 lg:px-24 pb-16">
+      <header className="relative h-[70vh] w-full flex items-end px-6 md:px-12 lg:px-24 pb-16">
         <div className="absolute inset-0 z-10">
           <img
             src={article.heroImage}
-            alt={article.title}
+            alt={`${article.title} cover`}
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" aria-hidden="true" />
         </div>
 
         <div className="relative z-10 w-full max-w-5xl">
           <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] font-semibold text-zinc-300 mb-6">
             <span>{article.category}</span>
-            <span className="w-1 h-1 rounded-full bg-zinc-500" />
+            <span className="w-1 h-1 rounded-full bg-zinc-500" aria-hidden="true" />
             <span>{article.publishDate}</span>
-            <span className="w-1 h-1 rounded-full bg-zinc-500" />
+            <span className="w-1 h-1 rounded-full bg-zinc-500" aria-hidden="true" />
             <span>{article.readTime}</span>
           </div>
           
@@ -83,7 +88,7 @@ export default function JournalArticlePage({ params }: Props) {
             {article.title}
           </h1>
         </div>
-      </section>
+      </header>
 
       {/* Editorial Content Renderer */}
       <article className="max-w-3xl mx-auto py-24 px-6 md:px-0">
@@ -126,9 +131,10 @@ export default function JournalArticlePage({ params }: Props) {
               <Link 
                 key={index} 
                 href={block.link || "#"} 
-                className="block w-fit bg-white text-black px-10 py-5 uppercase tracking-widest text-sm font-bold my-12 hover:bg-zinc-200 transition-colors rounded-2xl"
+                className="block w-fit bg-white text-black px-8 py-4 uppercase tracking-widest text-sm font-bold my-12 hover:bg-zinc-200 transition-colors rounded-full"
                 target={block.link?.startsWith('http') ? "_blank" : "_self"}
                 rel={block.link?.startsWith('http') ? "noopener noreferrer" : ""}
+                aria-label={block.value}
               >
                 {block.value}
               </Link>
@@ -138,18 +144,23 @@ export default function JournalArticlePage({ params }: Props) {
         })}
       </article>
       {/* Bottom Nav Overlay */}
-      <nav className="absolute bottom-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
+      <nav aria-label="Bottom navigation" className="absolute bottom-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 md:px-12 pointer-events-none">
         <button
           onClick={() => router.back()}
+          aria-label="Go back to journal"
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" />
+          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
           Back
         </button>
-        <button onClick={handleShare} className="text-xl hover:opacity-70 transition-opacity pointer-events-auto">
-          <IoShareOutline />
+        <button 
+          onClick={handleShare} 
+          aria-label="Share this article"
+          className="text-xl hover:opacity-70 transition-opacity pointer-events-auto"
+        >
+          <IoShareOutline aria-hidden="true" focusable="false" />
         </button>
       </nav>
-    </div>
+    </main>
   );
 }

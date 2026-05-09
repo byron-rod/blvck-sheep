@@ -291,7 +291,7 @@ export default function ServicesClient() {
               </div>
               <div className="mt-auto pt-4 border-t border-zinc-800/50">
                 <Link 
-                  href={activeLanguage === "en" ? "/journal/guatemala-sim-card-esim-guide" : "/journal/donde-comer-antigua-guatemala-parte-1"} 
+                  href={activeLanguage === "en" ? "/journal/guatemala-sim-card-esim-guide" : "/journal/guia-sim-card-esim-guatemala"} 
                   className="group inline-flex items-center gap-2 text-xs font-medium tracking-widest text-zinc-400 hover:text-white uppercase transition-colors"
                 >
                   {activeLanguage === "en" ? "Read our SIM guide" : "Lee nuestra guía de SIMs"}

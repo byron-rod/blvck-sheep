@@ -852,7 +852,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "cta",
-        value: "Reserva un traslado y solicita tu SIM local",
+        value: "Solicita tu SIM local",
         link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20y%20solicitar%20una%20tarjeta%20SIM%20local!"
       }
     ]

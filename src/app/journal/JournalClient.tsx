@@ -15,7 +15,7 @@ export default function JournalClient() {
       <header className="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-8">
         <div>
           {/* TEXTO DINÁMICO: Título */}
-          <h1 className="text-6xl md:text-8xl font-light tracking-tighter">
+          <h1 id="journal-heading" className="text-6xl md:text-8xl font-light tracking-tighter">
             {activeLanguage === "en" ? "The Travelogue" : "The Travelogue"}
           </h1>
           {/* TEXTO DINÁMICO: Subtítulo */}
@@ -27,11 +27,13 @@ export default function JournalClient() {
         </div>
 
         {/* Toggle Button */}
-        <div className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0">
+        <nav aria-label={activeLanguage === "en" ? "Language selector" : "Selector de idioma"} className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0">
           {(["en", "es"] as const).map((lang) => (
             <button
               key={lang}
               onClick={() => setActiveLanguage(lang)}
+              aria-label={lang === "en" ? "Switch to English" : "Cambiar a Español"}
+              aria-pressed={activeLanguage === lang}
               className={`relative px-6 py-2.5 text-sm font-medium uppercase tracking-widest rounded-full transition-colors z-10 ${
                 activeLanguage === lang ? "text-black" : "text-zinc-400 hover:text-white"
               }`}
@@ -46,48 +48,50 @@ export default function JournalClient() {
               {lang === "en" ? "ENG" : "ESP"}
             </button>
           ))}
-        </div>
+        </nav>
       </header>
 
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 z-10">
-        <AnimatePresence mode="popLayout">
-          {filteredPosts.map((post) => (
-            <motion.div
-              key={post.id}
-              layout
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.95 }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-            >
-              <Link href={`/journal/${post.id}`} className="group block h-full">
-                <article className="flex flex-col gap-6 h-full">
-                  <div className="w-full aspect-video overflow-hidden border border-transparent group-hover:border-zinc-800 transition-colors duration-500 rounded-none relative">
-                    <img
-                      src={post.heroImage}
-                      alt={post.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
-                    />
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
-                  </div>
-                  
-                  <div className="flex flex-col flex-grow">
-                    <span className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-semibold mb-3 border-b border-zinc-800 pb-2 self-start">
-                      {post.category}
-                    </span>
-                    <h2 className="text-2xl md:text-3xl font-medium mt-2 mb-4 tracking-tight group-hover:text-zinc-300 transition-colors leading-tight">
-                      {post.title}
-                    </h2>
-                    <p className="text-zinc-400 text-base leading-relaxed line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                  </div>
-                </article>
-              </Link>
-            </motion.div>
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      <section aria-labelledby="journal-heading">
+        <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 md:gap-16 z-10">
+          <AnimatePresence mode="popLayout">
+            {filteredPosts.map((post) => (
+              <motion.div
+                key={post.id}
+                layout
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.4, ease: "easeOut" }}
+              >
+                <Link href={`/journal/${post.id}`} className="group block h-full" aria-label={`Read article: ${post.title}`}>
+                  <article className="flex flex-col gap-6 h-full">
+                    <div className="w-full aspect-video overflow-hidden border border-transparent group-hover:border-zinc-800 transition-colors duration-500 rounded-none relative">
+                      <img
+                        src={post.heroImage}
+                        alt=""
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
+                      />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" aria-hidden="true" />
+                    </div>
+                    
+                    <div className="flex flex-col flex-grow">
+                      <span className="text-xs uppercase tracking-[0.2em] text-zinc-500 font-semibold mb-3 border-b border-zinc-800 pb-2 self-start" aria-hidden="true">
+                        {post.category}
+                      </span>
+                      <h2 className="text-2xl md:text-3xl font-medium mt-2 mb-4 tracking-tight group-hover:text-zinc-300 transition-colors leading-tight">
+                        {post.title}
+                      </h2>
+                      <p className="text-zinc-400 text-base leading-relaxed line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                    </div>
+                  </article>
+                </Link>
+              </motion.div>
+            ))}
+          </AnimatePresence>
+        </motion.div>
+      </section>
     </>
   );
 }
