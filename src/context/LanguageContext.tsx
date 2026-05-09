@@ -28,11 +28,8 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
     localStorage.setItem("blvcksheep-lang", lang);
   };
 
-  // Prevent hydration mismatch by rendering nothing (or children with default) until mounted
-  if (!isMounted) {
-    return <>{children}</>;
-  }
-
+  // Always return the Provider so children can consume the context during SSR.
+  // The actual stored language will be applied on the client after mount.
   return (
     <LanguageContext.Provider value={{ activeLanguage, setActiveLanguage }}>
       {children}
