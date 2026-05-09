@@ -3,13 +3,24 @@ import { AnimationPlaybackControls, motion, useAnimate } from "framer-motion";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
-export default function CallToAction() {
+const content = {
+  en: {
+    message: "Hi, I would like to book a ride!",
+    buttonText: "Book Your Ride"
+  },
+  es: {
+    message: "¡Hola, me gustaría reservar un viaje!",
+    buttonText: "Reserva Tu Viaje"
+  }
+};
+
+export default function CallToAction({ activeLanguage = "en" }: { activeLanguage?: "en" | "es" }) {
   const [isHovered, setIsHovered] = useState(false);
   const animation = useRef<AnimationPlaybackControls>(null);
   const [scope, animate] = useAnimate();
+  const data = content[activeLanguage];
 
-  const whatsappLink =
-    "https://wa.me/50255116881?text=Hi,%20I%20would%20like%20to%20book%20a%20ride!";
+  const whatsappLink = `https://wa.me/50255116881?text=${encodeURIComponent(data.message)}`;
 
   useEffect(() => {
     // Check if scope.current is defined before trying to animate
@@ -20,7 +31,7 @@ export default function CallToAction() {
         { duration: 30, ease: "linear", repeat: Infinity }
       );
     }
-  }, []);
+  }, [animate]);
 
   useEffect(() => {
     if (animation.current) {
@@ -51,7 +62,7 @@ export default function CallToAction() {
                 className="group-hover:text-blue-400"
                 aria-label="WhatsApp contact for BlackSheep Shuttles"
               >
-                Book Your Ride
+                {data.buttonText}
               </Link>
             </div>
           ))}

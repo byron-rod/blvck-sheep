@@ -5,17 +5,31 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { JournalPost } from "@/data/journal";
 
-export default function TraveloguePreview({ posts }: { posts: JournalPost[] }) {
+const content = {
+  en: {
+    subtitle: "Insights & Guides",
+    title: "The Travelogue",
+    button: "View All Articles"
+  },
+  es: {
+    subtitle: "Ideas y Guías",
+    title: "El Travelogue",
+    button: "Ver Todos los Artículos"
+  }
+};
+
+export default function TraveloguePreview({ posts, activeLanguage = "en" }: { posts: JournalPost[], activeLanguage?: "en" | "es" }) {
+  const data = content[activeLanguage];
   return (
     <section className="py-24 bg-black text-white border-t border-zinc-900 w-full overflow-hidden" id="travelogue">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
         {/* Header */}
         <div className="flex flex-col items-center mb-16 text-center">
            <h2 className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4">
-             Insights & Guides
+             {data.subtitle}
            </h2>
            <h3 className="text-5xl md:text-6xl font-light tracking-tight text-white mb-6">
-             The Travelogue
+             {data.title}
            </h3>
         </div>
 
@@ -63,7 +77,7 @@ export default function TraveloguePreview({ posts }: { posts: JournalPost[] }) {
             href="/journal"
             className="border border-white text-white px-10 py-4 uppercase tracking-widest text-sm font-bold hover:bg-white hover:text-black transition-colors rounded-full"
           >
-            View All Articles
+            {data.button}
           </Link>
         </div>
       </div>
