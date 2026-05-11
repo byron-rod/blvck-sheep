@@ -39,7 +39,7 @@ export const destinationsData: DestinationDetail[] = [
     sections: [
       {
         heading: "Navigating the Lake",
-        content: "The primary way to hop between villages is via public 'lanchas' (small water taxis) that cross the water daily, usually depart every 30 minutes from the docks of each village. It is crucial to know that these boats operate on an unofficial schedule, generally running from 6:30 AM until about 5:00 PM or 7:30 PM at the absolute latest (Panajachel Dock called Muelle Tzanjuyu, is the one that runs until the latest). If you miss the last boat, you will need to hire a private lancha at a premium rate, we have private lanchas available if you require them please let us know and we can arrange them for you. We provide shared and private shuttles from anywhere in the country to arrive and leave Lake Atitlán without any hassle.",
+        content: "The primary way to hop between villages is via public 'lanchas' (small water taxis) that cross the water daily, usually depart every 30 minutes from the docks of each village. It is crucial to know that these boats operate on an unofficial schedule, generally running from 6:30 AM until about 5:00 PM or 7:30 PM at the absolute latest (Panajachel Dock called Muelle Tzanjuyu, is the one that runs until the latest). If you miss the last boat, you will need to hire a private lancha at a higher rate, we have private lanchas available if you require them please let us know and we can arrange them for you. We provide shared and private shuttles from anywhere in the country to arrive and leave Lake Atitlán without any hassle.",
         actionText: "Read Our Guide For the Villages in Lake Atitlan",
         actionLink: "/journal/lake-atitlan-villages-guide",
       },
