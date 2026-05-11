@@ -251,7 +251,7 @@ export default function ServicesClient() {
               {activeLanguage === "en" ? "A La Carte" : "A La Carta"}
             </h2>
             <p className="text-zinc-400 font-light text-xl">
-              {activeLanguage === "en" ? "Elevate your journey. Exclusive add-ons available for our private routes. To ensure flawless logistics, all add-ons must be requested at least 24 hours in advance." : "Diseña tu experiencia. Complementos exclusivos disponibles en nuestras rutas privadas. Para garantizar una logística impecable, deben solicitarse con al menos 24 horas de anticipación."}
+              {activeLanguage === "en" ? "Elevate your journey. Exclusive add-ons available for our private routes. To ensure seamless logistics, all add-ons must be requested at least 24 hours in advance." : "Diseña tu experiencia. Complementos exclusivos disponibles en nuestras rutas privadas. Para garantizar una buena logística, deben solicitarse con al menos 24 horas de anticipación."}
             </p>
           </div>
 
