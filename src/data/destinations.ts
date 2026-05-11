@@ -35,7 +35,7 @@ export const destinationsData: DestinationDetail[] = [
     title: "Lake Atitlán",
     subtitle: "The Mystical Volcanic Caldera",
     heroImage: wellnessAtitlan.src,
-    overview: "Encircled by three towering volcanoes and dotted with vibrant, diverse Mayan villages, Lake Atitlán is a place where time slows down. Whether you are seeking deep spiritual restoration in San Marcos or vibrant social energy in Panajachel, the lake demands to be experienced, not just visited.",
+    overview: "Encircled by three towering volcanoes and dotted with vibrant, diverse Mayan villages, Lake Atitlán is a place where time slows down. Whether you are seeking deep spiritual restoration in San Marcos or vibrant social energy in San Pedro or Panajachel, the lake demands to be experienced, not just visited.",
     sections: [
       {
         heading: "Navigating the Lake",
@@ -75,7 +75,7 @@ export const destinationsData: DestinationDetail[] = [
     title: "Lago de Atitlán",
     subtitle: "La Mística Caldera Volcánica",
     heroImage: wellnessAtitlan.src,
-    overview: "Rodeado por tres imponentes volcanes, salpicado de vibrantes y diversos pueblos mayas, el Lago de Atitlán es un refugio donde el tiempo se detiene. Ya sea que busques una profunda restauración espiritual en San Marcos o la vibrante energía social de San Pedro La Laguna, el lago exige ser experimentado, no solo visitado.",
+    overview: "Rodeado por tres imponentes volcanes, salpicado de vibrantes y diversos pueblos mayas, el Lago de Atitlán es un refugio donde el tiempo se detiene. Ya sea que busques una profunda restauración espiritual en San Marcos o la vibrante energía social de San Pedro La Laguna o Panajachel, el lago exige ser experimentado, no solo visitado.",
     sections: [
       {
         heading: "Navegando el Lago",
