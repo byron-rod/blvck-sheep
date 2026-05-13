@@ -67,12 +67,12 @@ export default function DestinationsClient() {
               <img 
                 src={destination.heroImage} 
                 alt={destination.title} 
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 "
               />
               <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors duration-500" />
               
               <div className="absolute inset-0 p-8 md:p-16 flex flex-col justify-end md:justify-center items-start md:items-center text-left md:text-center">
-                <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-4 group-hover:-translate-y-2 transition-transform duration-500">
+                <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter mb-2 group-hover:-translate-x-2 transition-transform duration-500">
                   {destination.title}
                 </h2>
                 <h3 className="text-lg md:text-2xl text-zinc-300 font-light mb-8 opacity-0 group-hover:opacity-100 group-hover:-translate-y-2 transition-all duration-500 delay-100">

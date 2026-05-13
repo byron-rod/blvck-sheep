@@ -114,7 +114,7 @@ export const destinationsData: DestinationDetail[] = [
   {
     id: "antigua-guatemala",
     language: "en",
-    title: "Antigua Guatemala",
+    title: "Antigua",
     subtitle: "The Colonial Crown Jewel",
     heroImage: social.src, 
     overview: "Wandering through Antigua is like stepping into a living museum framed by the volcanos. With its cobblestone streets, ruined 16th-century convents, and an explosion of modern gastronomy and specialty coffee, it is the undisputed cultural heart of the country. It effortlessly blends the ancient with the highly sophisticated.",
@@ -154,7 +154,7 @@ export const destinationsData: DestinationDetail[] = [
   {
     id: "antigua-guatemala",
     language: "es",
-    title: "Antigua Guatemala",
+    title: "Antigua",
     subtitle: "La Joya de la Corona Colonial",
     heroImage: social.src, 
     overview: "Deambular por Antigua es como adentrarse en un museo viviente enmarcado por volcanes. Con sus calles empedradas, conventos en ruinas del siglo XVI, una explosión de gastronomía moderna y café de especialidad, es el indiscutible corazón cultural del país. Combina sin esfuerzo lo antiguo con lo sumamente sofisticado.",

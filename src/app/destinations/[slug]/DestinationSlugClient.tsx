@@ -89,7 +89,7 @@ export default function DestinationSlugClient({ params }: Props) {
             </nav>
 
       {/* Cinematic Hero */}
-      <section className="relative h-[85vh] w-full flex items-end pb-20 px-6 md:px-12 lg:px-24">
+      <section className="relative min-h-screen w-full flex flex-col justify-end pb-12 pt-40 px-6 md:px-12 lg:px-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
@@ -98,38 +98,41 @@ export default function DestinationSlugClient({ params }: Props) {
             className="w-full h-full object-cover"
           />
           {/* Magazine-style vignette gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent" />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-5xl mx-auto">
+        <div className="relative z-10 w-full max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
           >
-            <header className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-12">
+            {/* Flex-col-reverse pone el toggle arriba en móvil, y a la derecha en desktop */}
+            <header className="flex flex-col-reverse md:flex-row md:items-end justify-between gap-6 md:gap-8 mb-4">
               <div className="max-w-3xl">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="text-xs uppercase tracking-[0.3em] font-medium border border-white/30 px-3 py-1 rounded-full">
+                <div className="flex items-center gap-4 mb-5">
+                  <span className="text-xs uppercase tracking-[0.3em] font-medium border border-white/30 px-3 py-1 rounded-full backdrop-blur-sm">
                     {currentContent.guideTag}
                   </span>
                 </div>
                 
-                <h1 className="text-6xl md:text-7xl lg:text-[5rem] font-bold tracking-tighter leading-[0.9] mb-4">
+                {/* Ajustamos los tamaños de texto para que fluyan mejor */}
+                <h1 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-4">
                   {destination.title}
                 </h1>
                 
-                <h2 className="text-xl md:text-2xl text-zinc-300 font-light tracking-wide mb-8">
+                <h2 className="text-xl md:text-2xl text-zinc-300 font-light tracking-wide mb-6">
                   {destination.subtitle}
                 </h2>
                 
-                <p className="text-lg md:text-xl text-zinc-400 leading-relaxed mix-blend-screen">
+                <p className="text-base md:text-lg text-zinc-400 leading-relaxed mix-blend-screen max-w-2xl">
                   {destination.overview}
                 </p>
               </div>
 
-              <nav aria-label={activeLanguage === "en" ? "Language selector" : "Selector de idioma"} className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0">
+              {/* Language Toggle */}
+              <nav aria-label={activeLanguage === "en" ? "Language selector" : "Selector de idioma"} className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0 md:mb-6">
                 {(["en", "es"] as const).map((lang) => (
                   <button
                     key={lang}
@@ -142,7 +145,7 @@ export default function DestinationSlugClient({ params }: Props) {
                   >
                     {activeLanguage === lang && (
                       <motion.div
-                        layoutId={`active-lang-destinations-${lang}`} // Ensure unique layoutId to prevent animation bugs across pages
+                        layoutId={`active-lang-destinations-${lang}`} 
                         className="absolute inset-0 bg-white rounded-full -z-10"
                         transition={{ type: "spring", stiffness: 400, damping: 30 }}
                       />
