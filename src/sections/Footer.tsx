@@ -60,7 +60,7 @@ export default function Footer() {
                 <h3 className="text-white font-semibold mb-4">Stays</h3>
                 <div className="flex flex-col gap-2">
                   <Link href="/hotels" className="text-white/50 text-sm hover:text-white transition-colors">
-                    Boutique Hotels
+                    Accommodations
                   </Link>
                   <Link href="/hostels" className="text-white/50 text-sm hover:text-white transition-colors">
                     Social Hostels

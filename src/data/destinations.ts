@@ -62,7 +62,7 @@ export const destinationsData: DestinationDetail[] = [
         link: "/hostels"
       },
       {
-        title: "Boutique Hotels",
+        title: "Favorite Hotels",
         description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
         image: hotelMain.src, 
         link: "/hotels"
@@ -97,12 +97,12 @@ export const destinationsData: DestinationDetail[] = [
     accommodationPortals: [
       {
         title: "Hostales Curados",
-        description: "Descubre nuestra selección artesanal de espacios sociales de alta energía, centros comunitarios y refugios premium para viajeros.",
+        description: "Descubre nuestra selección de espacios sociales de alta energía, centros comunitarios y refugios premium para viajeros.",
         image: hostelMain.src, 
         link: "/hostels"
       },
       {
-        title: "Hoteles Boutique",
+        title: "Hoteles Favoritos",
         description: "Explora nuestra colección exclusiva de santuarios coloniales, retiros de lujo y propiedades de diseño de alta gama.",
         image: hotelMain.src, 
         link: "/hotels"
@@ -139,7 +139,7 @@ export const destinationsData: DestinationDetail[] = [
     accommodationPortals: [
       {
         title: "Curated Hostels",
-        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and backpacker lodges.",
         image: hostelMain.src, 
         link: "/hostels"
       },
@@ -179,12 +179,12 @@ export const destinationsData: DestinationDetail[] = [
     accommodationPortals: [
       {
         title: "Hostales Curados",
-        description: "Descubre nuestra selección artesanal de espacios sociales de alta energía, centros comunitarios y refugios premium para viajeros.",
+        description: "Descubre nuestra selección de espacios sociales de alta energía, centros comunitarios y refugios para viajeros.",
         image: hostelMain.src, 
         link: "/hostels"
       },
       {
-        title: "Hoteles Boutique",
+        title: "Hoteles Favoritos",
         description: "Explora nuestra colección exclusiva de santuarios coloniales, retiros de lujo y propiedades de diseño de alta gama.",
         image: hotelMain.src, 
         link: "/hotels"

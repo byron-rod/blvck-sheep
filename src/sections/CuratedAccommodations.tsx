@@ -8,7 +8,7 @@ const content = {
   en: {
     subtitle: "Rest & Recover",
     title: "Curated Accommodations",
-    card1Title: "Boutique Hotels",
+    card1Title: "Accommodations Hub",
     card1Desc: "Exclusive sanctuaries and high-end design.",
     card2Title: "Social Hostels",
     card2Desc: "High-energy social spaces and backpacker hubs."
@@ -16,7 +16,7 @@ const content = {
   es: {
     subtitle: "Descansa y Recupérate",
     title: "Alojamientos Exclusivos",
-    card1Title: "Hoteles Boutique",
+    card1Title: "Hospedajes",
     card1Desc: "Santuarios exclusivos y diseño de alta gama.",
     card2Title: "Hostales Sociales",
     card2Desc: "Espacios sociales llenos de energía y puntos de encuentro para mochileros."
