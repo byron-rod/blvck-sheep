@@ -8,8 +8,8 @@ const content = {
   en: {
     subtitle: "Rest & Recover",
     title: "Curated Accommodations",
-    card1Title: "Accommodations Hub",
-    card1Desc: "Exclusive sanctuaries and high-end design.",
+    card1Title: "Favorite Hotels",
+    card1Desc: "Discover the best hotels curated by our team.",
     card2Title: "Social Hostels",
     card2Desc: "High-energy social spaces and backpacker hubs."
   },

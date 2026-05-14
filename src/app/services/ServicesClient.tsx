@@ -88,7 +88,7 @@ export default function ServicesClient() {
           </h1>
           <p className="text-lg md:text-xl text-zinc-400 font-light max-w-2xl mx-auto leading-relaxed">
             {activeLanguage === "en" 
-              ? "From budget-friendly shared routes to absolute peace of mind. Find the perfect transit solution for your journey across Guatemala."
+              ? "From budget-friendly shared shuttles to absolute peace of mind. Find the perfect transit solution for your journey across Guatemala."
               : "Desde rutas compartidas accesibles hasta absoluta tranquilidad. Encuentra la solución de transporte perfecta para tu viaje por Guatemala."}
           </p>
         </div>

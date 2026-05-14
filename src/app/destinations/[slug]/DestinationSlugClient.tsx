@@ -14,7 +14,7 @@ const contentDict = {
     back: "Back",
     guideTag: "Destination Guide",
     whereToRest: "Where to Rest",
-    accommodationHubs: "Accommodation Hubs",
+    accommodationHubs: "Accommodations",
     linkCopied: "Link copied to clipboard!"
   },
   es: {
