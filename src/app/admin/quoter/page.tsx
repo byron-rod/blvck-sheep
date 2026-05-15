@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { sharedRoutes } from '@/data/pricing';
-import { Trip, QuotationData } from '@/components/quoter/QuotationPDF';
+import { Trip, QuotationData, AddOnItem } from '@/components/quoter/QuotationPDF';
 
 const QuotationDownload = dynamic(() => import('@/components/quoter/QuotationDownload'), {
   ssr: false,
@@ -19,6 +19,7 @@ export default function QuoterPage() {
   const [clientName, setClientName] = useState('');
   const [pax, setPax] = useState<number>(1);
   const [trips, setTrips] = useState<Trip[]>([]);
+  const [addons, setAddons] = useState<AddOnItem[]>([]);
 
   // Add a new empty trip
   const addTrip = () => {
@@ -34,12 +35,10 @@ export default function QuoterPage() {
     setTrips([...trips, newTrip]);
   };
 
-  // Remove a trip
   const removeTrip = (id: string) => {
     setTrips(trips.filter(t => t.id !== id));
   };
 
-  // Recalculate price for a specific trip when its dependencies change
   const calculatePrice = (trip: Trip, globalPax: number): number => {
     if (trip.type === 'group' || trip.routeId === 'custom') {
       return trip.price; // Keep manual price
@@ -59,19 +58,17 @@ export default function QuoterPage() {
     return 0;
   };
 
-  // Update a specific trip field
   const updateTrip = (id: string, field: keyof Trip, value: any) => {
     setTrips(prev => prev.map(trip => {
       if (trip.id !== id) return trip;
       
       const updatedTrip = { ...trip, [field]: value };
       
-      // Auto-recalculate price if type, routeId change (and not custom/group)
       if (field === 'type' || field === 'routeId') {
         if (updatedTrip.type === 'group') {
-          updatedTrip.price = 0; // Clear price for group
+          updatedTrip.price = 0; 
         } else if (updatedTrip.routeId === 'custom') {
-          updatedTrip.price = 0; // Clear price for custom
+          updatedTrip.price = 0; 
         } else {
           updatedTrip.price = calculatePrice(updatedTrip, pax);
         }
@@ -81,12 +78,9 @@ export default function QuoterPage() {
     }));
   };
 
-  // When global pax changes, recalculate all auto prices
   useEffect(() => {
     setTrips(prev => prev.map(trip => {
-      // Sync pax to trip
       const updatedTrip = { ...trip, pax };
-      // Only recalculate if not custom/group
       if (updatedTrip.type !== 'group' && updatedTrip.routeId !== 'custom') {
         updatedTrip.price = calculatePrice(updatedTrip, pax);
       }
@@ -94,12 +88,41 @@ export default function QuoterPage() {
     }));
   }, [pax]);
 
-  const total = trips.reduce((sum, trip) => sum + (Number(trip.price) || 0), 0);
+  // Add-ons Management
+  const addAddon = () => {
+    const newAddon: AddOnItem = {
+      id: Math.random().toString(36).substr(2, 9),
+      description: '',
+      price: 0,
+    };
+    setAddons([...addons, newAddon]);
+  };
+
+  const removeAddon = (id: string) => {
+    setAddons(addons.filter(a => a.id !== id));
+  };
+
+  const updateAddon = (id: string, field: keyof AddOnItem, value: any) => {
+    setAddons(prev => prev.map(addon => {
+      if (addon.id !== id) return addon;
+      return { ...addon, [field]: value };
+    }));
+  };
+
+  // Calculations
+  const tripsTotal = trips.reduce((sum, trip) => sum + (Number(trip.price) || 0), 0);
+  const addonsTotal = addons.reduce((sum, addon) => sum + (Number(addon.price) || 0), 0);
+  const subtotal = tripsTotal + addonsTotal;
+  const platformFee = subtotal * 0.05;
+  const grandTotal = subtotal + platformFee;
 
   const quotationData: QuotationData = {
     clientName,
     trips,
-    total,
+    addons,
+    subtotal,
+    platformFee,
+    grandTotal,
   };
 
   return (
@@ -235,14 +258,59 @@ export default function QuoterPage() {
             + ADD TRIP
           </button>
         </section>
+
+        {/* Extras / Add-ons */}
+        <section className="space-y-6">
+          <div className="flex justify-between items-end">
+            <h2 className="text-sm font-bold uppercase tracking-widest text-zinc-400">Extras / Add-ons</h2>
+          </div>
+
+          {addons.map((addon, index) => (
+            <div key={addon.id} className="bg-zinc-900 border border-zinc-800 rounded-xl p-4 space-y-4 relative">
+              <div className="flex justify-between items-center mb-2">
+                <span className="text-xs font-bold bg-white text-black px-2 py-1 rounded">Extra {index + 1}</span>
+                <button onClick={() => removeAddon(addon.id)} className="text-red-500 text-sm font-bold uppercase tracking-wider">Remove</button>
+              </div>
+
+              <div>
+                <label className="block text-xs text-zinc-500 mb-1">Description</label>
+                <input
+                  type="text"
+                  value={addon.description}
+                  onChange={e => updateAddon(addon.id, 'description', e.target.value)}
+                  placeholder="e.g. Early Morning Detour"
+                  className="w-full bg-black border border-zinc-800 rounded-lg p-3 text-sm focus:outline-none focus:border-white"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs text-zinc-500 mb-1">Price (Q)</label>
+                <input
+                  type="number"
+                  value={addon.price === 0 ? '' : addon.price}
+                  onChange={e => updateAddon(addon.id, 'price', parseFloat(e.target.value) || 0)}
+                  placeholder="Manual Price"
+                  className="w-full bg-black border border-zinc-800 rounded-lg p-3 text-sm focus:outline-none focus:border-white"
+                />
+              </div>
+            </div>
+          ))}
+
+          <button
+            onClick={addAddon}
+            className="w-full py-4 border-2 border-dashed border-zinc-800 rounded-xl text-zinc-400 font-bold hover:border-white hover:text-white transition-colors"
+          >
+            + ADD EXTRA
+          </button>
+        </section>
       </main>
 
       {/* Fixed Footer Bottom Bar */}
       <div className="fixed bottom-0 inset-x-0 bg-black border-t border-zinc-800 p-6 z-20">
         <div className="max-w-md mx-auto">
           <div className="flex justify-between items-center mb-4">
-            <span className="text-zinc-400 font-bold uppercase tracking-widest text-sm">Total</span>
-            <span className="text-2xl font-bold">Q{total.toFixed(2)}</span>
+            <span className="text-zinc-400 font-bold uppercase tracking-widest text-sm">Grand Total</span>
+            <span className="text-2xl font-bold">Q{grandTotal.toFixed(2)}</span>
           </div>
           <QuotationDownload data={quotationData} language={language} />
         </div>

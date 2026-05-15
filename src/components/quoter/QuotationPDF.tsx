@@ -13,51 +13,61 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 40,
+    paddingBottom: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#000000',
-    paddingBottom: 20,
+  },
+  headerLeft: {
+    flexDirection: 'column',
   },
   logoText: {
-    fontSize: 24,
+    fontSize: 18,
     fontWeight: 'bold',
     letterSpacing: 2,
     fontFamily: 'Helvetica-Bold',
+    marginBottom: 4,
+  },
+  contactText: {
+    fontSize: 8,
+    color: '#4b5563',
+    marginBottom: 2,
   },
   headerRight: {
     alignItems: 'flex-end',
+    justifyContent: 'flex-end',
   },
   dateText: {
     fontSize: 10,
-    color: '#666666',
+    color: '#000000',
     marginBottom: 4,
   },
   clientName: {
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
   },
   table: {
     width: '100%',
-    marginBottom: 30,
+    marginBottom: 20,
   },
   tableHeader: {
     flexDirection: 'row',
     borderBottomWidth: 1,
     borderBottomColor: '#000000',
-    paddingBottom: 8,
-    marginBottom: 8,
+    paddingBottom: 6,
+    marginBottom: 6,
   },
   tableColHeader: {
-    fontSize: 10,
+    fontSize: 8,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
     color: '#000000',
   },
   tableRow: {
     flexDirection: 'row',
-    borderBottomWidth: 1,
-    borderBottomColor: '#eeeeee',
-    paddingVertical: 12,
+    paddingVertical: 8,
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#e5e7eb',
   },
   tableCol: {
     fontSize: 10,
@@ -67,62 +77,86 @@ const styles = StyleSheet.create({
   colPrice: { width: '15%', textAlign: 'right' },
   colQty: { width: '15%', textAlign: 'center' },
   colTotal: { width: '15%', textAlign: 'right' },
-  totalContainer: {
+  totalsContainer: {
+    marginTop: 10,
+    alignItems: 'flex-end',
+    marginBottom: 30,
+  },
+  totalRow: {
     flexDirection: 'row',
     justifyContent: 'flex-end',
-    marginTop: 10,
-    marginBottom: 5,
+    marginBottom: 4,
+  },
+  grandTotalRow: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    marginTop: 4,
+    paddingTop: 4,
+    borderTopWidth: 1,
+    borderTopColor: '#000000',
   },
   totalLabel: {
+    fontSize: 10,
+    color: '#4b5563',
+    marginRight: 20,
+  },
+  totalValue: {
+    fontSize: 10,
+    width: '15%',
+    textAlign: 'right',
+  },
+  grandTotalLabel: {
     fontSize: 12,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
     marginRight: 20,
   },
-  totalValue: {
+  grandTotalValue: {
     fontSize: 12,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
     width: '15%',
     textAlign: 'right',
   },
-  feeNote: {
+  policiesSection: {
+    marginBottom: 20,
+  },
+  policiesText: {
     fontSize: 8,
-    color: '#666666',
-    textAlign: 'right',
-    marginBottom: 40,
+    color: '#4b5563',
+    lineHeight: 1.4,
   },
   upsellSection: {
     marginTop: 'auto',
-    paddingTop: 20,
+    paddingTop: 15,
     borderTopWidth: 1,
-    borderTopColor: '#000000',
+    borderTopColor: '#e5e7eb',
   },
   upsellTitle: {
-    fontSize: 12,
+    fontSize: 10,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
-    marginBottom: 10,
+    marginBottom: 8,
   },
   upsellItem: {
     flexDirection: 'row',
-    marginBottom: 6,
+    marginBottom: 4,
   },
   upsellDot: {
     width: 3,
     height: 3,
     backgroundColor: '#000000',
     borderRadius: 1.5,
-    marginTop: 4,
+    marginTop: 3,
     marginRight: 6,
   },
   upsellName: {
-    fontSize: 9,
+    fontSize: 8,
     fontWeight: 'bold',
     fontFamily: 'Helvetica-Bold',
   },
   upsellDesc: {
-    fontSize: 9,
+    fontSize: 8,
     color: '#666666',
   },
 });
@@ -137,10 +171,19 @@ export interface Trip {
   price: number;
 }
 
+export interface AddOnItem {
+  id: string;
+  description: string;
+  price: number;
+}
+
 export interface QuotationData {
   clientName: string;
   trips: Trip[];
-  total: number;
+  addons: AddOnItem[];
+  subtotal: number;
+  platformFee: number;
+  grandTotal: number;
 }
 
 interface Props {
@@ -169,9 +212,16 @@ export default function QuotationPDF({ data, language }: Props) {
     price: isEN ? 'PRICE' : 'PRECIO',
     qty: isEN ? 'QTY' : 'CANT',
     total: isEN ? 'TOTAL' : 'TOTAL',
-    totalLabel: isEN ? 'TOTAL' : 'TOTAL',
-    feeNote: isEN ? 'Prices include 5% platform fee.' : 'Los precios incluyen el 5% de cargo por uso de plataforma.',
+    subtotal: isEN ? 'Subtotal' : 'Subtotal',
+    fee: isEN ? '5% Platform & Tax Fee' : 'Cargo de Plataforma (5%)',
+    grandTotal: isEN ? 'TOTAL' : 'TOTAL',
+    dateLabel: isEN ? 'Date:' : 'Fecha:',
+    passengerLabel: isEN ? 'Passenger:' : 'Pasajero:',
     upsellTitle: isEN ? 'Add Extras to your Journey' : 'Añade extras a tu viaje',
+    policies: isEN ? 
+      `Book your journey with Blvck Sheep\nTo secure your itinerary and guarantee availability, we require an initial deposit:\nPrivate Transfer: Payment of the first trip (multiple dates) or 50% of your single trip.\nShared Shuttle: Full payment of the first leg.\nMethod: Payment link (Visa/Mastercard) via Recurrente.com (Includes a 5% platform fee).\nBalance payment: In cash on the day of the trip or via payment link.\nCancellation Policies: +24 hours notice: 100% refund. Less than 24 hours: Non-refundable.\nFull terms: blvck-sheep.com/terms-conditions\nReady to confirm? Let us know so we can generate your payment link.` 
+      : 
+      `Reserva tu viaje con Blvck Sheep\nPara asegurar tu itinerario y garantizar la disponibilidad, solicitamos un anticipo:\nTraslado Privado: Pago del primer viaje (múltiples fechas) o el 50% de tu viaje único.\nShuttle Compartido: Pago total del primer trayecto.\nMétodo: Link de pago (Visa/Mastercard) vía Recurrente.com (Aplica un cargo del 5% por uso de plataforma).\nPago del saldo: En efectivo el día del viaje o mediante link de pago.\nPolíticas de Cancelación: +24 hrs de anticipación: Reembolso del 100%. Menos de 24 hrs: No reembolsable.\nTérminos completos: blvck-sheep.com/terms-conditions\n¿Listo para confirmar? Avísanos para generar tu link de pago.`,
   };
 
   return (
@@ -179,16 +229,23 @@ export default function QuotationPDF({ data, language }: Props) {
       <Page size="A4" style={styles.page}>
         {/* Header */}
         <View style={styles.header}>
-          <Text style={styles.logoText}>BLVCK SHEEP</Text>
+          <View style={styles.headerLeft}>
+            <Text style={styles.logoText}>BLVCK SHEEP</Text>
+            <Text style={styles.contactText}>Panajachel, Guatemala</Text>
+            <Text style={styles.contactText}>connect@blvck-sheep.com</Text>
+          </View>
           <View style={styles.headerRight}>
             <Text style={styles.dateText}>
+              {t.dateLabel}{' '}
               {new Date().toLocaleDateString(isEN ? 'en-US' : 'es-ES', {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
               })}
             </Text>
-            <Text style={styles.clientName}>{data.clientName || (isEN ? 'Client' : 'Cliente')}</Text>
+            <Text style={styles.clientName}>
+              {t.passengerLabel} {data.clientName || (isEN ? 'Client' : 'Cliente')}
+            </Text>
           </View>
         </View>
 
@@ -226,27 +283,69 @@ export default function QuotationPDF({ data, language }: Props) {
               </Text>
             </View>
           ))}
+
+          {/* Render Add-ons if any */}
+          {data.addons.map((addon, index) => (
+            <View key={addon.id} style={styles.tableRow}>
+              <Text style={[styles.tableCol, styles.colNo]}>
+                +
+              </Text>
+              <View style={[styles.tableCol, styles.colDesc]}>
+                <Text style={{ fontFamily: 'Helvetica-Bold', marginBottom: 2 }}>
+                  {addon.description || 'Extra Service'}
+                </Text>
+                <Text style={{ color: '#666666', fontSize: 8 }}>
+                  {isEN ? 'Add-on / Extra' : 'Extra / Adicional'}
+                </Text>
+              </View>
+              <Text style={[styles.tableCol, styles.colPrice]}>
+                Q{addon.price.toFixed(2)}
+              </Text>
+              <Text style={[styles.tableCol, styles.colQty]}>
+                1
+              </Text>
+              <Text style={[styles.tableCol, styles.colTotal]}>
+                Q{addon.price.toFixed(2)}
+              </Text>
+            </View>
+          ))}
         </View>
 
-        {/* Total & Fee Note */}
-        <View style={styles.totalContainer}>
-          <Text style={styles.totalLabel}>{t.totalLabel}</Text>
-          <Text style={styles.totalValue}>Q{data.total.toFixed(2)}</Text>
+        {/* Totals Section */}
+        <View style={styles.totalsContainer}>
+          <View style={styles.totalRow}>
+            <Text style={styles.totalLabel}>{t.subtotal}</Text>
+            <Text style={styles.totalValue}>Q{data.subtotal.toFixed(2)}</Text>
+          </View>
+          <View style={styles.totalRow}>
+            <Text style={styles.totalLabel}>{t.fee}</Text>
+            <Text style={styles.totalValue}>Q{data.platformFee.toFixed(2)}</Text>
+          </View>
+          <View style={styles.grandTotalRow}>
+            <Text style={styles.grandTotalLabel}>{t.grandTotal}</Text>
+            <Text style={styles.grandTotalValue}>Q{data.grandTotal.toFixed(2)}</Text>
+          </View>
         </View>
-        <Text style={styles.feeNote}>{t.feeNote}</Text>
+
+        {/* Policies Section */}
+        <View style={styles.policiesSection}>
+          <Text style={styles.policiesText}>{t.policies}</Text>
+        </View>
 
         {/* Upsell Section */}
         <View style={styles.upsellSection}>
           <Text style={styles.upsellTitle}>{t.upsellTitle}</Text>
-          {addOns.map((addon) => (
-            <View key={addon.id} style={styles.upsellItem}>
-              <View style={styles.upsellDot} />
-              <Text style={styles.upsellName}>{addon.name}: </Text>
-              <Text style={styles.upsellDesc}>
-                {isEN ? addon.descriptionEN : addon.descriptionES}
-              </Text>
-            </View>
-          ))}
+          {addOns.map((addon) => {
+            const desc = isEN ? addon.descriptionEN : addon.descriptionES;
+            if (!desc) return null; // In case of empty translation
+            return (
+              <View key={addon.id} style={styles.upsellItem}>
+                <View style={styles.upsellDot} />
+                <Text style={styles.upsellName}>{addon.name}: </Text>
+                <Text style={styles.upsellDesc}>{desc}</Text>
+              </View>
+            );
+          })}
         </View>
       </Page>
     </Document>

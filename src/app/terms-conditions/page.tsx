@@ -69,7 +69,7 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Shared vs. Private:" : "Compartido vs. Privado:"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Shared shuttles operate on fixed routes with unpredictable departure, arrival times and wait times can vary between (10-60 mins) depending on your location. Please be ready 15 minutes before the pick-up time. If you are on a tight schedule, we recommend booking Private transit."
+              ? "Shared shuttles operate on fixed routes with specific departure times, arrival times and wait times can vary between (10-60 mins) depending on your location. Please be ready 15 minutes before the pick-up time. If you are on a tight schedule, we recommend booking Private transit."
               : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera impredecibles (10-60 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Si tienes un horario ajustado, te recomendamos reservar transporte Privado."}
           </li>
           <li>
