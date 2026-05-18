@@ -69,8 +69,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Shared vs. Private:" : "Compartido vs. Privado:"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Shared shuttles operate on fixed routes with specific departure times, arrival times and wait times can vary between (10-60 mins) depending on your location. Please be ready 15 minutes before the pick-up time. If you are on a tight schedule, we recommend booking Private transit."
-              : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera impredecibles (10-60 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Si tienes un horario ajustado, te recomendamos reservar transporte Privado."}
+              ? "Shared shuttles operate on fixed routes with specific departure times, for pick ups, arrival times and wait times can vary between (10-60 mins) depending on your location. Please be ready 15 minutes before the pick-up time. Shared routs also have conection wait times. If you are on a tight schedule, we recommend booking Private transit."
+              : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera muy variables (10-60 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Tambien cuentan con conexiones en ruta. Si tienes un horario ajustado, te recomendamos reservar transporte Privado."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Cancellations:" : "Cancelaciones:"}</strong>{" "}
@@ -114,8 +114,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Tight Schedules:" : "Horarios Ajustados:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>If you have a strict flight departure, a time-sensitive itinerary, or prefer not to wait on other passengers, <strong>we strongly advise booking an earlier shared departure or upgrading to our Private Transit tiers.</strong></>
-              : <>Si tienes una salida de vuelo estricta, un itinerario sensible al tiempo o prefieres no esperar a otros pasajeros, <strong>te recomendamos encarecidamente reservar una salida compartida más temprana o actualizar a nuestros niveles de Transporte Privado.</strong></>}
+              ? <>If you have a strict flight departure, a time-sensitive itinerary, or prefer not to wait on other passengers, <strong>we strongly advise booking an earlier shared departure or upgrading to our Private Transit tiers. We are not responsible for any missed routes due to delays.</strong></>
+              : <>Si tienes una salida de vuelo estricta, un itinerario sensible al tiempo o prefieres no esperar a otros pasajeros, <strong>te recomendamos encarecidamente reservar una salida compartida más temprana o actualizar a nuestros niveles de Transporte Privado. No nos hacemos responsables por ninguna conexión perdida debido a retrasos.</strong></>}
           </li>
         </ul>
       </section>
