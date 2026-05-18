@@ -107,13 +107,13 @@ export default function ServicesClient() {
                   {activeLanguage === "en" ? "Shared Shuttle" : "Shuttle Compartido"}
                 </h3>
                 <p className="text-zinc-400 text-sm font-medium tracking-wide uppercase">
-                  {activeLanguage === "en" ? "Reliable & Efficient" : "Eficiente y practico"}
+                  {activeLanguage === "en" ? "Practical & Budget-Friendly" : "Practico y Económico"}
                 </p>
               </div>
               <p className="text-zinc-300 font-light leading-relaxed mb-8">
                 {activeLanguage === "en" 
-                  ? "The smart, budget-friendly choice for flexible travelers." 
-                  : "La opción inteligente y accesible para viajeros flexibles."}
+                  ? "The budget-friendly choice for flexible travelers." 
+                  : "La opción económica para viajeros flexibles."}
               </p>
               <div className="space-y-6 flex-grow">
                 <div>
@@ -127,11 +127,11 @@ export default function ServicesClient() {
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Fixed schedules with possible connections" : "Horarios fijos con posibles conexiones"}</span>
+                      <span>{activeLanguage === "en" ? "Fixed schedules with connections" : "Horarios fijos con conexiones"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
-                      <span>{activeLanguage === "en" ? "Wait-time windows of 10-60 mins" : "Ventanas de espera de 10-60 minutos"}</span>
+                      <span>{activeLanguage === "en" ? "Wait-time windows of 10-90 mins" : "Ventanas de espera de 10-90 minutos"}</span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-300 font-light">
                       <Check className="w-4 h-4 text-zinc-500 mt-0.5 flex-shrink-0" />
@@ -144,7 +144,7 @@ export default function ServicesClient() {
                     {activeLanguage === "en" ? "Fleet" : "Flota"}
                   </h4>
                   <p className="text-sm text-zinc-300 font-light leading-relaxed">
-                    {activeLanguage === "en" ? "Operated via our trusted local partner networks using Vans and Microbuses." : "Operado a través de nuestra red de socios locales utilizando Vans y Microbuses."}
+                    {activeLanguage === "en" ? "Operated via local transport companies using Vans and Microbuses." : "Operado a través de empresas de transporte locales utilizando Vans y Microbuses."}
                   </p>
                 </div>
               </div>
