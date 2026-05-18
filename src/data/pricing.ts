@@ -12,7 +12,7 @@ export const sharedRoutes = [
 ];
 
 export const addOns = [
-  { id: "sim", name: "Instant Connectivity (SIM Card)", descriptionEN: "Local SIM or eSIM ready on boarding.", descriptionES: "SIM o eSIM local lista al abordar." },
+  { id: "sim", name: "Instant Connectivity (SIM Card)", descriptionEN: "Local SIM Card ready on boarding.", descriptionES: "Tarjeta SIM local lista al abordar." },
   { id: "detour", name: "The Express Detour", descriptionEN: "Modify your journey with strategic stops at Mayan ruins or local restaurants.", descriptionES: "Paradas estratégicas en ruinas Mayas o restaurantes locales." },
   { id: "cooler", name: "The Road Cooler", descriptionEN: "For long journeys, fill a cooler with ice-cold beverages and snacks during your transit.", descriptionES: "" }
 ];
