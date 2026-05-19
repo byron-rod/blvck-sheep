@@ -2,9 +2,9 @@ import Link from "next/link";
 import { hotelsData } from "@/data/hotels";
 
 export const metadata = {
-  title: "Premium Hotels - Black Sheep Shuttle Service",
+  title: "Favorite Hotels - Black Sheep Shuttle Service",
   description:
-    "Explore our curated selection of Guatemala's most exclusive hotels and accommodations.",
+    "Explore our curated selection of Guatemala's most beautiful hotels and accommodations.",
 };
 
 export default function HotelsIndexPage() {
