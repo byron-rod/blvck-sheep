@@ -7,25 +7,25 @@ const content = {
   en: {
     badge: "Explore Guatemala in Comfort",
     title: "Blvck Sheep",
-    subtitle: "Tourist Services,",
-    highlight: " just got Better",
-    cta: "Book Your Ride Now"
+    subtitle: "Tourist & Shuttle",
+    highlight: " Services",
+    cta: "Book Your Ride Now",
   },
   es: {
     badge: "Explora Guatemala con Comodidad",
     title: "Blvck Sheep",
-    subtitle: "Tourist Services,",
-    highlight: " just got Better",
-    cta: "Reserva Tu Viaje Ahora"
-  }
+    subtitle: "Tourist & Shuttle",
+    highlight: " Services",
+    cta: "Reserva Tu Viaje Ahora",
+  },
 };
 
-export default function Hero({ 
-  activeLanguage = "en", 
-  setActiveLanguage 
-}: { 
-  activeLanguage?: "en" | "es", 
-  setActiveLanguage: (lang: "en" | "es") => void 
+export default function Hero({
+  activeLanguage = "en",
+  setActiveLanguage,
+}: {
+  activeLanguage?: "en" | "es";
+  setActiveLanguage: (lang: "en" | "es") => void;
 }) {
   const whatsappLink =
     "https://wa.me/50255116881?text=Hello!,%20I%20would%20like%20to%20book%20a%20shuttle!";
@@ -44,7 +44,9 @@ export default function Hero({
           </h1>
           <p className="text-start text-xl lg:text-2xl text-white mt-4 md:mt-6 font-bold">
             {content[activeLanguage].subtitle}
-            <span className="text-gray-400">{content[activeLanguage].highlight}</span>
+            <span className="text-gray-400">
+              {content[activeLanguage].highlight}
+            </span>
           </p>
           <Button variant="secondary" className="mt-8 font-bold flex">
             <Link
@@ -59,15 +61,24 @@ export default function Hero({
           </Button>
         </div>
 
-        <nav aria-label={activeLanguage === "en" ? "Language selector" : "Selector de idioma"} className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0">
+        <nav
+          aria-label={
+            activeLanguage === "en" ? "Language selector" : "Selector de idioma"
+          }
+          className="relative flex items-center bg-zinc-900/50 p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0"
+        >
           {(["en", "es"] as const).map((lang) => (
             <button
               key={lang}
               onClick={() => setActiveLanguage(lang)}
-              aria-label={lang === "en" ? "Switch to English" : "Cambiar a Español"}
+              aria-label={
+                lang === "en" ? "Switch to English" : "Cambiar a Español"
+              }
               aria-pressed={activeLanguage === lang}
               className={`relative px-6 py-2.5 text-sm font-medium uppercase tracking-widest rounded-full transition-colors z-10 ${
-                activeLanguage === lang ? "text-black" : "text-zinc-400 hover:text-white"
+                activeLanguage === lang
+                  ? "text-black"
+                  : "text-zinc-400 hover:text-white"
               }`}
             >
               {activeLanguage === lang && (
