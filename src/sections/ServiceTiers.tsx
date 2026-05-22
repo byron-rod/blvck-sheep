@@ -35,7 +35,7 @@ const content = {
         name: "Blvck Sheep",
         icon: Sparkle,
         description:
-          "A quieter, more intentional way to travel. This tier pairs the smooth ride of our eco-conscious hybrid/electric vehicles with complimentary perks, our most refined service. \n\nFleet: Premium SUVs & MPVs.",
+          "A quieter, more intentional way to travel. This tier pairs our premium vehicles with complimentary perks, our most refined service. \n\nFleet: Electric SUVs & Premium MPVs.",
         textRest: "text-zinc-700",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
@@ -77,7 +77,7 @@ const content = {
         name: "Blvck Sheep",
         icon: Sparkle,
         description:
-          "Una forma de viajar más tranquila, comoda y con propósito. Este nivel combina el viaje silencioso de nuestros vehículos híbridos/eléctricos ecológicos con beneficios complementarios.\n\nFlota: SUVs Eléctricas.",
+          "Una forma de viajar más tranquila, comoda y con propósito. Este nivel combina la comodida total de nuestros vehículos premium con beneficios complementarios.\n\nFlota: Electric SUVs y MPVs Premium.",
         textRest: "text-zinc-700",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
