@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 import { destinationsData } from "@/data/destinations";
 import CallToAction from "@/sections/CallToAction";
+import { ArrowRight } from "lucide-react";
 
 const content = {
   en: {
@@ -88,6 +89,34 @@ export default function DestinationsClient() {
               </div>
             </div>
           ))}
+
+          {/* Premium Upsell Card for Express Detours */}
+          <Link href="/services/detours" className="group relative block w-full overflow-hidden rounded-2xl bg-gradient-to-br from-zinc-950 via-zinc-900 to-zinc-950 border border-zinc-800 hover:border-zinc-500 transition-colors duration-500 p-8 md:p-12 mt-8">
+            <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative z-10">
+              <div className="flex flex-col gap-4 max-w-2xl">
+                <span className="inline-block w-fit px-3 py-1 rounded-full border border-zinc-700 bg-zinc-900/50 text-[10px] uppercase tracking-widest text-zinc-300 font-semibold">
+                  {activeLanguage === "en" ? "Experience Upgrade" : "Mejora tu Experiencia"}
+                </span>
+                <h3 className="text-2xl md:text-3xl font-light text-white tracking-tight">
+                  {activeLanguage === "en"
+                    ? "Connect your destinations with curated Express Detours."
+                    : "Conecta tus destinos con Desvíos Express curados."}
+                </h3>
+                <p className="text-zinc-400 font-light text-sm md:text-base leading-relaxed">
+                  {activeLanguage === "en"
+                    ? "Don't just travel between places. Turn your transit days into unforgettable explorations by visiting ancient ruins, nature reserves, or local markets along your route."
+                    : "No solo viajes entre lugares. Convierte tus días de tránsito en exploraciones inolvidables visitando ruinas antiguas, reservas naturales o mercados locales en tu ruta."}
+                </p>
+              </div>
+              
+              <div className="shrink-0">
+                <div className="flex items-center justify-center w-14 h-14 rounded-full border border-zinc-700 bg-zinc-900 text-zinc-400 group-hover:bg-white group-hover:text-black group-hover:border-white transition-all duration-500">
+                  <ArrowRight className="w-6 h-6 group-hover:-rotate-45 transition-transform duration-500" />
+                </div>
+              </div>
+            </div>
+          </Link>
+
         </div>
       </div>
       <div className="mt-32">

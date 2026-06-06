@@ -373,18 +373,31 @@ export default function ServicesClient() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Perk 1 */}
-            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6 hover:bg-zinc-900 hover:border-zinc-700 transition-colors duration-300">
-              <MapPin strokeWidth={1} className="w-8 h-8 text-zinc-400 mb-4" />
-              <h3 className="text-lg font-medium text-white mb-3">
-                {activeLanguage === "en"
-                  ? "The Express Detours"
-                  : "Los Desvíos Express"}
-              </h3>
-              <p className="text-sm text-zinc-400 font-light leading-relaxed">
-                {activeLanguage === "en"
-                  ? "Turn a transit day into an exploration. Add curated stops along your route, like the kaqchikel Mayan capital of Iximché, or enjoy local cuisine at restaurants along the way."
-                  : "Convierte un día de tránsito en una exploración. Agrega paradas curadas en tu ruta, como la capital maya kaqchikel de Iximché, o disfruta de la cocina local en restaurantes en el camino."}
-              </p>
+            <div className="bg-zinc-900/50 border border-zinc-800/50 rounded-xl p-6 hover:bg-zinc-900 hover:border-zinc-700 transition-colors duration-300 flex flex-col justify-between">
+              <div>
+                <MapPin strokeWidth={1} className="w-8 h-8 text-zinc-400 mb-4" />
+                <h3 className="text-lg font-medium text-white mb-3">
+                  {activeLanguage === "en"
+                    ? "The Express Detours"
+                    : "Los Desvíos Express"}
+                </h3>
+                <p className="text-sm text-zinc-400 font-light leading-relaxed mb-6">
+                  {activeLanguage === "en"
+                    ? "Turn a transit day into an exploration. Add curated stops along your route, like the kaqchikel Mayan capital of Iximché, or enjoy local cuisine at restaurants along the way."
+                    : "Convierte un día de tránsito en una exploración. Agrega paradas curadas en tu ruta, como la capital maya kaqchikel de Iximché, o disfruta de la cocina local en restaurantes en el camino."}
+                </p>
+              </div>
+              <div className="mt-auto pt-4 border-t border-zinc-800/50">
+                <Link
+                  href="/services/detours"
+                  className="group inline-flex items-center gap-2 text-xs font-medium tracking-widest text-zinc-400 hover:text-white uppercase transition-colors"
+                >
+                  {activeLanguage === "en"
+                    ? "Explore detours"
+                    : "Ver desvíos populares"}
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
             </div>
 
             {/* Perk 2 */}
