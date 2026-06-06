@@ -26,6 +26,7 @@ import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 import social from "@/assets/images/social-hero.png";
 import hotelMain from "@/assets/images/hotel-main.png";
 import hostelMain from "@/assets/images/hostels-main.png";
+import tikalDestinations from "@/assets/images/tikal-destinations.webp";
 
 export const destinationsData: DestinationDetail[] = [
   // --- LAKE ATITLAN ---
@@ -330,6 +331,75 @@ export const destinationsData: DestinationDetail[] = [
       {
         heading: "Experiencias Esenciales",
         content: "Sube por el empinado y húmedo sendero hasta 'El Mirador' para obtener una vista panorámica perfecta de las pozas, luego desciende para nadar y deslizarte por las terrazas naturales de agua turquesa. Para pura adrenalina, atraviesa las inundadas Cuevas de iluminadas con velas o haz tubing por el caudaloso Río Cahabón.",
+      }
+    ],
+    accommodationPortals: [
+      {
+        title: "Hostales Curados",
+        description: "Descubre nuestra selección artesanal de espacios sociales de alta energía, centros comunitarios y refugios premium para viajeros.",
+        image: hostelMain.src, 
+        link: "/hostels"
+      },
+      {
+        title: "Hoteles Boutique",
+        description: "Explora nuestra colección exclusiva de santuarios coloniales, retiros de lujo y propiedades de diseño de alta gama.",
+        image: hotelMain.src, 
+        link: "/hotels"
+      }
+    ]
+  },
+  // --- TIKAL ---
+  {
+    id: "tikal",
+    language: "en",
+    title: "Tikal",
+    subtitle: "Jungle & Archeology",
+    heroImage: tikalDestinations.src,
+    overview: "The cradle of Maya civilization. Explore ancient temples surrounded by deep, pristine rainforest.",
+    sections: [
+      {
+        heading: "Quick Facts & Logistics",
+        content: "Tikal is the most important archeological site of the Mayan empire. Travel Time: While overland transit is possible with connecting trips in Lanquin or Rio Dulce, a direct 45-minute flight from Guatemala City to Mundo Maya International Airport is highly recommended for optimal comfort. Blvck Sheep provides private and shared transfers from Flores to Tikal, El Remate, or Crater Azul, as well as curated local tour coordination.",
+        actionText: "Plan your Tikal Expedition",
+        actionLink: "https://wa.me/50255116881?text=Hello!,%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Tikal!",
+      },
+      {
+        heading: "Curated Highlights",
+        content: "1. Tikal National Park: Ancient ruins, towering pyramids, and breathtaking views from Temple IV.\n2. Flores Island: Charming boutique lakeside town, famous for its colorful streets and sunsets over Lake Petén Itzá.\n3. Yaxhá National Park: Sunsets over the lagoon and an alternative, less crowded archaeological exploration.\n4. Crater Azul: Dive into the most pristine, crystal-clear water in one of Guatemala's best-kept secret spots.",
+      }
+    ],
+    accommodationPortals: [
+      {
+        title: "Curated Hostels",
+        description: "Discover our hand-picked selection of high-energy social spaces, community hubs, and premium backpacker lodges.",
+        image: hostelMain.src, 
+        link: "/hostels"
+      },
+      {
+        title: "Boutique Hotels",
+        description: "Explore our exclusive collection of colonial sanctuaries, luxury retreats, and high-end design properties.",
+        image: hotelMain.src, 
+        link: "/hotels"
+      }
+    ]
+  },
+  {
+    id: "tikal",
+    language: "es",
+    title: "Tikal",
+    subtitle: "Selva y Arqueología",
+    heroImage: tikalDestinations.src,
+    overview: "La cuna de la civilización Maya. Explora templos milenarios rodeados de selva tropical profunda.",
+    sections: [
+      {
+        heading: "Datos Rápidos y Logística",
+        content: "Tikal es el sitio arqueológico más importante del imperio Maya. Tiempo de Viaje: Aunque el tránsito terrestre es posible con paradas en Lanquín o Río Dulce, recomendamos encarecidamente un vuelo directo de 45 minutos desde la Ciudad de Guatemala al Aeropuerto Internacional Mundo Maya para una comodidad óptima. Blvck Sheep ofrece traslados privados y compartidos desde Flores hacia Tikal, El Remate, o Cráter Azul, así como coordinación de tours locales curados.",
+        actionText: "Planea tu Expedición a Tikal",
+        actionLink: "https://wa.me/50255116881?text=¡Hola!,%20Me%20interesa%20planear%20un%20viaje%20a%20Tikal!",
+      },
+      {
+        heading: "Experiencias Curadas",
+        content: "1. Parque Nacional Tikal: Ruinas milenarias, pirámides imponentes y vistas espectaculares desde el Templo IV.\n2. Isla de Flores: Encantador pueblo boutique junto al lago, famoso por sus calles coloridas y atardeceres en el Lago Petén Itzá.\n3. Parque Nacional Yaxhá: Atardeceres sobre la laguna y una exploración arqueológica alternativa con menos multitudes.\n4. Cráter Azul: Sumérgete en el agua más cristalina en uno de los lugares secretos mejor guardados de Guatemala.",
       }
     ],
     accommodationPortals: [
