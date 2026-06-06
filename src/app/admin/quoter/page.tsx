@@ -110,10 +110,25 @@ export default function QuoterPage() {
   };
 
   // Calculations
-  const tripsTotal = trips.reduce((sum, trip) => sum + (Number(trip.price) || 0), 0);
-  const addonsTotal = addons.reduce((sum, addon) => sum + (Number(addon.price) || 0), 0);
-  const subtotal = tripsTotal + addonsTotal;
-  const platformFee = subtotal * 0.05;
+  // 1. Sumamos los viajes automáticos (El precio base puro)
+  const autoTripsBase = trips
+    .filter(trip => trip.type !== 'group' && trip.routeId !== 'custom')
+    .reduce((sum, trip) => sum + (Number(trip.price) || 0), 0);
+
+  // 2. Sumamos los manuales y addons (La cantidad FINAL que tú escribiste, que ya incluye el 5%)
+  const manualTripsFinal = trips
+    .filter(trip => trip.type === 'group' || trip.routeId === 'custom')
+    .reduce((sum, trip) => sum + (Number(trip.price) || 0), 0);
+  
+  const addonsFinal = addons.reduce((sum, addon) => sum + (Number(addon.price) || 0), 0);
+  const manualTotalFinal = manualTripsFinal + addonsFinal;
+
+  // 3. Extraemos el precio base de los manuales (dividiendo entre 1.05)
+  const manualBase = manualTotalFinal / 1.05;
+
+  // 4. Calculamos Totales
+  const subtotal = autoTripsBase + manualBase;
+  const platformFee = (autoTripsBase * 0.05) + (manualTotalFinal - manualBase);
   const grandTotal = subtotal + platformFee;
 
   const quotationData: QuotationData = {
