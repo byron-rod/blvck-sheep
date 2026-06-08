@@ -292,14 +292,14 @@ export default function ServicesClient() {
                 </h3>
                 <p className="text-zinc-200 text-sm font-medium tracking-wide uppercase">
                   {activeLanguage === "en"
-                    ? "Conscious Comfort"
-                    : "Comodidad Consciente"}
+                    ? "Itinerary Design"
+                    : "Diseño de Itinerarios"}
                 </p>
               </div>
               <p className="text-white font-light leading-relaxed mb-8 relative z-10">
                 {activeLanguage === "en"
-                  ? "Travel in absolute comfort or reduce your footprint in our premium fleet."
-                  : "Viaja con absoluta comodidad o reduces tu huella en nuestra flota premium"}
+                  ? "Take advantage of our experience to design exclusive itineraries based on your interests."
+                  : "Aprovecha nuestra experiencia para diseñar itinerarios exclusivos basados en tus intereses"}
               </p>
               <div className="space-y-6 flex-grow relative z-10">
                 <div>
@@ -313,8 +313,8 @@ export default function ServicesClient() {
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
                       <span>
                         {activeLanguage === "en"
-                          ? "Hybrid Plug-in (PHEV) crossover SUV or Multi Purpose Vehicles (MPV)"
-                          : "Crossover SUV híbrido enchufable (PHEV) o Multi Purpose Vehicles (MPV)"}
+                          ? "Travel like a local with the best insight to plan your itinerary"
+                          : "Viaja como un local con la mejor información para planificar tu itinerario"}
                       </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
@@ -329,16 +329,16 @@ export default function ServicesClient() {
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
                       <span>
                         {activeLanguage === "en"
-                          ? "Generous luggage capacity"
-                          : "Generosa capacidad de equipaje"}
+                          ? "Aditional Perks +"
+                          : "Beneficios adicionales +"}
                       </span>
                     </li>
                     <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
                       <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
                       <span>
                         {activeLanguage === "en"
-                          ? "Travel with total comfort up to 6 passengers"
-                          : "Viaja con total comodida hasta 6 pasajeros"}
+                          ? "Express Detour Included"
+                          : "Desvío expréss incluido"}
                       </span>
                     </li>
                   </ul>
@@ -348,8 +348,8 @@ export default function ServicesClient() {
                 <p className="text-sm text-white font-medium uppercase tracking-widest flex items-center gap-2">
                   <Leaf className="w-4 h-4" />
                   {activeLanguage === "en"
-                    ? "Electric SUVs or MPVs"
-                    : "SUVs Electricos o MPVs"}
+                    ? "Hybrid SUVs or MPVs"
+                    : "SUVs Hibridos o MPVs"}
                 </p>
               </div>
             </div>
