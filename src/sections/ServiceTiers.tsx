@@ -35,7 +35,7 @@ const content = {
         name: "Blvck Sheep",
         icon: Sparkle,
         description:
-          "A quieter, more intentional way to travel. This tier pairs our premium vehicles with complimentary perks, our most refined service. \n\nFleet: Electric SUVs & Premium MPVs.",
+          "We help you plan your itinerary to enjoy Guatemala in a different way. \n\nFleet: Hybrid SUVs & MPVs",
         textRest: "text-zinc-700",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
@@ -77,7 +77,7 @@ const content = {
         name: "Blvck Sheep",
         icon: Sparkle,
         description:
-          "Una forma de viajar más tranquila, comoda y con propósito. Este nivel combina la comodida total de nuestros vehículos premium con beneficios complementarios.\n\nFlota: Electric SUVs y MPVs Premium.",
+          "Te ayudamos a planificar tu itinerario para que disfrutes de Guatemala de una forma diferente. \n\nFleet: Hybrid SUVs & MPVs",
         textRest: "text-zinc-700",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",

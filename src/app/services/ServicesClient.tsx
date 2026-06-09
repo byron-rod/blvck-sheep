@@ -299,7 +299,7 @@ export default function ServicesClient() {
               <p className="text-white font-light leading-relaxed mb-8 relative z-10">
                 {activeLanguage === "en"
                   ? "Take advantage of our experience to design exclusive itineraries based on your interests."
-                  : "Aprovecha nuestra experiencia para diseñar itinerarios exclusivos basados en tus intereses"}
+                  : "Aprovecha nuestra experiencia para diseñar itinerarios exclusivos basados en tus intereses."}
               </p>
               <div className="space-y-6 flex-grow relative z-10">
                 <div>
