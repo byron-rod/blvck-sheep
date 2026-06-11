@@ -69,8 +69,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Shared vs. Private:" : "Compartido vs. Privado:"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Shared shuttles operate on fixed routes with specific departure times, for pick ups, arrival times and wait times can vary between (10-60 mins) depending on your location. Please be ready 15 minutes before the pick-up time. Shared routes also have connection wait times. If you are on a tight schedule, we recommend booking Private transit."
-              : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera muy variables (10-60 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Tambien cuentan con conexiones en ruta. Si tienes un horario ajustado, te recomendamos reservar transporte Privado."}
+              ? "Shared shuttles operate on fixed routes with specific departure times, for pick ups, arrival times and wait times can vary between (10-90 mins) depending on your location. Please be ready 15 minutes before the pick-up time. Shared routes also have connection wait times, with variable wait times. If you are on a tight schedule, we recommend booking Private transit. We are not responsible for missed flights or other types of connecting transportation like boat rides or shuttles."
+              : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera muy variables (10-90 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Tambien cuentan con conexiones en ruta, con tiempo de espera variable. Si tienes un horario ajustado, te recomendamos reservar transporte Privado. No somos responsables por vuelos perdidos o cualquier otro tipo de conexion con transporte de cualquier clase, como lanchas u otros shuttles."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Cancellations:" : "Cancelaciones:"}</strong>{" "}
@@ -87,8 +87,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "External Factors:" : "Factores Externos:"}</strong>{" "}
             {activeLanguage === "en"
-              ? "We are not liable for missed flights or delays caused by third-party factors (roadblocks, extreme weather, heavy traffic)."
-              : "No nos hacemos responsables por vuelos perdidos o retrasos causados por factores de terceros (bloqueos de carreteras, clima extremo, tráfico pesado)."}
+              ? "We are not liable for missed flights, missed conections to other transportations services or delays caused by third-party factors (roadblocks, extreme weather, mechanical issues, heavy traffic)."
+              : "No nos hacemos responsables por vuelos perdidos, conexiones perdidas con otros servicios de transporte o retrasos causados por factores de terceros (bloqueos de carreteras, clima extremo, problemas mecanicos, tráfico pesado)."}
           </li>
         </ul>
       </section>
@@ -100,10 +100,10 @@ export default function TermsConditions() {
         </h2>
         <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
           <li>
-            <strong>{activeLanguage === "en" ? "Wait Times, Routing and Pick-up Locations:" : "Tiempos de Espera, Rutas y Puntos de Recogida:"}</strong>{" "}
+            <strong>{activeLanguage === "en" ? "Wait Times, Routing, Connections and Pick-up Locations:" : "Tiempos de Espera, Rutas, Conexiones y Puntos de Recogida:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>Shared shuttles are a highly practical and budget-friendly option operated in collaboration with local transportation companies (using vans or microbuses). Because drivers must navigate multiple pick-up locations, <strong>departure and arrival times are estimates, not guarantees. They may be earlier or later than the scheduled time. This varies depending on the location of your pick-up point.</strong> Please be ready 15 minutes before the time of your scheduled departure, if you are the first pick-up location or expect pick-up wait windows ranging from 10 to 90 minutes, especially during peak seasons. If you have activities planned after your shuttle ride, we recommend booking a private shuttle for added peace of mind.</>
-              : <>Los traslados compartidos son una opción practica y económica, operada en colaboración con empresas locales de confianza (usando vans o microbuses). Debido a que los conductores deben navegar por múltiples puntos de recogida, <strong>los horarios de salida y llegada son estimaciones, no garantías. Estos pueden ser un tiempo antes de la hora de salida o tiempo de espera despues, ya que varia dependiendo de la ubicacion de tu punto de abordaje.</strong> Por favor estar listo 15 minutos antes de la hora programada. Los tiempo de espera pueden variar entre 10 y 90 minutos, especialmente en temporada alta. Si tienes actividades planeadas después de tu viaje en shuttle, te recomendamos reservar un traslado privado para mayor tranquilidad.</>}
+              ? <>Shared shuttles are a highly practical and budget-friendly option operated in collaboration with local transportation companies (using vans or microbuses). Because drivers must navigate multiple pick-up locations, <strong>departure and arrival times are estimates, not guarantees. Pick up times may be earlier or later than the scheduled time. This varies depending on the location of your pick-up point.</strong> Please be ready 15 minutes before the time of your scheduled departure, if you are the first pick-up location or expect pick-up wait windows ranging from 10 to 90 minutes, especially during peak seasons. Most of your shared shuttles have some type of connection, wait time vary on each trip. If you have activities planned after your shuttle ride, we recommend booking a private shuttle for added peace of mind.</>
+              : <>Los traslados compartidos son una opción practica y económica, operada en colaboración con empresas locales de confianza (usando vans o microbuses). Debido a que los conductores deben navegar por múltiples puntos de recogida, <strong>los horarios de salida y llegada son estimaciones, no garantías. Los tiempos de recogida pueden ser un tiempo antes de la hora de salida o tiempo de espera despues, ya que varia dependiendo de la ubicacion de tu punto de abordaje.</strong> Por favor estar listo 15 minutos antes de la hora programada. Los tiempo de espera pueden variar entre 10 y 90 minutos, especialmente en temporada alta. La mayoria de nuestros viajes compartidos tienen algun tipo de conexion, los tiempos de conexion varia con cada viaje. Si tienes actividades planeadas después de tu viaje en shuttle, te recomendamos reservar un traslado privado para mayor tranquilidad.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Pick-up / Drop-off Zones:" : "Zonas de Recogida / Bajada:"}</strong>{" "}
