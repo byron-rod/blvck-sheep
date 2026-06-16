@@ -10,8 +10,12 @@ import {
   FaFacebook,
   FaTiktok,
 } from "react-icons/fa";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { activeLanguage } = useLanguage();
+  const isEs = activeLanguage === "es";
+
   const spotifyLink = "https://open.spotify.com/user/kitsunemura"; // Replace with your Spotify user link
   // const emailLink = "mailto:connect@blvck-sheep.com";
   const instagramLink = "https://www.instagram.com/blvcksheepgt";
@@ -70,13 +74,16 @@ export default function Footer() {
 
               {/* Column 3: Company */}
               <div className="flex flex-col">
-                <h3 className="text-white font-semibold mb-4">Company</h3>
+                <h3 className="text-white font-semibold mb-4">{isEs ? "Empresa" : "Company"}</h3>
                 <div className="flex flex-col gap-2">
+                  <Link href="/careers" className="text-white/50 text-sm hover:text-white transition-colors">
+                    {isEs ? "Trabaja con Nosotros" : "Work with Us"}
+                  </Link>
                   <Link href="/contact" className="text-white/50 text-sm hover:text-white transition-colors">
-                    Contact Us
+                    {isEs ? "Contáctanos" : "Contact Us"}
                   </Link>
                   <Link href="/terms-conditions" className="text-white/50 text-sm hover:text-white transition-colors">
-                    Terms & Conditions
+                    {isEs ? "Términos y Condiciones" : "Terms & Conditions"}
                   </Link>
                 </div>
               </div>
