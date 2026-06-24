@@ -233,12 +233,18 @@ export default function TermsConditions() {
         </ul>
       </section>
 
-      {/* 5. Booking, Payments & Cancellations */}
+      {/* 5. Pricing, Payments & Cancellations */}
       <section className="mb-10">
         <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
-          {activeLanguage === "en" ? "5. Payments & Cancellations" : "5. Pagos y Cancelaciones"}
+          {activeLanguage === "en" ? "5. Pricing, Payments & Cancellations" : "5. Precios, Pagos y Cancelaciones"}
         </h2>
         <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
+          <li>
+            <strong>{activeLanguage === "en" ? "Dynamic Pricing:" : "Precios Dinámicos:"}</strong>{" "}
+            {activeLanguage === "en"
+              ? "Because our rates are heavily dependent on current fuel and oil costs, prices are subject to change without prior notice. (Note: Once your booking is paid and confirmed, your rate is locked and will not change)."
+              : "Debido a que nuestros precios se basan en el estado actual del petróleo y los combustibles, las tarifas pueden cambiar sin previo aviso. (Nota: Una vez que tu reserva esté pagada y confirmada, tu tarifa queda asegurada y no cambiará)."}
+          </li>
           <li>
             <strong>{activeLanguage === "en" ? "Secure Processing (Inari Agency):" : "Procesamiento Seguro (Inari Agency):"}</strong>{" "}
             {activeLanguage === "en"
