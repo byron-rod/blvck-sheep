@@ -69,7 +69,7 @@ export default function TermsConditions() {
             <strong>{activeLanguage === "en" ? "Shared Shuttles (Crucial):" : "Shuttles Compartidos (Crucial):"}</strong>{" "}
             {activeLanguage === "en"
               ? "Shared routes have strict schedules, conections with change of vehicle, multiple stops to pick-up/drop-off people, wait times up to 90 minutes, and do not guarantee door-to-door service. We are NOT responsible for missed flights or connections due to shared route operating times. If you have a strict schedule we recommend our Private Transit."
-              : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas debido a retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
+              : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas por retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Cancellations:" : "Cancelaciones:"}</strong>{" "}
@@ -93,8 +93,8 @@ export default function TermsConditions() {
         </h2>
         <p className="text-zinc-400 mb-6 text-sm leading-relaxed">
           {activeLanguage === "en"
-            ? "Please read carefully. To offer budget-friendly shared options, we coordinate with the best external transportation companies in the country for each region. We do not operate these vehicles directly, meaning certain logistics and terms of service fall entirely under the operator's control. By booking a shared shuttle, you accept the following realities:"
-            : "Por favor lee detenidamente. Para ofrecerte opciones compartidas económicas, coordinamos con las mejores empresas de transporte externas para cada region del pais. Nosotros no operamos estos vehículos directamente, lo que significa que ciertas logísticas y terminos de servicio caen bajo el control del operador. Al reservar un shuttle compartido, aceptas las siguientes realidades:"}
+            ? "Please read carefully. To offer budget-friendly shared options, we coordinate with the best external transportation companies in the country for each region. We do not operate these vehicles directly, meaning certain logistics and terms of service fall entirely under the operator's control. Blvck Sheep was created to improve this system, that is why we focus on providing a more eficient way to travel with our Private Transit options. By booking a shared shuttle, you accept the following realities:"
+            : "Por favor lee detenidamente. Para ofrecerte opciones compartidas económicas, coordinamos con las mejores empresas de transporte externas para cada region del pais. Nosotros no operamos estos vehículos directamente, lo que significa que ciertas logísticas y terminos de servicio caen bajo el control del operador. Blvck Sheep fue creado para mejorar este sistema, por lo que tratamos de proveer un servicio mas eficiente en nuestros viajes de sistema privado. Al reservar un shuttle compartido, aceptas las siguientes realidades:"}
         </p>
 
         <div className="space-y-4">
