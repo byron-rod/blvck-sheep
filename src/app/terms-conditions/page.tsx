@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function TermsConditions() {
@@ -57,26 +56,26 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Our Service:" : "Nuestro Servicio:"}</strong>{" "}
             {activeLanguage === "en" 
-              ? <>Blvck Sheep operates private transfers only, with 5-passenger to 7-passenger vehicles SUVs or Sedans with limits on passenger capacity per trip for a more private and comfortable experience. For our <strong>shared services or larger groups (5+ passengers)</strong> we work with trusted transportation companies, that assist us with vans, microbuses or buses services.</>
-              : <>Blvck Sheep trabaja exclusivamente los viajes privados, opera Sedanes, y SUVs de 5 o 7 pasajeros con límites de capacidad por viaje para una experiencia más privada y cómoda. Para nuestros <strong>servicios compartidos o grupos grandes (5+ pasajeros)</strong>, trabajamos con empresas de transporte de confianza que nos asisten con servicios de van, microbús o autobús.</>}
+              ? <>Blvck Sheep operates private transfers only (SUVs or Sedans). For our <strong>shared services and large groups (5+ passengers)</strong>, we act as coordinators, working with trusted external transportation companies to facilitate your trip.</>
+              : <>Blvck Sheep opera exclusivamente viajes privados (Sedanes y SUVs). Para nuestros <strong>servicios compartidos y grupos grandes (5+ pasajeros)</strong>, actuamos como coordinadores, trabajando con empresas de transporte externas de confianza para facilitar tu viaje.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Luggage Rule:" : "Regla de Equipaje:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>Standard allowance is 1 large bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage</strong> so we can dispatch the correct vehicle size, otherwise, you may face delays or extra fees, read more below.</>
-              : <>El límite estándar es 1 maleta grande + 1 artículo personal por pasajero. <strong>Debes notificarnos con anticipación sobre cualquier equipaje extra</strong> para poder enviar el vehículo del tamaño correcto; de lo contrario, podrías enfrentar retrasos o cargos adicionales (lee más abajo).</>}
+              ? <>Standard allowance is 1 large/medium bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage.</strong></>
+              : <>El límite estándar es 1 maleta grande/mediana + 1 artículo personal por pasajero. <strong>Debes notificarnos con anticipación sobre cualquier equipaje extra.</strong></>}
           </li>
           <li>
-            <strong>{activeLanguage === "en" ? "Shared vs. Private:" : "Compartido vs. Privado:"}</strong>{" "}
+            <strong>{activeLanguage === "en" ? "Shared Shuttles (Crucial):" : "Shuttles Compartidos (Crucial):"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Shared shuttles operate on fixed routes with specific departure times, for pick ups, arrival times and wait times can vary between (10-90 mins) depending on your location. Please be ready 15 minutes before the pick-up time. Shared routes also have connection wait times, with variable wait times. If you are on a tight schedule, we recommend booking Private transit. We are not responsible for missed flights or other types of connecting transportation like boat rides or shuttles."
-              : "Los traslados compartidos operan en rutas fijas que varian dependiente de tu ubicacion, con tiempos de espera muy variables (10-90 minutos). Por favor estar listo 15 minutos antes de la hora de recogida. Tambien cuentan con conexiones en ruta, con tiempo de espera variable. Si tienes un horario ajustado, te recomendamos reservar transporte Privado. No somos responsables por vuelos perdidos o cualquier otro tipo de conexion con transporte de cualquier clase, como lanchas u otros shuttles."}
+              ? "Shared routes have strict schedules, conections with change of vehicle, multiple stops to pick-up/drop-off people, wait times up to 90 minutes, and do not guarantee door-to-door service. We are NOT responsible for missed flights or connections due to shared route operating times. If you have a strict schedule we recommend our Private Transit."
+              : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas debido a retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Cancellations:" : "Cancelaciones:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>You must cancel or reschedule at least <strong>24 hours</strong> before departure for a refund or free change.</>
-              : <>Debes cancelar o reprogramar con al menos <strong>24 horas</strong> de anticipación a la salida para obtener un reembolso o cambio gratuito.</>}
+              ? <>You must cancel or reschedule at least <strong>24 hours</strong> before departure for a refund.</>
+              : <>Debes cancelar o reprogramar con al menos <strong>24 horas</strong> de anticipación a la salida para obtener un reembolso.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Payments:" : "Pagos:"}</strong>{" "}
@@ -84,40 +83,73 @@ export default function TermsConditions() {
               ? <>All payments are securely processed via Recurrente.com under our parent company name, <strong>Inari Agency</strong>.</>
               : <>Todos los pagos se procesan de forma segura a través de Recurrente.com bajo el nombre de nuestra empresa matriz, <strong>Inari Agency</strong>.</>}
           </li>
-          <li>
-            <strong>{activeLanguage === "en" ? "External Factors:" : "Factores Externos:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? "We are not liable for missed flights, missed conections to other transportations services or delays caused by third-party factors (roadblocks, extreme weather, mechanical issues, heavy traffic)."
-              : "No nos hacemos responsables por vuelos perdidos, conexiones perdidas con otros servicios de transporte o retrasos causados por factores de terceros (bloqueos de carreteras, clima extremo, problemas mecanicos, tráfico pesado)."}
-          </li>
         </ul>
       </section>
 
-      {/* 1. Shared Shuttle Logistics */}
-      <section className="mb-10">
-        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+      {/* 1. Shared Shuttle Logistics - COMPLETELY RESTRUCTURED */}
+      <section className="mb-14">
+        <h2 className="text-2xl font-normal mb-4 text-white border-b border-zinc-800 pb-2">
           {activeLanguage === "en" ? "1. Shared Shuttle Logistics & Expectations" : "1. Logística y Expectativas del Servicio Compartido"}
         </h2>
-        <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
-          <li>
-            <strong>{activeLanguage === "en" ? "Wait Times, Routing, Connections and Pick-up Locations:" : "Tiempos de Espera, Rutas, Conexiones y Puntos de Recogida:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? <>Shared shuttles are a highly practical and budget-friendly option operated in collaboration with local transportation companies (using vans or microbuses). Because drivers must navigate multiple pick-up locations, <strong>departure and arrival times are estimates, not guarantees. Pick up times may be earlier or later than the scheduled time. This varies depending on the location of your pick-up point.</strong> Please be ready 15 minutes before the time of your scheduled departure, if you are the first pick-up location or expect pick-up wait windows ranging from 10 to 90 minutes, especially during peak seasons. Most of your shared shuttles have some type of connection, wait time vary on each trip. If you have activities planned after your shuttle ride, we recommend booking a private shuttle for added peace of mind.</>
-              : <>Los traslados compartidos son una opción practica y económica, operada en colaboración con empresas locales de confianza (usando vans o microbuses). Debido a que los conductores deben navegar por múltiples puntos de recogida, <strong>los horarios de salida y llegada son estimaciones, no garantías. Los tiempos de recogida pueden ser un tiempo antes de la hora de salida o tiempo de espera despues, ya que varia dependiendo de la ubicacion de tu punto de abordaje.</strong> Por favor estar listo 15 minutos antes de la hora programada. Los tiempo de espera pueden variar entre 10 y 90 minutos, especialmente en temporada alta. La mayoria de nuestros viajes compartidos tienen algun tipo de conexion, los tiempos de conexion varia con cada viaje. Si tienes actividades planeadas después de tu viaje en shuttle, te recomendamos reservar un traslado privado para mayor tranquilidad.</>}
-          </li>
-          <li>
-            <strong>{activeLanguage === "en" ? "Pick-up / Drop-off Zones:" : "Zonas de Recogida / Bajada:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? "Shared routes only operate at specific hubs. In Antigua, pick-ups are limited to the central zone. In Guatemala City, drop-offs and pick-ups are strictly limited to the airport perimeter and select nearby zones. Door-to-door hotel service is not guaranteed for shared routes."
-              : "Las rutas compartidas solo operan en puntos específicos. En Antigua, las recogidas se limitan a la zona central. En la Ciudad de Guatemala, las bajadas y recogidas están estrictamente limitadas al perímetro del aeropuerto y zonas cercanas seleccionadas. El servicio puerta a puerta en hoteles no está garantizado para rutas compartidas."}
-          </li>
-          <li>
-            <strong>{activeLanguage === "en" ? "Tight Schedules:" : "Horarios Ajustados:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? <>If you have a strict flight departure, a time-sensitive itinerary, or prefer not to wait on other passengers, <strong>we strongly advise booking an earlier shared departure or upgrading to our Private Transit tiers. We are not responsible for any missed routes due to delays.</strong></>
-              : <>Si tienes una salida de vuelo estricta, un itinerario sensible al tiempo o prefieres no esperar a otros pasajeros, <strong>te recomendamos encarecidamente reservar una salida compartida más temprana o actualizar a nuestros niveles de Transporte Privado. No nos hacemos responsables por ninguna conexión perdida debido a retrasos.</strong></>}
-          </li>
-        </ul>
+        <p className="text-zinc-400 mb-6 text-sm leading-relaxed">
+          {activeLanguage === "en"
+            ? "Please read carefully. To offer budget-friendly shared options, we coordinate with the best external transportation companies in the country for each region. We do not operate these vehicles directly, meaning certain logistics and terms of service fall entirely under the operator's control. By booking a shared shuttle, you accept the following realities:"
+            : "Por favor lee detenidamente. Para ofrecerte opciones compartidas económicas, coordinamos con las mejores empresas de transporte externas para cada region del pais. Nosotros no operamos estos vehículos directamente, lo que significa que ciertas logísticas y terminos de servicio caen bajo el control del operador. Al reservar un shuttle compartido, aceptas las siguientes realidades:"}
+        </p>
+
+        <div className="space-y-4">
+          {/* Box 1: Schedules & Meeting points */}
+          <div className="bg-zinc-900/30 border border-zinc-800/60 rounded-xl p-5">
+            <h3 className="text-white font-medium mb-2 flex items-center gap-2">
+              <span className="text-blue-500">▪</span> 
+              {activeLanguage === "en" ? "Fixed Schedules & Meeting Points" : "Horarios Fijos y Puntos de Encuentro"}
+            </h3>
+            <p className="text-zinc-400 text-sm leading-relaxed">
+              {activeLanguage === "en"
+                ? "Shared systems operate on strict, pre-established schedules. If you need to travel outside of these specific hours, you must book a private transfer. Furthermore, door-to-door service is NOT guaranteed. Most routes require you to arrive at specific hubs or meeting points (e.g., Central zones in Antigua, Airport perimeter in the City)."
+                : "Los sistemas compartidos operan bajo horarios estrictos y preestablecidos. Si deseas viajar fuera de esos horarios, debes reservar un traslado privado. Además, el servicio puerta a puerta NO está garantizado. La mayoría de rutas requieren que llegues a puntos de encuentro específicos (ej. zonas céntricas en Antigua, perímetro del aeropuerto en la Capital)."}
+            </p>
+          </div>
+
+          {/* Box 2: Wait times */}
+          <div className="bg-zinc-900/30 border border-zinc-800/60 rounded-xl p-5">
+            <h3 className="text-white font-medium mb-2 flex items-center gap-2">
+              <span className="text-blue-500">▪</span> 
+              {activeLanguage === "en" ? "Pick-Up Windows & Wait Times" : "Horas de Recogida y Tiempos de Espera"}
+            </h3>
+            <p className="text-zinc-400 text-sm leading-relaxed">
+              {activeLanguage === "en"
+                ? "Your actual pick-up time will vary greatly depending on your location. The driver may arrive before your scheduled time if you are the first stop, or significantly later if you are the last. Drivers grant a 10-minute grace period to each passenger to avoid leaving anyone behind. -IMPORTANT: They can leave you behind too if you are not able to reach the meeting point in time, this means, you would have to pay for a new ride. Because this adds up, wait times can range from 60 to 90 minutes. Please be ready 15 minutes before your scheduled time and be patient. Someone in your party MUST have working roaming or data plan so we can contact you outside of an area with WIFI."
+                : "Tu hora real de recogida variará dependiendo de tu punto de abordaje. El piloto puede llegar antes de la hora estipulada si eres la primera parada, o mucho tiempo después si eres el último. Los pilotos dan 10 minutos de gracia a cada pasajero para evitar dejar a alguien. -IMPORTANTE: El transporte te puede dejar sin no logras llegar a tiempo a tu punto de encuentro, esto significa, que debes de pagar un nuevo viaje. Debido a que todo esto suma, las esperas pueden ser de 60 a 90 minutos. Por favor, estate listo 15 minutos antes y ten paciencia. Alguien en tu grupo DEBE tener roaming o algun plan de internet para poder contactarlos sin necesidad de tener WIFI."}
+            </p>
+          </div>
+
+          {/* Box 3: Connections */}
+          <div className="bg-zinc-900/30 border border-zinc-800/60 rounded-xl p-5">
+            <h3 className="text-white font-medium mb-2 flex items-center gap-2">
+              <span className="text-blue-500">▪</span> 
+              {activeLanguage === "en" ? "Routing & Vehicle Connections" : "Rutas y Conexiones de Vehículos"}
+            </h3>
+            <p className="text-zinc-400 text-sm leading-relaxed">
+              {activeLanguage === "en"
+                ? "A shared shuttle is rarely a straight, non-stop line. The vast majority of routes involve at least one connection where you will wait and switch to a different van or bus to reach your final destination. These connection wait times are variable and out of our control."
+                : "Un shuttle compartido rara vez es una línea recta sin paradas. La gran mayoría de rutas tienen algún tipo de conexión, donde deberás esperar y cambiar de van o microbús para llegar a tu destino final. Los tiempos de espera en estas conexiones son variables y están fuera de nuestro control."}
+            </p>
+          </div>
+
+          {/* Box 4: ZERO LIABILITY (Strong warning) */}
+          <div className="bg-red-950/20 border border-red-900/30 rounded-xl p-5">
+            <h3 className="text-red-400 font-medium mb-2 flex items-center gap-2">
+              <span className="text-red-500">⚠️</span> 
+              {activeLanguage === "en" ? "Zero Liability for Missed Connections" : "Cero Responsabilidad por Conexiones Perdidas"}
+            </h3>
+            <p className="text-zinc-300 text-sm leading-relaxed">
+              {activeLanguage === "en"
+                ? "Because of all the factors mentioned above, Blvck Sheep is NOT responsible for any missed flights, missed boats, or missed connecting transport of any kind due to delays on a shared route. If you have a tight schedule or a flight to catch, we strongly advise booking an earlier shared departure or upgrading to a Private Transit where you control the schedule."
+                : "Debido a todos los factores mencionados, Blvck Sheep NO se hace responsable por vuelos perdidos, lanchas perdidas o conexiones con otros transportes de cualquier tipo que puedas perder por atrasos en rutas compartidas. Si tienes un horario ajustado, te aconsejamos usar horarios más tempranos o reservar un Traslado Privado, donde tú tienes el control total del tiempo."}
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* 2. Private & Blvck Tier Policies */}
@@ -129,8 +161,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Service Conditions & Fleet:" : "Condiciones del Servicio y Flota:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>For our Private and Blvck tiers, Blvck Sheep operates Sedans, 5-passenger SUVs, or 7-passenger SUVs. To ensure a comfortable experience, we allow a <strong>maximum of 4 clients per trip</strong> in these vehicles. For larger private groups, we utilize our trusted partner network for premium van services.</>
-              : <>Para nuestros niveles Privado y Blvck, operamos Sedanes, y SUVs de 5 o 7 pasajeros. Para garantizar una experiencia cómoda, permitimos un <strong>máximo de 4 clientes por viaje</strong> en estos vehículos. Para grupos privados más grandes, utilizamos nuestra red de socios de confianza para servicios de van premium.</>}
+              ? <>For our Private and Blvck tiers, Blvck Sheep operates Sedans, 5-passenger SUVs, or 7-passenger SUVs. To ensure a comfortable experience, we allow a <strong>maximum of 4 clients per trip</strong> in these vehicles. For larger private groups, we utilize our trusted partner network for van or microbus services.</>
+              : <>Para nuestros niveles Privado y Blvck, operamos Sedanes, y SUVs de 5 o 7 pasajeros. Para garantizar una experiencia cómoda, permitimos un <strong>máximo de 4 clientes por viaje</strong> en estos vehículos. Para grupos privados más grandes, utilizamos nuestra red de socios de confianza para servicios de van o microbus.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Schedule Flexibility & Notice:" : "Flexibilidad de Horarios y Avisos:"}</strong>{" "}
