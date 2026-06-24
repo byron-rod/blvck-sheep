@@ -11,6 +11,7 @@ import {
   Flame,
   Droplets,
   ShoppingBag,
+  PawPrint,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
@@ -51,6 +52,16 @@ export default function ExpressDetoursPage() {
   };
 
   const detours = [
+    {
+      id: "zoologico-la-aurora",
+      icon: PawPrint,
+      title: "Zoológico La Aurora",
+      tags: activeLanguage === "en" ? "Urban Wildlife & Family" : "Fauna Urbana y Familia",
+      desc:
+        activeLanguage === "en"
+          ? "Explore one of the best zoos in Latin America right in the heart of Guatemala City. A perfect, family-friendly stop before or after a flight."
+          : "Explora uno de los mejores zoológicos de Latinoamérica en el corazón de la Ciudad de Guatemala. Una parada perfecta y familiar antes o después de un vuelo.",
+    },
     {
       id: "chichicastenango",
       icon: ShoppingBag,

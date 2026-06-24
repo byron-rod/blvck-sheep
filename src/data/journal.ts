@@ -24,6 +24,7 @@ import decodingJournalImage from "@/assets/images/decoding-journal.png";
 import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
 import simJournalImage from "@/assets/images/sim-journal.png";
 import acatenangoJournalImage from "@/assets/images/fuego-volcano.png";
+import generalDetails from "@/assets/images/visit-guate.webp"
 
 
 
@@ -121,6 +122,234 @@ export const journalData: JournalPost[] = [
       }
     ]
 },
+{
+    id: "guia-esencial-guatemala",
+    title: "La Guía Esencial de Guatemala: Lo que debes saber antes de visitar",
+    excerpt: "Datos generales para ayudarte a planear mejor tu viaje a Guatemala. Como locales, te compartimos la información honesta sobre nuestra geografía, cultura Maya, gastronomía, clima y cómo moverte eficientemente.",
+    publishDate: "23 de Junio, 2026",
+    readTime: "12 MIN DE LECTURA",
+    heroImage: generalDetails.src, 
+    category: "Guías Generales",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "Planear un viaje a Guatemala no debería requerir horas leyendo foros desactualizados o viendo videos interminables. Sabemos que este país tiene una energía increíble, paisajes volcánicos surrealistas y una cultura vibrante, pero también sabemos que la logística puede ser un reto si no vienes preparado. Para ahorrarte horas de investigación, hemos reunido toda la información esencial y los secretos locales que necesitas saber antes de aterrizar en el País de la Eterna Primavera."
+      },
+      {
+        type: "heading",
+        value: "1. Entendiendo el Mapa: Geografía y Distancias"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala no se divide en estados, sino en <strong>22 Departamentos</strong>, los cuales se subdividen en Municipios, que son las ciudades o pueblos. Para entender cómo moverte, es útil visualizar el país en tres regiones turísticas principales:<br><br>• <strong>El Norte (Petén):</strong> El pulmón verde. Una selva tropical plana, calurosa y densa que alberga las antiguas ruinas mayas.<br>• <strong>El Centro y Altiplano (Ciudad de Guatemala, Antigua, Atitlán, Cobán):</strong> Una región montañosa y volcánica con climas templados a fríos. Aquí se concentra gran parte de la población y el turismo.<br>• <strong>El Sur (La Costa del Pacífico / El Paredón):</strong> Clima tropical, a nivel del mar y famoso por sus playas de arena negra volcánica."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>El factor clave:</strong> En Guatemala, las distancias no se miden en kilómetros, se miden en tiempo. Debido a la topografía montañosa y las carreteras de un solo carril, un viaje de 100 kilómetros puede tomar fácilmente 3 o 4 horas. No subestimes los tiempos de traslado al armar tu itinerario. Importante aprovechar rutas nocturnas para no perder todos tus dias en transito, Guatemala es seguro para viajar de noche."
+      },
+      {
+        type: "heading",
+        value: "2. El Clima y Qué Empacar"
+      },
+      {
+        type: "paragraph",
+        value: "Debido a los microclimas, debes estar listo para todo. El país tiene dos temporadas marcadas: la <strong>Temporada Seca</strong> (noviembre a abril), ideal para subir volcanes, veras los mejores atardeceres y si el calor del verano no es lo tuyo, nuestro clima en esta temporada es perfectamente fresco, entre 14 a 23 grados, y la <strong>Temporada de Lluvia</strong> (mayo a octubre), nuestra temporada de lluvia viene con el calor de nuestro verano, donde las mañanas son soleadas y las tardes traen aguaceros que vuelven el paisaje increíblemente verde. Importante saber que los meses con mas lluvias, donde ya no es tan recomendable subir el volcan Acatenango, es en Agosto y Septiembre, no quieres agregar lluvia a una escalada ya complicada."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Tu lista de empaque esencial:</strong><br>• Ropa fresca y ligera para el día (Antigua y Atitlán son muy soleados).<br>• Un buen suéter o chumpa para las noches, ya que las temperaturas bajan bastante en el altiplano, si visitaras Xela, ahi pueden llegar temperaturas bajo cero.<br>• Tenis o zapatos de montaña muy cómodos; caminarás sobre calles empedradas y senderos de tierra.<br>• <em>Calzonetas</em> (trajes de baño). Las necesitarás para las piscinas de los hoteles, el Lago de Atitlán, lagos en Peten, las playas de El Paredón o las aguas termales.<br>• Una chaqueta ligera impermeable si viajas entre mayo y octubre."
+      },
+      {
+        type: "heading",
+        value: "3. Destinos Imperdibles"
+      },
+      {
+        type: "paragraph",
+        value: "Para un viaje completo, te recomendamos explorar estas joyas:<br><br>• <a href='/destinations/antigua' class='text-blue-400 hover:underline'>Antigua:</a> La ciudad colonial rodeada de volcanes y arquitectura histórica.<br>• <a href='/destinations/lake-atitlan' class='text-blue-400 hover:underline'>Lago de Atitlán:</a> Nuestra casa, un lago de cráter rodeado de pueblos indígenas, considerado de los más hermosos del mundo.<br>• <a href='/destinations/tikal' class='text-blue-400 hover:underline'>Tikal (Petén):</a> Adéntrate en la selva profunda para descubrir imponentes pirámides mayas.<br>• <a href='/destinations/el-paredon' class='text-blue-400 hover:underline'>El Paredón:</a> El epicentro del surf, con vibras relajadas y playas de arena volcánica.<br>• <a href='/destinations/lanquin' class='text-blue-400 hover:underline'>Lanquín (Semuc Champey):</a> Pozas naturales escalonadas de agua turquesa cristalina escondidas en un cañón tropical."
+      },
+      {
+        type: "heading",
+        value: "4. El Corazón del Mundo Maya"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala es, sin lugar a dudas, el país más importante para la cultura maya en la actualidad. Es un país predominantemente indígena donde las tradiciones ancestrales no son solo historia, sino parte del día a día. Existen <strong>22 idiomas mayas oficiales</strong> (además del Xinca, el Garífuna y el Español)."
+      },
+      {
+        type: "paragraph",
+        value: "Verás esta riqueza en los coloridos textiles, las ceremonias y los mercados. Aunque Tikal es la máxima expresión arquitectónica antigua, si no tienes tiempo de volar hasta Petén, puedes reservar un <a href='/services/detours' class='text-blue-400 hover:underline'>Desvío Express hacia Iximché</a> durante tus traslados privados. Iximché fue la última capital maya Kaqchikel, y hoy en día es un sitio sagrado donde a menudo puedes presenciar ceremonias mayas reales mientras viajas de Antigua a Atitlán."
+      },
+      {
+        type: "heading",
+        value: "5. Gastronomía, Café de Altura y el Mejor Ron"
+      },
+      {
+        type: "paragraph",
+        value: "La comida en Guatemala es reconfortante y llena de historia. Tienes que probar los <strong>Tamales</strong> (masa de maíz rellena de recado y carne, envuelta en hojas de plátano) y los <strong>Chuchitos</strong> (una versión más pequeña y firme del tamal). La comida tipica indigena es unica, como el Pepián: El platillo más famoso del país. Es un guiso espeso de carne (pollo o res) bañado en una salsa tostada de pepitoria, ajonjolí, tomate y chile, generalmente acompañado de arroz. Los puestos callejeros con comida tipica son comunes en muchos lugares. Pero la verdadera joya de la comida callejera es el <strong>Shuco</strong>: la versión guatemalteca del hot dog, servido en pan tostado al carbón con guacamol, repollo, mostaza y tu elección de embutidos."
+      },
+      {
+        type: "paragraph",
+        value: "Para explorar la alta cocina y las fusiones modernas, revisa nuestra guía exclusiva sobre <a href='/journal/donde-comer-antigua-guatemala-parte-1' class='text-blue-400 hover:underline'>dónde comer en Antigua Guatemala</a>."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Bebidas que definen al país:</strong> Gracias a los suelos volcánicos, somos productores de algunos de los mejores cafés del mundo. Lugares como Cobán (cerca de Lanquín) y San Juan La Laguna en Atitlán producen granos excepcionales. Además, nuestra tierra fértil en la costa sur produce vastas cantidades de caña de azúcar, la base del mundialmente galardonado Ron Zacapa."
+      },
+      {
+        type: "heading",
+        value: "6. Conectividad: Internet al Instante"
+      },
+      {
+        type: "paragraph",
+        value: "Para evitar costosos planes de roaming o perder tiempo haciendo fila para registrar tu pasaporte por una SIM local, te recomendamos la app de Airalo para comprar una eSIM antes de aterrizar. Si prefieres los precios locales baratos, Blvck Sheep ofrece un servicio extra: te entregamos una tarjeta SIM local ya activada en el momento en que te subes a nuestro vehículo para tu traslado privado."
+      },
+      {
+        type: "cta",
+        value: "Ver planes de eSIM en Airalo",
+        link: "https://airalo.tpx.gr/78RgcRmp"
+      },
+      {
+        type: "heading",
+        value: "7. Seguridad y Cómo Moverse"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala es espectacular y muy amigable con el turista, pero el sentido común es clave, los lugares turisticos son muy seguros, pero siempre es bueno tener cuidado con sus cosas. El mayor reto logístico suele estar en el transporte. Los famosos 'Chicken Buses' son geniales para una foto, pero incómodos y lentos para viajar con equipaje. Uber funciona bien en Antigua y la capital, pero los conductores suelen cancelar viajes largos interurbanos."
+      },
+      {
+        type: "paragraph",
+        value: "Si valoras tu tiempo y tu espacio, los <a href='/services' class='text-blue-400 hover:underline'>Traslados Privados de Blvck Sheep</a> son la opción definitiva: tú decides la hora de salida, viajas de forma segura en vehículos espaciosos, con aire acondicionado y pilotos profesionales."
+      },
+      {
+        type: "heading",
+        value: "8. Moneda y Presupuesto"
+      },
+      {
+        type: "paragraph",
+        value: "La moneda oficial es el Quetzal (GTQ). Aunque muchos hoteles y restaurantes formales aceptan tarjetas de crédito (Visa es la más común), <strong>debes</strong> llevar efectivo en Quetzales para comprar en mercados locales, comer en la calle o tomar lanchas. Calcula un presupuesto diario de $50 a $100 USD por persona para un viaje muy cómodo, con buenos hoteles y traslados privados."
+      },
+      {
+        type: "cta",
+        value: "Diseña y planifica tus traslados con nosotros",
+        link: "https://wa.me/50255116881?text=¡Hola!%20Me%20gustaría%20empezar%20a%20planificar%20mis%20traslados%20en%20Guatemala."
+      }
+    ]
+  },
+  {
+    id: "guatemala-essential-guide",
+    title: "The Essential Guide to Guatemala: What to Know Before You Pack",
+    excerpt: "General facts to help you better plan your trip to Guatemala. As locals, we share the honest truth about our geography, Mayan culture, food, weather, and how to get around efficiently.",
+    publishDate: "June 23, 2026",
+    readTime: "12 MIN READ",
+    heroImage: generalDetails.src, 
+    category: "General Guides",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "Planning a trip to Guatemala shouldn't require hours of reading outdated forums or watching endless videos. We know this country has incredible energy, surreal volcanic landscapes, and a vibrant culture, but we also know the logistics can be a challenge if you don't come prepared. To save you hours of research, we have gathered all the essential information and local secrets you need to know before landing in the Land of Eternal Spring."
+      },
+      {
+        type: "heading",
+        value: "1. Understanding the Map: Geography & Distances"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala is not divided into states, but rather into <strong>22 Departments</strong>, which are further split into Municipios (the local towns or cities). To understand how to navigate, it helps to visualize the country in three main tourist regions:<br><br>• <strong>The North (Petén):</strong> The green lung. A dense, hot, and flat tropical jungle that houses the ancient Mayan ruins.<br>• <strong>The Center & Highlands (Guatemala City, Antigua, Atitlán, Cobán):</strong> A mountainous and volcanic region with temperate to cold climates. This is where most of the population and tourism is concentrated.<br>• <strong>The South (Pacific Coast / El Paredón):</strong> Sea-level, tropical weather, and famous for its black volcanic sand beaches."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The golden rule:</strong> In Guatemala, distances are not measured in kilometers; they are measured in time. Due to the mountainous topography and single-lane highways, a 100-kilometer drive can easily take 3 to 4 hours. Do not underestimate travel times when building your itinerary. It is highly recommended to take advantage of overnight routes so you don't lose your days in transit; Guatemala is safe for night travel."
+      },
+      {
+        type: "heading",
+        value: "2. The Weather & What to Pack"
+      },
+      {
+        type: "paragraph",
+        value: "Because of the country's microclimates, you must be ready for everything. The country has two distinct seasons: the <strong>Dry Season</strong> (November to April), which is ideal for hiking volcanoes, offering stunning sunsets. If intense summer heat isn't your thing, our weather during this season is perfectly cool, ranging between 14°C and 23°C (57°F - 73°F). Then there is the <strong>Rainy Season</strong> (May to October); our rainy season coincides with our warmer summer months, where mornings are sunny and afternoons bring heavy showers that turn the landscape incredibly green. Crucial note: August and September are the wettest months, meaning hiking the Acatenango Volcano is highly discouraged during this time—you definitely do not want to add downpours to an already grueling trek."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>Your essential packing list:</strong><br>• Fresh, light clothes for the daytime (Antigua and Atitlán get plenty of sun).<br>• A good sweater or jacket for the evenings, as temperatures drop significantly in the highlands—if you visit Xela, temperatures there can drop below freezing.<br>• Very comfortable walking shoes or hiking boots; you will be walking on cobblestones and dirt paths.<br>• Swimsuits (locally known as <em>calzonetas</em>). You will need them for hotel pools, Lake Atitlán, lakes in Petén, the beaches of El Paredón, or volcanic hot springs.<br>• A light rain jacket if you are traveling between May and October."
+      },
+      {
+        type: "heading",
+        value: "3. Must-See Destinations"
+      },
+      {
+        type: "paragraph",
+        value: "For a complete journey, we highly recommend exploring these gems:<br><br>• <a href='/destinations/antigua' class='text-blue-400 hover:underline'>Antigua:</a> The colonial city surrounded by volcanoes and historic architecture.<br>• <a href='/destinations/lake-atitlan' class='text-blue-400 hover:underline'>Lake Atitlán:</a> Our home base, a crater lake surrounded by indigenous villages, considered one of the most beautiful in the world.<br>• <a href='/destinations/tikal' class='text-blue-400 hover:underline'>Tikal (Petén):</a> The deep jungle cradle of the Mayan civilization featuring towering pyramids.<br>• <a href='/destinations/el-paredon' class='text-blue-400 hover:underline'>El Paredón:</a> The ultimate surf town with a laid-back vibe and black sand beaches.<br>• <a href='/destinations/lanquin' class='text-blue-400 hover:underline'>Lanquín (Semuc Champey):</a> Tiered, crystal-clear turquoise limestone pools hidden deep within a tropical canyon."
+      },
+      {
+        type: "heading",
+        value: "4. The Heart of the Mayan World"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala is undeniably the most important country for Mayan culture today. It is a predominantly indigenous nation where ancestral traditions are not just history—they are part of daily life. There are <strong>22 official Mayan languages</strong> spoken here (alongside Xinca, Garífuna, and Spanish)."
+      },
+      {
+        type: "paragraph",
+        value: "You will see this rich heritage in the vibrant textiles, ceremonies, and local markets. While Tikal is the ultimate ancient architectural achievement, if you don't have the time to fly to Petén, you can book an <a href='/services/detours' class='text-blue-400 hover:underline'>Express Detour to Iximché</a> during your private transfers. Iximché was the final Kaqchikel Mayan capital, and today it serves as a sacred site where you can often witness real Mayan ceremonies while traveling from Antigua to Atitlán."
+      },
+      {
+        type: "heading",
+        value: "5. Food, High-Altitude Coffee & Premium Rum"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemalan food is comforting and steeped in history. You must try the <strong>Tamales</strong> (corn dough filled with a rich sauce and meat, wrapped in banana leaves) and <strong>Chuchitos</strong> (a smaller, firmer version of the tamale). Traditional indigenous food is unique, such as <strong>Pepián</strong>: the most famous dish in the country. It is a thick meat stew (chicken or beef) simmered in a rich, roasted sauce made of pumpkin seeds, sesame seeds, tomatoes, and chiles, usually served with rice. Street stalls serving traditional food are quite common in many areas. But the absolute king of street food is the <strong>Shuco</strong>: the Guatemalan take on the hot dog, served on charcoal-toasted bread with guacamole, cabbage, mustard, and your choice of grilled meats."
+      },
+      {
+        type: "paragraph",
+        value: "To explore high cuisine and modern fusions, check out our exclusive guide on <a href='/journal/where-to-eat-antigua-guatemala-part-1' class='text-blue-400 hover:underline'>where to eat in Antigua Guatemala</a>."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The drinks that define us:</strong> Thanks to our volcanic soil, we produce some of the best coffee in the world. Regions like Cobán (near Lanquín) and San Juan La Laguna in Atitlán farm exceptional beans. Furthermore, the fertile plains on the southern coast produce vast amounts of sugar cane, which is the foundation for the globally awarded Ron Zacapa rum."
+      },
+      {
+        type: "heading",
+        value: "6. Connectivity: Get Online Instantly"
+      },
+      {
+        type: "paragraph",
+        value: "To avoid expensive roaming plans or wasting time in lines to register your passport for a local SIM, we recommend the Airalo app to buy an eSIM before landing. If you prefer cheap local data rates, Blvck Sheep offers an extra perk: we will hand you a fully activated local SIM card the moment you step into our vehicle for your private transfer."
+      },
+      {
+        type: "cta",
+        value: "View eSIM plans on Airalo",
+        link: "https://airalo.tpx.gr/78RgcRmp"
+      },
+      {
+        type: "heading",
+        value: "7. Safety & How to Get Around"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala is spectacular and very tourist-friendly, but common sense is key. Tourist hubs are very safe, but it's always smart to keep an eye on your belongings. The biggest logistical challenge is transportation. The famous 'Chicken Buses' are great for a photo but uncomfortable and slow for traveling with luggage. Uber works fine in Antigua and the City, but drivers frequently cancel long intercity trips."
+      },
+      {
+        type: "paragraph",
+        value: "If you value your time and comfort, <a href='/services' class='text-blue-400 hover:underline'>Blvck Sheep's Private Transfers</a> are the definitive option: you decide the departure time, traveling safely in modern, spacious, air-conditioned vehicles with professional drivers."
+      },
+      {
+        type: "heading",
+        value: "8. Currency & Budget"
+      },
+      {
+        type: "paragraph",
+        value: "The official currency is the Quetzal (GTQ). While many hotels and formal restaurants accept credit cards (Visa is the most widely accepted), you <strong>must</strong> carry cash in Quetzales for local markets, street food, or boats. Expect to budget between $50 and $100 USD per person daily for a highly comfortable trip featuring nice hotels and private transit."
+      },
+      {
+        type: "cta",
+        value: "Design and Plan Your Transfers With Us",
+        link: "https://wa.me/50255116881?text=Hello!%20I%20would%20like%20to%20start%20planning%20my%20transfers%20in%20Guatemala."
+      }
+    ]
+  },
   {
     id: "donde-comer-antigua-guatemala-parte-1",
     title: "Dónde Comer en Antigua, Parte 1: Mis 10 Lugares Favoritos",
