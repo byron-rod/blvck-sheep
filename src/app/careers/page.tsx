@@ -50,7 +50,7 @@ export default function CareersPage() {
       common: {
         title: isEs ? "Requisitos Generales" : "General Requirements",
         items: isEs ? [
-          "Mínimo 3 años de experiencia activa en Uber.",
+          "Mínimo 2 años de experiencia activa en Uber.",
           "Calificación mínima de 4.8 estrellas.",
           "Inglés Básico/Intermedio para interactuar con turistas.",
           "Excelente actitud de servicio al cliente y estricta puntualidad."
