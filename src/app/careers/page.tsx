@@ -55,7 +55,7 @@ export default function CareersPage() {
           "Inglés Básico/Intermedio para interactuar con turistas.",
           "Excelente actitud de servicio al cliente y estricta puntualidad."
         ] : [
-          "Minimum 3 years of active experience in Uber.",
+          "Minimum 2 years of active experience in Uber.",
           "Minimum rating of 4.8 stars.",
           "Basic/Intermediate English for tourist interaction.",
           "Excellent customer service attitude and strict punctuality."
