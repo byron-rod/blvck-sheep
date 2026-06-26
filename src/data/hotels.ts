@@ -16,8 +16,19 @@ import casaPalopo from "@/assets/images/palopo.png";
 import swell from "@/assets/images/swell.png";
 import lasLagunas from "@/assets/images/lagunas.png";
 import aviva from "@/assets/images/aviva.png";
+import gringoperdido from "@/assets/images/gringoperdido.webp";
 
 export const hotelsData: HotelDetail[] = [
+  {
+    id: "el-gringo-perdido",
+    name: "Hotel El Gringo Perdido",
+    location: "El Remate, Petén",
+    heroImage: gringoperdido.src, 
+    description: "Escondido en las cristalinas orillas del Lago Petén Itzá, este eco-lodge ofrece una inmersión total en la selva maya. Rodeado por un denso dosel forestal, cuenta con hermosos muelles de madera, hamacas sobre el agua y senderos naturales. Es el campamento base perfecto, relajado y auténtico, para tu expedición a Tikal.",
+    vibe: "Lakeside Eco-Lodge, Inmersión en la Selva, Rústico y Auténtico",
+    whatsappCode: "El%20Gringo%20Perdido%20Peten",
+    bookingLink: "https://www.hotelgringoperdido.com/",
+  },
   {
     id: "the-aviva-hotel",
     name: "The Aviva Hotel",
