@@ -1,91 +1,190 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { DollarSign, ShieldCheck, CalendarClock, CheckCircle2, Car, User } from "lucide-react";
+import { 
+  DollarSign, 
+  ShieldCheck, 
+  CalendarClock, 
+  CheckCircle2, 
+  Car, 
+  User, 
+  FileText, 
+  Sparkles, 
+  Briefcase, 
+  Laptop 
+} from "lucide-react";
 import Button from "@/components/Button";
 import Link from "next/link";
 
 export default function CareersPage() {
   const { activeLanguage } = useLanguage();
-
   const isEs = activeLanguage === "es";
+  const [activeTab, setActiveTab] = useState<"drivers" | "admin">("drivers");
 
   const content = {
     hero: {
-      title: isEs ? "Únete a la Flota Blvck Sheep" : "Join the Blvck Sheep Fleet",
+      title: isEs ? "Únete al Equipo Blvck Sheep" : "Join the Blvck Sheep Team",
       subtitle: isEs 
-        ? "¿Trabajas en Uber y quieres multiplicar tus ingresos con viajes seguros y programados?"
-        : "Do you drive for Uber and want to multiply your income with safe, scheduled trips?",
-      cta: isEs ? "Aplicar Ahora" : "Apply Now"
+        ? "Buscamos talento excepcional para expandir nuestros servicios. Ya sea al volante o en la oficina digital, hay un lugar para ti."
+        : "We are looking for exceptional talent to expand our services. Whether behind the wheel or in the digital office, there is a place for you.",
+      cta: isEs ? "Ver Puestos" : "View Positions"
+    },
+    tabs: {
+      drivers: isEs ? "Pilotos / Conducción" : "Drivers & Fleet",
+      admin: isEs ? "Roles Administrativos" : "Administrative Roles"
     },
     benefits: {
-      title: isEs ? "Por qué conducir con nosotros" : "Why drive with us",
+      title: isEs ? "Por qué trabajar con nosotros" : "Why work with us",
       items: [
         {
           icon: <DollarSign className="w-8 h-8 text-white mb-4" />,
-          title: isEs ? "Tarifas Fijas" : "Fixed Rates",
+          title: isEs ? "Ingresos Estables" : "Stable Income",
           description: isEs 
-            ? "Gana mejor por viaje en lugar de depender del tráfico."
-            : "Earn better per trip instead of relying on traffic."
+            ? "Tarifas fijas y competitivas por viaje o esquemas claros en roles administrativos."
+            : "Fixed, competitive rates per trip or clear structures for admin roles."
         },
         {
           icon: <ShieldCheck className="w-8 h-8 text-white mb-4" />,
-          title: isEs ? "Seguridad Total" : "Total Security",
-          description: isEs
-            ? "Viajes privados pre-agendados exclusivamente con turistas."
-            : "Private pre-scheduled trips exclusively with tourists."
+          title: isEs ? "Seguridad & Confianza" : "Safety & Trust",
+          description: isEs 
+            ? "Operamos exclusivamente con clientes pre-agendados y filtros estrictos de seguridad."
+            : "We operate exclusively with pre-scheduled clients and strict security filters."
         },
         {
           icon: <CalendarClock className="w-8 h-8 text-white mb-4" />,
-          title: isEs ? "Menos Desgaste" : "Less Wear & Tear",
-          description: isEs
-            ? "Viajes largos en carretera, menos tráfico de ciudad."
-            : "Long highway trips, less city traffic."
+          title: isEs ? "Flexibilidad Real" : "Real Flexibility",
+          description: isEs 
+            ? "Viajes programados de larga distancia o modalidades de trabajo remoto."
+            : "Scheduled long-distance trips or remote work modalities."
         }
       ]
     },
-    requirements: {
-      title: isEs ? "Requisitos para aplicar" : "Requirements to apply",
-      common: {
-        title: isEs ? "Requisitos Generales" : "General Requirements",
-        items: isEs ? [
-          "Mínimo 2 años de experiencia activa en Uber.",
-          "Calificación mínima de 4.8 estrellas.",
-          "Inglés Básico/Intermedio para interactuar con turistas.",
+    driversTab: {
+      requirements: {
+        title: isEs ? "Requisitos de Ingreso" : "Application Requirements",
+        generalTitle: isEs ? "Requisitos Obligatorios" : "Mandatory Requirements",
+        generalItems: isEs ? [
+          "Antecedentes penales y policiacos vigentes y limpios.",
+          "Inglés Básico / Intermedio para interactuar fluidamente con turistas.",
           "Excelente actitud de servicio al cliente y estricta puntualidad."
         ] : [
-          "Minimum 2 years of active experience in Uber.",
-          "Minimum rating of 4.8 stars.",
-          "Basic/Intermediate English for tourist interaction.",
+          "Current and clean criminal and police background checks.",
+          "Basic / Intermediate English to interact smoothly with tourists.",
           "Excellent customer service attitude and strict punctuality."
+        ],
+        desirableTitle: isEs ? "Perfil Deseable (Puntos Extra)" : "Preferred Profile (Bonus Points)",
+        desirableItems: isEs ? [
+          "Experiencia activa previa en Uber, Indriver u otras apps de transporte.",
+          "Calificación histórica ideal de 4.8+ estrellas en plataformas de movilidad.",
+          "Estudios en carreras afines al turismo o un fuerte interés por el sector.",
+          "Habilidad y comodidad usando tecnología y apps de gestión de equipos (como Connecteam)."
+        ] : [
+          "Active prior experience in Uber, Indriver, or other transport apps.",
+          "Historical rating of 4.8+ stars on mobility platforms is ideal.",
+          "Studies related to tourism or a strong interest in the industry.",
+          "Comfortable using technology and team management apps (like Connecteam)."
         ]
       },
       tracks: [
         {
           icon: <Car className="w-6 h-6 text-white mb-2" />,
-          title: isEs ? "Piloto con Vehículo" : "Driver with Vehicle",
+          title: isEs ? "Piloto con Vehículo Propio" : "Driver with Own Vehicle",
           items: isEs ? [
             "Vehículo modelo 2018 o más reciente en excelentes condiciones.",
-            "Sedán espacioso, van, microbus o SUV.",
-            "Pantalla con GPS/Waze/Maps.",
+            "Sedán espacioso, SUV, van o microbús.",
+            "Pantalla con GPS / Waze / Google Maps operativo.",
             "Aire acondicionado 100% funcional."
           ] : [
             "Vehicle model 2018 or newer in excellent condition.",
-            "Spacious Sedan, van, microbus or SUV.",
-            "Screen with GPS/Waze/Maps.",
+            "Spacious Sedan, SUV, van, or microbus.",
+            "Screen with active GPS / Waze / Google Maps.",
             "100% functional Air Conditioning."
           ]
         },
         {
           icon: <User className="w-6 h-6 text-white mb-2" />,
-          title: isEs ? "Solo Piloto" : "Driver Only (No Vehicle)",
+          title: isEs ? "Solo Piloto (Flotilla)" : "Driver Only (Fleet)",
           items: isEs ? [
-            "Aplica para conducir nuestros vehículos de flotilla.",
-            "Aplican los mismos requisitos de experiencia y calificación."
+            "Aplica para conducir nuestros vehículos de flotilla interna.",
+            "Aplican los mismos requisitos obligatorios de seguridad y servicio."
           ] : [
-            "Apply to drive our fleet vehicles.",
-            "Same experience and rating requirements apply."
+            "Apply to drive our internal fleet vehicles.",
+            "Same mandatory safety and service requirements apply."
+          ]
+        }
+      ]
+    },
+    adminTab: {
+      title: isEs ? "Plazas Administrativas Disponibles" : "Available Administrative Positions",
+      roles: [
+        {
+          id: "social-media",
+          title: isEs ? "Social Media Associate (Junior)" : "Social Media Associate (Junior)",
+          subtitle: isEs ? "Modalidad: Remoto | Horario: Part-Time" : "Location: Remote | Schedule: Part-Time",
+          description: isEs
+            ? "Buscamos un/a creador/a digital apasionado/a, con un excelente sentido de la estética y ganas de crecer. Si tienes un estilo de diseño minimalista, sabes crear contenido atractivo y te entusiasma interactuar con una comunidad internacional, este es tu lugar."
+            : "We are looking for a passionate digital creator with an excellent sense of aesthetics and a desire to grow. If you have a minimalist design style, know how to create engaging content, and love interacting with an international community, this is for you.",
+          tasksTitle: isEs ? "¿Qué harás?" : "What you will do:",
+          tasks: isEs ? [
+            "Crear, editar y programar contenido (Reels, Stories, posts) enfocado en turismo local e internacional.",
+            "Gestionar comunidades en Instagram, TikTok y Facebook: responder interacciones y conectar con turistas.",
+            "Mantener y proteger la identidad visual de la marca (estilo limpio, sofisticado y monocromático).",
+            "Apoyar en la redacción de copys bilingües persuasivos y monitorear tendencias frescas de viaje."
+          ] : [
+            "Create, edit, and schedule content (Reels, Stories, posts) focused on local and international tourism.",
+            "Manage communities on Instagram, TikTok, and Facebook: reply to interactions and connect with tourists.",
+            "Maintain and protect the brand's visual identity (clean, sophisticated, and monochrome style).",
+            "Assist in writing persuasive bilingual copies and monitor fresh travel trends."
+          ],
+          requirementsTitle: isEs ? "¿Qué buscamos?" : "What we look for:",
+          requirements: isEs ? [
+            "Estudios universitarios iniciales en Marketing Digital, CM o experiencia junior (1-2 años) con portafolio (valen proyectos personales/universitarios).",
+            "Nivel de inglés avanzado (indispensable para redactar y responder fluidamente a turistas).",
+            "Excelente ojo visual con fuerte inclinación hacia la estética minimalista y limpia.",
+            "Habilidad en edición de video corto (CapCut, Premiere, etc.). Plus: Uso de Adobe After Effects.",
+            "Familiaridad con el uso de Inteligencia Artificial para optimizar textos o imágenes (Gran diferenciador).",
+            "Actitud proactiva, atención al detalle y excelente ortografía en ambos idiomas."
+          ] : [
+            "Early university studies in Digital Marketing, CM, or junior experience (1-2 years) with a portfolio (personal/university projects count).",
+            "Advanced English level (essential for writing and smoothly responding to tourists).",
+            "Excellent visual eye with a strong inclination towards clean and minimalist aesthetics.",
+            "Skills in short-form video editing (CapCut, Premiere, etc.). Bonus: Adobe After Effects mastery.",
+            "Familiarity with using Artificial Intelligence to optimize text or images (Great differentiator).",
+            "Proactive attitude, sharp attention to detail, and excellent spelling in both languages."
+          ]
+        },
+        {
+          id: "travel-assistant",
+          title: isEs ? "Asistente Ejecutivo de Viajes" : "Travel Executive Assistant",
+          subtitle: isEs ? "Modalidad: Remoto | Horario: Part-Time" : "Location: Remote | Schedule: Part-Time",
+          description: isEs 
+            ? "Buscamos una persona altamente organizada y apasionada por el turismo en Guatemala, el servicio premium y el orden digital."
+            : "We are looking for a highly organized individual passionate about tourism in Guatemala, premium service, and digital organization.",
+          tasksTitle: isEs ? "¿Qué harás?" : "What you will do:",
+          tasks: isEs ? [
+            "Coordinar la logística de viajes y traslados, asegurando tiempos exactos y un servicio impecable.",
+            "Primer punto de contacto: responder consultas, brindar información y enviar cotizaciones rápidas y profesionales.",
+            "Gestionar y optimizar bases de datos en Google Sheets (itinerarios, registro de clientes y control contable básico).",
+            "Asegurar una experiencia de cliente fluida y de nivel premium desde el primer contacto."
+          ] : [
+            "Coordinate trip and transfer logistics, ensuring exact timing and flawless service.",
+            "First point of contact: answer inquiries, provide info, and send out quick and professional quotes.",
+            "Manage and optimize databases in Google Sheets (itineraries, client logs, basic accounting).",
+            "Ensure a smooth, premium client experience right from the initial inquiry."
+          ],
+          requirementsTitle: isEs ? "¿Qué buscamos?" : "What we look for:",
+          requirements: isEs ? [
+            "Excelente manejo de Google Workspace (dominio específico y comprobable en Google Sheets).",
+            "Nivel de inglés avanzado (tanto escrito como hablado de forma fluida).",
+            "Estudios universitarios en Administración de Empresas, Marketing o afín (únicamente cursando 1er o 2do año) O experiencia previa en puestos administrativos, logística o turismo.",
+            "Atención meticulosa al detalle, excelente redacción, ortografía y capacidad multitarea."
+          ] : [
+            "Excellent command of Google Workspace (specific, verifiable mastery of Google Sheets).",
+            "Advanced English level (fluent written and spoken).",
+            "University studies in Business Admin, Marketing, or related fields (strictly 1st or 2nd year students) OR prior experience in admin, logistics, or tourism.",
+            "Meticulous attention to detail, excellent writing and spelling, and multitasking abilities."
           ]
         }
       ]
@@ -93,14 +192,16 @@ export default function CareersPage() {
     cta: {
       title: isEs ? "Comienza tu proceso" : "Start your process",
       description: isEs
-        ? "Envíanos un correo electrónico con tus datos para iniciar el proceso de selección."
-        : "Send us an email with your details to start the selection process.",
+        ? "Envíanos un correo electrónico con tus datos para iniciar el proceso de selección de inmediato."
+        : "Send us an email with your details to start the selection process right away.",
       email: "connect@blvck-sheep.com",
-      subject: isEs ? "Aplicación Piloto Blvck Sheep" : "Blvck Sheep Driver Application",
+      subject: isEs ? "Aplicación de Cartera - Blvck Sheep" : "Job Application - Blvck Sheep",
       instructions: isEs
-        ? "Por favor adjunta tu CV, una captura de pantalla de tu perfil de Uber (mostrando calificación y tiempo conduciendo), y fotos de tu vehículo, por dentro y por fuera (si aplicas con auto)."
-        : "Please attach your CV, a screenshot of your Uber profile (showing rating and time driving), and photos of your vehicle, inside and out (if applying with a car).",
-      buttonText: isEs ? "Enviar Aplicación" : "Send Application"
+        ? "Si aplicas para Piloto, adjunta tu CV, incluye tus antecedentes penales/policiacos y capturas de tus plataformas de transporte o fotos de tu auto (si aplica). Si aplicas para Asistente o Social Media Associate, adjunta tu CV y un pequeño resumen de tu experiencia."
+        : "Please attach your CV. If applying as a Driver, include your background checks and screenshots of your transport platforms or car photos (if applicable). If applying as an Assistant or Social Media Associate, attach your resume and a brief summary of your experience.",
+      warningText: isEs 
+        ? "Aplicar únicamente por correo: no se recibirán mensajes de WhatsApp para aplicaciones."
+        : "Apply via email only: WhatsApp messages for applications will not be accepted."
     }
   };
 
@@ -123,7 +224,7 @@ export default function CareersPage() {
         
         {/* Hero Section */}
         <motion.div 
-          className="text-center max-w-3xl mx-auto mb-24"
+          className="text-center max-w-3xl mx-auto mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -135,7 +236,7 @@ export default function CareersPage() {
             {content.hero.subtitle}
           </p>
           <Button variant="primary">
-            <Link href="#apply">
+            <Link href="#positions-section">
               {content.hero.cta}
             </Link>
           </Button>
@@ -143,15 +244,12 @@ export default function CareersPage() {
 
         {/* Benefits Section */}
         <motion.div 
-          className="mb-32"
+          className="mb-24"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-semibold mb-12 text-center">
-            {content.benefits.title}
-          </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {content.benefits.items.map((item, idx) => (
               <motion.div 
@@ -167,57 +265,177 @@ export default function CareersPage() {
           </div>
         </motion.div>
 
-        {/* Requirements Section */}
-        <motion.div 
+        {/* Navigation Tabs Selector */}
+        <div id="positions-section" className="flex justify-center mb-16 border-b border-zinc-800 p-2 max-w-md mx-auto">
+          <button
+            onClick={() => setActiveTab("drivers")}
+            className={`flex-1 py-3 text-center font-medium text-sm transition-all rounded-xl relative ${
+              activeTab === "drivers" ? "text-white" : "text-zinc-500 hover:text-zinc-300"
+            }`}
+          >
+            {activeTab === "drivers" && (
+              <motion.div 
+                layoutId="activeTabIndicator" 
+                className="absolute inset-0 bg-zinc-900 border border-zinc-800 rounded-xl -z-10"
+                transition={{ type: "spring", stiffness: 380, damping: 30 }}
+              />
+            )}
+            {content.tabs.drivers}
+          </button>
+          <button
+            onClick={() => setActiveTab("admin")}
+            className={`flex-1 py-3 text-center font-medium text-sm transition-all rounded-xl relative ${
+              activeTab === "admin" ? "text-white" : "text-zinc-500 hover:text-zinc-300"
+            }`}
+          >
+            {activeTab === "admin" && (
+              <motion.div 
+                layoutId="activeTabIndicator" 
+                className="absolute inset-0 bg-zinc-900 border border-zinc-800 rounded-xl -z-10"
+                transition={{ type: "spring", stiffness: 380, damping: 30 }}
+              />
+            )}
+            {content.tabs.admin}
+          </button>
+        </div>
+
+        {/* Dynamic Content View based on Active Tab */}
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, x: activeTab === "drivers" ? -20 : 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.4 }}
           className="mb-32"
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
         >
-          <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-semibold mb-12 text-center">
-            {content.requirements.title}
-          </motion.h2>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Common Requirements */}
-            <motion.div variants={itemVariants} className="lg:col-span-3 bg-zinc-900/30 border border-zinc-800 rounded-2xl p-8 md:p-12">
-              <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
-                {content.requirements.common.title}
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {content.requirements.common.items.map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-white/70 shrink-0 mt-0.5" />
-                    <p className="text-zinc-300">{item}</p>
+          {activeTab === "drivers" ? (
+            /* DRIVERS CONTENT */
+            <div className="space-y-12">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                {/* Mandatory Requirements */}
+                <div className="bg-zinc-900/30 border border-zinc-800 rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold mb-6 flex items-center gap-3 text-white">
+                    <ShieldCheck className="w-5 h-5 text-zinc-400" />
+                    {content.driversTab.requirements.generalTitle}
+                  </h3>
+                  <div className="space-y-4">
+                    {content.driversTab.requirements.generalItems.map((item, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <CheckCircle2 className="w-5 h-5 text-white/80 shrink-0 mt-0.5" />
+                        <p className="text-zinc-300">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Desirable Profiles */}
+                <div className="bg-zinc-900/10 border border-zinc-800/60 border-dashed rounded-2xl p-8">
+                  <h3 className="text-xl font-semibold mb-6 flex items-center gap-3 text-zinc-300">
+                    <Sparkles className="w-5 h-5 text-zinc-500" />
+                    {content.driversTab.requirements.desirableTitle}
+                  </h3>
+                  <div className="space-y-4">
+                    {content.driversTab.requirements.desirableItems.map((item, idx) => (
+                      <div key={idx} className="flex items-start gap-3">
+                        <div className="w-1.5 h-1.5 rounded-full bg-zinc-500 mt-2 shrink-0" />
+                        <p className="text-zinc-400 text-sm">{item}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Tracks (Fleet vs Private car) */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-4">
+                {content.driversTab.tracks.map((track, idx) => (
+                  <div 
+                    key={idx} 
+                    className={`bg-zinc-900/20 border border-zinc-800 rounded-2xl p-8 ${idx === 0 ? 'lg:col-span-2' : 'lg:col-span-1'}`}
+                  >
+                    {track.icon}
+                    <h3 className="text-xl font-medium mb-6">{track.title}</h3>
+                    <ul className="space-y-4">
+                      {track.items.map((item, i) => (
+                        <li key={i} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 rounded-full bg-white/50 mt-2 shrink-0" />
+                          <p className="text-zinc-400 text-sm">{item}</p>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
+          ) : (
+            /* ADMINISTRATIVE ROLES CONTENT */
+            <div className="space-y-12">
+              <h2 className="text-2xl font-semibold mb-8 text-center md:text-left">
+                {content.adminTab.title}
+              </h2>
+              
+              <div className="grid grid-cols-1 gap-8">
+                {content.adminTab.roles.map((role) => (
+                  <div 
+                    key={role.id}
+                    className="bg-zinc-900/30 border border-zinc-800 rounded-2xl p-8 md:p-10 hover:border-zinc-700 transition-colors"
+                  >
+                    <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800/60 pb-6 mb-6">
+                      <div>
+                        <h3 className="text-2xl font-bold tracking-tight mb-1">{role.title}</h3>
+                        <p className="text-zinc-500 text-sm font-medium uppercase tracking-wider">{role.subtitle}</p>
+                      </div>
+                      <Briefcase className="w-8 h-8 text-zinc-600 hidden md:block" />
+                    </div>
 
-            {/* Tracks */}
-            {content.requirements.tracks.map((track, idx) => (
-              <motion.div 
-                key={idx} 
-                variants={itemVariants}
-                className={`bg-zinc-900/20 border border-zinc-800 rounded-2xl p-8 ${idx === 0 ? 'lg:col-span-2' : 'lg:col-span-1'}`}
-              >
-                {track.icon}
-                <h3 className="text-xl font-medium mb-6">{track.title}</h3>
-                <ul className="space-y-4">
-                  {track.items.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-white/50 mt-2 shrink-0" />
-                      <p className="text-zinc-400 text-sm">{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </motion.div>
-            ))}
-          </div>
+                    {/* Specific Description if exists */}
+                    {'description' in role && (
+                      <p className="text-zinc-300 mb-6 leading-relaxed bg-zinc-950/40 p-4 border border-zinc-900 rounded-xl">
+                        {role.description}
+                      </p>
+                    )}
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      {/* Left Column Tasks if applicable */}
+                      {'tasks' in role && (
+                        <div>
+                          <h4 className="text-md font-semibold text-white mb-4 flex items-center gap-2">
+                            <Laptop className="w-4 h-4 text-zinc-400" />
+                            {role.tasksTitle}
+                          </h4>
+                          <ul className="space-y-3">
+                            {role.tasks?.map((task, i) => (
+                              <li key={i} className="flex items-start gap-3 text-sm text-zinc-400">
+                                <div className="w-1.5 h-1.5 rounded-full bg-zinc-600 mt-2 shrink-0" />
+                                <span>{task}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+
+                      {/* Right/Full Column Requirements */}
+                      <div className={'tasks' in role ? '' : 'md:col-span-2'}>
+                        <h4 className="text-md font-semibold text-white mb-4 flex items-center gap-2">
+                          <FileText className="w-4 h-4 text-zinc-400" />
+                          {role.requirementsTitle}
+                        </h4>
+                        <ul className="space-y-3">
+                          {role.requirements.map((req, i) => (
+                            <li key={i} className="flex items-start gap-3 text-sm text-zinc-300">
+                              <CheckCircle2 className="w-4 h-4 text-zinc-500 shrink-0 mt-0.5" />
+                              <span>{req}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </motion.div>
 
-        {/* CTA Section */}
         {/* CTA Section */}
         <motion.div 
           id="apply"
@@ -238,7 +456,7 @@ export default function CareersPage() {
             </p>
           </div>
 
-          {/* Área de Contacto Directo y Advertencia */}
+          {/* Contact and Restrictions Area */}
           <div className="flex flex-col items-center justify-center space-y-4 mt-8">
             <a 
               href={`mailto:${content.cta.email}?subject=${encodeURIComponent(content.cta.subject)}`}
@@ -249,9 +467,7 @@ export default function CareersPage() {
             
             <div className="bg-zinc-950/30 border border-zinc-900/50 rounded-lg px-6 py-3 mt-6">
               <p className="text-white/90 text-xs md:text-sm font-medium tracking-widest uppercase">
-                {activeLanguage === "en" 
-                  ? "Apply via email only: WhatsApp messages for applications will not be accepted."
-                  : "Aplicar únicamente por correo: no se recibirán mensajes de WhatsApp para aplicaciones."}
+                {content.cta.warningText}
               </p>
             </div>
           </div>
