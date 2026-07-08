@@ -130,29 +130,29 @@ export default function CareersPage() {
           tasks: isEs ? [
             "Crear, editar y programar contenido (Reels, Stories, posts) enfocado en turismo local e internacional.",
             "Gestionar comunidades en Instagram, TikTok y Facebook: responder interacciones y conectar con turistas.",
-            "Mantener y proteger la identidad visual de la marca (estilo limpio, sofisticado y monocromático).",
-            "Apoyar en la redacción de copys bilingües persuasivos y monitorear tendencias frescas de viaje."
+            "Mantener y proteger la identidad visual de la marca.",
+            "Contacto directo con otras marcas para crear alianzas o planificar visitas."
           ] : [
             "Create, edit, and schedule content (Reels, Stories, posts) focused on local and international tourism.",
             "Manage communities on Instagram, TikTok, and Facebook: reply to interactions and connect with tourists.",
-            "Maintain and protect the brand's visual identity (clean, sophisticated, and monochrome style).",
-            "Assist in writing persuasive bilingual copies and monitor fresh travel trends."
+            "Maintain and protect the brand's visual identity.",
+            "Direct contact with other brands to create partnerships or plan visits."
           ],
           requirementsTitle: isEs ? "¿Qué buscamos?" : "What we look for:",
           requirements: isEs ? [
             "Estudios universitarios iniciales en Marketing Digital, CM o experiencia junior (1-2 años) con portafolio (valen proyectos personales/universitarios).",
+            "Disponibilidad para viajar dentro del país para la creación de contenido (Indispensable).",
             "Nivel de inglés avanzado (indispensable para redactar y responder fluidamente a turistas).",
             "Excelente ojo visual con fuerte inclinación hacia la estética minimalista y limpia.",
             "Habilidad en edición de video corto (CapCut, Premiere, etc.). Plus: Uso de Adobe After Effects.",
-            "Familiaridad con el uso de Inteligencia Artificial para optimizar textos o imágenes (Gran diferenciador).",
-            "Actitud proactiva, atención al detalle y excelente ortografía en ambos idiomas."
+            "Conocimiento en el uso de Inteligencia Artificial.",
           ] : [
             "Early university studies in Digital Marketing, CM, or junior experience (1-2 years) with a portfolio (personal/university projects count).",
+            "Availability to travel within the country for content creation (Essential).",
             "Advanced English level (essential for writing and smoothly responding to tourists).",
             "Excellent visual eye with a strong inclination towards clean and minimalist aesthetics.",
-            "Skills in short-form video editing (CapCut, Premiere, etc.). Bonus: Adobe After Effects mastery.",
-            "Familiarity with using Artificial Intelligence to optimize text or images (Great differentiator).",
-            "Proactive attitude, sharp attention to detail, and excellent spelling in both languages."
+            "Skills in short-form video editing (CapCut, Premiere, etc.). Bonus: Adobe After Effects knowledge.",
+            "Knowledge using Artificial Intelligence.",
           ]
         },
         {
@@ -178,12 +178,12 @@ export default function CareersPage() {
           requirements: isEs ? [
             "Excelente manejo de Google Workspace (dominio específico y comprobable en Google Sheets).",
             "Nivel de inglés avanzado (tanto escrito como hablado de forma fluida).",
-            "Estudios universitarios en Administración de Empresas, Marketing o afín (únicamente cursando 1er o 2do año) O experiencia previa en puestos administrativos, logística o turismo.",
+            "Estudios iniciales universitarios en Administración de Empresas, Marketing o afín (únicamente cursando 1er o 2do año) O experiencia previa en puestos administrativos, logística o turismo.",
             "Atención meticulosa al detalle, excelente redacción, ortografía y capacidad multitarea."
           ] : [
             "Excellent command of Google Workspace (specific, verifiable mastery of Google Sheets).",
             "Advanced English level (fluent written and spoken).",
-            "University studies in Business Admin, Marketing, or related fields (strictly 1st or 2nd year students) OR prior experience in admin, logistics, or tourism.",
+            "Initial university studies in Business Admin, Marketing, or related fields (only 1st or 2nd year students) OR prior experience in admin, logistics, or tourism.",
             "Meticulous attention to detail, excellent writing and spelling, and multitasking abilities."
           ]
         }
