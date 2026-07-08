@@ -124,11 +124,11 @@ export default function CareersPage() {
           title: isEs ? "Social Media Associate (Junior)" : "Social Media Associate (Junior)",
           subtitle: isEs ? "Modalidad: Remoto | Horario: Part-Time" : "Location: Remote | Schedule: Part-Time",
           description: isEs
-            ? "Buscamos un/a creador/a digital apasionado/a, con un excelente sentido de la estética y ganas de crecer. Si tienes un estilo de diseño minimalista, sabes crear contenido atractivo y te entusiasma interactuar con una comunidad internacional, este es tu lugar."
-            : "We are looking for a passionate digital creator with an excellent sense of aesthetics and a desire to grow. If you have a minimalist design style, know how to create engaging content, and love interacting with an international community, this is for you.",
+            ? "Buscamos un/a creador/a digital, con un excelente sentido de la estética y ganas de crecer. Si tienes un estilo de diseño minimalista, sabes crear contenido atractivo y te entusiasma el turismo nacional, este es tu lugar."
+            : "We are looking for a passionate digital creator with an excellent sense of aesthetics and a desire to grow. If you have a minimalist design style, know how to create engaging content, and love tourism, this is for you.",
           tasksTitle: isEs ? "¿Qué harás?" : "What you will do:",
           tasks: isEs ? [
-            "Crear, editar y programar contenido (Reels, Stories, posts) enfocado en turismo local e internacional.",
+            "Crear, editar y programar contenido (Reels, Stories, posts) enfocado en turismo local.",
             "Gestionar comunidades en Instagram, TikTok y Facebook: responder interacciones y conectar con turistas.",
             "Mantener y proteger la identidad visual de la marca.",
             "Contacto directo con otras marcas para crear alianzas o planificar visitas."
