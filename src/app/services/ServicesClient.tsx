@@ -2,6 +2,8 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
+import blvckSheepLogo from "@/assets/images/blvck-sheep-new.png";
 import { useRouter } from "next/navigation";
 import { IoChevronBack, IoShareOutline } from "react-icons/io5";
 import {
@@ -9,6 +11,9 @@ import {
   Car,
   Sparkle,
   MapPin,
+  Compass,
+  Star,
+  Armchair,
   Coffee,
   Wifi,
   Map,
@@ -128,7 +133,7 @@ export default function ServicesClient() {
       {/* 2. The Tiers */}
       <section className="relative w-full py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Card 1: Shared Transit */}
             <div className="group relative bg-zinc-950 border border-zinc-700 rounded-2xl p-8 hover:border-zinc-500 transition-colors duration-500 flex flex-col">
               <div className="mb-8">
@@ -227,8 +232,8 @@ export default function ServicesClient() {
               </div>
               <p className="text-zinc-200 font-light leading-relaxed mb-8">
                 {activeLanguage === "en"
-                  ? "Your schedule, your route. Our 24/7 door to door service."
-                  : "Tu horario, tu ruta. Nuestro servicio puerta a puerta 24/7."}
+                  ? "Your schedule, your route. Our 24 hour door to door service."
+                  : "Tu horario, tu ruta. Nuestro servicio puerta a puerta, disponible las 24 horas."}
               </p>
               <div className="space-y-6 flex-grow">
                 <div>
@@ -277,81 +282,83 @@ export default function ServicesClient() {
               </div>
             </div>
 
-            {/* Card 3: The Blvck Tier */}
-            <div className="group relative bg-gradient-to-b from-zinc-900 to-zinc-950 border border-zinc-600 rounded-2xl p-8 hover:border-white hover:shadow-[0_0_30px_rgba(255,255,255,0.05)] transition-all duration-500 flex flex-col overflow-hidden">
-              <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity duration-700 pointer-events-none">
-                <Sparkle strokeWidth={0.5} className="w-32 h-32" />
-              </div>
-              <div className="mb-8 relative z-10">
-                <Sparkle
-                  strokeWidth={1}
-                  className="w-12 h-12 text-white mb-6"
-                />
-                <h3 className="text-3xl font-light tracking-tight mb-3 text-white">
-                  Blvck Sheep
-                </h3>
-                <p className="text-zinc-200 text-sm font-medium tracking-wide uppercase">
-                  {activeLanguage === "en"
-                    ? "Itinerary Design"
-                    : "Diseño de Itinerarios"}
-                </p>
-              </div>
-              <p className="text-white font-light leading-relaxed mb-8 relative z-10">
-                {activeLanguage === "en"
-                  ? "Take advantage of our experience to design exclusive itineraries based on your interests."
-                  : "Aprovecha nuestra experiencia para diseñar itinerarios exclusivos basados en tus intereses."}
+          </div>
+        </div>
+      </section>
+
+      {/* 2.5 The Blvck Sheep Standard */}
+      <section className="relative w-full py-24 px-6 bg-black border-t border-zinc-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 max-w-3xl mx-auto flex flex-col items-center">
+            <div className="relative w-28 h-28 mb-8">
+              <Image 
+                src={blvckSheepLogo} 
+                alt="Blvck Sheep Logo" 
+                fill 
+                className="object-contain"
+              />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-light tracking-tight text-white mb-4">
+              {activeLanguage === "en" ? "The Blvck Sheep Standard" : "El Estilo Blvck Sheep"}
+            </h2>
+            <p className="text-zinc-400 font-light text-xl">
+              {activeLanguage === "en"
+                ? "Why traveling with us is different"
+                : "Por qué viajar con nosotros es diferente"}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Pillar 1 */}
+            <div className="bg-zinc-900/20 rounded-2xl p-8 hover:bg-zinc-900/40 transition-colors duration-500">
+              <Compass strokeWidth={1} className="w-10 h-10 text-zinc-300 mb-6" />
+              <h3 className="text-xl font-medium text-white mb-4">
+                {activeLanguage === "en" ? "Custom-Tailored Design" : "Diseño a Medida"}
+              </h3>
+              <p className="text-sm text-zinc-400 font-light leading-relaxed">
+                {activeLanguage === "en" 
+                  ? "We optimize your itinerary's logistics so you can make the most of every destination, with perfect timing and zero stress." 
+                  : "Ayudamos a optimizar la logística de tu itinerario para que puedas aprovechar cada destino al máximo, con los tiempos perfectos y sin estrés."}
               </p>
-              <div className="space-y-6 flex-grow relative z-10">
-                <div>
-                  <h4 className="text-xs uppercase tracking-widest text-zinc-300 font-semibold mb-3">
-                    {activeLanguage === "en"
-                      ? "The Experience"
-                      : "La Experiencia"}
-                  </h4>
-                  <ul className="space-y-3">
-                    <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
-                      <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>
-                        {activeLanguage === "en"
-                          ? "Travel like a local with the best insight to plan your itinerary"
-                          : "Viaja como un local con la mejor información para planificar tu itinerario"}
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
-                      <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>
-                        {activeLanguage === "en"
-                          ? "Total control - more personalized experience"
-                          : "Control total - una experiencia más personalizada"}
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
-                      <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>
-                        {activeLanguage === "en"
-                          ? "Aditional Perks +"
-                          : "Beneficios adicionales +"}
-                      </span>
-                    </li>
-                    <li className="flex items-start gap-3 text-sm text-zinc-200 font-light">
-                      <Check className="w-4 h-4 text-zinc-400 mt-0.5 flex-shrink-0" />
-                      <span>
-                        {activeLanguage === "en"
-                          ? "Express Detour Included"
-                          : "Desvío expréss incluido"}
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div className="mt-8 pt-8 border-t border-zinc-800 relative z-10">
-                <p className="text-sm text-white font-medium uppercase tracking-widest flex items-center gap-2">
-                  <Leaf className="w-4 h-4" />
-                  {activeLanguage === "en"
-                    ? "Hybrid SUVs or MPVs"
-                    : "SUVs Hibridos o MPVs"}
-                </p>
-              </div>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="bg-zinc-900/20 rounded-2xl p-8 hover:bg-zinc-900/40 transition-colors duration-500">
+              <Star strokeWidth={1} className="w-10 h-10 text-zinc-300 mb-6" />
+              <h3 className="text-xl font-medium text-white mb-4">
+                {activeLanguage === "en" ? "Curated Experiences" : "Experiencias Únicas"}
+              </h3>
+              <p className="text-sm text-zinc-400 font-light leading-relaxed">
+                {activeLanguage === "en" 
+                  ? "We design your trip around your time and budget, recommending only the best-vetted hotels, activities, and local gastronomy." 
+                  : "Diseñamos tu viaje según tu tiempo y presupuesto, recomendando únicamente las mejores opciones probadas de hoteles, actividades y gastronomía local."}
+              </p>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="bg-zinc-900/20 rounded-2xl p-8 hover:bg-zinc-900/40 transition-colors duration-500">
+              <MapPin strokeWidth={1} className="w-10 h-10 text-zinc-300 mb-6" />
+              <h3 className="text-xl font-medium text-white mb-4">
+                {activeLanguage === "en" ? "Express Detours" : "Desvios Express"}
+              </h3>
+              <p className="text-sm text-zinc-400 font-light leading-relaxed">
+                {activeLanguage === "en" 
+                  ? "The journey is as important as the destination. We offer strategic stops and en-route options to visit hidden points of interest." 
+                  : "El viaje es tan importante como el destino. Ofrecemos paradas estratégicas y opciones en ruta para que puedas visitar puntos de interés ocultos."}
+              </p>
+            </div>
+
+            {/* Pillar 4 */}
+            <div className="bg-zinc-900/20 rounded-2xl p-8 hover:bg-zinc-900/40 transition-colors duration-500">
+              <Sparkle strokeWidth={1} className="w-10 h-10 text-zinc-300 mb-6" />
+              <h3 className="text-xl font-medium text-white mb-4">
+                {activeLanguage === "en" ? "Total Comfort" : "Comodidad Total"}
+              </h3>
+              <p className="text-sm text-zinc-400 font-light leading-relaxed">
+                {activeLanguage === "en" 
+                  ? "Travel relaxed in our comfortable SUVs or Sedans. Our professional drivers are dedicated to assisting you with every detail on the road." 
+                  : "Viaja relajado en nuestras cómodas SUVs o Sedanes. Nuestros conductores profesionales están dedicados a asistirte en cada detalle de tu ruta."}
+              </p>
             </div>
           </div>
         </div>
