@@ -1,5 +1,7 @@
-import { Bus, Car, Sparkle } from "lucide-react";
+import { Bus, Car } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import blvckSheepLogo from "@/assets/images/blvck-sheep-new.png"; 
 
 const content = {
   en: {
@@ -18,6 +20,7 @@ const content = {
         bgHover:
           "bg-gradient-to-b from-[#85714D]/40 via-[#85714D]/10 to-transparent",
         borderHover: "group-hover:border-[#85714D]",
+        isLogo: false,
       },
       {
         name: "Private Ride",
@@ -30,17 +33,19 @@ const content = {
         bgHover:
           "bg-gradient-to-b from-zinc-700/30 via-zinc-700/10 to-transparent",
         borderHover: "group-hover:border-zinc-400",
+        isLogo: false,
       },
       {
-        name: "Blvck Sheep",
-        icon: Sparkle,
+        name: "The Blvck Sheep Standard",
+        isLogo: true,
+        icon: null,
         description:
-          "We help you plan your itinerary to enjoy Guatemala in a different way. \n\nFleet: Hybrid SUVs & MPVs",
-        textRest: "text-zinc-700",
+          "Curated itineraries, tailored design, and total comfort. We don't just offer rides; we design unique travel experiences across Guatemala to match your time and budget.",
+        textRest: "text-white",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
         bgHover: "bg-gradient-to-b from-zinc-900 via-black to-black",
-        borderHover: "group-hover:border-zinc-700",
+        borderHover: "group-hover:border-zinc-500",
       },
     ],
   },
@@ -60,6 +65,7 @@ const content = {
         bgHover:
           "bg-gradient-to-b from-[#85714D]/40 via-[#85714D]/10 to-transparent",
         borderHover: "group-hover:border-[#85714D]",
+        isLogo: false,
       },
       {
         name: "Viaje Privado",
@@ -72,17 +78,19 @@ const content = {
         bgHover:
           "bg-gradient-to-b from-zinc-700/30 via-zinc-700/10 to-transparent",
         borderHover: "group-hover:border-zinc-400",
+        isLogo: false,
       },
       {
-        name: "Blvck Sheep",
-        icon: Sparkle,
+        name: "The Blvck Sheep Standard",
+        isLogo: true,
+        icon: null,
         description:
-          "Te ayudamos a planificar tu itinerario para que disfrutes de Guatemala de una forma diferente. \n\nFleet: Hybrid SUVs & MPVs",
-        textRest: "text-zinc-700",
+          "Itinerarios curados, diseño a medida y comodidad total. No solo ofrecemos viajes; diseñamos experiencias únicas por toda Guatemala adaptadas a tu tiempo y presupuesto.",
+        textRest: "text-white",
         bgRest: "bg-zinc-950",
         borderRest: "border-zinc-700",
         bgHover: "bg-gradient-to-b from-zinc-900 via-black to-black",
-        borderHover: "group-hover:border-zinc-700",
+        borderHover: "group-hover:border-zinc-500",
       },
     ],
   },
@@ -132,12 +140,27 @@ export default function ServiceTiers({
                 <div className="relative z-10 w-full h-full p-8 md:p-4 lg:p-8 flex flex-col justify-center items-center">
                   {/* Resting block */}
                   <header className="flex flex-col items-center justify-center transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)] transform group-hover:-translate-y-24 md:group-hover:-translate-y-16 lg:group-hover:-translate-y-24 group-hover:scale-95 origin-top w-full">
-                    <tier.icon
-                      strokeWidth={1}
-                      className={`w-24 h-24 mb-8 md:w-16 md:h-16 md:mb-4 lg:w-24 lg:h-24 lg:mb-8 ${tier.textRest} transition-all duration-500 ease-in-out group-hover:scale-75 group-hover:text-white`}
-                      aria-hidden="true"
-                      focusable="false"
-                    />
+                    
+                    {tier.isLogo ? (
+                      <div className="relative w-24 h-24 mb-8 md:w-16 md:h-16 md:mb-4 lg:w-24 lg:h-24 lg:mb-8 transition-all duration-500 ease-in-out group-hover:scale-75 opacity-70 group-hover:opacity-100">
+                        <Image 
+                          src={blvckSheepLogo} 
+                          alt="Blvck Sheep" 
+                          fill 
+                          className="object-contain"
+                        />
+                      </div>
+                    ) : (
+                      tier.icon && (
+                        <tier.icon
+                          strokeWidth={1}
+                          className={`w-24 h-24 mb-8 md:w-16 md:h-16 md:mb-4 lg:w-24 lg:h-24 lg:mb-8 ${tier.textRest} transition-all duration-500 ease-in-out group-hover:scale-75 group-hover:text-white`}
+                          aria-hidden="true"
+                          focusable="false"
+                        />
+                      )
+                    )}
+
                     <h3
                       id={`tier-${tier.name.toLowerCase().replace(/\s+/g, "-")}`}
                       className="text-3xl md:text-xl md:mb-8 lg:text-3xl font-normal text-white tracking-tight text-center"
