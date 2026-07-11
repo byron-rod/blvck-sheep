@@ -32,7 +32,7 @@ export default function CareersPage() {
       cta: isEs ? "Ver Puestos" : "View Positions"
     },
     tabs: {
-      drivers: isEs ? "Pilotos / Conducción" : "Drivers & Fleet",
+      drivers: isEs ? "Pilotos Turisticos" : "Drivers & Fleet",
       admin: isEs ? "Roles Administrativos" : "Administrative Roles"
     },
     benefits: {

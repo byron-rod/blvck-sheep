@@ -194,8 +194,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Private Transit & Advance Notice:" : "Transporte Privado y Aviso Previo:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>Because our Private and Blvck tier fleets range from Sedans to larger 7-passenger SUVs, total cargo capacity varies per trip. We can happily accommodate extra luggage on private routes, but <strong>you must notify us at the time of booking</strong> so we can dispatch the correct vehicle size.</>
-              : <>Debido a que nuestra flota de nivel Privado y Blvck varía desde Sedanes hasta SUVs más grandes, la capacidad total de carga varía por viaje. Podemos acomodar equipaje extra en rutas privadas, pero <strong>debes notificarnos al momento de la reserva</strong> para que podamos despachar el tamaño de vehículo correcto.</>}
+              ? <>Because our Private fleets range from Sedans to larger 7-passenger SUVs, total cargo capacity varies per trip. We can happily accommodate extra luggage on private routes, but <strong>you must notify us at the time of booking</strong> so we can dispatch the correct vehicle size.</>
+              : <>Debido a que nuestra flota de nivel Privado varía desde Sedanes hasta SUVs más grandes, la capacidad total de carga varía por viaje. Podemos acomodar equipaje extra en rutas privadas, pero <strong>debes notificarnos al momento de la reserva</strong> para que podamos despachar el tamaño de vehículo correcto.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Failure to Disclose Excess Luggage:" : "Consecuencias de No Declarar Equipaje Extra:"}</strong>{" "}

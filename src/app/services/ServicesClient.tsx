@@ -11,11 +11,17 @@ import {
   Car,
   Sparkle,
   MapPin,
+  Clock,
+  ShieldCheck,
+  Briefcase,
+  Ban,
+  AlertTriangle,
   Compass,
   Star,
   Armchair,
   Coffee,
   Wifi,
+  CreditCard,
   Map,
   Leaf,
   Headphones,
@@ -299,7 +305,7 @@ export default function ServicesClient() {
               />
             </div>
             <h2 className="text-3xl md:text-5xl font-light tracking-tight text-white mb-4">
-              {activeLanguage === "en" ? "The Blvck Sheep Standard" : "El Estilo Blvck Sheep"}
+              {activeLanguage === "en" ? "The Blvck Sheep Standard" : "The Blvck Sheep Standard"}
             </h2>
             <p className="text-zinc-400 font-light text-xl">
               {activeLanguage === "en"
@@ -343,8 +349,8 @@ export default function ServicesClient() {
               </h3>
               <p className="text-sm text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en" 
-                  ? "The journey is as important as the destination. We offer strategic stops and en-route options to visit hidden points of interest." 
-                  : "El viaje es tan importante como el destino. Ofrecemos paradas estratégicas y opciones en ruta para que puedas visitar puntos de interés ocultos."}
+                  ? "The journey is as important as the destination. We offer strategic stops and en-route options to visit points of interest." 
+                  : "El viaje es tan importante como el destino. Ofrecemos paradas estratégicas y opciones en ruta para que puedas visitar puntos de interés."}
               </p>
             </div>
 
@@ -363,6 +369,181 @@ export default function ServicesClient() {
           </div>
         </div>
       </section>
+
+      {/* --- NUEVA SECCIÓN: BENTO BOX DE TÉRMINOS (The Essentials) --- */}
+      <section className="relative w-full py-20 px-6 border-t border-zinc-900 bg-zinc-950/30">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-12">
+            <h2 className="text-3xl font-light tracking-tight text-white mb-4">
+              {activeLanguage === "en" ? "The Essentials" : "Los Esenciales"}
+            </h2>
+            <p className="text-zinc-400 font-light text-lg max-w-2xl">
+              {activeLanguage === "en"
+                ? "A quick guide on how our services operate. Please review these key points before booking."
+                : "Una guía rápida de cómo operan nuestros servicios. Por favor revisa estos puntos clave antes de reservar."}
+            </p>
+          </div>
+
+          {/* Bento Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-min">
+
+             {/* Box 1: Private Transit (2 cols) */}
+            <div className="md:col-span-2 bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 hover:bg-zinc-900/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <ShieldCheck className="w-6 h-6 text-zinc-600" />
+                <h3 className="text-xl font-medium text-white">
+                  {activeLanguage === "en" ? "Blvck Sheep: Private Transit" : "Blvck Sheep: Viajes Privados"}
+                </h3>
+              </div>
+              
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Total control, our personalized service." 
+                      : "Control total, nuestro servicio personalizado."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Direct door-to-door for pick-ups and drop-offs." 
+                      : "Servicio directo puerta a puerta para abordajes y llegadas."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Zero wait times for other passengers." 
+                      : "Sin tiempos de espera por otros pasajeros."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Available 24 hours a day, this service adapts to all your needs." 
+                      : "Disponible 24 horas del día, este servicio se adapta a todas tus necesidades."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Operated by our own drivers in comfortable SUVs or Sedans." 
+                      : "Operado por nuestros propios pilotos en cómodas SUVs o Sedanes."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-zinc-500 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Express Detours available on routes." 
+                      : "Desvios Express disponibles en ruta."}
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Box 2: Luggage Rule (1 col) - Placed next to Shared */}
+            <div className="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 hover:bg-zinc-900/60 transition-colors flex flex-col justify-center">
+              <div className="flex items-center gap-3 mb-4">
+                <Briefcase className="w-6 h-6 text-amber-900" />
+                <h3 className="text-xl font-medium text-white">
+                  {activeLanguage === "en" ? "The Luggage Rule" : "Regla de Equipaje"}
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {activeLanguage === "en"
+                  ? "Standard allowance for ALL trips is 1 large (23kg) / medium bag (10kg) + 1 personal item per person. If you are bringing extra bags or oversized items, you MUST notify us in advance. Undeclared extra luggage may not fit in your assigned vehicle and may result in additional fees to provide a larger vehicle if available."
+                  : "El límite estándar para TODOS los viajes es 1 maleta grande (23kg) / mediana (10kg) + 1 artículo personal por persona. Si traes maletas extra o equipaje muy grande, DEBES notificarnos con anticipación. El equipaje no declarado puede no caber en el vehículo asignado y puede resultar en tarifas adicionales para proporcionar un vehículo más grande si está disponible."}
+              </p>
+            </div>
+
+            {/* Box 3: Shared Shuttles (2 cols) */}
+            <div className="md:col-span-2 bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 hover:bg-zinc-900/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <Clock className="w-6 h-6 text-yellow-600" />
+                <h3 className="text-xl font-medium text-white">
+                  {activeLanguage === "en" ? "Shared Transit Logistics" : "Logística del Viaje Compartido"}
+                </h3>
+              </div>
+              
+              <ul className="space-y-3 mb-5">
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-yellow-600 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "We coordinate with external operators for shared routes." 
+                      : "Coordinamos con operadores externos para rutas compartidas."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-yellow-600 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Pick-up and drop-off are at specific meeting points. Door-to-door service is not always guaranteed." 
+                      : "Abordaje y llegadas son en puntos específicos. No siempre hay servicio puerta a puerta."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-yellow-600 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Please arrive at your meeting point 10 minutes before departure time." 
+                      : "Estar en puntos de abordaje 10 minutos antes de la hora de salida."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-yellow-600 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "The vehicles pick up multiple people, depending on your location, wait times can vary from 10 to 90 minutes." 
+                      : "Los vehículos recogen a múltiples personas, dependiendo de tu ubicación, los tiempos de espera pueden variar de 10 a 90 minutos."}
+                  </span>
+                </li>
+                <li className="flex items-start gap-2 text-zinc-400 text-sm">
+                  <span className="text-yellow-600 mt-0.5">•</span>
+                  <span>
+                    {activeLanguage === "en" 
+                      ? "Shared routes often involve connections. Departure and arrival times are approximate." 
+                      : "Las rutas compartidas tienen conexiones. Los tiempos de salida y llegada son aproximados."}
+                  </span>
+                </li>
+              </ul>
+
+              <div className="flex items-start gap-2 bg-yellow-950/20 text-yellow-600/80 p-3 rounded-lg border border-yellow-900/30 text-xs">
+                <AlertTriangle className="w-4 h-4 shrink-0 mt-0.5" />
+                <p>
+                  {activeLanguage === "en"
+                    ? "We are not liable for missed flights or connections due to shared route delays."
+                    : "No somos responsables por vuelos o conexiones perdidas por retrasos en estas rutas."}
+                </p>
+              </div>
+            </div>
+
+            {/* Box 4: Cancellations (1 col) - Placed next to Private */}
+            <div className="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-6 md:p-8 hover:bg-zinc-900/60 transition-colors">
+              <div className="flex items-center gap-3 mb-4">
+                <CreditCard className="w-6 h-6 text-green-400/80" />
+                <h3 className="text-xl font-medium text-white">
+                  {activeLanguage === "en" ? "Payments & Cancellations" : "Pagos y Cancelaciones"}
+                </h3>
+              </div>
+              <p className="text-zinc-400 text-sm leading-relaxed">
+                {activeLanguage === "en"
+                  ? "All reservation payments are processed securely via Recurrente.com with Visa or Master Card. You must cancel or reschedule at least 24 hours before your departure time to qualify for a refund. Cancellations made within 24 hours of the trip are strictly non-refundable."
+                  : "Todos los pagos de reservaciones se procesan de forma segura a través de Recurrente.com con tarjeta Visa o Master Card. Debes cancelar o reprogramar con al menos 24 horas de anticipación a tu salida para aplicar a un reembolso. Las cancelaciones hechas con menos de 24 horas son estrictamente no reembolsables."}
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      {/* --- FIN NUEVA SECCIÓN --- */}
 
       {/* 3. The A La Carte Collection (Upsells for ALL tiers) */}
       <section className="relative w-full py-24 px-6 border-t border-zinc-900 bg-zinc-950/50">
