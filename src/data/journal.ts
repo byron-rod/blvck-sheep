@@ -25,6 +25,7 @@ import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
 import simJournalImage from "@/assets/images/sim-journal.png";
 import acatenangoJournalImage from "@/assets/images/fuego-volcano.png";
 import generalDetails from "@/assets/images/visit-guate.webp"
+import safetyGuideImage from "@/assets/images/guatesafe.webp";
 
 
 
@@ -1063,6 +1064,154 @@ export const journalData: JournalPost[] = [
         type: "cta",
         value: "Solicita tu SIM local con tu traslado",
         link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20y%20solicitar%20una%20tarjeta%20SIM%20local!"
+      }
+    ]
+  },
+  {
+    id: "es-seguro-viajar-a-guatemala",
+    title: "¿Es seguro viajar a Guatemala en 2026? Guía para un viaje sin preocupaciones",
+    excerpt: "La pregunta número uno de todo viajero: ¿Es seguro viajar a Guatemala? Descubre la realidad sobre la capital, los destinos turísticos, viajar de noche y consejos clave para tu seguridad.",
+    publishDate: "10 de agosto de 2026",
+    readTime: "5 MIN DE LECTURA",
+    heroImage: safetyGuideImage.src, 
+    category: "Guías de Viaje",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "La pregunta que más recibimos de nuestros viajeros internacionales es: '¿Es seguro viajar a Guatemala?'. La respuesta corta es sí. Guatemala es un país hermoso y vibrante, y miles de turistas lo visitan cada mes sin ningún incidente. Sin embargo, como en cualquier otro destino del mundo, la clave para un viaje sin estrés es estar informado, usar el sentido común y saber cómo moverte."
+      },
+      {
+        type: "heading",
+        value: "¿Es peligrosa la Ciudad de Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Como en toda gran metrópolis, existen zonas rojas, pero estas se encuentran muy alejadas de las áreas donde los turistas y viajeros de negocios suelen moverse. Las zonas más seguras para hospedarse son la Zona 10 (conocida como la Zona Viva), la Zona 14 cerca de Las Américas, o la Zona 13, que es muy conveniente por su cercanía al Aeropuerto Internacional La Aurora."
+      },
+      {
+        type: "paragraph",
+        value: "¿Vale la pena quedarse en la ciudad? Puedes visitar el Centro Histórico, disfrutar de excelentes restaurantes de clase mundial, modernos centros comerciales o el Zoológico La Aurora. Sin embargo, lo que la mayoría de los turistas hacen es reservar un traslado privado desde el aeropuerto directo hacia Antigua Guatemala o Panajachel (Lago de Atitlán) para pasar su primera noche rodeados de naturaleza o arquitectura colonial."
+      },
+      {
+        type: "heading",
+        value: "Seguridad en Destinos Turísticos: Antigua, Atitlán, Lanquín y Flores"
+      },
+      {
+        type: "paragraph",
+        value: "Destinos populares como Antigua Guatemala, el Lago de Atitlán, Lanquín (Semuc Champey) y Flores (Tikal) son extremadamente seguros. La economía de estos lugares gira en torno al turismo, por lo que la comunidad local respeta, valora y cuida mucho a los visitantes. Puedes caminar por las calles empedradas de Antigua o explorar los pueblos del lago con total tranquilidad, siempre manteniendo precauciones normales."
+      },
+      {
+        type: "heading",
+        value: "¿Es seguro viajar de noche por las carreteras en Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Sí, las principales rutas turísticas (hacia Antigua, Atitlán, El Paredón y la Ciudad de Guatemala) son seguras tanto de día como de noche. De hecho, los viajes nocturnos son una excelente estrategia para evitar el tráfico y maximizar tu tiempo. Por ejemplo, la ruta de Atitlán a Lanquín puede ser muy larga, pero viajando de noche no pierdes un día entero de tus vacaciones."
+      },
+      {
+        type: "paragraph",
+        value: "En Blvck Sheep, nuestros servicios de transporte privado operan las 24 horas. Podemos llevarte en un viaje en nuestro bus popular nocturno desde San Pedro La Laguna hasta Lanquín a las 8:00 PM. Tambien puedes usar nuestros servicios privados desde cualquier destino turistico en rutas nocturnas. Ahorras una noche de hotel, viajas cómodo y seguro, y amaneces listo para la aventura."
+      },
+      {
+        type: "paragraph",
+        value: "Si viajas hacia el norte (Petén), recomendamos los autobuses nocturnos de lujo. Puedes salir a las 9:00 PM desde la capital y llegar a Flores al amanecer en un asiento tipo cama muy cómodo. Dejas tus maletas y te vas directo a tu tour por Tikal."
+      },
+      {
+        type: "cta",
+        value: "Reserva tu bus nocturno a Flores con Fuente del Norte (Servicio Cama)",
+        link: "https://transportesfuentedelnorte.com/en/" 
+      },
+      {
+        type: "heading",
+        value: "Consejos Prácticos para tu Seguridad (Especial para Solo Travelers)"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala es un destino fantástico incluso para quienes viajan solos. Aquí te dejamos unos consejos básicos:"
+      },
+      {
+        type: "paragraph",
+        value: "1. Cuida tus pertenencias: No pierdas de vista tu teléfono o equipaje en lugares concurridos, bares o puntos de espera. Los carteristas buscan oportunidades fáciles.\n2. Guarda tu pasaporte: Deja siempre tu pasaporte original en tu hotel. Para entrar a bares, restaurantes o participar en tours, una licencia de conducir o ID de tu país es más que suficiente.\n3. Cajeros Automáticos (ATMs): Usa siempre cajeros ubicados dentro de centros comerciales, hoteles o bancos, y evita los que están en calles solitarias. Un tip local: los cajeros azules de Banco Industrial usualmente tienen las mejores tasas de comisión por retiro del país.\n4. Transporte seguro: Evita tomar taxis en la calle. Si una oferta de transporte suena demasiado buena para ser verdad en comparación con los precios de agencias de confianza, ten cuidado, ya que podría ser una estafa. Uber es la mejor opción en la capital y Antigua. Sobre los famosos 'Chicken Buses' (camionetas): aunque son visualmente muy llamativos, el viaje puede representar un riesgo para tus pertenencias (a veces suben tu mochila al techo), suelen ir saturados de gente, por lo que no será un viaje cómodo, y hacen múltiples paradas que pueden confundirte en la ruta. Es mucho mejor utilizar servicios de shuttles compartidos o reservar traslados privados confiables."
+      },
+      {
+        type: "cta",
+        value: "Planifica tu viaje seguro por Guatemala con nuestros traslados privados",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20información%20sobre%20traslados%20privados%20seguros%20en%20Guatemala!"
+      }
+    ]
+  },
+  {
+    id: "is-guatemala-safe-to-travel",
+    title: "Is Guatemala Safe to Travel in 2026? The Ultimate Safety Guide",
+    excerpt: "The #1 question from every traveler: Is Guatemala safe? Discover the truth about Guatemala City, tourist destinations, night travel, and practical tips for a worry-free adventure.",
+    publishDate: "August 10, 2026",
+    readTime: "5 MIN READ",
+    heroImage: safetyGuideImage.src, 
+    category: "Travel Hacks",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "The most common question we get from international travelers is: 'Is Guatemala safe to travel?'. The short answer is yes. Guatemala is a beautiful, vibrant country, and thousands of tourists visit every month without incident. However, just like any destination in the world, the key to a stress-free trip is being informed, using common sense, and knowing how to get around safely."
+      },
+      {
+        type: "heading",
+        value: "Is Guatemala City Dangerous for Tourists?"
+      },
+      {
+        type: "paragraph",
+        value: "Like any major metropolis, there are 'red zones', but these are located far away from the areas where tourists and business travelers spend their time. The safest neighborhoods to stay in are Zone 10 (known as Zona Viva), Zone 14 near Las Americas, or Zone 13, which is highly convenient due to its proximity to La Aurora International Airport."
+      },
+      {
+        type: "paragraph",
+        value: "Is it worth staying in the city? You can visit the Historic Center, enjoy world-class restaurants, modern malls, or the Aurora Zoo. However, what most tourists do is book a private transfer right from the airport directly to Antigua Guatemala or Panajachel (Lake Atitlan) so they can spend their first night surrounded by nature or colonial architecture."
+      },
+      {
+        type: "heading",
+        value: "Safety in Tourist Hubs: Antigua, Atitlan, Lanquin, and Flores"
+      },
+      {
+        type: "paragraph",
+        value: "Top destinations like Antigua Guatemala, Lake Atitlan, Lanquin (Semuc Champey), and Flores (Tikal) are extremely safe. These towns are highly dependent on tourism, meaning the local community deeply respects, values, and protects visitors. You can confidently walk the cobblestone streets of Antigua or explore the lake towns with peace of mind, practicing normal situational awareness."
+      },
+      {
+        type: "heading",
+        value: "Is Night Travel and Driving Safe in Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Yes, the main tourist routes (around Antigua, Atitlan, El Paredon, and Guatemala City) are safe for both day and night travel. In fact, overnight travel is a smart strategy to avoid traffic and maximize your vacation time. For instance, the drive from Lake Atitlan to Lanquin is long, but traveling at night saves you from wasting a precious daylight day on the road."
+      },
+      {
+        type: "paragraph",
+        value: "At Blvck Sheep, our private transfer services run 24 hours a day. We can arrange a private overnight ride departing any location. We also have shared shuttles that can help you avoid long routes, like San Pedro La Laguna (Lake Atitlan) to Lanquin (Semuc Champey), we have an 8:00 PM bus that gets you straight to Lanquin overnight. You save on a hotel night, travel in comfort, and wake up ready for adventure."
+      },
+      {
+        type: "paragraph",
+        value: "If you are heading up north to Peten, we highly recommend comfortable overnight buses. You depart Guatemala City from 8:00 PM to 11:00 PM schedules, and arrive in Flores at dawn on a comfortable sofa style seat. Drop your bags off at your hotel and head straight to your Tikal tour!"
+      },
+      {
+        type: "cta",
+        value: "Book your overnight bus to Flores with Fuente del Norte",
+        link: "https://transportesfuentedelnorte.com/en/" 
+      },
+      {
+        type: "heading",
+        value: "Practical Safety Tips (Great for Solo Travelers)"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala is a fantastic destination, even for those traveling alone (solo female travel in Guatemala is incredibly popular). Here are some basic tips:"
+      },
+      {
+        type: "paragraph",
+        value: "1. Watch your belongings: Never leave your phone or bags unattended in crowded places, bars, or waiting areas. Pickpockets look for easy opportunities.\n2. Secure your passport: Always leave your original passport at your hotel. When going out to bars, restaurants, or taking tours, a driver's license or ID card from your home country is more than enough.\n3. ATMs: Always use ATMs located inside malls, hotels, or banks, and avoid standalone ATMs on empty streets. Local tip: The blue 'Banco Industrial' ATMs usually offer the best withdrawal exchange rates and lowest fees in the country.\n4. Reliable Transportation: Avoid hailing random taxis on the street. If a travel deal sounds too good to be true compared to regular prices from trusted agencies, be careful as it could be a scam. Uber is a great option available in Guatemala City and Antigua. Regarding the famous 'Chicken Buses': while they are visually striking, the ride can be risky for your belongings (they sometimes tie your backpack to the roof), they get extremely crowded making for an uncomfortable ride, and they make multiple random stops that can get you lost on your route. It is always better to use shared shuttles or book reliable private transfers."
+      },
+      {
+        type: "cta",
+        value: "Plan a safe trip in Guatemala with our 24/7 Private Transfers",
+        link: "https://wa.me/50255116881?text=Hello!%20I%20would%20like%20information%20about%20safe%20private%20transfers%20in%20Guatemala!"
       }
     ]
   },
