@@ -126,6 +126,154 @@ export const journalData: JournalPost[] = [
     ]
 },
 {
+    id: "es-seguro-viajar-a-guatemala",
+    title: "¿Es seguro viajar a Guatemala en 2026? Guía para un viaje sin preocupaciones",
+    excerpt: "La pregunta número uno de todo viajero: ¿Es seguro viajar a Guatemala? Descubre la realidad sobre la capital, los destinos turísticos, viajar de noche y consejos clave para tu seguridad.",
+    publishDate: "10 de agosto de 2026",
+    readTime: "5 MIN DE LECTURA",
+    heroImage: safetyGuideImage.src, 
+    category: "Guías de Viaje",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "La pregunta que más recibimos de nuestros viajeros internacionales es: '¿Es seguro viajar a Guatemala?'. La respuesta corta es sí. Guatemala es un país hermoso y vibrante, y miles de turistas lo visitan cada mes sin ningún incidente. Sin embargo, como en cualquier otro destino del mundo, la clave para un viaje sin estrés es estar informado, usar el sentido común y saber cómo moverte."
+      },
+      {
+        type: "heading",
+        value: "¿Es peligrosa la Ciudad de Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Como en toda gran metrópolis, existen zonas rojas, pero estas se encuentran muy alejadas de las áreas donde los turistas y viajeros de negocios suelen moverse. Las zonas más seguras para hospedarse son la Zona 10 (conocida como la Zona Viva), la Zona 14 cerca de Las Américas, o la Zona 13, que es muy conveniente por su cercanía al Aeropuerto Internacional La Aurora."
+      },
+      {
+        type: "paragraph",
+        value: "¿Vale la pena quedarse en la ciudad? Puedes visitar el Centro Histórico, disfrutar de excelentes restaurantes de clase mundial, modernos centros comerciales o el Zoológico La Aurora. Sin embargo, lo que la mayoría de los turistas hacen es reservar un traslado privado desde el aeropuerto directo hacia Antigua Guatemala o Panajachel (Lago de Atitlán) para pasar su primera noche rodeados de naturaleza o arquitectura colonial."
+      },
+      {
+        type: "heading",
+        value: "Seguridad en Destinos Turísticos: Antigua, Atitlán, Lanquín y Flores"
+      },
+      {
+        type: "paragraph",
+        value: "Destinos populares como Antigua Guatemala, el Lago de Atitlán, Lanquín (Semuc Champey) y Flores (Tikal) son extremadamente seguros. La economía de estos lugares gira en torno al turismo, por lo que la comunidad local respeta, valora y cuida mucho a los visitantes. Puedes caminar por las calles empedradas de Antigua o explorar los pueblos del lago con total tranquilidad, siempre manteniendo precauciones normales."
+      },
+      {
+        type: "heading",
+        value: "¿Es seguro viajar de noche por las carreteras en Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Sí, las principales rutas turísticas (hacia Antigua, Atitlán, El Paredón y la Ciudad de Guatemala) son seguras tanto de día como de noche. De hecho, los viajes nocturnos son una excelente estrategia para evitar el tráfico y maximizar tu tiempo. Por ejemplo, la ruta de Atitlán a Lanquín puede ser muy larga, pero viajando de noche no pierdes un día entero de tus vacaciones."
+      },
+      {
+        type: "paragraph",
+        value: "En Blvck Sheep, nuestros servicios de transporte privado operan las 24 horas. Podemos llevarte en un viaje en nuestro bus popular nocturno desde San Pedro La Laguna hasta Lanquín a las 8:00 PM. Tambien puedes usar nuestros servicios privados desde cualquier destino turistico en rutas nocturnas. Ahorras una noche de hotel, viajas cómodo y seguro, y amaneces listo para la aventura."
+      },
+      {
+        type: "paragraph",
+        value: "Si viajas hacia el norte (Petén), recomendamos los autobuses nocturnos de lujo. Puedes salir a las 9:00 PM desde la capital y llegar a Flores al amanecer en un asiento tipo cama muy cómodo. Dejas tus maletas y te vas directo a tu tour por Tikal."
+      },
+      {
+        type: "cta",
+        value: "Reserva tu bus nocturno a Flores con Fuente del Norte (Servicio Cama)",
+        link: "https://transportesfuentedelnorte.com/en/" 
+      },
+      {
+        type: "heading",
+        value: "Consejos Prácticos para tu Seguridad (Especial para Solo Travelers)"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala es un destino fantástico incluso para quienes viajan solos. Aquí te dejamos unos consejos básicos:"
+      },
+      {
+        type: "paragraph",
+        value: "1. Cuida tus pertenencias: No pierdas de vista tu teléfono o equipaje en lugares concurridos, bares o puntos de espera. Los carteristas buscan oportunidades fáciles.\n2. Guarda tu pasaporte: Deja siempre tu pasaporte original en tu hotel. Para entrar a bares, restaurantes o participar en tours, una licencia de conducir o ID de tu país es más que suficiente.\n3. Cajeros Automáticos (ATMs): Usa siempre cajeros ubicados dentro de centros comerciales, hoteles o bancos, y evita los que están en calles solitarias. Un tip local: los cajeros azules de Banco Industrial usualmente tienen las mejores tasas de comisión por retiro del país.\n4. Transporte seguro: Evita tomar taxis en la calle. Si una oferta de transporte suena demasiado buena para ser verdad en comparación con los precios de agencias de confianza, ten cuidado, ya que podría ser una estafa. Uber es la mejor opción en la capital y Antigua. Sobre los famosos 'Chicken Buses' (camionetas): aunque son visualmente muy llamativos, el viaje puede representar un riesgo para tus pertenencias (a veces suben tu mochila al techo), suelen ir saturados de gente, por lo que no será un viaje cómodo, y hacen múltiples paradas que pueden confundirte en la ruta. Es mucho mejor utilizar servicios de shuttles compartidos o reservar traslados privados confiables."
+      },
+      {
+        type: "cta",
+        value: "Planifica tu viaje seguro por Guatemala con nuestros traslados privados",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20información%20sobre%20traslados%20privados%20seguros%20en%20Guatemala!"
+      }
+    ]
+  },
+  {
+    id: "is-guatemala-safe-to-travel",
+    title: "Is Guatemala Safe to Travel in 2026? The Ultimate Safety Guide",
+    excerpt: "The #1 question from every traveler: Is Guatemala safe? Discover the truth about Guatemala City, tourist destinations, night travel, and practical tips for a worry-free adventure.",
+    publishDate: "August 10, 2026",
+    readTime: "5 MIN READ",
+    heroImage: safetyGuideImage.src, 
+    category: "Travel Hacks",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "The most common question we get from international travelers is: 'Is Guatemala safe to travel?'. The short answer is yes. Guatemala is a beautiful, vibrant country, and thousands of tourists visit every month without incident. However, just like any destination in the world, the key to a stress-free trip is being informed, using common sense, and knowing how to get around safely."
+      },
+      {
+        type: "heading",
+        value: "Is Guatemala City Dangerous for Tourists?"
+      },
+      {
+        type: "paragraph",
+        value: "Like any major metropolis, there are 'red zones', but these are located far away from the areas where tourists and business travelers spend their time. The safest neighborhoods to stay in are Zone 10 (known as Zona Viva), Zone 14 near Las Americas, or Zone 13, which is highly convenient due to its proximity to La Aurora International Airport."
+      },
+      {
+        type: "paragraph",
+        value: "Is it worth staying in the city? You can visit the Historic Center, enjoy world-class restaurants, modern malls, or the Aurora Zoo. However, what most tourists do is book a private transfer right from the airport directly to Antigua Guatemala or Panajachel (Lake Atitlan) so they can spend their first night surrounded by nature or colonial architecture."
+      },
+      {
+        type: "heading",
+        value: "Safety in Tourist Hubs: Antigua, Atitlan, Lanquin, and Flores"
+      },
+      {
+        type: "paragraph",
+        value: "Top destinations like Antigua Guatemala, Lake Atitlan, Lanquin (Semuc Champey), and Flores (Tikal) are extremely safe. These towns are highly dependent on tourism, meaning the local community deeply respects, values, and protects visitors. You can confidently walk the cobblestone streets of Antigua or explore the lake towns with peace of mind, practicing normal situational awareness."
+      },
+      {
+        type: "heading",
+        value: "Is Night Travel and Driving Safe in Guatemala?"
+      },
+      {
+        type: "paragraph",
+        value: "Yes, the main tourist routes (around Antigua, Atitlan, El Paredon, and Guatemala City) are safe for both day and night travel. In fact, overnight travel is a smart strategy to avoid traffic and maximize your vacation time. For instance, the drive from Lake Atitlan to Lanquin is long, but traveling at night saves you from wasting a precious daylight day on the road."
+      },
+      {
+        type: "paragraph",
+        value: "At Blvck Sheep, our private transfer services run 24 hours a day. We can arrange a private overnight ride departing any location. We also have shared shuttles that can help you avoid long routes, like San Pedro La Laguna (Lake Atitlan) to Lanquin (Semuc Champey), we have an 8:00 PM bus that gets you straight to Lanquin overnight. You save on a hotel night, travel in comfort, and wake up ready for adventure."
+      },
+      {
+        type: "paragraph",
+        value: "If you are heading up north to Peten, we highly recommend comfortable overnight buses. You depart Guatemala City from 8:00 PM to 11:00 PM schedules, and arrive in Flores at dawn on a comfortable sofa style seat. Drop your bags off at your hotel and head straight to your Tikal tour!"
+      },
+      {
+        type: "cta",
+        value: "Book your overnight bus to Flores with Fuente del Norte",
+        link: "https://transportesfuentedelnorte.com/en/" 
+      },
+      {
+        type: "heading",
+        value: "Practical Safety Tips (Great for Solo Travelers)"
+      },
+      {
+        type: "paragraph",
+        value: "Guatemala is a fantastic destination, even for those traveling alone (solo female travel in Guatemala is incredibly popular). Here are some basic tips:"
+      },
+      {
+        type: "paragraph",
+        value: "1. Watch your belongings: Never leave your phone or bags unattended in crowded places, bars, or waiting areas. Pickpockets look for easy opportunities.\n2. Secure your passport: Always leave your original passport at your hotel. When going out to bars, restaurants, or taking tours, a driver's license or ID card from your home country is more than enough.\n3. ATMs: Always use ATMs located inside malls, hotels, or banks, and avoid standalone ATMs on empty streets. Local tip: The blue 'Banco Industrial' ATMs usually offer the best withdrawal exchange rates and lowest fees in the country.\n4. Reliable Transportation: Avoid hailing random taxis on the street. If a travel deal sounds too good to be true compared to regular prices from trusted agencies, be careful as it could be a scam. Uber is a great option available in Guatemala City and Antigua. Regarding the famous 'Chicken Buses': while they are visually striking, the ride can be risky for your belongings (they sometimes tie your backpack to the roof), they get extremely crowded making for an uncomfortable ride, and they make multiple random stops that can get you lost on your route. It is always better to use shared shuttles or book reliable private transfers."
+      },
+      {
+        type: "cta",
+        value: "Plan a safe trip in Guatemala with our 24/7 Private Transfers",
+        link: "https://wa.me/50255116881?text=Hello!%20I%20would%20like%20information%20about%20safe%20private%20transfers%20in%20Guatemala!"
+      }
+    ]
+  },
+{
     id: "guia-esencial-guatemala",
     title: "La Guía Esencial de Guatemala: Lo que debes saber antes de visitar",
     excerpt: "Datos generales para ayudarte a planear mejor tu viaje a Guatemala. Como locales, te compartimos la información honesta sobre nuestra geografía, cultura Maya, gastronomía, clima y cómo moverte eficientemente.",
@@ -584,84 +732,10 @@ export const journalData: JournalPost[] = [
       },
     ]
   },
-  {
-    id: "antigua-to-lake-atitlan-guide",
-    title: "The Ultimate Guide: Traveling from Antigua to Lake Atitlán in 2026",
-    excerpt: "Everything you need to know about navigating Guatemala's most popular route. From surviving the chaotic 'chicken buses' to finding the perfect lakeside sanctuary.",
-    publishDate: "February 12, 2026",
-    readTime: "8 MIN READ",
-    heroImage: roadguideJournalImage.src, 
-    category: "Transit & Logistics",
-    language: "en",
-    content: [
-      {
-        type: "paragraph",
-        value: "Making the 77-kilometer journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, this 2.5 to 3-hour drive through the highlands is not a simple straight line. Depending on your budget, your timeline, and your tolerance for dizzying mountain curves, there are three distinct ways to make this transit. After half a decade of navigating these exact roads, here is the unfiltered truth about how to get to the lake."
-      },
-      {
-        type: "heading",
-        value: "Option 1: The 'Chicken Bus' (Camioneta) Reality"
-      },
-      {
-        type: "paragraph",
-        value: "These brightly painted, souped-up former North American school buses are an iconic piece of the Guatemalan landscape. Traveling this way is incredibly cheap, but the true cost is your time and energy. It requires four separate transfers. You begin at the Antigua bus terminal (located behind the central market near Pollo Campero). You catch a bus heading to Chimaltenango (approx. 20 GTQ) and ask the 'ayudante' (the driver's assistant) to drop you off at the highway corner for Los Encuentros. From there, you flag down a bus heading toward Quiché or Xela, taking it to the Los Encuentros crossroads (10-20 GTQ). Next, you catch a bus dropping down into the Sololá department (5 GTQ), and finally, take your last bus descending into Panajachel. If you are catching a public boat, get off at the very first stop in Pana—it is a short walk down to Muelle Tzanjuyú."
-      },
-      {
-        type: "paragraph",
-        value: "<strong>The Brutal Truth:</strong> There is a famous local saying: <em>'Donde caben 3, caben 4'</em> (Where three fit, four fit). This perfectly sums up the camioneta experience. Drivers maximize profits by cramming as many people as physically possible into the seats and aisles. Your luggage will likely go on the roof, you will have zero personal space, and the drivers take the winding mountain curves at alarming speeds. We highly recommend taking a chicken bus for a short, 15-minute trip just for the cultural experience, but for a 3-hour transit with heavy bags? It is an extreme sport."
-      },
-      {
-        type: "heading",
-        value: "Option 2: The Shared Tourist Shuttle"
-      },
-      {
-        type: "paragraph",
-        value: "This is the standard backpacker choice. For about 125 to 150 GTQ ($16 - $20 USD), you book a seat in a 15-passenger van (Toyota Hiace or Nissan Urvan). They leave at specific, scheduled times daily. Depending on the season and traffic in Antigua, they will either pick you up at your hotel, or require you to meet at central hubs like Café Condesa at Central Park or popular hostels like Bloom."
-      },
-      {
-        type: "paragraph",
-        value: "<strong>The Route:</strong> Shared shuttles almost exclusively take the Patzún route to save time. This road cuts through deep agricultural valleys, crosses a small river gorge, and drops down through San Andrés Semetabaj before arriving in Pana. It is highly efficient, but the roads are incredibly narrow and aggressively winding. If you are prone to motion sickness, this route can be tough."
-      },
-      {
-        type: "heading",
-        value: "Option 3: The Private Alternative (Blvck Sheep)"
-      },
-      {
-        type: "paragraph",
-        value: "Your vacation time is your most valuable asset. For those who want to avoid the dizziness of the Patzún curves and the strict schedules of shared vans, booking a private transfer changes the entire tone of your travel day. At Blvck Sheep, our private transit routes bypass Patzún entirely. Instead, we take the Tecpán route."
-      },
-      {
-        type: "paragraph",
-        value: "Tecpán is located on Guatemala's primary highways, the CA-1 (Pan-American Highway). While the total distance is slightly longer than the Patzún shortcut, this highway offers significantly more room to breathe. Instead of navigating tight, single-lane mountain passes, the CA-1 features two wide lanes in each direction and vastly superior road conditions, making for a much smoother ride. Furthermore, Tecpán happens to be a celebrated culinary destination, famous for its artisanal cheeses, smoked sausages, and highway steakhouses."
-      },
-      {
-        type: "paragraph",
-        value: "More importantly, this route grants immediate access to the ancient Kaqchikel Mayan ruins of Iximché, the entrance is only Q5, if you are lucky you can get to witness a traditional mayan ceremony while exploring the ruins. We highly recommend this quick detour on your way to or from the lake. Our private drivers can pause your transit, allowing you to explore the ruins and enjoy an authentic local lunch before making the final descent to the water via the 'Las Trampas' route. This specific approach offers breathtaking, high-altitude views of the lake, plus all three volcanos, from the mountains before winding down through San Andrés Semetabaj and into Pana."
-      },
-      {
-        type: "cta",
-        value: "Secure Your Transfer to the Lake",
-        link: "https://wa.me/50255116881?text=Hello!,%20I%20want%20to%20book%20a%20shuttle%20from%20Antigua%20to%20Atitlan!"
-      },
-      {
-        type: "heading",
-        value: "Where to Drop Your Bags"
-      },
-      {
-        type: "paragraph",
-        value: "While Panajachel is the main logistical hub, our private transfers offer direct routes to several other accessible villages around Atitlan. The lake offers entirely different energies depending on which shoreline you choose. If you want high-energy social spaces and the backpacker crowd, head to San Pedro La Laguna. For a 'hippie-chic' vibe centered on yoga and meditation retreats, San Marcos is the place. If authentic Tz'utujil Mayan culture and incredible textile arts are your priority, San Juan La Laguna is unmatched. Finally, for absolute exclusivity, world-class boutique hotels, and silence, look toward Santa Catarina Palopó or Santa Cruz. If you require stable infrastructure, fast internet, and the convenience of a larger town, making Panajachel your basecamp is the smartest move."
-      },
-      {
-        type: "cta",
-        value: "Explore Our Curated Lake Atitlán Stays",
-        link: "/hostels" 
-      }
-    ]
-  },
  {
     id: "guatemala-sim-card-esim-guide",
     title: "How to Get Data in Guatemala: Why Airalo is Your Best Choice",
-    excerpt: "Navigating mobile data in Guatemala can be surprisingly frustrating due to strict registration laws. Here is the ultimate guide to getting online the moment you land without the paperwork.",
+    excerpt: "Navigating mobile data in Guatemala can be surprisingly frustrating due to strict registration laws. Here is the guide to getting online the moment you land without the paperwork.",
     publishDate: "March 16, 2026",
     readTime: "4 MIN READ",
     heroImage: simJournalImage.src, 
@@ -768,7 +842,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Known affectionately by the locals as 'San Pedro La Locura' (San Pedro the Madness), this is the undisputed epicenter for the younger backpacker crowd—the ultimate party town. It is a maze of narrow, vibrant streets covered in graffiti art, packed with social hubs, party hostels, and an energetic nightlife. Navigating its tight alleys in a tuk-tuk is a rite of passage, especially after a fun night out with newfound friends. Stay tuned—we will be dropping a dedicated journal entry soon detailing our favorite local-only food spots, hidden bars, and things to do that only locals know about in San Pedro."
+        value: "Known affectionately by the locals as 'San Pedro La Locura' (San Pedro the Madness), this is the undisputed epicenter for the younger backpacker crowd— the best party town. It is a maze of narrow, vibrant streets covered in graffiti art, packed with social hubs, party hostels, and an energetic nightlife. Navigating its tight alleys in a tuk-tuk is a rite of passage, especially after a fun night out with newfound friends. Stay tuned—we will be dropping a dedicated journal entry soon detailing our favorite local-only food spots, hidden bars, and things to do that only locals know about in San Pedro."
       },
       {
         type: "heading",
@@ -890,7 +964,7 @@ export const journalData: JournalPost[] = [
   {
     id: "guatemala-transportation-guide",
     title: "The Ultimate Guide to Getting Around Guatemala: Shuttles, Private Transfers, and Flights",
-    excerpt: "Navigating Guatemala’s mountains and roads can be confusing for foreigners. Discover the best ways to get around, the difference between shared shuttles and private transfers, and the easiest route to Tikal.",
+    excerpt: "Navigating Guatemala can be confusing for foreigners. Discover the best ways to get around, the difference between shared shuttles and private transfers, and the easiest route to Tikal.",
     publishDate: "August 16, 2026",
     readTime: "6 MIN READ",
     heroImage: chickenbus.src, 
@@ -899,7 +973,7 @@ export const journalData: JournalPost[] = [
     content: [
       {
         type: "paragraph",
-        value: "Getting around Guatemala is an adventure in itself. With its breathtaking mountainous topography, winding roads, and remote rural highways, planning your transportation logistics is vital so you don't waste precious vacation time. If you're wondering how to get around Guatemala safely and efficiently, here is the ultimate breakdown of your options."
+        value: "Getting around Guatemala is an adventure in itself. With its breathtaking mountainous topography, winding roads, and remote rural highways, planning your transportation logistics is vital so you don't waste precious vacation time. If you're wondering how to get around Guatemala safely and efficiently, here is the breakdown of your options."
       },
       {
         type: "heading",
@@ -966,80 +1040,6 @@ export const journalData: JournalPost[] = [
     ]
   },
   {
-    id: "guia-antigua-lago-atitlan",
-    title: "La Guía Definitiva: Viajar de Antigua al Lago de Atitlán en 2026",
-    excerpt: "Todo lo que necesitas saber para navegar por la ruta más popular de Guatemala. Desde sobrevivir a las 'camionetas' hasta encontrar el santuario perfecto a orillas del lago.",
-    publishDate: "12 de febrero de 2026",
-    readTime: "8 MIN DE LECTURA",
-    heroImage: roadguideJournalImage.src, 
-    category: "Tránsito y Logística",
-    language: "es",
-    content: [
-      {
-        type: "paragraph",
-        value: "Hacer el viaje de 77 kilómetros desde las calles empedradas de Antigua hasta las costas volcánicas del Lago de Atitlán es un rito de iniciación para cualquiera que visite Guatemala. Sin embargo, este viaje de 2.5 a 3 horas a través del altiplano no es una simple línea recta. Dependiendo de tu presupuesto, tu tiempo y tu tolerancia a las curvas cerradas en la montaña, hay tres formas distintas de hacer este trayecto. Después de media década navegando exactamente por estas carreteras, aquí tienes la verdad sin filtros sobre cómo llegar al lago."
-      },
-      {
-        type: "heading",
-        value: "Opción 1: La realidad de la 'Camioneta' (Chicken Bus)"
-      },
-      {
-        type: "paragraph",
-        value: "Estos antiguos autobuses escolares norteamericanos, modificados y pintados con colores brillantes, son una pieza icónica del paisaje guatemalteco. Viajar de esta manera es increíblemente barato, pero el verdadero costo es tu tiempo y energía. Requiere cuatro transbordos separados. Empiezas en la terminal de autobuses de Antigua (ubicada detrás del mercado central cerca de Pollo Campero). Tomas un autobús en dirección a Chimaltenango (aprox. 20 GTQ) y le pides al 'ayudante' que te baje en la esquina de la carretera para Los Encuentros. Desde allí, haces señas a un autobús que vaya hacia Quiché o Xela, tomándolo hasta el cruce de Los Encuentros (10-20 GTQ). Luego, tomas un autobús que desciende hacia el departamento de Sololá (5 GTQ), y finalmente, tomas tu último autobús que baja hacia Panajachel. Si vas a tomar una lancha pública, bájate en la primera parada en Pana—es una caminata corta hasta el Muelle Tzanjuyú."
-      },
-      {
-        type: "paragraph",
-        value: "<strong>La Verdad Brutal:</strong> Hay un dicho local famoso: <em>'Donde caben 3, caben 4'</em>. Esto resume perfectamente la experiencia de la camioneta. Los conductores maximizan las ganancias apretujando a la mayor cantidad de personas físicamente posible en los asientos y pasillos. Es probable que tu equipaje vaya en el techo, tendrás cero espacio personal, y los conductores toman las curvas sinuosas de la montaña a velocidades alarmantes. Recomendamos encarecidamente tomar una camioneta para un viaje corto de 15 minutos solo por la experiencia cultural, pero ¿para un viaje de 3 horas con maletas pesadas? Es un deporte extremo."
-      },
-      {
-        type: "heading",
-        value: "Opción 2: El Shuttle Turístico Compartido"
-      },
-      {
-        type: "paragraph",
-        value: "Esta es la opción estándar para los mochileros. Por unos 125 a 150 GTQ ($16 - $20 USD), reservas un asiento en una camioneta de 15 pasajeros (Toyota Hiace o Nissan Urvan). Salen a horas específicas programadas todos los días. Dependiendo de la temporada y el tráfico en Antigua, te recogerán en tu hotel o te pedirán que te reúnas en puntos céntricos como el Café Condesa en el Parque Central o en hostales populares como Bloom."
-      },
-      {
-        type: "paragraph",
-        value: "<strong>La Ruta:</strong> Los shuttles compartidos toman casi exclusivamente la ruta de Patzún para ahorrar tiempo. Este camino atraviesa profundos valles agrícolas, cruza un pequeño desfiladero con un río, y desciende a través de San Andrés Semetabaj antes de llegar a Pana. Es muy eficiente, pero las carreteras son increíblemente estrechas y con curvas agresivas. Si eres propenso al mareo, esta ruta puede ser difícil."
-      },
-      {
-        type: "heading",
-        value: "Opción 3: La Alternativa Privada (Blvck Sheep)"
-      },
-      {
-        type: "paragraph",
-        value: "Tu tiempo de vacaciones es tu activo más valioso. Para aquellos que quieren evitar el mareo de las curvas de Patzún y los horarios estrictos de las camionetas compartidas, reservar un traslado privado cambia todo el tono de tu día de viaje. En Blvck Sheep, nuestras rutas de tránsito privado evitan Patzún por completo. En su lugar, tomamos la ruta de Tecpán."
-      },
-      {
-        type: "paragraph",
-        value: "Tecpán está ubicado en las carreteras principales de Guatemala, la CA-1 (Carretera Interamericana). Si bien la distancia total es ligeramente más larga que el atajo de Patzún, esta carretera ofrece mucho más espacio para respirar. En lugar de navegar por pasos de montaña estrechos de un solo carril, la CA-1 cuenta con dos carriles anchos en cada dirección y condiciones de carretera muy superiores, lo que hace que el viaje sea mucho más suave. Además, Tecpán resulta ser un célebre destino culinario, famoso por sus quesos artesanales, embutidos ahumados y asadores de carretera."
-      },
-      {
-        type: "paragraph",
-        value: "Aún más importante, esta ruta otorga acceso inmediato a las antiguas ruinas mayas kaqchikeles de Iximché; la entrada cuesta solo Q5 y, si tienes suerte, podrás presenciar una ceremonia maya tradicional mientras exploras las ruinas. Recomendamos encarecidamente este rápido desvío en tu camino hacia o desde el lago. Nuestros conductores privados pueden pausar tu viaje, permitiéndote explorar las ruinas y disfrutar de un auténtico almuerzo local antes de hacer el descenso final hacia el agua por la ruta de 'Las Trampas'. Este enfoque específico ofrece impresionantes vistas de gran altitud del lago y de los tres volcanes desde las montañas, antes de bajar serpenteando por San Andrés Semetabaj hasta Pana."
-      },
-      {
-        type: "cta",
-        value: "Asegura tu Traslado al Lago",
-        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20de%20Antigua%20a%20Atitlán!"
-      },
-      {
-        type: "heading",
-        value: "Dónde Dejar tus Maletas"
-      },
-      {
-        type: "paragraph",
-        value: "Si bien Panajachel es el centro logístico principal, nuestros traslados privados ofrecen rutas directas a varios otros pueblos accesibles alrededor de Atitlán. El lago ofrece energías completamente diferentes dependiendo de qué orilla elijas. Si buscas espacios sociales de alta energía y un ambiente mochilero, dirígete a San Pedro La Laguna. Para una vibra 'hippie-chic' centrada en retiros de yoga y meditación, San Marcos es el lugar. Si tu prioridad es la auténtica cultura maya tz'utujil y el increíble arte textil, San Juan La Laguna es inigualable. Finalmente, para exclusividad absoluta, hoteles boutique de clase mundial y silencio, mira hacia Santa Catarina Palopó o Santa Cruz. Si requieres infraestructura estable, internet rápido y la conveniencia de un pueblo más grande, hacer de Panajachel tu campamento base es la decisión más inteligente."
-      },
-      {
-        type: "cta",
-        value: "Explora Nuestras Estadías Curadas en Atitlán",
-        link: "/hostels" 
-      }
-    ]
-  },
-  {
     id: "where-to-eat-antigua-guatemala-part-1",
     title: "Where to Eat in Antigua, Part 1: My Top 10 Favorite Spots",
     excerpt: "Navigating cobblestone streets to find new restaurants in Antigua is one of my favorite things to do. Here are 10 of my favorite spots to eat in this colonial city. From fancy dining to the best spots for a hangover cure, I've got you covered.",
@@ -1092,7 +1092,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "<strong>Vibe: Ayurvedic Wellness & With a Dash of Mysticism.</strong> Since 2014, Samsara has been Antigua's definitive sanctuary for functional, plant-based nutrition. Inspired by Ayurvedic philosophy, their menu acts as a deliberate reset button for tired travelers. From their on-tap kombucha and house-made ferments (like kimchi and tempeh) to healing, spiced bowls of kitchary, every ingredient is chosen to restore your energy and balance your system. It is the ultimate spot to nourish your body cleanly and intentionally after days of heavy travel. This restuarant is one of my favorites spots. <br/><br/><a href='https://www.samsara.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
+        value: "<strong>Vibe: Ayurvedic Wellness & With a Dash of Mysticism.</strong> Since 2014, Samsara has been Antigua's definitive sanctuary for functional, plant-based nutrition. Inspired by Ayurvedic philosophy, their menu acts as a deliberate reset button for tired travelers. From their on-tap kombucha and house-made ferments (like kimchi and tempeh) to healing, spiced bowls of kitchary, every ingredient is chosen to restore your energy and balance your system. It is the spot to nourish your body cleanly and intentionally after days of heavy travel. This restuarant is one of my favorites spots. <br/><br/><a href='https://www.samsara.com.gt/' target='_blank' class='text-blue-400 hover:underline'>Visit Website</a>"
       },
       {
         type: "heading",
@@ -1226,154 +1226,6 @@ export const journalData: JournalPost[] = [
     ]
   },
   {
-    id: "es-seguro-viajar-a-guatemala",
-    title: "¿Es seguro viajar a Guatemala en 2026? Guía para un viaje sin preocupaciones",
-    excerpt: "La pregunta número uno de todo viajero: ¿Es seguro viajar a Guatemala? Descubre la realidad sobre la capital, los destinos turísticos, viajar de noche y consejos clave para tu seguridad.",
-    publishDate: "10 de agosto de 2026",
-    readTime: "5 MIN DE LECTURA",
-    heroImage: safetyGuideImage.src, 
-    category: "Guías de Viaje",
-    language: "es",
-    content: [
-      {
-        type: "paragraph",
-        value: "La pregunta que más recibimos de nuestros viajeros internacionales es: '¿Es seguro viajar a Guatemala?'. La respuesta corta es sí. Guatemala es un país hermoso y vibrante, y miles de turistas lo visitan cada mes sin ningún incidente. Sin embargo, como en cualquier otro destino del mundo, la clave para un viaje sin estrés es estar informado, usar el sentido común y saber cómo moverte."
-      },
-      {
-        type: "heading",
-        value: "¿Es peligrosa la Ciudad de Guatemala?"
-      },
-      {
-        type: "paragraph",
-        value: "Como en toda gran metrópolis, existen zonas rojas, pero estas se encuentran muy alejadas de las áreas donde los turistas y viajeros de negocios suelen moverse. Las zonas más seguras para hospedarse son la Zona 10 (conocida como la Zona Viva), la Zona 14 cerca de Las Américas, o la Zona 13, que es muy conveniente por su cercanía al Aeropuerto Internacional La Aurora."
-      },
-      {
-        type: "paragraph",
-        value: "¿Vale la pena quedarse en la ciudad? Puedes visitar el Centro Histórico, disfrutar de excelentes restaurantes de clase mundial, modernos centros comerciales o el Zoológico La Aurora. Sin embargo, lo que la mayoría de los turistas hacen es reservar un traslado privado desde el aeropuerto directo hacia Antigua Guatemala o Panajachel (Lago de Atitlán) para pasar su primera noche rodeados de naturaleza o arquitectura colonial."
-      },
-      {
-        type: "heading",
-        value: "Seguridad en Destinos Turísticos: Antigua, Atitlán, Lanquín y Flores"
-      },
-      {
-        type: "paragraph",
-        value: "Destinos populares como Antigua Guatemala, el Lago de Atitlán, Lanquín (Semuc Champey) y Flores (Tikal) son extremadamente seguros. La economía de estos lugares gira en torno al turismo, por lo que la comunidad local respeta, valora y cuida mucho a los visitantes. Puedes caminar por las calles empedradas de Antigua o explorar los pueblos del lago con total tranquilidad, siempre manteniendo precauciones normales."
-      },
-      {
-        type: "heading",
-        value: "¿Es seguro viajar de noche por las carreteras en Guatemala?"
-      },
-      {
-        type: "paragraph",
-        value: "Sí, las principales rutas turísticas (hacia Antigua, Atitlán, El Paredón y la Ciudad de Guatemala) son seguras tanto de día como de noche. De hecho, los viajes nocturnos son una excelente estrategia para evitar el tráfico y maximizar tu tiempo. Por ejemplo, la ruta de Atitlán a Lanquín puede ser muy larga, pero viajando de noche no pierdes un día entero de tus vacaciones."
-      },
-      {
-        type: "paragraph",
-        value: "En Blvck Sheep, nuestros servicios de transporte privado operan las 24 horas. Podemos llevarte en un viaje en nuestro bus popular nocturno desde San Pedro La Laguna hasta Lanquín a las 8:00 PM. Tambien puedes usar nuestros servicios privados desde cualquier destino turistico en rutas nocturnas. Ahorras una noche de hotel, viajas cómodo y seguro, y amaneces listo para la aventura."
-      },
-      {
-        type: "paragraph",
-        value: "Si viajas hacia el norte (Petén), recomendamos los autobuses nocturnos de lujo. Puedes salir a las 9:00 PM desde la capital y llegar a Flores al amanecer en un asiento tipo cama muy cómodo. Dejas tus maletas y te vas directo a tu tour por Tikal."
-      },
-      {
-        type: "cta",
-        value: "Reserva tu bus nocturno a Flores con Fuente del Norte (Servicio Cama)",
-        link: "https://transportesfuentedelnorte.com/en/" 
-      },
-      {
-        type: "heading",
-        value: "Consejos Prácticos para tu Seguridad (Especial para Solo Travelers)"
-      },
-      {
-        type: "paragraph",
-        value: "Guatemala es un destino fantástico incluso para quienes viajan solos. Aquí te dejamos unos consejos básicos:"
-      },
-      {
-        type: "paragraph",
-        value: "1. Cuida tus pertenencias: No pierdas de vista tu teléfono o equipaje en lugares concurridos, bares o puntos de espera. Los carteristas buscan oportunidades fáciles.\n2. Guarda tu pasaporte: Deja siempre tu pasaporte original en tu hotel. Para entrar a bares, restaurantes o participar en tours, una licencia de conducir o ID de tu país es más que suficiente.\n3. Cajeros Automáticos (ATMs): Usa siempre cajeros ubicados dentro de centros comerciales, hoteles o bancos, y evita los que están en calles solitarias. Un tip local: los cajeros azules de Banco Industrial usualmente tienen las mejores tasas de comisión por retiro del país.\n4. Transporte seguro: Evita tomar taxis en la calle. Si una oferta de transporte suena demasiado buena para ser verdad en comparación con los precios de agencias de confianza, ten cuidado, ya que podría ser una estafa. Uber es la mejor opción en la capital y Antigua. Sobre los famosos 'Chicken Buses' (camionetas): aunque son visualmente muy llamativos, el viaje puede representar un riesgo para tus pertenencias (a veces suben tu mochila al techo), suelen ir saturados de gente, por lo que no será un viaje cómodo, y hacen múltiples paradas que pueden confundirte en la ruta. Es mucho mejor utilizar servicios de shuttles compartidos o reservar traslados privados confiables."
-      },
-      {
-        type: "cta",
-        value: "Planifica tu viaje seguro por Guatemala con nuestros traslados privados",
-        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20información%20sobre%20traslados%20privados%20seguros%20en%20Guatemala!"
-      }
-    ]
-  },
-  {
-    id: "is-guatemala-safe-to-travel",
-    title: "Is Guatemala Safe to Travel in 2026? The Ultimate Safety Guide",
-    excerpt: "The #1 question from every traveler: Is Guatemala safe? Discover the truth about Guatemala City, tourist destinations, night travel, and practical tips for a worry-free adventure.",
-    publishDate: "August 10, 2026",
-    readTime: "5 MIN READ",
-    heroImage: safetyGuideImage.src, 
-    category: "Travel Hacks",
-    language: "en",
-    content: [
-      {
-        type: "paragraph",
-        value: "The most common question we get from international travelers is: 'Is Guatemala safe to travel?'. The short answer is yes. Guatemala is a beautiful, vibrant country, and thousands of tourists visit every month without incident. However, just like any destination in the world, the key to a stress-free trip is being informed, using common sense, and knowing how to get around safely."
-      },
-      {
-        type: "heading",
-        value: "Is Guatemala City Dangerous for Tourists?"
-      },
-      {
-        type: "paragraph",
-        value: "Like any major metropolis, there are 'red zones', but these are located far away from the areas where tourists and business travelers spend their time. The safest neighborhoods to stay in are Zone 10 (known as Zona Viva), Zone 14 near Las Americas, or Zone 13, which is highly convenient due to its proximity to La Aurora International Airport."
-      },
-      {
-        type: "paragraph",
-        value: "Is it worth staying in the city? You can visit the Historic Center, enjoy world-class restaurants, modern malls, or the Aurora Zoo. However, what most tourists do is book a private transfer right from the airport directly to Antigua Guatemala or Panajachel (Lake Atitlan) so they can spend their first night surrounded by nature or colonial architecture."
-      },
-      {
-        type: "heading",
-        value: "Safety in Tourist Hubs: Antigua, Atitlan, Lanquin, and Flores"
-      },
-      {
-        type: "paragraph",
-        value: "Top destinations like Antigua Guatemala, Lake Atitlan, Lanquin (Semuc Champey), and Flores (Tikal) are extremely safe. These towns are highly dependent on tourism, meaning the local community deeply respects, values, and protects visitors. You can confidently walk the cobblestone streets of Antigua or explore the lake towns with peace of mind, practicing normal situational awareness."
-      },
-      {
-        type: "heading",
-        value: "Is Night Travel and Driving Safe in Guatemala?"
-      },
-      {
-        type: "paragraph",
-        value: "Yes, the main tourist routes (around Antigua, Atitlan, El Paredon, and Guatemala City) are safe for both day and night travel. In fact, overnight travel is a smart strategy to avoid traffic and maximize your vacation time. For instance, the drive from Lake Atitlan to Lanquin is long, but traveling at night saves you from wasting a precious daylight day on the road."
-      },
-      {
-        type: "paragraph",
-        value: "At Blvck Sheep, our private transfer services run 24 hours a day. We can arrange a private overnight ride departing any location. We also have shared shuttles that can help you avoid long routes, like San Pedro La Laguna (Lake Atitlan) to Lanquin (Semuc Champey), we have an 8:00 PM bus that gets you straight to Lanquin overnight. You save on a hotel night, travel in comfort, and wake up ready for adventure."
-      },
-      {
-        type: "paragraph",
-        value: "If you are heading up north to Peten, we highly recommend comfortable overnight buses. You depart Guatemala City from 8:00 PM to 11:00 PM schedules, and arrive in Flores at dawn on a comfortable sofa style seat. Drop your bags off at your hotel and head straight to your Tikal tour!"
-      },
-      {
-        type: "cta",
-        value: "Book your overnight bus to Flores with Fuente del Norte",
-        link: "https://transportesfuentedelnorte.com/en/" 
-      },
-      {
-        type: "heading",
-        value: "Practical Safety Tips (Great for Solo Travelers)"
-      },
-      {
-        type: "paragraph",
-        value: "Guatemala is a fantastic destination, even for those traveling alone (solo female travel in Guatemala is incredibly popular). Here are some basic tips:"
-      },
-      {
-        type: "paragraph",
-        value: "1. Watch your belongings: Never leave your phone or bags unattended in crowded places, bars, or waiting areas. Pickpockets look for easy opportunities.\n2. Secure your passport: Always leave your original passport at your hotel. When going out to bars, restaurants, or taking tours, a driver's license or ID card from your home country is more than enough.\n3. ATMs: Always use ATMs located inside malls, hotels, or banks, and avoid standalone ATMs on empty streets. Local tip: The blue 'Banco Industrial' ATMs usually offer the best withdrawal exchange rates and lowest fees in the country.\n4. Reliable Transportation: Avoid hailing random taxis on the street. If a travel deal sounds too good to be true compared to regular prices from trusted agencies, be careful as it could be a scam. Uber is a great option available in Guatemala City and Antigua. Regarding the famous 'Chicken Buses': while they are visually striking, the ride can be risky for your belongings (they sometimes tie your backpack to the roof), they get extremely crowded making for an uncomfortable ride, and they make multiple random stops that can get you lost on your route. It is always better to use shared shuttles or book reliable private transfers."
-      },
-      {
-        type: "cta",
-        value: "Plan a safe trip in Guatemala with our 24/7 Private Transfers",
-        link: "https://wa.me/50255116881?text=Hello!%20I%20would%20like%20information%20about%20safe%20private%20transfers%20in%20Guatemala!"
-      }
-    ]
-  },
-  {
     id: "5-day-acatenango-volcano-itinerary",
     title: "The 5-6 Day Itinerary to Conquer the Acatenango Volcano",
     excerpt: "If you are traveling to Guatemala to see the Fuego Volcano erupt, this is the perfect logistical plan. How to acclimatize first in Atitlán, what to expect from the ascent, and where to recover your legs after the mountain.",
@@ -1473,6 +1325,154 @@ export const journalData: JournalPost[] = [
       {
         type: "paragraph",
         value: "Depending on what time your flight is, you can arrange a direct transfer from Antigua or from the beach in El Paredón to La Aurora International Airport. Make sure to coordinate this trip well in advance to avoid any stress on your last day. You should arrive at the airport at least 2 hours in advance."
+      }
+    ]
+  },
+  {
+    id: "guia-antigua-lago-atitlan",
+    title: "Guía de Rutas: Viajar de Antigua al Lago de Atitlán en 2026",
+    excerpt: "Todo lo que necesitas saber para navegar por la ruta más popular de Guatemala. Desde sobrevivir a las 'camionetas' hasta encontrar el santuario perfecto a orillas del lago.",
+    publishDate: "12 de febrero de 2026",
+    readTime: "8 MIN DE LECTURA",
+    heroImage: roadguideJournalImage.src, 
+    category: "Tránsito y Logística",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "Hacer el viaje de 77 kilómetros desde las calles empedradas de Antigua hasta las costas volcánicas del Lago de Atitlán es un rito de iniciación para cualquiera que visite Guatemala. Sin embargo, este viaje de 2.5 a 3 horas a través del altiplano no es una simple línea recta. Dependiendo de tu presupuesto, tu tiempo y tu tolerancia a las curvas cerradas en la montaña, hay tres formas distintas de hacer este trayecto. Después de media década navegando exactamente por estas carreteras, aquí tienes la verdad sin filtros sobre cómo llegar al lago."
+      },
+      {
+        type: "heading",
+        value: "Opción 1: La realidad de la 'Camioneta' (Chicken Bus)"
+      },
+      {
+        type: "paragraph",
+        value: "Estos antiguos autobuses escolares norteamericanos, modificados y pintados con colores brillantes, son una pieza icónica del paisaje guatemalteco. Viajar de esta manera es increíblemente barato, pero el verdadero costo es tu tiempo y energía. Requiere cuatro transbordos separados. Empiezas en la terminal de autobuses de Antigua (ubicada detrás del mercado central cerca de Pollo Campero). Tomas un autobús en dirección a Chimaltenango (aprox. 20 GTQ) y le pides al 'ayudante' que te baje en la esquina de la carretera para Los Encuentros. Desde allí, haces señas a un autobús que vaya hacia Quiché o Xela, tomándolo hasta el cruce de Los Encuentros (10-20 GTQ). Luego, tomas un autobús que desciende hacia el departamento de Sololá (5 GTQ), y finalmente, tomas tu último autobús que baja hacia Panajachel. Si vas a tomar una lancha pública, bájate en la primera parada en Pana—es una caminata corta hasta el Muelle Tzanjuyú."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>La Verdad Brutal:</strong> Hay un dicho local famoso: <em>'Donde caben 3, caben 4'</em>. Esto resume perfectamente la experiencia de la camioneta. Los conductores maximizan las ganancias apretujando a la mayor cantidad de personas físicamente posible en los asientos y pasillos. Es probable que tu equipaje vaya en el techo, tendrás cero espacio personal, y los conductores toman las curvas sinuosas de la montaña a velocidades alarmantes. Recomendamos encarecidamente tomar una camioneta para un viaje corto de 15 minutos solo por la experiencia cultural, pero ¿para un viaje de 3 horas con maletas pesadas? Es un deporte extremo."
+      },
+      {
+        type: "heading",
+        value: "Opción 2: El Shuttle Turístico Compartido"
+      },
+      {
+        type: "paragraph",
+        value: "Esta es la opción estándar para los mochileros. Por unos 125 a 150 GTQ ($16 - $20 USD), reservas un asiento en una camioneta de 15 pasajeros (Toyota Hiace o Nissan Urvan). Salen a horas específicas programadas todos los días. Dependiendo de la temporada y el tráfico en Antigua, te recogerán en tu hotel o te pedirán que te reúnas en puntos céntricos como el Café Condesa en el Parque Central o en hostales populares como Bloom."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>La Ruta:</strong> Los shuttles compartidos toman casi exclusivamente la ruta de Patzún para ahorrar tiempo. Este camino atraviesa profundos valles agrícolas, cruza un pequeño desfiladero con un río, y desciende a través de San Andrés Semetabaj antes de llegar a Pana. Es muy eficiente, pero las carreteras son increíblemente estrechas y con curvas agresivas. Si eres propenso al mareo, esta ruta puede ser difícil."
+      },
+      {
+        type: "heading",
+        value: "Opción 3: La Alternativa Privada (Blvck Sheep)"
+      },
+      {
+        type: "paragraph",
+        value: "Tu tiempo de vacaciones es tu activo más valioso. Para aquellos que quieren evitar el mareo de las curvas de Patzún y los horarios estrictos de las camionetas compartidas, reservar un traslado privado cambia todo el tono de tu día de viaje. En Blvck Sheep, nuestras rutas de tránsito privado evitan Patzún por completo. En su lugar, tomamos la ruta de Tecpán."
+      },
+      {
+        type: "paragraph",
+        value: "Tecpán está ubicado en las carreteras principales de Guatemala, la CA-1 (Carretera Interamericana). Si bien la distancia total es ligeramente más larga que el atajo de Patzún, esta carretera ofrece mucho más espacio para respirar. En lugar de navegar por pasos de montaña estrechos de un solo carril, la CA-1 cuenta con dos carriles anchos en cada dirección y condiciones de carretera muy superiores, lo que hace que el viaje sea mucho más suave. Además, Tecpán resulta ser un célebre destino culinario, famoso por sus quesos artesanales, embutidos ahumados y asadores de carretera."
+      },
+      {
+        type: "paragraph",
+        value: "Aún más importante, esta ruta otorga acceso inmediato a las antiguas ruinas mayas kaqchikeles de Iximché; la entrada cuesta solo Q5 y, si tienes suerte, podrás presenciar una ceremonia maya tradicional mientras exploras las ruinas. Recomendamos encarecidamente este rápido desvío en tu camino hacia o desde el lago. Nuestros conductores privados pueden pausar tu viaje, permitiéndote explorar las ruinas y disfrutar de un auténtico almuerzo local antes de hacer el descenso final hacia el agua por la ruta de 'Las Trampas'. Este enfoque específico ofrece impresionantes vistas de gran altitud del lago y de los tres volcanes desde las montañas, antes de bajar serpenteando por San Andrés Semetabaj hasta Pana."
+      },
+      {
+        type: "cta",
+        value: "Asegura tu Traslado al Lago",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20reservar%20un%20shuttle%20de%20Antigua%20a%20Atitlán!"
+      },
+      {
+        type: "heading",
+        value: "Dónde Dejar tus Maletas"
+      },
+      {
+        type: "paragraph",
+        value: "Si bien Panajachel es el centro logístico principal, nuestros traslados privados ofrecen rutas directas a varios otros pueblos accesibles alrededor de Atitlán. El lago ofrece energías completamente diferentes dependiendo de qué orilla elijas. Si buscas espacios sociales de alta energía y un ambiente mochilero, dirígete a San Pedro La Laguna. Para una vibra 'hippie-chic' centrada en retiros de yoga y meditación, San Marcos es el lugar. Si tu prioridad es la auténtica cultura maya tz'utujil y el increíble arte textil, San Juan La Laguna es inigualable. Finalmente, para exclusividad absoluta, hoteles boutique de clase mundial y silencio, mira hacia Santa Catarina Palopó o Santa Cruz. Si requieres infraestructura estable, internet rápido y la conveniencia de un pueblo más grande, hacer de Panajachel tu campamento base es la decisión más inteligente."
+      },
+      {
+        type: "cta",
+        value: "Explora Nuestras Estadías Curadas en Atitlán",
+        link: "/hostels" 
+      }
+    ]
+  },
+  {
+    id: "antigua-to-lake-atitlan-guide",
+    title: "Road Guide: Traveling from Antigua to Lake Atitlán in 2026",
+    excerpt: "Everything you need to know about navigating Guatemala's most popular route. From surviving the chaotic 'chicken buses' to finding the perfect lakeside sanctuary.",
+    publishDate: "February 12, 2026",
+    readTime: "8 MIN READ",
+    heroImage: roadguideJournalImage.src, 
+    category: "Transit & Logistics",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "Making the 77-kilometer journey from the cobblestone streets of Antigua to the volcanic shores of Lake Atitlán is a rite of passage for anyone visiting Guatemala. However, this 2.5 to 3-hour drive through the highlands is not a simple straight line. Depending on your budget, your timeline, and your tolerance for dizzying mountain curves, there are three distinct ways to make this transit. After half a decade of navigating these exact roads, here is the unfiltered truth about how to get to the lake."
+      },
+      {
+        type: "heading",
+        value: "Option 1: The 'Chicken Bus' (Camioneta) Reality"
+      },
+      {
+        type: "paragraph",
+        value: "These brightly painted, souped-up former North American school buses are an iconic piece of the Guatemalan landscape. Traveling this way is incredibly cheap, but the true cost is your time and energy. It requires four separate transfers. You begin at the Antigua bus terminal (located behind the central market near Pollo Campero). You catch a bus heading to Chimaltenango (approx. 20 GTQ) and ask the 'ayudante' (the driver's assistant) to drop you off at the highway corner for Los Encuentros. From there, you flag down a bus heading toward Quiché or Xela, taking it to the Los Encuentros crossroads (10-20 GTQ). Next, you catch a bus dropping down into the Sololá department (5 GTQ), and finally, take your last bus descending into Panajachel. If you are catching a public boat, get off at the very first stop in Pana—it is a short walk down to Muelle Tzanjuyú."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The Brutal Truth:</strong> There is a famous local saying: <em>'Donde caben 3, caben 4'</em> (Where three fit, four fit). This perfectly sums up the camioneta experience. Drivers maximize profits by cramming as many people as physically possible into the seats and aisles. Your luggage will likely go on the roof, you will have zero personal space, and the drivers take the winding mountain curves at alarming speeds. We highly recommend taking a chicken bus for a short, 15-minute trip just for the cultural experience, but for a 3-hour transit with heavy bags? It is an extreme sport."
+      },
+      {
+        type: "heading",
+        value: "Option 2: The Shared Tourist Shuttle"
+      },
+      {
+        type: "paragraph",
+        value: "This is the standard backpacker choice. For about 125 to 150 GTQ ($16 - $20 USD), you book a seat in a 15-passenger van (Toyota Hiace or Nissan Urvan). They leave at specific, scheduled times daily. Depending on the season and traffic in Antigua, they will either pick you up at your hotel, or require you to meet at central hubs like Café Condesa at Central Park or popular hostels like Bloom."
+      },
+      {
+        type: "paragraph",
+        value: "<strong>The Route:</strong> Shared shuttles almost exclusively take the Patzún route to save time. This road cuts through deep agricultural valleys, crosses a small river gorge, and drops down through San Andrés Semetabaj before arriving in Pana. It is highly efficient, but the roads are incredibly narrow and aggressively winding. If you are prone to motion sickness, this route can be tough."
+      },
+      {
+        type: "heading",
+        value: "Option 3: The Private Alternative (Blvck Sheep)"
+      },
+      {
+        type: "paragraph",
+        value: "Your vacation time is your most valuable asset. For those who want to avoid the dizziness of the Patzún curves and the strict schedules of shared vans, booking a private transfer changes the entire tone of your travel day. At Blvck Sheep, our private transit routes bypass Patzún entirely. Instead, we take the Tecpán route."
+      },
+      {
+        type: "paragraph",
+        value: "Tecpán is located on Guatemala's primary highways, the CA-1 (Pan-American Highway). While the total distance is slightly longer than the Patzún shortcut, this highway offers significantly more room to breathe. Instead of navigating tight, single-lane mountain passes, the CA-1 features two wide lanes in each direction and vastly superior road conditions, making for a much smoother ride. Furthermore, Tecpán happens to be a celebrated culinary destination, famous for its artisanal cheeses, smoked sausages, and highway steakhouses."
+      },
+      {
+        type: "paragraph",
+        value: "More importantly, this route grants immediate access to the ancient Kaqchikel Mayan ruins of Iximché, the entrance is only Q5, if you are lucky you can get to witness a traditional mayan ceremony while exploring the ruins. We highly recommend this quick detour on your way to or from the lake. Our private drivers can pause your transit, allowing you to explore the ruins and enjoy an authentic local lunch before making the final descent to the water via the 'Las Trampas' route. This specific approach offers breathtaking, high-altitude views of the lake, plus all three volcanos, from the mountains before winding down through San Andrés Semetabaj and into Pana."
+      },
+      {
+        type: "cta",
+        value: "Secure Your Transfer to the Lake",
+        link: "https://wa.me/50255116881?text=Hello!,%20I%20want%20to%20book%20a%20shuttle%20from%20Antigua%20to%20Atitlan!"
+      },
+      {
+        type: "heading",
+        value: "Where to Drop Your Bags"
+      },
+      {
+        type: "paragraph",
+        value: "While Panajachel is the main logistical hub, our private transfers offer direct routes to several other accessible villages around Atitlan. The lake offers entirely different energies depending on which shoreline you choose. If you want high-energy social spaces and the backpacker crowd, head to San Pedro La Laguna. For a 'hippie-chic' vibe centered on yoga and meditation retreats, San Marcos is the place. If authentic Tz'utujil Mayan culture and incredible textile arts are your priority, San Juan La Laguna is unmatched. Finally, for absolute exclusivity, world-class boutique hotels, and silence, look toward Santa Catarina Palopó or Santa Cruz. If you require stable infrastructure, fast internet, and the convenience of a larger town, making Panajachel your basecamp is the smartest move."
+      },
+      {
+        type: "cta",
+        value: "Explore Our Curated Lake Atitlán Stays",
+        link: "/hostels" 
       }
     ]
   },
