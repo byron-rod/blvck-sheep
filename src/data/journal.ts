@@ -26,6 +26,8 @@ import simJournalImage from "@/assets/images/sim-journal.png";
 import acatenangoJournalImage from "@/assets/images/fuego-volcano.png";
 import generalDetails from "@/assets/images/visit-guate.webp"
 import safetyGuideImage from "@/assets/images/guatesafe.webp";
+import antiguafood from "@/assets/images/antiguafood.webp";
+import chickenbus from "@/assets/images/buses.webp";
 
 
 
@@ -357,7 +359,7 @@ export const journalData: JournalPost[] = [
     excerpt: "¿Con hambre en la ciudad colonial? Te ahorramos la búsqueda con nuestra selección personal de los 10 mejores spots en Antigua Guatemala: desde ceviches legendarios hasta alta cocina volcánica.",
     publishDate: "16 de Abril, 2026",
     readTime: "6 MIN DE LECTURA",
-    heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
+    heroImage: antiguafood.src, 
     category: "Gastronomía y Cultura",
     language: "es",
     content: [
@@ -808,6 +810,162 @@ export const journalData: JournalPost[] = [
     ]
   },
   {
+    id: "guia-definitiva-transporte-guatemala",
+    title: "La Guía Definitiva de Transporte en Guatemala: Shuttles, Traslados Privados y Vuelos",
+    excerpt: "Moverse por la topografía de Guatemala puede ser un reto para los extranjeros. Descubre cómo desplazarte por el país, las diferencias entre servicios compartidos y privados, y la mejor forma de llegar a Tikal.",
+    publishDate: "16 de agosto de 2026",
+    readTime: "6 MIN DE LECTURA",
+    heroImage: chickenbus.src, 
+    category: "Guías de Viaje",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "Moverse por Guatemala es una aventura en sí misma. Entre su impresionante topografía montañosa, caminos sinuosos y carreteras rurales, planificar tu logística de transporte es vital para no perder tiempo de tus vacaciones. Si te preguntas cómo desplazarte por el país de la forma más segura y eficiente, aquí te explicamos todas tus opciones."
+      },
+      {
+        type: "heading",
+        value: "1. Los Famosos 'Chicken Buses' y el uso de Uber"
+      },
+      {
+        type: "paragraph",
+        value: "Para los mochileros que buscan una experiencia cultural (y muy económica), los coloridos 'Chicken Buses' son la opción número uno. Sin embargo, aunque son visualmente llamativos para unas fotos, el viaje no es cómodo ni seguro para tus pertenencias. Suelen ir extremadamente llenos, tu equipaje a menudo va atado al techo, y hacen múltiples paradas que extienden los tiempos de viaje drásticamente."
+      },
+      {
+        type: "paragraph",
+        value: "Por otro lado, si te preguntas sobre Uber en Guatemala, sí existe y funciona de maravilla, pero está limitado casi exclusivamente a la Ciudad de Guatemala y Antigua Guatemala. Para viajes largos entre destinos turísticos, Uber no es una opción viable."
+      },
+      {
+        type: "heading",
+        value: "2. Shuttles Compartidos vs. Traslados Privados"
+      },
+      {
+        type: "paragraph",
+        value: "Al viajar hacia el Lago de Atitlán, Lanquín o las playas del Pacífico, las dos opciones principales son los shuttles (minivans) o los servicios privados. ¿Cuál elegir?"
+      },
+      {
+        type: "paragraph",
+        value: "Rutas Compartidas (Shuttles): Son ideales para presupuestos ajustados. Sin embargo, debes saber que operan bajo horarios muy estrictos y puntos de encuentro específicos (el servicio puerta a puerta no siempre está garantizado). Como recogen a múltiples personas de diferentes hoteles, los tiempos de espera pueden ir de 10 a 90 minutos y, si hay retrasos en la ruta o conexiones perdidas, las agencias no se hacen responsables de tus vuelos."
+      },
+      {
+        type: "paragraph",
+        value: "Traslados Privados (La Experiencia Blvck Sheep): Si valoras tu tiempo, seguridad y comodidad absoluta, esta es tu opción. En Blvck Sheep ofrecemos viajes privados disponibles las 24 horas del día. Nosotros te recogemos exactamente en tu hotel o en la puerta del aeropuerto a la hora que tú decidas. Viajas en vehículos modernos, sin hacer paradas innecesarias para recoger a otros extraños, permitiéndote relajarte por completo y disfrutar del paisaje."
+      },
+      {
+        type: "cta",
+        value: "Reserva tu traslado privado premium con Blvck Sheep",
+        link: "https://www.blvcksheep.com/services" 
+      },
+      {
+        type: "heading",
+        value: "3. Ciudad de Guatemala a Flores (Petén): ¿Vuelo o Autobús?"
+      },
+      {
+        type: "paragraph",
+        value: "Para visitar las ruinas mayas de Tikal, debes llegar a Flores, Petén. La ruta desde la capital es larga (más de 400 km), por lo que tienes dos excelentes alternativas según tu presupuesto:"
+      },
+      {
+        type: "paragraph",
+        value: "En Avión (La forma más rápida): Los vuelos internos salen del Aeropuerto Internacional La Aurora (GUA) y aterrizan en el Aeropuerto Internacional Mundo Maya (FRS) en Flores. Aerolíneas como TAG Airlines y Avianca operan vuelos diarios que duran tan solo 1 hora. Los precios varían según la temporada, pero suelen rondar entre los $60 y $150 USD por trayecto."
+      },
+      {
+        type: "paragraph",
+        value: "Autobús Nocturno Tipo Cama (La forma eficiente): Empresas como Fuente del Norte ofrecen autobuses de primera clase con asientos reclinables tipo cama. El viaje dura de 9 a 10 horas y el boleto cuesta aproximadamente $40 a $45 USD - Q300 a Q400. Es la opción favorita de muchos viajeros astutos, ya que sales a las 9:00 PM de la capital, duermes cómodamente durante el trayecto, ahorras una noche de hotel, y llegas al amanecer directo para tomar tu tour a Tikal."
+      },
+      {
+        type: "heading",
+        value: "4. Estrategia de Rutas: ¿De Día o De Noche?"
+      },
+      {
+        type: "paragraph",
+        value: "El secreto mejor guardado de los locales es saber cuándo viajar de noche. Rutas cortas como Ciudad de Guatemala a Antigua (1 hora) o Antigua a Panajachel (2.5 horas) son perfectas para hacerlas de día y disfrutar las vistas. Sin embargo, trayectos largos y pesados, como ir de Atitlán o Antigua a Lanquín (Semuc Champey), son ideales para viajar de noche, que contamos con rutas compartidas para ambos puntos de partida. Con los traslados privados 24h de Blvck Sheep, podemos salir de noche, llegar a destino por la madrugada y evitar que pierdas todo un día de turismo sentado en un vehículo."
+      },
+      {
+        type: "cta",
+        value: "¿Necesitas ayuda con tu logística? Diseñemos tu itinerario a medida.",
+        link: "https://wa.me/50255116881?text=¡Hola!,%20¡Quiero%20ayuda%20para%20planificar%20mi%20viaje%20y%20transporte%20por%20Guatemala!"
+      }
+    ]
+  },
+  {
+    id: "guatemala-transportation-guide",
+    title: "The Ultimate Guide to Getting Around Guatemala: Shuttles, Private Transfers, and Flights",
+    excerpt: "Navigating Guatemala’s mountains and roads can be confusing for foreigners. Discover the best ways to get around, the difference between shared shuttles and private transfers, and the easiest route to Tikal.",
+    publishDate: "August 16, 2026",
+    readTime: "6 MIN READ",
+    heroImage: chickenbus.src, 
+    category: "Travel Guides",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "Getting around Guatemala is an adventure in itself. With its breathtaking mountainous topography, winding roads, and remote rural highways, planning your transportation logistics is vital so you don't waste precious vacation time. If you're wondering how to get around Guatemala safely and efficiently, here is the ultimate breakdown of your options."
+      },
+      {
+        type: "heading",
+        value: "1. The Famous 'Chicken Buses' and Uber in Guatemala"
+      },
+      {
+        type: "paragraph",
+        value: "For backpackers looking for a raw cultural experience (and the cheapest fare), the colorful 'Chicken Buses' are a bucket-list item. However, while they look great for photos, the ride is neither comfortable nor secure for your belongings. They are often overcrowded, your luggage is usually tied to the roof, and they make multiple random stops that drastically extend your travel time."
+      },
+      {
+        type: "paragraph",
+        value: "On the other hand, if you are wondering about Uber in Guatemala, it does exist and works wonderfully—but it is strictly limited to Guatemala City and Antigua. For long-distance travel between tourist hubs, Uber is not a viable option."
+      },
+      {
+        type: "heading",
+        value: "2. Shuttle vs Private Transfer Guatemala"
+      },
+      {
+        type: "paragraph",
+        value: "When traveling to Lake Atitlan, Lanquin, or the Pacific Coast, your two main options are shared shuttles (minivans) or private transfers. Which one should you choose?"
+      },
+      {
+        type: "paragraph",
+        value: "Shared Routes (Shuttles): Great for tight budgets. However, you must know that they operate on strict schedules and specific meeting points (door-to-door service is not always guaranteed). Because they pick up multiple people from different hotels, waiting times can range from 10 to 90 minutes. If there are delays on the road, travel agencies are not liable for missed flights or connections."
+      },
+      {
+        type: "paragraph",
+        value: "Private Transfers (The Blvck Sheep Way): If you value your time, safety, and absolute comfort, this is the way to go. At Blvck Sheep, we offer private rides available 24 hours a day. We pick you up exactly at your hotel or the airport gate at the time YOU decide. You travel in modern vehicles without making unnecessary stops to pick up strangers, allowing you to fully relax and enjoy the scenery."
+      },
+      {
+        type: "cta",
+        value: "Book your premium private transfer with Blvck Sheep",
+        link: "https://www.blvcksheep.com/services" 
+      },
+      {
+        type: "heading",
+        value: "3. Guatemala City to Flores (Peten): Flight or Overnight Bus?"
+      },
+      {
+        type: "paragraph",
+        value: "To visit the majestic Mayan ruins of Tikal, you need to reach Flores, Peten. The route from the capital is long (over 400 km), leaving you with two excellent alternatives depending on your budget:"
+      },
+      {
+        type: "paragraph",
+        value: "By Air (The Fastest Way): Domestic flights depart from La Aurora International Airport (GUA) and land at Mundo Maya International Airport (FRS) in Flores. Airlines like TAG Airlines and Avianca operate daily flights that take only 1 hour. Prices vary by season but generally range from $60 to $150 USD one-way."
+      },
+      {
+        type: "paragraph",
+        value: "Overnight Bus - Comfortable Sofa Beds (The Efficient Way): Companies like Fuente del Norte offer very comfortable buses with sofa style reclining seats. The journey takes 9 to 10 hours and tickets cost around $40 to $45 USD or around Q350. This is a favorite among smart travelers because you depart at 9:00 PM from the city, sleep comfortably on the way, save on a hotel night, and arrive at dawn ready for your morning Tikal tour."
+      },
+      {
+        type: "heading",
+        value: "4. Route Strategy: Day Travel vs. Night Travel"
+      },
+      {
+        type: "paragraph",
+        value: "The best-kept secret of local travelers is knowing when to travel at night. Short routes like Guatemala City to Antigua (1.5 hrs) or Antigua to Lake Atitlan (2.5 hrs) are perfect for daytime travel to enjoy the views. However, long and exhausting hauls, like traveling from Lake Atitlan or Antigua to Lanquin (Semuc Champey), are ideal for overnight rides, we offer shared options for both routes. With Blvck Sheep's 24/7 private transfers, we can depart from any destination during the evening, arrive at your destination in the early hours of the morning, and prevent you from losing a full day of tourism sitting in a car."
+      },
+      {
+        type: "cta",
+        value: "Need help with your logistics? Let us design your custom itinerary.",
+        link: "https://wa.me/50255116881?text=Hello!%20I%20want%20help%20planning%20my%20trip%20and%20transportation%20in%20Guatemala!"
+      }
+    ]
+  },
+  {
     id: "guia-antigua-lago-atitlan",
     title: "La Guía Definitiva: Viajar de Antigua al Lago de Atitlán en 2026",
     excerpt: "Todo lo que necesitas saber para navegar por la ruta más popular de Guatemala. Desde sobrevivir a las 'camionetas' hasta encontrar el santuario perfecto a orillas del lago.",
@@ -887,7 +1045,7 @@ export const journalData: JournalPost[] = [
     excerpt: "Navigating cobblestone streets to find new restaurants in Antigua is one of my favorite things to do. Here are 10 of my favorite spots to eat in this colonial city. From fancy dining to the best spots for a hangover cure, I've got you covered.",
     publishDate: "April 16, 2026",
     readTime: "6 MIN READ",
-    heroImage: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=2000&auto=format&fit=crop", 
+    heroImage: antiguafood.src, 
     category: "Food & Culture",
     language: "en",
     content: [
