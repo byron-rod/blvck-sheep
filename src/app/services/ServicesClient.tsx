@@ -530,13 +530,13 @@ export default function ServicesClient() {
               <div className="flex items-center gap-3 mb-4">
                 <CreditCard className="w-6 h-6 text-green-400/80" />
                 <h3 className="text-xl font-medium text-white">
-                  {activeLanguage === "en" ? "Payments & Cancellations" : "Pagos y Cancelaciones"}
+                  {activeLanguage === "en" ? "Payments, Changes & Cancellations" : "Pagos, Cambios y Cancelaciones"}
                 </h3>
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 {activeLanguage === "en"
-                  ? "All reservation payments are processed securely via Recurrente.com with Visa or Master Card. You must cancel or reschedule at least 24 hours before your departure time to qualify for a refund. Cancellations made within 24 hours of the trip are strictly non-refundable."
-                  : "Todos los pagos de reservaciones se procesan de forma segura a través de Recurrente.com con tarjeta Visa o Master Card. Debes cancelar o reprogramar con al menos 24 horas de anticipación a tu salida para aplicar a un reembolso. Las cancelaciones hechas con menos de 24 horas son estrictamente no reembolsables."}
+                  ? "All reservation payments are processed securely via Recurrente.com with Visa or Master Card. You must cancel, change departure times or dates at least 24 hours before your scheduled departure time to qualify for a refund or for us to accomodate a schedule change. Cancellations made within 24 hours of the trip are strictly non-refundable."
+                  : "Todos los pagos de reservaciones se procesan de forma segura a través de Recurrente.com con tarjeta Visa o Master Card. Debes cancelar, cambiar horarios de salida o fechas con al menos 24 horas de anticipación a tu salida para aplicar a un reembolso o para que podamos acomodar un cambio de horario. Las cancelaciones hechas con menos de 24 horas son estrictamente no reembolsables."}
               </p>
             </div>
 
@@ -614,8 +614,8 @@ export default function ServicesClient() {
                 </h3>
                 <p className="text-sm text-zinc-400 font-light leading-relaxed mb-6">
                   {activeLanguage === "en"
-                    ? "Don't waste time hunting for Wi-Fi. We provide ready-to-use local SIM cards upon boarding so you stay connected."
-                    : "No pierdas tiempo buscando Wi-Fi. Proveemos tarjetas SIM o eSIM locales listas para usar al abordar para que te mantengas conectado."}
+                    ? "Don't waste time hunting for Wi-Fi. We provide ready-to-use local SIM cards upon boarding so you stay connected. Preorder this service before your arrival."
+                    : "No pierdas tiempo buscando Wi-Fi. Proveemos tarjetas SIM o eSIM locales listas para usar al abordar para que te mantengas conectado. Pre-ordena este servicio antes de tu llegada."}
                 </p>
               </div>
               <div className="mt-auto pt-4 border-t border-zinc-800/50">

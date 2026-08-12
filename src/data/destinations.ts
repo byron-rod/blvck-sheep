@@ -360,8 +360,8 @@ export const destinationsData: DestinationDetail[] = [
       {
         heading: "Quick Facts & Logistics",
         content: "Tikal is the most important archeological site of the Mayan empire. Travel Time: While overland transit is possible with connecting trips in Lanquin or Rio Dulce, a direct 45-minute flight from Guatemala City to Mundo Maya International Airport is highly recommended for optimal comfort. Blvck Sheep provides private and shared transfers from Flores to Tikal, El Remate, or Crater Azul, as well as curated local tour coordination.",
-        actionText: "Plan your Tikal Expedition",
-        actionLink: "https://wa.me/50255116881?text=Hello!,%20I%20am%20interested%20in%20planning%20a%20trip%20to%20Tikal!",
+        actionText: "Read our Transportation Guide", 
+        actionLink: "/journal/guatemala-transportation-guide",
       },
       {
         heading: "Curated Highlights",
@@ -394,8 +394,8 @@ export const destinationsData: DestinationDetail[] = [
       {
         heading: "Datos Rápidos y Logística",
         content: "Tikal es el sitio arqueológico más importante del imperio Maya. Tiempo de Viaje: Aunque el tránsito terrestre es posible con paradas en Lanquín o Río Dulce, recomendamos encarecidamente un vuelo directo de 45 minutos desde la Ciudad de Guatemala al Aeropuerto Internacional Mundo Maya para una comodidad óptima. Blvck Sheep ofrece traslados privados y compartidos desde Flores hacia Tikal, El Remate, o Cráter Azul, así como coordinación de tours locales curados.",
-        actionText: "Planea tu Expedición a Tikal",
-        actionLink: "https://wa.me/50255116881?text=¡Hola!,%20Me%20interesa%20planear%20un%20viaje%20a%20Tikal!",
+        actionText: "Guía de Transporte en Guatemala", 
+        actionLink: "/journal/guatemala-transportation-guide",
       },
       {
         heading: "Experiencias Curadas",
