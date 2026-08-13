@@ -146,7 +146,7 @@ export default function RenathaBlondePage() {
             </div>
             <h3 className="text-2xl md:text-3xl font-medium text-zinc-100 mb-4 tracking-tight">Descuento Especial</h3>
             <p className="text-zinc-400 leading-relaxed text-lg font-light">
-              Un precio preferencial en tu primer traslado. Viaja con comodidad y seguridad desde el momento en que llegas.
+              Un precio especial en tu primer traslado. Viaja con comodidad y seguridad desde el momento en que llegas.
             </p>
           </motion.div>
 
@@ -163,7 +163,7 @@ export default function RenathaBlondePage() {
             </div>
             <h3 className="text-2xl md:text-3xl font-medium text-zinc-100 mb-4 tracking-tight">Diseño de Itinerario</h3>
             <p className="text-zinc-400 leading-relaxed text-lg font-light">
-              Te ayudamos a crear tu itinerario personalizado 1:1 con nuestro equipo para que disfrutes al máximo tu aventura.
+              Te ayudamos a crear tu itinerario personalizado con nuestro equipo para que disfrutes al máximo tu aventura.
             </p>
           </motion.div>
         </div>
@@ -200,7 +200,7 @@ export default function RenathaBlondePage() {
               <div className="bg-black/60 border border-zinc-800 rounded-xl p-4 md:p-5 space-y-4 text-sm text-zinc-300">
                 <p className="flex items-start gap-3">
                   <span className="text-amber-400 mt-0.5">✓</span> 
-                  <span>Reservar para viajar entre <strong className="text-white">Septiembre y Noviembre</strong>.</span>
+                  <span>Reservar para viajar entre <strong className="text-white">Septiembre y Octubre</strong>.</span>
                 </p>
                 <div className="flex items-start gap-3 border-t border-zinc-800 pt-4">
                   <span className="text-amber-400 mt-0.5">✓</span> 
