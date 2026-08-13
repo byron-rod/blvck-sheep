@@ -1,5 +1,6 @@
 "use client";
 
+import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import { Video, Globe, Ticket, Sparkles, ArrowRight, Gift } from "lucide-react";
 import { FaInstagram, FaTiktok, FaFacebook, FaYoutube } from "react-icons/fa";
@@ -7,6 +8,9 @@ import { FaInstagram, FaTiktok, FaFacebook, FaYoutube } from "react-icons/fa";
 import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 
 export default function RenathaBlondePage() {
+  // Muestra la página 404 de tu sitio
+  notFound();
+
   return (
     <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-zinc-800">
       {/* Hero Section */}
