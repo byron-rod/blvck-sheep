@@ -193,7 +193,7 @@ export default function RenathaBlondePage() {
                 Itinerario Completo Gratis
               </h3>
               <p className="text-zinc-300 font-light leading-relaxed mb-6">
-                Sorteamos los tres traslados para la ruta icónica para grupos de 1 a 4 personas: <strong className="text-white font-medium">Ciudad de Guatemala ➔ Antigua ➔ Panajachel ➔ Ciudad de Guatemala</strong>. Ampliaremos mas detalles en el instagram de Blvck Sheep.
+                Sorteamos los tres traslados, para grupos de 1 a 4 personas, de la ruta icónica : <strong className="text-white font-medium">Ciudad de Guatemala ➔ Antigua ➔ Panajachel ➔ Ciudad de Guatemala</strong>. Ampliaremos mas detalles en el instagram de Blvck Sheep.
               </p>
 
               {/* Requirements */}
