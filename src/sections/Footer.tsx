@@ -85,6 +85,9 @@ export default function Footer() {
                   <Link href="/terms-conditions" className="text-white/50 text-sm hover:text-white transition-colors">
                     {isEs ? "Términos y Condiciones" : "Terms & Conditions"}
                   </Link>
+                  <Link href="/privacy" className="text-white/50 text-sm hover:text-white transition-colors">
+                    {isEs ? "Política de Privacidad" : "Privacy Policy"}
+                  </Link>
                 </div>
               </div>
             </nav>
