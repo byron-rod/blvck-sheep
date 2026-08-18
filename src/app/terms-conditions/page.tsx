@@ -72,10 +72,10 @@ export default function TermsConditions() {
               : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas por retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
           </li>
           <li>
-            <strong>{activeLanguage === "en" ? "Cancellations:" : "Cancelaciones:"}</strong>{" "}
+            <strong>{activeLanguage === "en" ? "Cancellations / changes:" : "Cancelaciones / Cambios:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>You must cancel or reschedule at least <strong>24 hours</strong> before departure for a refund.</>
-              : <>Debes cancelar o reprogramar con al menos <strong>24 horas</strong> de anticipación a la salida para obtener un reembolso.</>}
+              ? <>You must cancel, change or reschedule at least <strong>24 hours</strong> before departure for a refund or to be able to accomodate your change.</>
+              : <>Debes cancelar, cambiar o reprogramar con al menos <strong>24 horas</strong> de anticipación a la salida para obtener un reembolso o para poder acomodar tu cambio.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Payments:" : "Pagos:"}</strong>{" "}

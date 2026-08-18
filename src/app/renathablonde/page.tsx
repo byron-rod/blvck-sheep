@@ -204,7 +204,7 @@ export default function RenathaBlondePage() {
               <div className="bg-black/60 border border-zinc-800 rounded-xl p-4 md:p-5 space-y-4 text-sm text-zinc-300">
                 <p className="flex items-start gap-3">
                   <span className="text-amber-400 mt-0.5">✓</span> 
-                  <span>Reservar para viajar entre <strong className="text-white">Septiembre y Octubre</strong>.</span>
+                  <span>Reservar para viajar entre <strong className="text-white">Septiembre (01/09/2026) y Octubre (31/10/2026)</strong>.</span>
                 </p>
                 <div className="flex items-start gap-3 border-t border-zinc-800 pt-4">
                   <span className="text-amber-400 mt-0.5">✓</span> 
@@ -247,7 +247,7 @@ export default function RenathaBlondePage() {
           className="flex flex-col items-center"
         >
           <a
-            href="https://wa.me/50255116881?text=%C2%A1Hola!%20Quiero%20la%20promo%20de%20Renatha%20Blonde%20Codigo:%20RENATHA-AG26%20para%20mi%20viaje%20a%20Guatemala%20y%20quiero%20entrar%20al%20sorteo%20del%20Itinerario%20Completo.%20%F0%9F%90%91%E2%9C%A8"
+            href="https://wa.me/50255116881?text=%C2%A1Hola!%20Quiero%20la%20promo%20de%20Renatha%20Blonde%20Codigo:%20RENATHA-08/26%20para%20mi%20viaje%20a%20Guatemala%20y%20quiero%20entrar%20al%20sorteo%20del%20Itinerario%20Completo."
             target="_blank"
             rel="noopener noreferrer"
             className="group relative inline-flex items-center justify-center gap-3 px-8 md:px-10 py-5 bg-white text-black font-semibold text-lg rounded-full overflow-hidden hover:bg-zinc-200 transition-all duration-300 shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] hover:-translate-y-1"
