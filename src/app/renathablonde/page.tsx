@@ -1,6 +1,6 @@
 "use client";
 
-import { notFound } from "next/navigation";
+// import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
 import { Video, Globe, Ticket, Sparkles, ArrowRight, Gift } from "lucide-react";
 import { FaInstagram, FaTiktok, FaFacebook, FaYoutube } from "react-icons/fa";
@@ -9,7 +9,7 @@ import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
 
 export default function RenathaBlondePage() {
   // Muestra la página 404 de tu sitio
-  notFound();
+  // notFound();
 
   return (
     <div className="min-h-screen bg-black text-zinc-100 font-sans selection:bg-zinc-800">
@@ -232,7 +232,7 @@ export default function RenathaBlondePage() {
             </div>
           </div>
           <div className="mt-8 pt-5 border-t border-zinc-900/80 text-xs md:text-sm text-amber-400/80 font-medium text-center md:text-left">
-            Anuncio del ganador: Domingo 30 de Agosto
+            Anuncio del ganador: Lunes 31 de Agosto
           </div>
         </motion.div>
       </section>
