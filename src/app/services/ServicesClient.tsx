@@ -458,8 +458,8 @@ export default function ServicesClient() {
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 {activeLanguage === "en"
-                  ? "Standard allowance for ALL trips is 1 large (23kg) / medium bag (10kg) + 1 personal item per person. If you are bringing extra bags or oversized items, you MUST notify us in advance. Undeclared extra luggage may not fit in your assigned vehicle and may result in additional fees to provide a larger vehicle if available."
-                  : "El límite estándar para TODOS los viajes es 1 maleta grande (23kg) / mediana (10kg) + 1 artículo personal por persona. Si traes maletas extra o equipaje muy grande, DEBES notificarnos con anticipación. El equipaje no declarado puede no caber en el vehículo asignado y puede resultar en tarifas adicionales para proporcionar un vehículo más grande si está disponible."}
+                  ? "Standard allowance for ALL trips is 1 large (23kg) or medium bag (10kg) + 1 personal item per person. If you are bringing extra bags or oversized items, you MUST notify us in advance. Undeclared extra luggage may not fit in your assigned vehicle and may result in additional fees to provide a larger vehicle if available."
+                  : "El límite estándar para TODOS los viajes es 1 maleta grande (23kg) o mediana (10kg) + 1 artículo personal por persona. Si traes maletas extra o equipaje muy grande, DEBES notificarnos con anticipación. El equipaje no declarado puede no caber en el vehículo asignado y puede resultar en tarifas adicionales para proporcionar un vehículo más grande si está disponible."}
               </p>
             </div>
 
