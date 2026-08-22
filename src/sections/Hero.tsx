@@ -28,7 +28,7 @@ export default function Hero({
   setActiveLanguage: (lang: "en" | "es") => void;
 }) {
   const whatsappLink =
-    "https://wa.me/50255116881?text=Hola!,%20me%20gustaria%20consultar%20sobre%20los%20traslados.";
+    "https://wa.me/50255116881";
 
   return (
     <section className="py-24 px-5 md:px-0">
