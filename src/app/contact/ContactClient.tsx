@@ -8,6 +8,7 @@ import {
   FaEnvelope,
   FaInstagram,
   FaFacebook,
+  FaTiktok,
 } from "react-icons/fa";
 
 export default function ContactClient() {
@@ -15,6 +16,7 @@ export default function ContactClient() {
   const emailLink = "mailto:connect@blvck-sheep.com";
   const instagramLink = "https://www.instagram.com/blvcksheepgt";
   const facebookLink = "https://www.facebook.com/blvcksheepgt";
+  const tiktokLink = "https://www.tiktok.com/@blvcksheepgt";
 
   // Function to handle conversion tracking
   const handleWhatsAppClick = () => {
@@ -39,6 +41,11 @@ export default function ContactClient() {
         <p className="text-start text-lg md:text-xl lg:text-2xl text-white/50 mt-4 md:mt-6 max-w-xl lg:max-w-3xl">
           For all your transportation needs in Guatemala, we are here to help.
           Reach out to us via WhatsApp, email, or social media.
+        </p>
+        <p className="text-start text-lg md:text-xl lg:text-2xl text-white/50 mt-4 md:mt-6 max-w-xl lg:max-w-3xl">
+          Para todas tus necesidades de transporte en Guatemala, estamos aquí para
+          ayudarte. Comunícate con nosotros a través de WhatsApp, correo
+          electrónico o redes sociales
         </p>
         <div className="flex gap-4 mt-8">
           {/* WhatsApp */}
@@ -87,6 +94,18 @@ export default function ContactClient() {
               aria-label="Facebook page for Blvck Sheep"
             >
               <FaFacebook size={24} aria-hidden="true" focusable="false" />
+            </Link>
+          </Button>
+
+          {/* Tik Tok */}
+          <Button variant="secondary" className="mt-8 font-bold flex text-center justify-center">
+            <Link
+              href={tiktokLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Tiktok profile for Blvck Sheep"
+            >
+              <FaTiktok size={24} aria-hidden="true" focusable="false" />
             </Link>
           </Button>
         </div>
