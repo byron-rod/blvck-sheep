@@ -535,8 +535,8 @@ export default function ServicesClient() {
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed">
                 {activeLanguage === "en"
-                  ? "All reservation payments are processed securely via Recurrente.com with Visa or Master Card. You must cancel, change departure times or dates at least 24 hours before your scheduled departure time to qualify for a refund or for us to accomodate a schedule change. Cancellations made within 24 hours of the trip are strictly non-refundable."
-                  : "Todos los pagos de reservaciones se procesan de forma segura a través de Recurrente.com con tarjeta Visa o Master Card. Debes cancelar, cambiar horarios de salida o fechas con al menos 24 horas de anticipación a tu salida para aplicar a un reembolso o para que podamos acomodar un cambio de horario. Las cancelaciones hechas con menos de 24 horas son estrictamente no reembolsables."}
+                  ? "All reservation payments are processed securely via Recurrente.com with Visa or Master Card. You must cancel, change departure times or dates at least 24 hours before your scheduled departure time to qualify for a refund or for us to accomodate a schedule change. Cancellations made within 24 hours of the trip are strictly non-refundable. Last-minute schedule changes are not always possible as they may affect the logistics of other passengers."  
+                  : "Todos los pagos de reservaciones se procesan de forma segura a través de Recurrente.com con tarjeta Visa o Master Card. Debes cancelar, cambiar horarios de salida o fechas con al menos 24 horas de anticipación a tu salida para aplicar a un reembolso o para que podamos acomodar un cambio de horario. Las cancelaciones hechas con menos de 24 horas son estrictamente no reembolsables. Los cambios en horarios de ultima hora no siempre son posibles ya que pueden afectar la logística de otros pasajeros."}
               </p>
             </div>
 
