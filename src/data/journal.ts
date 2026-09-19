@@ -28,7 +28,7 @@ import generalDetails from "@/assets/images/visit-guate.webp"
 import safetyGuideImage from "@/assets/images/guatesafe.webp";
 import antiguafood from "@/assets/images/antiguafood.webp";
 import chickenbus from "@/assets/images/buses.webp";
-
+import roadlogistics from "@/assets/images/tiempo-rutas.webp";
 
 
 export const journalData: JournalPost[] = [
@@ -270,6 +270,118 @@ export const journalData: JournalPost[] = [
         type: "cta",
         value: "Plan a safe trip in Guatemala with our 24/7 Private Transfers",
         link: "https://wa.me/50255116881?text=Hello!%20I%20would%20like%20information%20about%20safe%20private%20transfers%20in%20Guatemala!"
+      }
+    ]
+  },
+  {
+    id: "distancias-tiempos-viaje-guatemala",
+    title: "El Mapa de Rutas: Distancias, Tiempos y Logística en Guatemala",
+    excerpt: "100 kilómetros en Guatemala no son lo mismo que en tu país. Conoce las distancias reales, tiempos estimados y qué rutas evitar durante horas pico o de noche.",
+    publishDate: "20 de Septiembre, 2026",
+    readTime: "8 MIN DE LECTURA",
+    heroImage: roadlogistics.src,
+    category: "Guías Exclusivas",
+    language: "es",
+    content: [
+      {
+        type: "paragraph",
+        value: "Al planear un viaje a Guatemala, el error más común es confiar ciegamente en el tiempo que marca el GPS. Debido a la topografía montañosa, la altitud y las carreteras de un solo carril, las distancias no se miden en kilómetros, sino en tiempo. Además, dependiendo de la ruta, viajar de noche puede ser la mejor estrategia para evitar tráfico o una mala idea por seguridad. Aquí tienes la guía definitiva de distancias y logística entre nuestros destinos principales."
+      },
+      {
+        type: "heading",
+        value: "Desde Ciudad de Guatemala (Aeropuerto)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Hacia Antigua Guatemala:</strong> 45 km | 1 a 2 horas (dependiendo del tráfico).<br><em>Viaje nocturno:</em> Muy seguro y rápido. Ideal si tu vuelo llega tarde en la noche.<br><em>Qué evitar:</em> Horas pico (4:00 PM a 6:00 PM de lunes a viernes, y sábados a las 11:00 AM). Esto puede sumar hasta 2 horas extra de tráfico.<br><br>• <strong>Hacia Panajachel (Lago de Atitlán):</strong> 160 km | 3.5 a 4.5 horas.<br><em>Viaje nocturno:</em> Únicamente posible en traslado privado. Recomendado para evitar el tráfico denso de la Carretera Interamericana.<br><em>Qué evitar:</em> Las mismas horas pico de salida que hacia Antigua.<br><br>• <strong>Hacia El Paredón:</strong> 140 km | 2.5 a 3 horas.<br><em>Viaje nocturno:</em> Posible y rápido, la carretera hacia la costa es bastante plana.<br><em>Qué evitar:</em> Horas pico para salir de la ciudad.<br><br>• <strong>Hacia Lanquín (Semuc Champey):</strong> 280 km | 8+ horas.<br><em>Viaje nocturno:</em> Es lo más recomendado. Esta ruta es muy larga y es mejor aprovechar para descansar en el camino que perder un día entero en ruta.<br><br>• <strong>Hacia Flores (Petén):</strong> 500 km | 12+ horas.<br><em>Viaje nocturno:</em> Altamente popular. Muchos viajan en autobuses tipo Pullman con sillones reclinables (tipo cama) durante la noche para ahorrar un día de itinerario y una noche de hotel."
+      },
+      {
+        type: "heading",
+        value: "Desde Antigua Guatemala"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Hacia Ciudad de Guatemala:</strong> 40 km | 1 a 2 horas.<br><em>Viaje nocturno:</em> Totalmente recomendado, fluido y seguro.<br><em>Qué evitar:</em> Entradas a la ciudad entre las 6:00 AM y las 8:00 AM.<br><br>• <strong>Hacia Panajachel:</strong> 90 km | 2.5 a 3 horas.<br><em>Viaje nocturno:</em> Seguro. El último servicio compartido sale a las 4:00 PM; en horarios más tarde sería únicamente en transporte privado.<br><br>• <strong>Hacia El Paredón:</strong> 110 km | 2 a 2.5 horas.<br><em>Viaje nocturno:</em> Viable en privado, las carreteras se vacían.<br><br>• <strong>Hacia Lanquín:</strong> 310 km | 8 a 9 horas.<br><em>Viaje nocturno:</em> Preferible salir en ruta nocturna por ser un viaje largo.<br><br>• <strong>Hacia Flores (Petén):</strong> 520 km | 9 a 11 horas.<br><em>Viaje nocturno:</em> La mejor opción es viajar a la Ciudad de Guatemala por la tarde/noche y tomar un bus nocturno o vuelo temprano desde ahí."
+      },
+      {
+        type: "heading",
+        value: "Desde el Lago de Atitlán (Panajachel / San Pedro)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Panajachel hacia Antigua:</strong> 90 km | 2.5 a 3 horas.<br><em>Viaje nocturno:</em> Muy seguro en traslado privado. La última hora de salida en compartido es a las 4:00 PM.<br><br>• <strong>Panajachel hacia El Paredón:</strong> 180 km | 4+ horas.<br><em>Viaje nocturno:</em> Es posible y recomendado únicamente desde Panajachel (el último viaje compartido sale a la 1:00 PM).<br><em>Qué evitar:</em> Salir de San Pedro La Laguna de noche, la ruta de montaña puede ser peligrosa.<br><br>• <strong>Panajachel hacia Ciudad de Guatemala:</strong> 165 km | 3.5 a 4.5 horas.<br><em>Viaje nocturno:</em> Seguro e ideal si tienes un vuelo de madrugada.<br><br>• <strong>San Pedro La Laguna hacia Lanquín:</strong> 360 km | 10 a 12 horas.<br><em>Viaje nocturno:</em> Debido a la distancia extrema, la mejor opción es tomar un viaje nocturno para no perder el día completo."
+      },
+      {
+        type: "heading",
+        value: "Desde El Paredón"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Hacia Antigua:</strong> 110 km | 2 a 2.5 horas.<br><em>Viaje nocturno:</em> Fácil y recomendable para evitar tráfico.<br><br>• <strong>Hacia Panajachel:</strong> 140 km | 3.5 a 4 horas.<br><em>Viaje nocturno:</em> Si viajas a Atitlán, lo mejor es dirigirse únicamente a Panajachel.<br><em>Qué evitar:</em> La ruta hacia San Pedro de noche puede ser muy peligrosa.<br><br>• <strong>Hacia Ciudad de Guatemala:</strong> 130 km | 2.5 a 3 horas.<br><em>Viaje nocturno:</em> Es una excelente ruta para viajar al atardecer o de noche.<br><em>Qué evitar:</em> Entrar a la ciudad en horas pico (6:00 AM a 8:00 AM y 4:00 PM a 7:00 PM)."
+      },
+      {
+        type: "heading",
+        value: "Desde Lanquín (Semuc Champey)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Hacia Flores, Antigua, San Pedro La Laguna o Ciudad de Guatemala.</strong><br><br><strong>Logística crucial:</strong> Por estar inmerso en la selva montañosa, las salidas desde Lanquín hacia cualquier destino son <strong>exclusivamente matutinas</strong>. No hay proveedores de servicios compartidos que operen rutas nocturnas desde aquí; los viajes suelen salir entre las 6:00 AM y las 8:00 AM. Toma esto en cuenta: el día que abandones Semuc Champey se considera regularmente perdido en tránsito al ser un trayecto muy largo, por lo que no podrás agendar actividades esa mañana."
+      }
+    ]
+  },
+  {
+    id: "guatemala-travel-distances-times",
+    title: "The Route Map: Distances, Times, and Logistics in Guatemala",
+    excerpt: "100 kilometers in Guatemala is not the same as in your country. Learn the real distances, estimated times, and what routes to avoid during rush hours or at night.",
+    publishDate: "September 20, 2026",
+    readTime: "8 MIN READ",
+    heroImage: roadlogistics.src, 
+    category: "Insider Guides",
+    language: "en",
+    content: [
+      {
+        type: "paragraph",
+        value: "When planning a trip to Guatemala, the most common mistake is trusting GPS times blindly. Due to the mountainous topography, altitude, and single-lane highways, distances are not measured in kilometers, but in time. Additionally, depending on the route, traveling at night can be the best strategy to avoid traffic or a bad idea due to safety. Here is the ultimate guide to distances and logistics between our main destinations."
+      },
+      {
+        type: "heading",
+        value: "From Guatemala City (Airport)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>To Antigua Guatemala:</strong> 45 km (28 miles) | 1 to 2 hours (traffic dependent).<br><em>Night travel:</em> Very safe and fast. Ideal if your flight arrives late at night.<br><em>What to avoid:</em> Rush hours (4:00 PM to 6:00 PM Monday-Friday, and Saturdays at 11:00 AM). This can add up to 2 extra hours in traffic.<br><br>• <strong>To Panajachel (Lake Atitlán):</strong> 160 km (99 miles) | 3.5 to 4.5 hours.<br><em>Night travel:</em> Only possible via private transfer. Recommended to avoid heavy traffic on the Inter-American Highway.<br><em>What to avoid:</em> The same city departure rush hours as going to Antigua.<br><br>• <strong>To El Paredón:</strong> 140 km (87 miles) | 2.5 to 3 hours.<br><em>Night travel:</em> Possible and fast, the road to the coast is relatively flat.<br><em>What to avoid:</em> Rush hours when exiting the city.<br><br>• <strong>To Lanquín (Semuc Champey):</strong> 280 km (173 miles) | 8+ hours.<br><em>Night travel:</em> Highly recommended. This route is very long, and it is better to rest on the road than to lose an entire daytime itinerary.<br><br>• <strong>To Flores (Petén):</strong> 500 km (310 miles) | 12+ hours.<br><em>Night travel:</em> Highly popular. Many choose overnight luxury Pullman buses with reclining bed-style seats to save a day of travel and a night's hotel stay."
+      },
+      {
+        type: "heading",
+        value: "From Antigua Guatemala"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>To Guatemala City:</strong> 40 km (25 miles) | 1 to 2 hours.<br><em>Night travel:</em> Highly recommended, smooth and safe.<br><em>What to avoid:</em> Entering the city during the morning rush hour (6:00 AM to 8:00 AM).<br><br>• <strong>To Panajachel:</strong> 90 km (56 miles) | 2.5 to 3 hours.<br><em>Night travel:</em> Safe. The latest shared shuttle leaves at 4:00 PM; anything later must be a private transfer.<br><br>• <strong>To El Paredón:</strong> 110 km (68 miles) | 2 to 2.5 hours.<br><em>Night travel:</em> Viable privately, the roads empty out.<br><br>• <strong>To Lanquín:</strong> 310 km (192 miles) | 8 to 9 hours.<br><em>Night travel:</em> Preferable to take a night route due to the long distance.<br><br>• <strong>To Flores (Petén):</strong> 520 km (323 miles) | 9 to 11 hours.<br><em>Night travel:</em> The best route is to travel to Guatemala City in the late afternoon/evening and catch an overnight bus or early flight from there."
+      },
+      {
+        type: "heading",
+        value: "From Lake Atitlán (Panajachel / San Pedro)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>Panajachel to Antigua:</strong> 90 km (56 miles) | 2.5 to 3 hours.<br><em>Night travel:</em> Very safe via private transfer. The latest shared departure is at 4:00 PM.<br><br>• <strong>Panajachel to El Paredón:</strong> 180 km (111 miles) | 4+ hours.<br><em>Night travel:</em> Possible and recommended only from Panajachel (the latest shared shuttle leaves at 1:00 PM).<br><em>What to avoid:</em> Leaving from San Pedro La Laguna at night; the mountain route can be dangerous.<br><br>• <strong>Panajachel to Guatemala City:</strong> 165 km (102 miles) | 3.5 to 4.5 hours.<br><em>Night travel:</em> Safe and ideal if you have a red-eye flight to catch.<br><br>• <strong>San Pedro La Laguna to Lanquín:</strong> 360 km (223 miles) | 10 to 12 hours.<br><em>Night travel:</em> Due to the extreme distance, the best option is taking a night trip so you don't lose the whole day."
+      },
+      {
+        type: "heading",
+        value: "From El Paredón"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>To Antigua:</strong> 110 km (68 miles) | 2 to 2.5 hours.<br><em>Night travel:</em> Easy and highly recommended to avoid traffic.<br><br>• <strong>To Panajachel:</strong> 140 km (86 miles) | 3.5 to 4 hours.<br><em>Night travel:</em> If traveling to Atitlán, it is best to head exclusively to Panajachel.<br><em>What to avoid:</em> The route to San Pedro at night can be dangerous.<br><br>• <strong>To Guatemala City:</strong> 130 km (80 miles) | 2.5 to 3 hours.<br><em>Night travel:</em> An excellent route to travel at sunset or night.<br><em>What to avoid:</em> Entering the city during rush hours (6:00 AM to 8:00 AM and 4:00 PM to 7:00 PM)."
+      },
+      {
+        type: "heading",
+        value: "From Lanquín (Semuc Champey)"
+      },
+      {
+        type: "paragraph",
+        value: "• <strong>To Flores, Antigua, San Pedro La Laguna, or Guatemala City.</strong><br><br><strong>Crucial logistics:</strong> Because it is deep in the mountainous jungle, departures from Lanquín to ANY destination are <strong>strictly morning-only</strong>. There are no shared service providers that operate night routes from here; trips usually leave between 6:00 AM and 8:00 AM. Keep this in mind: the day you leave Semuc Champey is regularly considered a lost day in transit because it's a very long journey, meaning you won't be able to schedule any morning activities."
       }
     ]
   },
