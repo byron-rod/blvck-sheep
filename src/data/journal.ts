@@ -22,9 +22,9 @@ export type JournalPost = {
 
 import decodingJournalImage from "@/assets/images/decoding-journal.png";
 import roadguideJournalImage from "@/assets/images/roadguide-journal.png";
-import simJournalImage from "@/assets/images/sim-journal.png";
+import simJournalImage from "@/assets/images/sim-journal-icecream.webp";
 import acatenangoJournalImage from "@/assets/images/fuego-volcano.png";
-import generalDetails from "@/assets/images/visit-guate.webp"
+import generalDetails from "@/assets/images/visit-guate-tikal.webp"
 import safetyGuideImage from "@/assets/images/guatesafe.webp";
 import antiguafood from "@/assets/images/antiguafood.webp";
 import chickenbus from "@/assets/images/buses.webp";
