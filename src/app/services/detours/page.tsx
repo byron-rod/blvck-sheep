@@ -12,6 +12,8 @@ import {
   Droplets,
   ShoppingBag,
   PawPrint,
+  Store,
+  Coffee,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
@@ -122,6 +124,26 @@ export default function ExpressDetoursPage() {
           ? "Relax in natural hot springs surrounded by a lush cloud forest. The perfect restorative break during a long transit day."
           : "Relájate en aguas termales naturales rodeadas de un exuberante bosque nuboso. El descanso perfecto durante un largo día de tránsito.",
     },
+    {
+      id: "centros-comerciales",
+      icon: Store,
+      title: activeLanguage === "en" ? "Shopping Centers" : "Centros Comerciales",
+      tags: activeLanguage === "en" ? "Shopping & Dining" : "Compras y Gastronomía",
+      desc:
+        activeLanguage === "en"
+          ? "Explore Guatemala City's finest lifestyle centers including Ciudad Cayalá, Oakland Place, and Miraflores. Perfect for dining, upscale shopping, and relaxing."
+          : "Explora los centros de estilo de vida más exclusivos de la Ciudad de Guatemala, incluyendo Ciudad Cayalá, Oakland Place y Miraflores. Perfecto para compras y gastronomía.",
+    },
+    {
+      id: "antigua-villages",
+      icon: Coffee,
+      title: activeLanguage === "en" ? "Antigua Day Trips" : "Actividades Antigua",
+      tags: activeLanguage === "en" ? "Culture & Tastings" : "Cultura y Degustación",
+      desc:
+        activeLanguage === "en"
+          ? "Discover activities in Antigua and surrounding towns. Enjoy local coffee tours, artisan crafts, and boutique wine tastings in the highlands."
+          : "Descubre actividades en Antigua y los pueblos cercanos. Disfruta de tours de café local, talleres de artesanías y degustaciones de vino boutique en el altiplano.",
+    }
   ];
 
   const steps = [
