@@ -67,11 +67,11 @@ export default function CareersPage() {
         generalTitle: isEs ? "Requisitos Obligatorios" : "Mandatory Requirements",
         generalItems: isEs ? [
           "Antecedentes penales y policiacos vigentes y limpios.",
-          "Inglés Básico / Intermedio para interactuar fluidamente con turistas.",
+          "Inglés Básico / Intermedio para interactuar fluidamente con turistas",
           "Excelente actitud de servicio al cliente y estricta puntualidad."
         ] : [
           "Current and clean criminal and police background checks.",
-          "Basic / Intermediate English to interact smoothly with tourists.",
+          "Basic / Intermediate English to interact smoothly with tourists",
           "Excellent customer service attitude and strict punctuality."
         ],
         desirableTitle: isEs ? "Perfil Deseable (Puntos Extra)" : "Preferred Profile (Bonus Points)",
@@ -79,12 +79,12 @@ export default function CareersPage() {
           "Experiencia activa previa en Uber, Indriver u otras apps de transporte.",
           "Calificación histórica ideal de 4.8+ estrellas en plataformas de movilidad.",
           "Estudios en carreras afines al turismo o un fuerte interés por el sector.",
-          "Habilidad y comodidad usando tecnología y apps de gestión de equipos (como Connecteam)."
+          "Habilidad y comodidad usando tecnología y apps de gestión de equipos."
         ] : [
           "Active prior experience in Uber, Indriver, or other transport apps.",
           "Historical rating of 4.8+ stars on mobility platforms is ideal.",
           "Studies related to tourism or a strong interest in the industry.",
-          "Comfortable using technology and team management apps (like Connecteam)."
+          "Comfortable using technology and team management apps."
         ]
       },
       tracks: [
@@ -105,7 +105,7 @@ export default function CareersPage() {
         },
         {
           icon: <User className="w-6 h-6 text-white mb-2" />,
-          title: isEs ? "Solo Piloto (Flotilla)" : "Driver Only (Fleet)",
+          title: isEs ? "Solo Piloto (NO DISPONIBLE)" : "Driver Only (NOT AVAILABLE)",
           items: isEs ? [
             "Aplica para conducir nuestros vehículos de flotilla interna.",
             "Aplican los mismos requisitos obligatorios de seguridad y servicio."
