@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { motion } from "framer-motion";
 
@@ -75,7 +74,7 @@ export default function TermsConditions() {
             <strong>{activeLanguage === "en" ? "Cancellations / changes:" : "Cancelaciones / Cambios:"}</strong>{" "}
             {activeLanguage === "en"
               ? <>You must cancel, change or reschedule at least <strong>24 hours</strong> before departure for a refund or to be able to accomodate your change.</>
-              : <>Debes cancelar, cambiar o reprogramar con al menos <strong>24 horas</strong> de anticipación a la salida para obtener un reembolso o para poder acomodar tu cambio.</>}
+              : <>Debes cancelar, cambiar o reprogramar con al menos <strong>24 hours</strong> de anticipación a la salida para obtener un reembolso o para poder acomodar tu cambio.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Payments:" : "Pagos:"}</strong>{" "}
@@ -155,14 +154,26 @@ export default function TermsConditions() {
       {/* 2. Private & Blvck Tier Policies */}
       <section className="mb-10">
         <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
-          {activeLanguage === "en" ? "2. Private & Blvck Tier Policies" : "2. Políticas de Servicio Privado y Tier Blvck"}
+          {activeLanguage === "en" ? "2. Private Services Policies" : "2. Políticas de Servicio Privado"}
         </h2>
         <ul className="list-disc pl-6 text-zinc-400 space-y-4 leading-relaxed marker:text-zinc-600">
           <li>
             <strong>{activeLanguage === "en" ? "Service Conditions & Fleet:" : "Condiciones del Servicio y Flota:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>For our Private and Blvck tiers, Blvck Sheep operates Sedans, 5-passenger SUVs, or 7-passenger SUVs. To ensure a comfortable experience, we allow a <strong>maximum of 4 clients per trip</strong> in these vehicles. For larger private groups, we utilize our trusted partner network for van or microbus services.</>
-              : <>Para nuestros niveles Privado y Blvck, operamos Sedanes, y SUVs de 5 o 7 pasajeros. Para garantizar una experiencia cómoda, permitimos un <strong>máximo de 4 clientes por viaje</strong> en estos vehículos. Para grupos privados más grandes, utilizamos nuestra red de socios de confianza para servicios de van o microbus.</>}
+              ? <>For our Private and Blvck tiers, Blvck Sheep operates Sedans, 5-passenger SUVs. To ensure a comfortable experience, we allow a <strong>maximum of 4 clients per trip</strong> in these vehicles. For larger private groups, we utilize our trusted partner network for van or microbus services.</>
+              : <>Para nuestros niveles Privado y Blvck, operamos Sedanes, y SUVs de 5 pasajeros. Para garantizar una experiencia cómoda, permitimos un <strong>máximo de 4 clientes por viaje</strong> en estos vehículos. Para grupos privados más grandes, utilizamos nuestra red de socios de confianza para servicios de van o microbus.</>}
+          </li>
+          <li>
+            <strong>{activeLanguage === "en" ? "Included Idle Time (Wait Times):" : "Tiempo de Espera Incluido (Idle Time):"}</strong>{" "}
+            {activeLanguage === "en"
+              ? "Drivers can wait for you during stops along the way based on the route length: Short routes (e.g., Guatemala City to Antigua) include 25 minutes of idle time. Medium routes (e.g., Guatemala City or Antigua to Panajachel) include 45 minutes. Long routes (e.g., to Lanquín) include 1 hour and 30 minutes. If you would like to stay longer at any destination, it costs Q75 quetzales per extra hour."
+              : "Los pilotos pueden esperarte en paradas durante el trayecto según la duración de la ruta: Las rutas cortas (ej. Ciudad de Guatemala a Antigua) incluyen 25 minutos de espera. Las rutas medias (ej. Ciudad de Guatemala o Antigua a Panajachel) incluyen 45 minutos. Las rutas largas (ej. hacia Lanquín) incluyen 1 hora y 30 minutos de tiempo de espera. Si les interesa estar en ruta mas tiempo en algun destino, son Q75 quetzales la hora extra."}
+          </li>
+          <li>
+            <strong>{activeLanguage === "en" ? "Guatemala City Coverage Zones:" : "Zonas de Cobertura en Ciudad de Guatemala:"}</strong>{" "}
+            {activeLanguage === "en"
+              ? "Due to heavy and unpredictable traffic in Guatemala City, our standard service coverage for private transit is limited to the central areas: Zones 4, 9, 10, 13, and 14. Pick-ups or drop-offs outside these specific zones will incur an additional fee."
+              : "Debido al tráfico pesado e impredecible en la Ciudad de Guatemala, nuestra cobertura de servicio estándar para viajes privados se limita a las áreas céntricas: Zonas 4, 9, 10, 13 y 14. Las recogidas o bajadas fuera de estas zonas específicas tendrán un costo extra."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Schedule Flexibility & Notice:" : "Flexibilidad de Horarios y Avisos:"}</strong>{" "}
@@ -258,10 +269,10 @@ export default function TermsConditions() {
               : <>Las cancelaciones realizadas con 24 horas o más de anticipación a la hora de salida programada califican para un reembolso completo. <strong>Las cancelaciones realizadas dentro de las 24 horas previas al viaje son estrictamente no reembolsables.</strong></>}
           </li>
           <li>
-            <strong>{activeLanguage === "en" ? "Late Bookings:" : "Reservas de Última Hora:"}</strong>{" "}
+            <strong>{activeLanguage === "en" ? "Late Bookings or Last Minute Changes:" : "Reservas de Última Hora o Cambios de Último Minuto:"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Last-minute reservations (within 8 hours of departure) are subject to immediate availability and may incur expedited logistics charges."
-              : "Las reservaciones de último minuto (dentro de las 8 horas previas a la salida) están sujetas a disponibilidad inmediata y pueden incurrir en cargos por logística expedita."}
+              ? "Last-minute reservations or last minute changes are subject to immediate availability and may incur additional charges."
+              : "Las reservaciones de último minuto o cambios de último minuto están sujetas a disponibilidad inmediata y pueden incurrir en cargos adicionales."}
           </li>
         </ul>
       </section>
