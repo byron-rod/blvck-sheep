@@ -359,7 +359,7 @@ export const destinationsData: DestinationDetail[] = [
     sections: [
       {
         heading: "Quick Facts & Logistics",
-        content: "Tikal is the most important archeological site of the Mayan empire. Travel Time: While overland transit is possible with connecting trips in Lanquin or Rio Dulce, a direct 45-minute flight from Guatemala City to Mundo Maya International Airport is highly recommended for optimal comfort. Blvck Sheep provides private and shared transfers from Flores to Tikal, El Remate, or Crater Azul, as well as curated local tour coordination.",
+        content: "Tikal is the most important archeological site of the Mayan empire. Travel Time: While overland transit is possible with connecting trips in Lanquin or Rio Dulce, a direct 45-minute flight from Guatemala City to Mundo Maya International Airport is highly recommended for optimal comfort. If you are traveling by land, the best option is to take an overnight bus from the company Fuentes del Norte, saving you a hotel night and letting you travel in comfortable reclining seats, arriving in Flores the next morning ready for Tikal.",
         actionText: "Read our Transportation Guide", 
         actionLink: "/journal/guatemala-transportation-guide",
       },
@@ -393,7 +393,7 @@ export const destinationsData: DestinationDetail[] = [
     sections: [
       {
         heading: "Datos Rápidos y Logística",
-        content: "Tikal es el sitio arqueológico más importante del imperio Maya. Tiempo de Viaje: Aunque el tránsito terrestre es posible con paradas en Lanquín o Río Dulce, recomendamos encarecidamente un vuelo directo de 45 minutos desde la Ciudad de Guatemala al Aeropuerto Internacional Mundo Maya para una comodidad óptima. Blvck Sheep ofrece traslados privados y compartidos desde Flores hacia Tikal, El Remate, o Cráter Azul, así como coordinación de tours locales curados.",
+        content: "Tikal es el sitio arqueológico más importante del imperio Maya. Tiempo de Viaje: Aunque el tránsito terrestre es posible con paradas en Lanquín o Río Dulce, recomendamos encarecidamente un vuelo directo de 45 minutos desde la Ciudad de Guatemala al Aeropuerto Internacional Mundo Maya para una comodidad óptima. Si viajan por tierra lo mejor son los buses de la empresa Fuentes del Norte en su ruta nocturna, te ahorras una noche de hotel, vas en sillones cama y en la mañana siguiente estás en Flores listo para Tikal.",
         actionText: "Guía de Transporte en Guatemala", 
         actionLink: "/journal/guatemala-transportation-guide",
       },
