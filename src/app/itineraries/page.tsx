@@ -23,18 +23,18 @@ export default function ItinerariesPage() {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-tight">
               {activeLanguage === "en" ? (
                 <>
-                  Curated <br className="hidden md:block" /> Trips
+                  Popular <br className="hidden md:block" /> Itinerary Ideas
                 </>
               ) : (
                 <>
-                  Viajes <br className="hidden md:block" /> Curados
+                  Ideas de <br className="hidden md:block" /> Itinerarios
                 </>
               )}
             </h1>
             <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
               {activeLanguage === "en"
-                ? "Exclusive experiences tailored to your distinctive travel style. Select your path and begin the adventure. Our team can also create custom itineraries for you."
-                : "Experiencias exclusivas adaptadas a tu estilo de viaje. Selecciona tu ruta y comienza la aventura. Nuestro equipo también diseña itinerarios a tu medida."}
+                ? "Explore our most popular route ideas across Guatemala, tailored to different travel styles. Use them as inspiration for your trip—we can advise you on how to optimize your route and handle all your transportation between destinations."
+                : "Explora nuestras ideas de rutas más populares por Guatemala según tu estilo de viaje. Úsalas como inspiración: podemos asesorarte para optimizar tu itinerario, aprovechar mejor tu tiempo y encargarnos de todo tu transporte entre destinos."}
             </p>
           </div>
 
@@ -76,8 +76,8 @@ export default function ItinerariesPage() {
         <section aria-labelledby="itineraries-heading">
           <h2 id="itineraries-heading" className="sr-only">
             {activeLanguage === "en"
-              ? "Available Itineraries"
-              : "Itinerarios Disponibles"}
+              ? "Popular Itinerary Ideas"
+              : "Ideas de Itinerarios Populares"}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatePresence mode="popLayout">
@@ -125,8 +125,8 @@ export default function ItinerariesPage() {
             className="text-4xl md:text-5xl font-light tracking-tight mb-16"
           >
             {activeLanguage === "en"
-              ? "Beyond Transportation"
-              : "Más Allá del Transporte"}
+              ? "Optimize Your Time in Guatemala"
+              : "Optimiza tu Tiempo en Guatemala"}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -144,8 +144,8 @@ export default function ItinerariesPage() {
               </h3>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
-                  ? "More than just a ride. We engineer your entire logistical route across Guatemala, ensuring flawless, private transitions between destinations in our fleet."
-                  : "Algo más que un simple viaje. Diseñamos toda tu ruta logística por Guatemala, garantizando transiciones privadas y sin contratiempos en nuestra flota."}
+                  ? "More than just a ride. We help you connect your destinations efficiently across Guatemala, offering private and shared transfers that match your schedule."
+                  : "Algo más que un simple viaje. Te ayudamos a conectar tus destinos de forma eficiente por toda Guatemala, con traslados privados y compartidos adaptados a tus tiempos."}
               </p>
             </article>
 
@@ -158,13 +158,13 @@ export default function ItinerariesPage() {
               />
               <h3 className="text-xl font-medium mb-4">
                 {activeLanguage === "en"
-                  ? "Curated Pacing & Stays"
-                  : "Estadías y Ritmo Curados"}
+                  ? "Route Advisory & Favorite Stays"
+                  : "Asesoría de Ruta y Estadías"}
               </h3>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
-                  ? "Not sure how many nights to spend at the lake? We provide expert guidance on pacing your trip and unlock our hand-picked portfolio of our favorite accommodations."
-                  : "¿No estás seguro de cuántas noches pasar en el lago? Te brindamos asesoría experta sobre el ritmo de tu viaje y te damos acceso a nuestro portafolio seleccionado de nuestros hospedajes favoritos."}
+                  ? "Not sure how many nights to spend at the lake or in what order to visit each spot? We advise you on optimizing your pacing and share our favorite hostels and hotels."
+                  : "¿No estás seguro de cuántas noches pasar en el lago o en qué orden visitar cada lugar? Te asesoramos para optimizar tus tiempos y te compartimos nuestros hostales y hoteles favoritos."}
               </p>
             </article>
 
@@ -182,8 +182,8 @@ export default function ItinerariesPage() {
               </h3>
               <p className="text-zinc-400 font-light leading-relaxed">
                 {activeLanguage === "en"
-                  ? "Transform a transit day into an expedition. We customize your routes with strategic stops—from soaking in volcanic hot springs to exploring hidden Mayan ruins on the way to your next hotel."
-                  : "Transforma un día de tránsito en una expedición. Personalizamos tus rutas con paradas estratégicas: desde aguas termales volcánicas hasta ruinas mayas escondidas en el camino a tu hotel."}
+                  ? "Transform a transit day into an expedition. Enhance your private transfer with strategic stops—from soaking in volcanic hot springs to exploring Mayan ruins on the way to your next stop."
+                  : "Transforma un día de tránsito en una expedición. Mejora tu traslado privado con paradas estratégicas: desde aguas termales volcánicas hasta ruinas mayas de camino a tu próximo destino."}
               </p>
             </article>
           </div>
@@ -192,21 +192,21 @@ export default function ItinerariesPage() {
             <Link
               href={`https://wa.me/50255116881?text=${encodeURIComponent(
                 activeLanguage === "en"
-                  ? "Hello!, I would like help crafting a custom itinerary in Guatemala."
-                  : "¡Hola!, Me gustaría recibir ayuda para diseñar un itinerario a la medida en Guatemala."
+                  ? "Hello!, I would like advice on optimizing my route and transportation in Guatemala."
+                  : "¡Hola!, Me gustaría recibir asesoría para optimizar mi ruta y transporte en Guatemala."
               )}`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label={
                 activeLanguage === "en"
-                  ? "Craft Your Custom Route via WhatsApp"
-                  : "Diseña tu Ruta Personalizada por WhatsApp"
+                  ? "Ask for Route Advice via WhatsApp"
+                  : "Pedir Asesoría de Ruta por WhatsApp"
               }
               className="group inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-zinc-200 transition-colors"
             >
               {activeLanguage === "en"
-                ? "Craft Your Custom Route"
-                : "Diseña tu Ruta Personalizada"}
+                ? "Optimize Your Route with Us"
+                : "Optimiza tu Ruta con Nosotros"}
             </Link>
           </div>
         </section>

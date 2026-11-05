@@ -6,29 +6,38 @@ import Tag from "@/components/Tag";
 
 const content = {
   en: {
-    tag: "New",
+    tag: "Popular Ideas",
     headingPart1: "Elevate",
     headingPart2: " Your",
     headingPart3: "Journey.",
-    description: "Discover Guatemala differently. Our travel agency and itinerary planning services can help you design crafted adventures, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.",
-    button: "Explore Itineraries"
+    description:
+      "Discover Guatemala differently. We can advise you on how to optimize your itinerary so you make the most of your time in Guatemala, blending seamless logistics, cultural immersion, and comfort tailored entirely to you.",
+    button: "Explore Itinerary Ideas",
   },
   es: {
-    tag: "Nuevo",
+    tag: "Ideas de Ruta",
     headingPart1: "Eleva",
     headingPart2: " Tu",
     headingPart3: "Viaje.",
-    description: "Descubre Guatemala de manera diferente. Nuestra agencia de viajes y servicios de planificación de itinerarios pueden ayudarte a diseñar aventuras a tu medida, combinando logística perfecta, inmersión cultural y comodidad adaptada completamente a ti.",
-    button: "Explorar Itinerarios"
-  }
+    description:
+      "Descubre Guatemala de manera diferente. Podemos asesorarte para optimizar tu itinerario, así aprovechas más tu tiempo en Guatemala, combinando logística perfecta, inmersión cultural y comodidad adaptada completamente a ti.",
+    button: "Explorar Ideas de Itinerarios",
+  },
 };
 
-export default function CuratedExperiences({ activeLanguage = "en" }: { activeLanguage?: "en" | "es" }) {
+export default function CuratedExperiences({
+  activeLanguage = "en",
+}: {
+  activeLanguage?: "en" | "es";
+}) {
   const data = content[activeLanguage];
   return (
-    <section className="py-24 bg-black text-white relative border-t border-white/5" id="curated-experiences">
+    <section
+      className="py-24 bg-black text-white relative border-t border-white/5"
+      id="curated-experiences"
+    >
       <div className="container px-6 md:px-12 lg:px-24 max-w-6xl mx-auto">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -37,7 +46,9 @@ export default function CuratedExperiences({ activeLanguage = "en" }: { activeLa
         >
           <Tag>{data.tag}</Tag>
           <h2 className="text-4xl md:text-5xl lg:text-7xl mt-6 mb-8 font-bold tracking-tighter">
-            <span className="text-yellow-300">{data.headingPart1}</span>{data.headingPart2} <br className="hidden md:block"/> {data.headingPart3}
+            <span className="text-yellow-300">{data.headingPart1}</span>
+            {data.headingPart2} <br className="hidden md:block" />{" "}
+            {data.headingPart3}
           </h2>
           <p className="text-zinc-400 text-lg md:text-xl max-w-3xl mb-12 leading-relaxed">
             {data.description}

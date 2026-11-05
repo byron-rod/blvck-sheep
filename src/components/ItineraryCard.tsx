@@ -112,13 +112,13 @@ export default function ItineraryCard({
         <div className="flex justify-start mt-auto">
           <Link
             href={bookingUrl || "#"}
-            aria-label={`${language === "en" ? "Explore Itinerary" : "Explorar Itinerario"}: ${title}`}
+            aria-label={`${language === "en" ? "View Route Idea" : "Ver Idea de Ruta"}: ${title}`}
             onClick={(e) => {
               if (!bookingUrl) e.preventDefault();
             }}
             className="inline-flex items-center gap-2 border border-white/20 rounded-full px-6 py-3 font-medium text-sm transition-colors hover:bg-white hover:text-black text-center"
           >
-            {language === "en" ? "Explore Itinerary" : "Explorar Itinerario"}
+            {language === "en" ? "View Route Idea" : "Ver Idea de Ruta"}
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

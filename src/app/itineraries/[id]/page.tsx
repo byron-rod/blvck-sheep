@@ -18,13 +18,13 @@ const uiText = {
     back: "Back",
     shareLabel: "Share this itinerary",
     linkCopied: "Link copied to clipboard!",
-    editionLabel: "Itinerary Blueprint",
-    featuredStaysHeading: "Route & Featured Stays",
-    moreInfo: "Want to customize or book this route?",
-    inquireButton: "Inquire to Book",
+    editionLabel: "Popular Route Idea",
+    featuredStaysHeading: "Route Stops & Recommended Stays",
+    moreInfo: "Need transport or advice to optimize this route?",
+    inquireButton: "Quote Route Transport",
     hookLabels: {
       wellness: "Wellness & Restoration",
-      adrenaline: "Adrenaline & Social",
+      adrenaline: "Adrenaline & Social Hostels",
       culture: "Heritage & Expedition",
     } as Record<string, string>,
   },
@@ -33,13 +33,13 @@ const uiText = {
     back: "Volver",
     shareLabel: "Compartir este itinerario",
     linkCopied: "¡Enlace copiado al portapapeles!",
-    editionLabel: "Plan de Ruta",
-    featuredStaysHeading: "Etapas y Estadías Destacadas",
-    moreInfo: "¿Quieres personalizar o reservar esta ruta?",
-    inquireButton: "Cotizar Experiencia",
+    editionLabel: "Idea de Ruta Popular",
+    featuredStaysHeading: "Paradas de la Ruta y Estadías Recomendadas",
+    moreInfo: "¿Necesitas transporte o asesoría para optimizar esta ruta?",
+    inquireButton: "Cotizar Transporte de Ruta",
     hookLabels: {
       wellness: "Bienestar y Restauración",
-      adrenaline: "Adrenalina y Social",
+      adrenaline: "Adrenalina y Hostales Sociales",
       culture: "Cultura y Expedición",
     } as Record<string, string>,
   },
@@ -70,8 +70,8 @@ export default function ItineraryDetailPage({ params }: Props) {
 
   const whatsappMessage =
     activeLanguage === "es"
-      ? `¡Hola!, Me interesa reservar o personalizar la experiencia "${itinerary.title}".`
-      : `Hello!, I am interested in booking or customizing the "${itinerary.title}" experience!`;
+      ? `¡Hola!, Me interesa cotizar el transporte y recibir asesoría para la ruta "${itinerary.title}" (${itinerary.duration}).`
+      : `Hello!, I would like to quote transportation and get advice for the "${itinerary.title}" (${itinerary.duration}) route!`;
 
   const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent(
     whatsappMessage
