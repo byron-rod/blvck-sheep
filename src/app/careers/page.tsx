@@ -158,7 +158,7 @@ export default function CareersPage() {
         {
           id: "travel-assistant",
           title: isEs ? "Asistente Ejecutivo de Viajes" : "Travel Executive Assistant",
-          subtitle: isEs ? "Modalidad: Remoto | Horario: Part-Time" : "Location: Remote | Schedule: Part-Time",
+          subtitle: isEs ? "Modalidad: Remoto | Horario: Full-Time" : "Location: Remote | Schedule: Full-Time",
           description: isEs 
             ? "Buscamos una persona altamente organizada y apasionada por el turismo en Guatemala, el servicio premium y el orden digital."
             : "We are looking for a highly organized individual passionate about tourism in Guatemala, premium service, and digital organization.",
@@ -178,12 +178,12 @@ export default function CareersPage() {
           requirements: isEs ? [
             "Excelente manejo de Google Workspace (dominio específico y comprobable en Google Sheets).",
             "Nivel de inglés avanzado (tanto escrito como hablado de forma fluida).",
-            "Estudios iniciales universitarios en Administración de Empresas, Marketing o afín (únicamente cursando 1er o 2do año) O experiencia previa en puestos administrativos, logística o turismo.",
+            "Estudios iniciales universitarios en Administración de Empresas, Ingienerias, Marketing o afín O experiencia previa en puestos administrativos, logística o turismo.",
             "Atención meticulosa al detalle, excelente redacción, ortografía y capacidad multitarea."
           ] : [
             "Excellent command of Google Workspace (specific, verifiable mastery of Google Sheets).",
             "Advanced English level (fluent written and spoken).",
-            "Initial university studies in Business Admin, Marketing, or related fields (only 1st or 2nd year students) OR prior experience in admin, logistics, or tourism.",
+            "Initial university studies in Business Admin, Engineering, Marketing, or related fields or prior experience in admin, logistics, or tourism.",
             "Meticulous attention to detail, excellent writing and spelling, and multitasking abilities."
           ]
         }
