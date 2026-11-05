@@ -6,119 +6,42 @@ import Link from "next/link";
 import { itinerariesData } from "@/data/itineraries";
 import { useRouter } from "next/navigation";
 import { IoChevronBack, IoShareOutline } from "react-icons/io5";
-
-// Import local assets
-import fuegoVolcan from "@/assets/images/fuego-volcano.png";
-import wellnessAtitlan from "@/assets/images/wellness-atitlan.png";
-import quetzal from "@/assets/images/quetzal-hero.png";
-import tikalVertical from "@/assets/images/tikal.png";
-import semuc from "@/assets/images/semuc.png";
-import mayan from "@/assets/images/mayan-heartbeat.png";
-import social from "@/assets/images/social-hero.png";
-import arco from "@/assets/images/arco-antigua.png";
-import lakeRetreat from "@/assets/images/lake-retreat.png";
-import coastalHideaway from "@/assets/images/coastal-hideaway.png";
+import { useLanguage } from "@/context/LanguageContext";
 
 type Props = {
   params: Promise<{ id: string }>;
 };
 
-// Mock Data specifically for Lookbook
-const lookbookData = {
-  "social-surf-summit": {
-    heroImage:
-      // "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?q=80&w=2500&auto=format&fit=crop" 
-      social.src,
-    duration: "5 Days / 4 Nights",
-    highlights: ["Volcanic Crater Basecamp", "Pacific Swell Sessions", "Curated Colonial Nightlife"],
-    featuredStays: [
-      {
-        name: "Basecamp Antigua",
-        location: "Antigua, Guatemala",
-        description:
-          "Drop your bags in the colonial heart of Guatemala. We've secured access to Antigua's premier boutique stay, where high-end design meets an electrifying social scene. Pre-game with crafted cocktails on a private rooftop while the Volcán de Agua fades into the night skyline.",
-        image: arco.src,
-      },
-      {
-        name: "Fuego Summit",
-        location: "Acatenango Volcano",
-        description:
-          "Trade the boutique suite for a night above the clouds. This is a fully guided, high-octane ascent to our private Acatenango basecamp. Witness the raw, cinematic power of Volcán de Fuego erupting under the stars—completely off the grid, yet anchored in elevated comfort.",
-        // Using the statically imported local image
-        image: fuegoVolcan.src,
-      },
-      {
-        name: "Driftwood Oasis",
-        location: "El Paredon",
-        description:
-          "Chase the adrenaline with world-class Pacific swells. Step directly onto the volcanic black sand of El Paredon. By day, it's surf and coastal recovery; by night, we plug you into an exclusive open-air pool club featuring strictly curated DJ sets and an unmatched coastal energy. Or switch the beach for the mountains and head to Lake Atitlan.",
-        image:
-          "https://images.unsplash.com/photo-1502680390469-be75c86b636f?q=80&w=1000&auto=format&fit=crop",
-      },
-    ],
+const uiText = {
+  en: {
+    notFound: "Itinerary Not Found",
+    back: "Back",
+    shareLabel: "Share this itinerary",
+    linkCopied: "Link copied to clipboard!",
+    editionLabel: "Itinerary Blueprint",
+    featuredStaysHeading: "Route & Featured Stays",
+    moreInfo: "Want to customize or book this route?",
+    inquireButton: "Inquire to Book",
+    hookLabels: {
+      wellness: "Wellness & Restoration",
+      adrenaline: "Adrenaline & Social",
+      culture: "Heritage & Expedition",
+    } as Record<string, string>,
   },
-  "wellness-retreat": {
-    heroImage: wellnessAtitlan.src,
-    duration: "7 Days / 6 Nights",
-    highlights: ["Ancestral Cacao Rites", "Private Atitlán Sanctuary", "Coastal Restoration"],
-    featuredStays: [
-      {
-        name: "Antigua Culinary Enclave",
-        location: "Antigua, Guatemala",
-        description:
-          "Begin your restoration with a sophisticated deep-dive into Guatemalan gastronomy. This isn't a standard food tour; it's a curated culinary journey through private colonial kitchens and hidden courtyards, focusing on organic, farm-to-table ingredients that bridge the gap between ancient tradition and modern refinement.",
-        image: arco.src,
-      },
-      {
-        name: "The Lakeside Sanctuary",
-        location: "Lake Atitlán",
-        description:
-          "The centerpiece of your journey. We secure your stay in one of Atitlán's premier eco-luxury havens, completely removed from the noise of the outside world. Your days are anchored in deep meditation, bespoke yoga sessions, and traditional Mayan cacao ceremonies, all performed with the majestic stillness of the volcanic lake as your backdrop.",
-        image: lakeRetreat.src,
-      },
-      {
-        name: "The Coastal Hideaway",
-        location: "El Paredon",
-        description:
-          "Conclude your retreat where the jungle meets the Pacific. We have selected a boutique beachfront sanctuary designed for ultimate decompression. Trade the social energy of the village for unscripted stillness, organic coastal cuisine, and the restorative power of the equatorial sun. This is wellness in its purest, most relaxed form.",
-        image: coastalHideaway.src,
-      },
-    ],
-  },
-  "cultural-immersion": {
-    heroImage: quetzal.src,
-    duration: "14 Days / 13 Nights",
-    highlights: ["Ancient Petén Jungle", "Highland Gastronomy", "Caribbean & Canyons"],
-    featuredStays: [
-      {
-        name: "The Northern Expedition",
-        location: "Flores & Tikal",
-        description:
-          "Your expedition begins deep within the Petén biosphere. We bypass the standard tours to grant you intimate, early-access to the towering pyramids of Tikal as the jungle wakes. Retreat to a luxury eco-lodge suspended above Lake Petén Itzá to decompress after touching ancient history.",
-        image: tikalVertical.src,
-      },
-      {
-        name: "Canyons & The Coast",
-        location: "Semuc Champey to Livingston",
-        description:
-          "Traverse the limestone terraces and pristine turquoise pools of Semuc Champey before navigating the dramatic Rio Dulce gorge. Emerge on the Caribbean coast in Livingston, where we immerse you in the vibrant rhythms and rich, coconut-infused seafood of the indigenous Garifuna culture.",
-        image: semuc.src,
-      },
-      {
-        name: "The Mayan Heartbeat",
-        location: "Lake Atitlán & Chichicastenango",
-        description:
-          "Witness the living colors of the Chichicastenango market before descending to Lake Atitlán. Here, we trade the tourist trail for deep authenticity in San Juan La Laguna. Source fresh ingredients at the local market to cook alongside a Mayan matriarch, capped by a breathtaking panoramic summit of the Rostro Maya.",
-        image: mayan.src,
-      },
-      {
-        name: "The Grand Finale",
-        location: "Antigua & Acatenango",
-        description:
-          "Return to colonial elegance. Dine at Antigua's most exclusive culinary tables, experiencing the absolute pinnacle of modern Guatemalan gastronomy. For the final act, a fully-guided, premium ascent of Acatenango to witness Fuego's eruptions under the stars—ensuring you sleep all the way home. Live the definitive Guatemala experience.",
-        image: fuegoVolcan.src,
-      },
-    ],
+  es: {
+    notFound: "Itinerario no Encontrado",
+    back: "Volver",
+    shareLabel: "Compartir este itinerario",
+    linkCopied: "¡Enlace copiado al portapapeles!",
+    editionLabel: "Plan de Ruta",
+    featuredStaysHeading: "Etapas y Estadías Destacadas",
+    moreInfo: "¿Quieres personalizar o reservar esta ruta?",
+    inquireButton: "Cotizar Experiencia",
+    hookLabels: {
+      wellness: "Bienestar y Restauración",
+      adrenaline: "Adrenalina y Social",
+      culture: "Cultura y Expedición",
+    } as Record<string, string>,
   },
 };
 
@@ -126,30 +49,41 @@ export default function ItineraryDetailPage({ params }: Props) {
   const resolvedParams = use(params);
   const { id } = resolvedParams;
   const router = useRouter();
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
-  const itinerary = itinerariesData.find((item) => item.id === id);
+  // Support both canonical IDs and legacy "-es" IDs
+  const normalizedId = id.replace(/-es$/, "");
+  const t = uiText[activeLanguage];
 
-  // If not found, show minimal 404
+  const itinerary =
+    itinerariesData.find(
+      (item) => item.id === normalizedId && item.language === activeLanguage
+    ) || itinerariesData.find((item) => item.id === normalizedId);
+
   if (!itinerary) {
     return (
-      <main className="min-h-screen flex items-center justify-center bg-black text-white">
-        <h1 className="text-2xl font-light">Itinerary Not Found</h1>
-      </main>
+      <div className="min-h-screen flex items-center justify-center bg-black text-white">
+        <h1 className="text-2xl font-light">{t.notFound}</h1>
+      </div>
     );
   }
 
-  const lookbook = lookbookData[id as keyof typeof lookbookData];
-  
-  // Use generic fallback if no specific lookbook data is found
-  const heroImage = lookbook?.heroImage || "https://images.unsplash.com/photo-1620925763618-9d41ae648eaf?q=80&w=2500&auto=format&fit=crop";
-  const featuredStays = lookbook?.featuredStays || [];
+  const whatsappMessage =
+    activeLanguage === "es"
+      ? `¡Hola!, Me interesa reservar o personalizar la experiencia "${itinerary.title}".`
+      : `Hello!, I am interested in booking or customizing the "${itinerary.title}" experience!`;
 
-  const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent("Hello!, I am interested in booking the " + itinerary.title + " experience!")}`;
+  const whatsappUrl = `https://wa.me/50255116881?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   const handleShare = async () => {
     const shareData = {
       title: `Blvck Sheep: ${itinerary.title}`,
-      text: `Check out the ${itinerary.title} experience in Guatemala!`,
+      text:
+        activeLanguage === "es"
+          ? `¡Descubre el itinerario ${itinerary.title} en Guatemala!`
+          : `Check out the ${itinerary.title} experience in Guatemala!`,
       url: window.location.href,
     };
     try {
@@ -157,7 +91,7 @@ export default function ItineraryDetailPage({ params }: Props) {
         await navigator.share(shareData);
       } else {
         await navigator.clipboard.writeText(window.location.href);
-        alert("Link copied to clipboard!");
+        alert(t.linkCopied);
       }
     } catch (err) {
       console.error("Error sharing:", err);
@@ -165,20 +99,27 @@ export default function ItineraryDetailPage({ params }: Props) {
   };
 
   return (
-    <main className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-24">
-      {/* Top Nav Overlay - Now Fixed and Scrollable */}
-      <nav aria-label="Top navigation" className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+    <div className="relative min-h-screen bg-black text-white font-sans selection:bg-white selection:text-black pb-28">
+      {/* Top Nav Overlay */}
+      <nav
+        aria-label="Top navigation"
+        className="absolute top-0 left-0 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference"
+      >
         <button
           onClick={() => router.back()}
-          aria-label="Go back to itineraries"
+          aria-label={t.back}
           className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
-          Back
+          <IoChevronBack
+            className="text-xl group-hover:-translate-x-1 transition-transform"
+            aria-hidden="true"
+            focusable="false"
+          />
+          {t.back}
         </button>
-        <button 
-          onClick={handleShare} 
-          aria-label="Share this itinerary"
+        <button
+          onClick={handleShare}
+          aria-label={t.shareLabel}
           className="text-xl hover:opacity-70 transition-opacity pointer-events-auto"
         >
           <IoShareOutline aria-hidden="true" focusable="false" />
@@ -186,47 +127,110 @@ export default function ItineraryDetailPage({ params }: Props) {
       </nav>
 
       {/* Cinematic Hero */}
-      <header className="relative h-[85vh] w-full flex items-end pb-20 px-6 md:px-12 lg:px-24">
+      <header className="relative min-h-[85vh] w-full flex flex-col justify-end pb-16 pt-36 px-6 md:px-12 lg:px-24">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src={heroImage}
+            src={itinerary.heroImage}
             alt={`${itinerary.title} cover`}
             className="w-full h-full object-cover"
           />
           {/* Magazine-style vignette gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-black/20" aria-hidden="true" />
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/20"
+            aria-hidden="true"
+          />
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 w-full max-w-5xl mx-auto">
+        <div className="relative z-10 w-full max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.9, delay: 0.15 }}
           >
-            <div className="flex items-center gap-4 mb-6">
-              <span className="text-xs uppercase tracking-[0.3em] font-medium border border-white/30 px-3 py-1 rounded-full">
-                {lookbook?.duration || "Curated Experience"}
-              </span>
-              <span className="text-xs text-zinc-400 uppercase tracking-[0.2em]">
-                {itinerary.visualHookKey}
-              </span>
+            <div className="flex flex-col-reverse md:flex-row md:items-end justify-between gap-6 md:gap-8">
+              <div className="max-w-3xl">
+                <div className="flex flex-wrap items-center gap-4 mb-6">
+                  <span className="text-xs uppercase tracking-[0.3em] font-medium border border-white/30 bg-black/40 backdrop-blur-sm px-3.5 py-1.5 rounded-full">
+                    {itinerary.duration}
+                  </span>
+                  <span className="text-xs text-zinc-300 uppercase tracking-[0.2em]">
+                    {t.hookLabels[itinerary.visualHookKey] ||
+                      itinerary.visualHookKey}
+                  </span>
+                </div>
+
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95] mb-6">
+                  {itinerary.title}
+                </h1>
+
+                <p className="text-lg md:text-xl text-zinc-300 max-w-2xl leading-relaxed mb-8">
+                  {itinerary.description}
+                </p>
+
+                {itinerary.highlights && itinerary.highlights.length > 0 && (
+                  <div className="flex flex-wrap gap-3">
+                    {itinerary.highlights.map((highlight) => (
+                      <span
+                        key={highlight}
+                        className="text-xs uppercase tracking-widest text-zinc-200 bg-white/10 backdrop-blur-md border border-white/15 px-4 py-2 rounded-full"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Language Toggle */}
+              <nav
+                aria-label={
+                  activeLanguage === "en"
+                    ? "Language selector"
+                    : "Selector de idioma"
+                }
+                className="relative flex items-center bg-zinc-900/70 backdrop-blur-md p-1 rounded-full border border-zinc-800 self-start md:self-auto shrink-0"
+              >
+                {(["en", "es"] as const).map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => setActiveLanguage(lang)}
+                    aria-label={
+                      lang === "en" ? "Switch to English" : "Cambiar a Español"
+                    }
+                    aria-pressed={activeLanguage === lang}
+                    className={`relative px-6 py-2.5 text-sm font-medium uppercase tracking-widest rounded-full transition-colors z-10 ${
+                      activeLanguage === lang
+                        ? "text-black"
+                        : "text-zinc-400 hover:text-white"
+                    }`}
+                  >
+                    {activeLanguage === lang && (
+                      <motion.div
+                        layoutId={`active-lang-itinerary-detail-${lang}`}
+                        className="absolute inset-0 bg-white rounded-full -z-10"
+                        transition={{
+                          type: "spring",
+                          stiffness: 400,
+                          damping: 30,
+                        }}
+                      />
+                    )}
+                    {lang === "en" ? "ENG" : "ESP"}
+                  </button>
+                ))}
+              </nav>
             </div>
-            
-            <h1 className="text-6xl md:text-8xl lg:text-[7rem] font-bold tracking-tighter leading-[0.9] mb-8">
-              {itinerary.title}
-            </h1>
-            
-            <p className="text-lg md:text-xl text-zinc-300 max-w-2xl leading-relaxed mix-blend-screen">
-              {itinerary.description}
-            </p>
           </motion.div>
         </div>
       </header>
 
-      {/* Lookbook: Featured Stays */}
-      <section aria-labelledby="featured-stays-heading" className="py-32 px-6 md:px-12 lg:px-24">
+      {/* Lookbook: Route & Featured Stays */}
+      <section
+        aria-labelledby="featured-stays-heading"
+        className="py-28 px-6 md:px-12 lg:px-24"
+      >
         <div className="max-w-5xl mx-auto">
           <motion.div
             initial={{ opacity: 0 }}
@@ -234,43 +238,58 @@ export default function ItineraryDetailPage({ params }: Props) {
             viewport={{ once: true }}
             className="mb-20"
           >
-            <p className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4" aria-hidden="true">Edition / 01</p>
-            <h2 id="featured-stays-heading" className="text-4xl md:text-5xl font-light tracking-tight">Featured Stays</h2>
+            <p
+              className="text-xs uppercase tracking-[0.3em] text-zinc-500 mb-4"
+              aria-hidden="true"
+            >
+              {t.editionLabel}
+            </p>
+            <h2
+              id="featured-stays-heading"
+              className="text-4xl md:text-5xl font-light tracking-tight"
+            >
+              {t.featuredStaysHeading}
+            </h2>
           </motion.div>
 
           <div className="flex flex-col gap-32">
-            {featuredStays.map((stay, index) => (
-              <article 
-                key={stay.name} 
-                className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center gap-10 md:gap-20`}
+            {itinerary.featuredStays.map((stay, index) => (
+              <article
+                key={`${stay.name}-${index}`}
+                className={`flex flex-col ${
+                  index % 2 !== 0 ? "md:flex-row-reverse" : "md:flex-row"
+                } items-center gap-10 md:gap-20`}
               >
                 {/* Image Card */}
-                <motion.div 
-                  initial={{ opacity: 0, y: 100 }}
+                <motion.div
+                  initial={{ opacity: 0, y: 80 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                   className="w-full md:w-3/5"
                 >
-                  <figure className="relative aspect-[3/4] md:aspect-[4/5] overflow-hidden group m-0">
-                    <img 
-                      src={stay.image} 
-                      alt={`View of ${stay.name}`} 
-                      className="w-full h-full object-cover transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                  <figure className="relative aspect-[3/4] md:aspect-[4/5] overflow-hidden rounded-2xl group m-0 bg-zinc-900">
+                    <img
+                      src={stay.image}
+                      alt={`${stay.name} - ${stay.location}`}
+                      className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
                     />
                   </figure>
                 </motion.div>
 
                 {/* Text Content */}
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, x: index % 2 !== 0 ? -50 : 50 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
                   className="w-full md:w-2/5 flex flex-col justify-center"
                 >
-                  <span className="text-sm font-mono text-zinc-500 mb-6" aria-hidden="true">
-                    {String(index + 1).padStart(2, '0')} // {stay.location}
+                  <span
+                    className="text-sm font-mono text-zinc-500 mb-4"
+                    aria-hidden="true"
+                  >
+                    {String(index + 1).padStart(2, "0")} // {stay.location}
                   </span>
                   <h3 className="text-3xl md:text-4xl font-semibold mb-6">
                     {stay.name}
@@ -285,42 +304,55 @@ export default function ItineraryDetailPage({ params }: Props) {
         </div>
       </section>
 
-       <nav aria-label="Bottom navigation" className="absolute bottom-0 left-3 w-full z-50 flex justify-between items-center px-6 py-8 mix-blend-difference ">
+      {/* Bottom Nav */}
+      <nav
+        aria-label="Bottom navigation"
+        className="w-full max-w-5xl mx-auto flex justify-between items-center px-6 py-8"
+      >
         <button
           onClick={() => router.back()}
-          aria-label="Go back to itineraries"
-          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity pointer-events-auto"
+          aria-label={t.back}
+          className="group flex items-center gap-2 text-sm uppercase tracking-widest font-medium hover:opacity-70 transition-opacity"
         >
-          <IoChevronBack className="text-xl group-hover:-translate-x-1 transition-transform" aria-hidden="true" focusable="false" />
-          Back
+          <IoChevronBack
+            className="text-xl group-hover:-translate-x-1 transition-transform"
+            aria-hidden="true"
+            focusable="false"
+          />
+          {t.back}
         </button>
-        <button 
-          onClick={handleShare} 
-          aria-label="Share this itinerary"
-          className="text-xl hover:opacity-70 mr-6 transition-opacity pointer-events-auto"
+        <button
+          onClick={handleShare}
+          aria-label={t.shareLabel}
+          className="text-xl hover:opacity-70 transition-opacity"
         >
           <IoShareOutline aria-hidden="true" focusable="false" />
         </button>
       </nav>
 
       {/* Sticky Bottom Action Bar */}
-      <aside aria-label="Booking actions" className="fixed bottom-0 left-0 w-full z-40 bg-black/80 backdrop-blur-xl border-t border-zinc-900 border-opacity-50 shadow-2xl">
+      <aside
+        aria-label="Booking actions"
+        className="fixed bottom-0 left-0 w-full z-40 bg-black/85 backdrop-blur-xl border-t border-zinc-900/80 shadow-2xl"
+      >
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="hidden sm:block">
-            <p className="text-xs uppercase tracking-widest text-zinc-400">{itinerary.title}</p>
-            <p className="text-sm font-medium">More information?</p>
+            <p className="text-xs uppercase tracking-widest text-zinc-400">
+              {itinerary.title} · {itinerary.duration}
+            </p>
+            <p className="text-sm font-medium">{t.moreInfo}</p>
           </div>
           <Link
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={`Inquire to book ${itinerary.title} via WhatsApp`}
+            aria-label={`${t.inquireButton}: ${itinerary.title}`}
             className="w-full sm:w-auto bg-white text-black px-10 py-4 rounded-full text-sm uppercase tracking-[0.2em] font-semibold hover:bg-zinc-200 transition-colors text-center"
           >
-            Inquire to Book
+            {t.inquireButton}
           </Link>
         </div>
       </aside>
-    </main>
+    </div>
   );
 }
