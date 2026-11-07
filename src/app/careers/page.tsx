@@ -157,7 +157,7 @@ export default function CareersPage() {
         },
         {
           id: "travel-assistant",
-          title: isEs ? "Asistente Ejecutivo de Viajes" : "Travel Executive Assistant",
+          title: isEs ? "Coordinador de Operaciones de Viajes" : "Travel Operations Coordinator",
           subtitle: isEs ? "Modalidad: Remoto | Horario: Full-Time" : "Location: Remote | Schedule: Full-Time",
           description: isEs 
             ? "Buscamos una persona altamente organizada y apasionada por el turismo en Guatemala, el servicio premium y el orden digital."
@@ -171,14 +171,14 @@ export default function CareersPage() {
           ] : [
             "Coordinate trip and transfer logistics, ensuring exact timing and flawless service.",
             "First point of contact: answer inquiries, provide info, and send out quick and professional quotes.",
-            "Manage and optimize databases in Google Sheets (itineraries, client logs, basic accounting).",
+            "Manage and optimize databases in Google Sheets (itineraries, and client logs).",
             "Ensure a smooth, premium client experience right from the initial inquiry."
           ],
           requirementsTitle: isEs ? "¿Qué buscamos?" : "What we look for:",
           requirements: isEs ? [
             "Excelente manejo de Google Workspace (dominio específico y comprobable en Google Sheets).",
             "Nivel de inglés avanzado (tanto escrito como hablado de forma fluida).",
-            "Estudios iniciales universitarios en Administración de Empresas, Ingienerias, Marketing o afín O experiencia previa en puestos administrativos, logística o turismo.",
+            "Estudios iniciales universitarios en Administración de Empresas, Ingienerias, Marketing O experiencia previa en puestos administrativos, logística o turismo.",
             "Atención meticulosa al detalle, excelente redacción, ortografía y capacidad multitarea."
           ] : [
             "Excellent command of Google Workspace (specific, verifiable mastery of Google Sheets).",
@@ -197,8 +197,8 @@ export default function CareersPage() {
       email: "connect@blvck-sheep.com",
       subject: isEs ? "Aplicación de Cartera - Blvck Sheep" : "Job Application - Blvck Sheep",
       instructions: isEs
-        ? "Si aplicas para Piloto, adjunta tu CV, incluye tus antecedentes penales/policiacos y capturas de tus plataformas de transporte o fotos de tu auto (si aplica). Si aplicas para Asistente o Social Media Associate, adjunta tu CV y un pequeño resumen de tu experiencia."
-        : "Please attach your CV. If applying as a Driver, include your background checks and screenshots of your transport platforms or car photos (if applicable). If applying as an Assistant or Social Media Associate, attach your resume and a brief summary of your experience.",
+        ? "Si aplicas para Piloto, adjunta tu CV, incluye tus antecedentes penales/policiacos y capturas de tus plataformas de transporte o fotos de tu auto (si aplica). Si aplicas para Coorindador o Social Media Associate, adjunta tu CV y un pequeño resumen de tu experiencia."
+        : "Please attach your CV. If applying as a Driver, include your background checks and screenshots of your transport platforms (if applicable). If applying as an Coordinator or Social Media Associate, attach your resume and a brief summary of your experience.",
       warningText: isEs 
         ? "Aplicar únicamente por correo: no se recibirán mensajes de WhatsApp para aplicaciones."
         : "Apply via email only: WhatsApp messages for applications will not be accepted."
