@@ -124,8 +124,8 @@ export default function CareersPage() {
           title: isEs ? "Social Media Associate (Junior)" : "Social Media Associate (Junior)",
           subtitle: isEs ? "Modalidad: Remoto | Contrato: Freelance" : "Location: Remote | Contract: Freelance",
           description: isEs
-            ? "Buscamos un/a creador/a digital, con un excelente sentido de la estética y ganas de crecer. Si tienes un estilo de diseño minimalista, sabes crear contenido atractivo y te entusiasma el turismo nacional, este es tu lugar."
-            : "We are looking for a passionate digital creator with an excellent sense of aesthetics and a desire to grow. If you have a minimalist design style, know how to create engaging content, and love tourism, this is for you.",
+            ? "Buscamos un/a creador/a digital, con un excelente sentido de la estética. Si tienes un estilo de diseño minimalista, sabes crear contenido atractivo y te entusiasma el turismo nacional, este es tu lugar."
+            : "We are looking for a passionate digital creator with an excellent sense of aesthetics. If you have a minimalist design style, know how to create engaging content, and love tourism, this is for you.",
           tasksTitle: isEs ? "¿Qué harás?" : "What you will do:",
           tasks: isEs ? [
             "Crear, editar y programar contenido (Reels, Stories, posts) enfocado en turismo local.",
@@ -168,22 +168,22 @@ export default function CareersPage() {
           tasks: isEs ? [
             "Coordinar la logística de viajes y traslados, asegurando tiempos exactos y un servicio impecable.",
             "Primer punto de contacto: responder consultas, brindar información y enviar cotizaciones rápidas y profesionales.",
-            "Gestionar y optimizar bases de datos en Google Sheets (itinerarios, registro de clientes y control contable básico).",
-            "Asegurar una experiencia de cliente fluida y de nivel premium desde el primer contacto."
+            "Gestionar y mantener actualizadas las bases de datos de clientes y operaciones en Google Sheets y en nuestra app.",
+            "Asegurar una experiencia de cliente fluida desde el primer contacto."
           ] : [
             "Coordinate trip and transfer logistics, ensuring exact timing and flawless service.",
             "First point of contact: answer inquiries, provide info, and send out quick and professional quotes.",
-            "Manage and optimize databases in Google Sheets (itineraries, and client logs).",
-            "Ensure a smooth, premium client experience right from the initial inquiry."
+            "Manage and optimize databases in Google Sheets and in our app.",
+            "Ensure a smooth client experience from the initial inquiry."
           ],
           requirementsTitle: isEs ? "¿Qué buscamos?" : "What we look for:",
           requirements: isEs ? [
-            "Excelente manejo de Google Workspace (dominio específico y comprobable en Google Sheets).",
+            "Excelente manejo de Google Workspace.",
             "Nivel de inglés avanzado (tanto escrito como hablado de forma fluida).",
-            "Estudios iniciales universitarios en Administración de Empresas, Ingienerias, Marketing O experiencia previa en puestos administrativos, logística o turismo.",
+            "Estudios iniciales universitarios en Administración, Ingienerias, Marketing o experiencia previa en puestos administrativos, logística o turismo.",
             "Atención meticulosa al detalle, excelente redacción, ortografía y capacidad multitarea."
           ] : [
-            "Excellent command of Google Workspace (specific, verifiable mastery of Google Sheets).",
+            "Excellent command of Google Workspace.",
             "Advanced English level (fluent written and spoken).",
             "Initial university studies in Business Admin, Engineering, Marketing, or related fields or prior experience in admin, logistics, or tourism.",
             "Meticulous attention to detail, excellent writing and spelling, and multitasking abilities."
