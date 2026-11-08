@@ -157,7 +157,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Destinos populares como Antigua Guatemala, el Lago de Atitlán, Lanquín (Semuc Champey) y Flores (Tikal) son extremadamente seguros. La economía de estos lugares gira en torno al turismo, por lo que la comunidad local respeta, valora y cuida mucho a los visitantes. Puedes caminar por las calles empedradas de Antigua o explorar los pueblos del lago con total tranquilidad, siempre manteniendo precauciones normales."
+        value: "Destinos populares como Antigua Guatemala, el Lago de Atitlán, Lanquín (Semuc Champey) y Flores (Tikal) son seguros. La economía de estos lugares gira en torno al turismo, por lo que la comunidad local respeta, valora y cuida mucho a los visitantes. Puedes caminar por las calles empedradas de Antigua o explorar los pueblos del lago con total tranquilidad, siempre manteniendo precauciones normales."
       },
       {
         type: "heading",
@@ -231,7 +231,7 @@ export const journalData: JournalPost[] = [
       },
       {
         type: "paragraph",
-        value: "Top destinations like Antigua Guatemala, Lake Atitlan, Lanquin (Semuc Champey), and Flores (Tikal) are extremely safe. These towns are highly dependent on tourism, meaning the local community deeply respects, values, and protects visitors. You can confidently walk the cobblestone streets of Antigua or explore the lake towns with peace of mind, practicing normal situational awareness."
+        value: "Top destinations like Antigua Guatemala, Lake Atitlan, Lanquin (Semuc Champey), and Flores (Tikal) are safe. These towns are highly dependent on tourism, meaning the local community deeply respects, values, and protects visitors. You can confidently walk the cobblestone streets of Antigua or explore the lake towns with peace of mind, practicing normal situational awareness."
       },
       {
         type: "heading",

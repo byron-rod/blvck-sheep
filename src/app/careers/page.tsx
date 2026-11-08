@@ -146,14 +146,14 @@ export default function CareersPage() {
             "Disponibilidad para viajar dentro del país para la creación de contenido (Indispensable).",
             "Nivel de inglés avanzado (indispensable para redactar y responder fluidamente a turistas).",
             "Excelente ojo visual con fuerte inclinación hacia la estética minimalista y limpia.",
-            "Habilidad en edición de video corto (CapCut, Premiere, etc.). Plus: Uso de Adobe After Effects.",
+            "Habilidad en edición de video corto (CapCut, Premiere, etc.). Plus: Uso de Adobe After Effects y DaVince Resolve.",
             "Conocimiento en el uso de Inteligencia Artificial.",
           ] : [
             "Early university studies in Digital Marketing, CM, or junior experience (1-2 years) with a portfolio (personal/university projects count).",
             "Availability to travel within the country for content creation (Essential).",
             "Advanced English level (essential for writing and smoothly responding to tourists).",
             "Excellent visual eye with a strong inclination towards clean and minimalist aesthetics.",
-            "Skills in short-form video editing (CapCut, Premiere, etc.). Bonus: Adobe After Effects knowledge.",
+            "Skills in short-form video editing (CapCut, Premiere, etc.). Bonus: Adobe After Effects and DaVince Resolve knowledge.",
             "Knowledge using Artificial Intelligence.",
           ]
         },
