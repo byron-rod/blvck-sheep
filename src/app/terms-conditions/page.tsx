@@ -1,9 +1,9 @@
 "use client";
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function TermsConditions() {
-  const [activeLanguage, setActiveLanguage] = useState<"en" | "es">("en");
+  const { activeLanguage, setActiveLanguage } = useLanguage();
 
   return (
     <main className="container mx-auto max-w-4xl py-24 px-6 lg:px-0">
@@ -71,10 +71,10 @@ export default function TermsConditions() {
               : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas por retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
           </li>
           <li>
-            <strong>{activeLanguage === "en" ? "Cancellations / changes:" : "Cancelaciones / Cambios:"}</strong>{" "}
+            <strong>{activeLanguage === "en" ? "Cancellations & Schedule Changes:" : "Cancelaciones y Cambios de Horario:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>You must cancel, change or reschedule at least <strong>24 hours</strong> before departure for a refund or to be able to accomodate your change.</>
-              : <>Debes cancelar, cambiar o reprogramar con al menos <strong>24 hours</strong> de anticipación a la salida para obtener un reembolso o para poder acomodar tu cambio.</>}
+              ? <>Any cancellation or schedule modification must be requested at least <strong>24 hours</strong> before departure. Due to high demand and back-to-back routes, last-minute changes cannot always be accommodated and may incur additional fees.</>
+              : <>Cualquier cancelación o cambio de horario debe solicitarse con al menos <strong>24 horas</strong> de anticipación a la salida. Debido a la alta demanda y rutas consecutivas, los cambios de última hora no siempre pueden ser acomodados y pueden incurrir en cargos adicionales.</>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Payments:" : "Pagos:"}</strong>{" "}
@@ -151,7 +151,7 @@ export default function TermsConditions() {
         </div>
       </section>
 
-      {/* 2. Private & Blvck Tier Policies */}
+      {/* 2. Private Policies */}
       <section className="mb-10">
         <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
           {activeLanguage === "en" ? "2. Private Services Policies" : "2. Políticas de Servicio Privado"}
@@ -175,19 +175,30 @@ export default function TermsConditions() {
               ? "Due to heavy and unpredictable traffic in Guatemala City, our standard service coverage for private transit is limited to the central areas: Zones 4, 9, 10, 13, and 14. Pick-ups or drop-offs outside these specific zones will incur an additional fee."
               : "Debido al tráfico pesado e impredecible en la Ciudad de Guatemala, nuestra cobertura de servicio estándar para viajes privados se limita a las áreas céntricas: Zonas 4, 9, 10, 13 y 14. Las recogidas o bajadas fuera de estas zonas específicas tendrán un costo extra."}
           </li>
-          <li>
-            <strong>{activeLanguage === "en" ? "Schedule Flexibility & Notice:" : "Flexibilidad de Horarios y Avisos:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? <>While we offer total flexibility, any changes to your departure time or route must be requested at least <strong>24 hours in advance</strong> so we can properly manage driver logistics.</>
-              : <>Aunque ofrecemos total flexibilidad, cualquier cambio en tu hora de salida o ruta debe solicitarse con al menos <strong>24 horas de anticipación</strong> para que podamos gestionar adecuadamente la logística de los conductores.</>}
-          </li>
-          <li>
-            <strong>{activeLanguage === "en" ? "Short-Notice Adjustments:" : "Ajustes de Última Hora:"}</strong>{" "}
-            {activeLanguage === "en"
-              ? "Changes requested within 24 hours of your trip are strictly subject to availability. They may incur additional fees or be declined if they conflict with our drivers' overlapping schedules."
-              : "Los cambios solicitados dentro de las 24 horas previas a tu viaje están estrictamente sujetos a disponibilidad. Podrían incurrir en tarifas adicionales o ser rechazados si entran en conflicto con los horarios de otros clientes."}
-          </li>
         </ul>
+
+        {/* Warning Box: 24-Hour Notice for Schedule Changes */}
+        <div className="mt-6 bg-red-950/20 border border-red-900/30 rounded-xl p-5">
+          <h3 className="text-red-400 font-medium mb-2 flex items-center gap-2">
+            <span className="text-red-500">⚠️</span>
+            {activeLanguage === "en"
+              ? "High Season: Schedule Changes & Last-Minute Adjustments (24-Hour Notice)"
+              : "Temporada Alta: Cambios de Horario y Ajustes de Última Hora (Aviso de 24 Horas)"}
+          </h3>
+          <p className="text-zinc-300 text-sm leading-relaxed">
+            {activeLanguage === "en" ? (
+              <>
+                To guarantee the punctuality and service standard that define Blvck Sheep, especially right now during peak travel season in Guatemala, our fleet and driver schedules are carefully coordinated each day. For this reason, any modification to your departure time or route must be requested at least <strong>24 hours before your scheduled departure</strong> (example: If your trip is on December 22 at 10:00 AM, you must request the change by December 21 at 10:00 AM).{" "}
+                While we always do our best to assist with unexpected change of plans, due to the current high demand, last-minute changes impact the entire day&apos;s logistics and cannot always be accommodated. If our travel coordinator is able to restructure operations to fulfill a short-notice change, additional fees may apply.
+              </>
+            ) : (
+              <>
+                Para garantizarte la puntualidad y el estándar de servicio que nos caracteriza, especialmente ahora durante temporada de alta demanda en Guatemala, nuestra flota y la agenda de cada conductor se coordinan con precisión día a día. Por ello, cualquier cambio en tu horario de salida o ruta debe solicitarse con un mínimo de <strong>24 horas de anticipación</strong> a tu hora de salida. Si tu viaje es el 22 de diciembre a las 10:00 AM, el cambio debe solicitarse a mas tardar el 21 de diciembre a las 10:00 AM.{" "}
+                Siempre haremos lo posible por adaptarnos a tus cambios; sin embargo, debido a alta demanda actual, los cambios de última hora afectan toda la logística del día y no siempre pueden ser acomodados. En caso de ser necesario reestructurar la operación para realizar el cambio, esto puede incurrir en gastos adicionales.
+              </>
+            )}
+          </p>
+        </div>
       </section>
 
       {/* 3. Luggage Constraints */}
