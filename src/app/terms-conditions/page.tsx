@@ -321,6 +321,20 @@ export default function TermsConditions() {
           </li>
         </ul>
       </section>
+
+      {/* 7. Right to Refuse Service */}
+      <section className="mb-10">
+        <h2 className="text-2xl font-normal mb-6 text-white border-b border-zinc-800 pb-2">
+          {activeLanguage === "en"
+            ? "7. Right to Refuse Service"
+            : "7. Derecho de Admisión y Reserva de Servicio"}
+        </h2>
+        <p className="text-zinc-400 leading-relaxed">
+          {activeLanguage === "en"
+            ? "Blvck Sheep Shuttles reserves the right to accept, decline, or cancel any quote request or reservation at its sole discretion whenever it determines that operational availability, safety, logistical conditions, or respectful communication are not met to ensure proper service delivery. If Blvck Sheep exercises this right on a paid reservation prior to departure—provided it is not due to a breach of these Terms by the passenger—a 100% refund of the amount paid will be issued."
+            : "Blvck Sheep Shuttles se reserva el derecho de aceptar, rechazar o cancelar cualquier solicitud de cotización o reservación a su entera discreción cuando considere que no existen las condiciones adecuadas de disponibilidad operativa, seguridad, logística o comunicación respetuosa para garantizar la calidad del servicio. En caso de que Blvck Sheep ejerza este derecho sobre una reservación ya pagada antes del inicio del traslado —y siempre que no se deba a un incumplimiento de estos términos por parte del pasajero—, se realizará el reembolso del 100 % del monto abonado."}
+        </p>
+      </section>
     </main>
   );
 }
