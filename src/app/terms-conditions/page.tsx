@@ -61,14 +61,14 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Luggage Rule:" : "Regla de Equipaje:"}</strong>{" "}
             {activeLanguage === "en"
-              ? <>Standard allowance is 1 large/medium bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage.</strong></>
-              : <>El límite estándar es 1 maleta grande/mediana + 1 artículo personal por pasajero. <strong>Debes notificarnos con anticipación sobre cualquier equipaje extra.</strong></>}
+              ? <>Standard allowance is 1 large/medium bag + 1 personal item per person. <strong>You must notify us in advance of any extra luggage, there might be extra charges for additional luggage.</strong></>
+              : <>El límite estándar es 1 maleta grande/mediana + 1 artículo personal por pasajero. <strong>Debes notificarnos con anticipación sobre cualquier equipaje extra, este podria tener un costo adicional.</strong></>}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Shared Shuttles (Crucial):" : "Shuttles Compartidos (Crucial):"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Shared routes have strict schedules, conections with change of vehicle, multiple stops to pick-up/drop-off people, wait times up to 90 minutes, and do not guarantee door-to-door service. We are NOT responsible for missed flights or connections due to shared route operating times. If you have a strict schedule we recommend our Private Transit."
-              : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y no garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas por retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
+              ? "Shared routes have strict schedules, conections with change of vehicle, multiple stops to pick-up/drop-off people, wait times up to 90 minutes, and do NOT guarantee door-to-door service. We are NOT responsible for missed flights or connections due to shared route operating times. If you have a strict schedule we recommend our Private Transit."
+              : "Las rutas compartidas tienen horarios estrictos, conexiones con cambios de vehiculo, multiples paradas para recoger/dejar mas pasajeros, esperas de hasta 90 minutos y NO garantizan servicio puerta a puerta. NO nos hacemos responsables por vuelos o conexiones perdidas por retrasos debido al funcionamiento usual de este servicio. Si tienen tiempo limitado recomendamos usar viajes Privados."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Cancellations & Schedule Changes:" : "Cancelaciones y Cambios de Horario:"}</strong>{" "}
@@ -166,8 +166,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "Included Idle Time (Wait Times):" : "Tiempo de Espera Incluido (Idle Time):"}</strong>{" "}
             {activeLanguage === "en"
-              ? "Drivers can wait for you during stops along the way based on the route length: Short routes (e.g., Guatemala City to Antigua) include 25 minutes of idle time. Medium routes (e.g., Guatemala City or Antigua to Panajachel) include 45 minutes. Long routes (e.g., to Lanquín) include 1 hour and 30 minutes. If you would like to stay longer at any destination, it costs Q75 quetzales per extra hour."
-              : "Los pilotos pueden esperarte en paradas durante el trayecto según la duración de la ruta: Las rutas cortas (ej. Ciudad de Guatemala a Antigua) incluyen 25 minutos de espera. Las rutas medias (ej. Ciudad de Guatemala o Antigua a Panajachel) incluyen 45 minutos. Las rutas largas (ej. hacia Lanquín) incluyen 1 hora y 30 minutos de tiempo de espera. Si les interesa estar en ruta mas tiempo en algun destino, son Q75 quetzales la hora extra."}
+              ? "Drivers can wait for you during stops along the way based on the route length: Short routes (e.g., Guatemala City to Antigua) include 25 minutes of idle time. Medium routes (e.g., Guatemala City or Antigua to Panajachel) include 45 minutes. Long routes (e.g., to Lanquín) include 1 hour and 30 minutes. If you would like to stay longer at any destination, it costs Q85 quetzales per extra hour."
+              : "Los pilotos pueden esperarte en paradas durante el trayecto según la duración de la ruta: Las rutas cortas (ej. Ciudad de Guatemala a Antigua) incluyen 25 minutos de espera. Las rutas medias (ej. Ciudad de Guatemala o Antigua a Panajachel) incluyen 45 minutos. Las rutas largas (ej. hacia Lanquín) incluyen 1 hora y 30 minutos de tiempo de espera. Si les interesa estar en ruta mas tiempo en algun destino, son Q85 quetzales la hora extra."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Guatemala City Coverage Zones:" : "Zonas de Cobertura en Ciudad de Guatemala:"}</strong>{" "}
@@ -210,8 +210,8 @@ export default function TermsConditions() {
           <li>
             <strong>{activeLanguage === "en" ? "The Standard Allowance (Golden Rule):" : "El Límite Estándar (Regla de Oro):"}</strong>{" "}
             {activeLanguage === "en"
-              ? "The baseline allowance for all passengers is one (1) large suitcase and one (1) personal item (such as a backpack or purse). For shared shuttles, there are exceptions to this rule but depends on the number of passengers and the size of their luggage. Please notify if you bring any extras."
-              : "El límite base para todos los pasajeros es de una (1) maleta grande y un (1) artículo personal (como una mochila o bolso). Para los traslados compartidos, pueden aceptar mas dependiendo de la cantidad de pasajeros ese dia y el tamaño de sus maletas. Por favor notifica si llevas algo extra."}
+              ? "The baseline allowance for all passengers is one (1) large (23kg) or medium (14kg) suitcase and one (1) personal item (such as a backpack or purse). For shared shuttles, it is possible to travel with more luggage but it would have an additional cost. Please notify if you bring any extras."
+              : "El límite base para todos los pasajeros es de una (1) maleta grande (23kg) o mediana (14kg) y un (1) artículo personal (como una mochila o bolso). Para los traslados compartidos, pueden aceptar mas dependiendo de la cantidad de pasajeros ese dia y el tamaño de sus maletas, pero tendran un costro adicional. Por favor notifica si llevas algo extra."}
           </li>
           <li>
             <strong>{activeLanguage === "en" ? "Private Transit & Advance Notice:" : "Transporte Privado y Aviso Previo:"}</strong>{" "}
